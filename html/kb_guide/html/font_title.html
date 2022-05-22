@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div class="__guide">
+
+	<div class="__aside">
+		<div class="__component-name">폰트/타이틀</div>
+		<div class="__p">font 크기는 px 단위를 사용한다.</div>
+	</div>
+
+	<div class="__contents u-2019">
+
+		<div class="__h1">폰트</div>
+		<div class="__h2">색상</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>fc-1 <span class="fc-1">■</span></td>
+					<td>부정상태(오류,금지,경고), 부정액션(출금,삭제)<br />예금출금, 입력오류, 정보삭제</td>
+				</tr>
+				<tr>
+					<td>fc-2 <span class="fc-2">■</span></td>
+					<td>긍정상태(정상,허용), 긍정액션(입금,등록)<br />예금입금, 주식정보, 보유자금현황</td>
+				</tr>
+				<tr>
+					<td>fc-3 <span class="fc-3">■</span></td>
+					<td>고객행동 유도(입력,확인,단계)<br />입력항목안내, 입력내용확인, 프로세스 중 현재단계</td>
+				</tr>
+				<tr>
+					<td>fc-4 <span class="fc-4">■</span></td>
+					<td>고객행동 유도 2nd(확인,단계)<br />키보드 입력 후 확인, 프로세스 중 이전/다음 단계, 고객 행동에 대한 간단 피드백</td>
+				</tr>
+				<tr>
+					<td>fc-5 <span class="fc-5">■</span></td>
+					<td>알림, 중요정보 강조<br />새소식 알림, 중요 텍스트 강조</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview">
+			<xmp class="__code">
+<p class="fc-1">내 컬러는?</p>
+<p class="fc-2">내 컬러는?</p>
+<p class="fc-3">내 컬러는?</p>
+<p class="fc-4">내 컬러는?</p>
+<p class="fc-5">내 컬러는?</p>				
+			</xmp>
+		</div>
+
+		<div class="__h2">본문내용</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>txt-cont</td>
+					<td>기본 본문 텍스트</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview">
+			<xmp class="__code">
+<div class="txt-cont">기본 본문 텍스트 입니다. 기본 본문 텍스트 입니다. 기본 본문 텍스트 입니다. 기본 본문 텍스트 입니다. 기본 본문 텍스트 입니다. 기본 본문 텍스트 입니다. 기본 본문 텍스트 입니다. 기본 본문 텍스트 입니다.</div>
+			</xmp>
+		</div>
+
+		<div class="__h1">타이틀</div>
+		<div class="__h2">title depth</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>tit-dep1</td>
+					<td>1 depth (상품명, 콘텐츠 제목)</td>
+				</tr>
+				<tr>
+					<td>tit-dep2</td>
+					<td>2 depth (콘텐츠 설명 상단 타이틀)</td>
+				</tr>
+				<tr>
+					<td>tit-dep3</td>
+					<td>3 depth (프로세스 상단 타이틀)</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview">
+			<xmp class="__code">
+<h2 class="tit-dep1">1 depth title</h2>
+<h3 class="tit-dep2">2 depth title</h3>
+<h3 class="tit-dep3">3 depth title (여백 필요함)</h3>
+			</xmp>
+		</div>
+
+		<div class="__h2">title + button</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>tit-area.ty1</td>
+					<td>title, button inline 형태</td>
+				</tr>
+				<tr>
+					<td>tit-area.ty2</td>
+					<td>bg gray</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview">
+			<xmp class="__code">
+<div class="tit-area ty1">
+	<h2 class="tit-dep1">추가 본인인증</h2>
+	<button type="button" rel="#layer1" class="btn-info layerpop"><span class="blind">안내</span></button>
+</div>
+<br /><br />
+<div class="tit-area ty2">
+	<h2 class="tit-dep1">추가 본인인증</h2>
+	<button type="button" rel="#layer1" class="btn-info layerpop"><span class="blind">안내</span></button>
+</div>
+			</xmp>
+		</div>
+
+		<div class="__h2">title + sub text</div>
+		
+		<div class="__preview">
+			<xmp class="__code">
+<h2 class="tit-dep1">추가 본인인증</h2>
+<p class="txt-dep-desc">추가 본인인증 상세 설명입니다.</p>
+			</xmp>
+		</div>		
+	</div>
+	
+</div>
+    
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/common_ui.js"></script>
+<script src="../js/common_ui_2019.js"></script>
+
+</body>
+</html>

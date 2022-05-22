@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>내건물 등록하기</title>
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/content.css">
+	<!-- 190515 추가 -->
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/common_2019.css">
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/common_2019_new.css">
+	<!--// 190515 추가 -->
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/common_2021.css">
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/content_2021.css">
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/content_renton_2022.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content_renton_2022.css">
+	<!--// 190515 추가 -->
+	
+	<!-- 공통 스크립트 영역 START -->
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/library/jquery_lib.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/library/common.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/mnbiz_common.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/common/common-tag.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/common/mb_common.js"></script>
+	<!-- 공통 스크립트 영역 END -->
+    <script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/common/jquery.validity.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/mbank_common.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/common_ui.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/common_ui_2019.js"></script>
+    <script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/plugin/plugin-cert.js"></script>
+    <script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/car_common.js"></script>
+    <script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/transfer_common.js"></script>
+    
+    <!-- https://zobiz.kbstar.com/mobiz/app -->
+</head>
+<body>
+<div id="wrap">
+	<form method="post" name="IBF" id="IBF" onsubmit="return false;">
+		<div id="contents" class="u-2019 u-2021 u-bizcontent renton">
+			<!-- <div class="step-wrap ty1" role="img" aria-label="총 3단계 중 3단계(내 건물 등록 완료)">
+				<ol class="pt10">
+					<li><p>건물 기본정보</p></li>
+					<li><p>내 건물 등록하기</p></li>
+					<li class="on"><p>내 건물 등록 완료</p></li>
+				</ol>
+			</div> -->
+			<h2 class="tit-dep1 tac">내 건물 등록 완료!</h2>
+			<div class="msg-box success">
+				<strong class="msg-tit">축하해요!&#127881;</strong>
+				<p class="msg-txt">KB와 함께하는 갓물주 되기<br/> 첫 단계가 완료 되었어요.</p>
+			</div>
+			<div class="list-wrap">
+				<ul class="list-support build-success">
+					<li class="list icon-wrap">
+						<div class="gradiant-box yellow">
+							<span class="icon icon-buliding01"></span>
+						</div>
+						<div class="list-txt">
+							<em class="sub-tit">국민 101호</em>
+							<p class="sub-desc">등록완료</p>
+						</div>
+					</li>
+					<li class="list icon-wrap">
+						<div class="gradiant-box blue">
+							<span class="icon icon-buliding02"></span>
+						</div>
+						<div class="list-txt">
+							<em class="sub-tit">건물명최대글자수테스트</em>
+							<p class="sub-desc">등록완료</p>
+						</div>
+					</li>
+					<li class="list icon-wrap">
+						<div class="gradiant-box green">
+							<span class="icon icon-buliding02"></span>
+						</div>
+						<div class="list-txt">
+							<em class="sub-tit">건물명최대글자수테스트</em>
+							<p class="sub-desc">등록완료</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="space-line mt40">
+				<p class="f_15 tac">
+					지금 임대료를 받고 있는 내 계좌를 연결하면<br/>받은 <strong>임대료 확인</strong>과 <strong>수납처리</strong>를 한 번에 할 수 있어요
+				</p>
+				<div class="btn-area full">
+					<button type="button" class="btn-ty2 lv2">계좌 연결하기</button>
+				</div>
+			</div>
+			<div class="btn-area full fixed ty1">
+				<button type="button" class="btn-ty3">확인</button>
+				<button type="button" class="btn-ty1">건물 추가 등록</button>
+			</div>			
+		</div>
+	</form>
+</div>
+<script>
+ $(document).ready(function(){
+	//입력필드 포커스시 금액추가버튼 표시
+	$('#payMonthVal').focus(function() {
+		$('#payMonthBtn').removeClass('hide');
+	});
+	//입력필드 포커스아웃시 금액추가버튼 비표시
+	$('#payMonthVal').focusout(function() {
+		$('#payMonthBtn').addClass('hide');
+	});
+ })
+ function inputMoneyText(obj, type) {
+		var pay = $(obj).val();
+		var wagePay = 0;
+
+		if(pay != '') {
+			pay = pay.replace(/[^0-9]/g,'');
+			pay = pay.replace(/,/g,'');
+			
+			if(type == 'money') {
+				$(obj).val(Number(pay).toLocaleString("en"));
+			}else {
+				$(obj).val(Number(pay));
+			}
+		}
+		else {
+			$(obj).val('');
+		}
+	}
+	
+	function payMonthClick(pMoney) {
+		event.preventDefault(); //기본급 입력칸 포커스아웃 발생으로인해 버튼 감춰지는거 방지
+		
+		var money = $('#payMonthVal').val();
+		
+		if(money != '') {
+			money = money.replace(/[^0-9]/g,'');
+			money = money.replace(/,/g,'');
+			
+			$('#payMonthVal').val((money*1)+(pMoney*1));
+		}
+		else {
+			$('#payMonthVal').val(pMoney);
+		}
+		
+		inputMoneyText($('#payMonthVal'),'money');
+		
+		//nextBtnAative();
+	}
+	$(document).ready(function(){
+		$('.renton-requierdVal').on('change' , function(){
+			console.log($('.renton-requierdVal').val())
+			/* if($('.renton-requierdVal').val()) */
+			
+		});
+	});
+</script>
+</body>
+</html>

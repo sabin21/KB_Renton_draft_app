@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+	<script type="text/javascript" src="https://zobank.kbstar.com/mobiz/app/js/library/jquery_lib.js"></script>
+	<script type="text/javascript" src="https://zobank.kbstar.com/mobiz/app/js/mbank/common_ui.js"></script>
+	<script type="text/javascript" src="https://zobank.kbstar.com/mobiz/app/js/library/common.js"></script>
+
+	<style>
+	.u-2019 {position:initial}
+	</style>
+</head>
+
+<body>
+
+<div class="__guide">
+	
+	<div class="__aside">
+		<div class="__component-name">팝업</div>
+		<div class="__p">콘텐츠를 감쌀때 사용한다.</div>
+	</div>
+
+	<div class="__contents u-2019">
+
+		<div class="__h1">풀팝업</div>		
+	
+		<div class="__preview">
+			<xmp class="__code">
+<div id="wrap">
+	<form>
+		<div id="contents" class="u-2019 full-popup">
+			내용
+		</div>
+	</form>
+</div>
+			</xmp>
+		</div>	
+
+		<div class="__h1">레이어팝업</div>		
+
+		<div class="__h2">기본</div>				
+		<div class="__preview">
+			<xmp class="__code">
+<button rel="#layer1" class="btn-ty1 lv1 layerpop">기본 팝업</button>
+
+<div id="layer1" class="layerwrap">
+	<div class="pop-inner">
+		<h2 class="pop-tit">해지 불가능한 예부적금</h2>
+		<div class="pop-contents">
+			컨텐츠 영역 상하 좌우 마진 64 Font Size 28px 3줄 기준입니다.<br />중앙정렬
+		</div>		
+		<div class="btn-area full">
+			<button type="button" class="btn-ty3 lv2 close">취소</button>
+			<button type="button" class="btn-ty1 lv2">확인</button>
+		</div>
+	</div>
+</div>
+			</xmp>
+		</div>	
+
+		<div class="__h2">기본 (타이틀 제외)</div>				
+		<div class="__preview">
+			<xmp class="__code">
+<button rel="#layer2" class="btn-ty1 lv1 layerpop">타이틀 없는 팝업</button>
+
+<div id="layer2" class="layerwrap">
+	<div class="pop-inner">
+		<div class="pop-contents">
+			컨텐츠 영역 상하 좌우 마진 64 Font Size 28px 3줄 기준입니다.<br />중앙정렬
+		</div>		
+		<div class="btn-area full">
+			<button type="button" class="btn-ty3 lv2 close">취소</button>
+			<button type="button" class="btn-ty1 lv2">확인</button>
+		</div>
+	</div>
+</div>
+			</xmp>
+		</div>	
+
+		<div class="__h2">알림성 팝업</div>				
+		<div class="__preview">
+			<xmp class="__code">
+<button rel="#layer3" class="btn-ty1 lv1 layerpop">경고</button>
+
+<div id="layer3" class="layerwrap">
+	<div class="pop-inner">
+		<h2 class="pop-tit warning">알림내용 영역</h2>
+		<div class="pop-contents">
+			오류에 대한 자세한 내용이 들어갑니다.<br />
+			오류에 대한 자세한 내용이 들어갑니다.
+		</div>		
+		<div class="btn-area full">
+			<button type="button" class="btn-ty1 lv2 close">확인</button>
+		</div>
+	</div>
+</div>
+			</xmp>
+		</div>	
+
+		<div class="__h1">바텀 시트</div>		
+	
+		<div class="__preview">
+			<xmp class="__code">
+<!-- bottom sheet -->
+<button type="button" rel="#bs1" class="btn-ty3 bspop">인증방법변경</button>
+
+<div id="bs1" class="bswrap">
+	<div class="bs-inner">
+		<h2 class="bs-tit">인증방법 변경</h2>
+		<button type="button" class="btn-close close">닫기</button>
+		<div class="bs-contents">
+			내용
+		</div>							
+	</div>
+</div>
+<!--// bottom sheet -->	
+			</xmp>
+		</div>	
+
+	</div>	
+</div>
+<script src="../js/scripts.js"></script>
+<script src="../js/common_ui.js"></script>
+<script src="../js/common_ui_2019.js"></script>
+</body>
+</html>

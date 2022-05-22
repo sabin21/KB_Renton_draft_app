@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+<body>
+
+<div id="wrap" class="__guide">
+
+	<div class="__aside">
+		<div class="__component-name">데이터 리스트</div>
+		<div class="__p">설명글 입력</div>
+	</div>
+
+	<div id="contents" class="__contents u-2019">
+
+		<div class="__h1">단순 정보 리스트</div>
+		<div class="__p">정보 전달만을 목적으로 사용하는 리스트로 추가적인 액션을 필요로 하지 않는다.</div>
+				
+		<div class="__h2">세로형 리스트</div>		
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>list</td>
+					<td>리스트</td>
+				</tr>
+				<tr>
+					<td>list.ty3</td>
+					<td>리스트 (라인 없음)</td>
+				</tr>
+				<tr>
+					<td>sub-tit</td>
+					<td>서브 타이틀</td>
+				</tr>
+				<tr>
+					<td>sub-desc</td>
+					<td>서브 카피</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<ul class="list">
+	<li>한 줄 텍스트입니다.</li>
+	<li><input type="checkbox" id="chk1" name="" value="" class="chk" /><label for="chk1">통합징수보험</label></li>
+	<li><input type="radio" id="rdo1" name="rdo1" value="" class="rdo" /><label for="rdo1">통합징수보험</label></li>
+</ul>
+<ul class="list">
+	<li>
+		<em class="sub-tit">리스트 타이틀</em>
+		<p class="sub-desc">서브카피 내용이 들어갑니다.</p>
+	</li>
+	<li>
+		<em class="sub-tit">리스트 타이틀</em>
+		<p class="sub-desc">서브카피 내용이 들어갑니다.</p>
+	</li>
+</ul>
+<br /><br />
+<ul class="list ty3">
+	<li>한 줄 텍스트입니다.</li>
+	<li><input type="checkbox" id="chk1" name="" value="" class="chk" /><label for="chk1">통합징수보험</label></li>
+	<li><input type="radio" id="rdo1" name="rdo1" value="" class="rdo" /><label for="rdo1">통합징수보험</label></li>
+</ul>
+			</xmp>
+		</div>		
+
+		<div class="__h2">분할 리스트</div>		
+		<div class="__p">리스트는 4개 이상 분할하지 않으며, 4개 이상일 경우, 세로형을 사용한다.</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>col-2</td>
+					<td>2분할</td>
+				</tr>
+				<tr>
+					<td>col-3</td>
+					<td>3분할</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<ul class="list col-2">
+	<li><input type="radio" id="rdo2" name="rdo2" value="" class="rdo" /><label for="rdo2">통합징수보험</label></li>
+	<li><input type="radio" id="rdo3" name="rdo2" value="" class="rdo" checked="checked" /><label for="rdo3">국민연금</label></li>	
+	<li><input type="radio" id="rdo4" name="rdo2" value="" class="rdo" /><label for="rdo4">국민연금</label></li>
+	<li><input type="radio" id="rdo5" name="rdo2" value="" class="rdo" /><label for="rdo5">국민연금</label></li>
+</ul>
+<br /><br />
+<ul class="list ty3 col-2">
+	<li><input type="radio" id="rdo20" name="rdo20" value="" class="rdo" /><label for="rdo20">통합징수보험</label></li>
+	<li><input type="radio" id="rdo21" name="rdo20" value="" class="rdo" checked="checked" /><label for="rdo21">국민연금</label></li>	
+</ul>
+<br /><br />
+<ul class="list ty3 col-3">
+	<li><input type="checkbox" id="chk2" name="" value="" class="chk" /><label for="chk2">있음</label></li>
+	<li><input type="checkbox" id="chk3" name="" value="" class="chk" /><label for="chk3">없음</label></li>
+	<li><input type="checkbox" id="chk4" name="" value="" class="chk" checked="checked" /><label for="chk4">둘다</label></li>
+	<li><input type="checkbox" id="chk5" name="" value="" class="chk" /><label for="chk5">있음</label></li>
+	<li><input type="checkbox" id="chk6" name="" value="" class="chk" /><label for="chk6">없음</label></li>
+</ul>
+			</xmp>
+		</div>		
+
+		<div class="__h2">복합형 리스트</div>
+		<div class="__p">버튼 등이 포함되는 복합형 리스트</div>
+		
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>has-btn</td>
+					<td>버튼이 있는 복합형일 경우</td>
+				</tr>
+				<tr>
+					<td>has-btn.ty1</td>
+					<td>버튼 영역이 li 전체(full) 일 경우</td>
+				</tr>
+				<tr>
+					<td>has-btn.ty2</td>
+					<td>기본 버튼 일 경우 (max-width:64px)</td>
+				</tr>
+				<tr>
+					<td>has-btn.ty3</td>
+					<td>화살표 버튼 일 경우 / 그 외 동일 사이즈 버튼</td>
+				</tr>
+				<tr>
+					<td>has-btn.ty4</td>
+					<td>버튼 영역이 li 전체(full) 이고, 내용 전체가 버튼일 경우</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<ul class="list">
+	<li class="has-btn ty1">
+		li 전체 영역을 클릭할 수 있어요. li 전체 영역을 클릭할 수 있어요. li 전체 영역을 클릭할 수 있어요.
+		<a href="#" role="button" class="btn-drag">드래그</a>
+	</li>
+	<li class="has-btn ty2">
+		기본 버튼을 가지고 있어요. 기본 버튼을 가지고 있어요. 기본 버튼을 가지고 있어요. 기본 버튼을 가지고 있어요. 기본 버튼을 가지고 있어요. 기본 버튼을 가지고 있어요.
+		<button type="button" class="btn-ty2 lv3">버튼</button>
+	</li>
+	<li class="has-btn ty3">
+		화살표 버튼을 가지고 있어요. 화살표 버튼을 가지고 있어요. 화살표 버튼을 가지고 있어요. 화살표 버튼을 가지고 있어요.
+		<a href="#" class="btn-fold">바로가기</a>
+	</li>
+	<li class="has-btn ty4">		
+		<a href="#" class="">저는 전체버튼입니다. 제 자체가 버튼이에요</a>
+	</li>
+</ul>
+			</xmp>
+		</div>
+
+		<div class="__h2">체크박스 리스트</div>
+		<div class="__p">체크박스, 라디오버튼이 병합된 리스트</div>
+		
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>list.ty2</td>
+					<td>체크박스, 라이오버튼이 있는 복합형</td>
+				</tr>				
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<ul class="list ty2">	
+	<li>
+		<input type="checkbox" id="chk20" name="" value="" class="chk" />
+		<label for="chk20" class="blind">내용 선택</label>
+		<div class="">
+			내용
+		</div>
+	</li>	
+	<li>
+		<input type="checkbox" id="chk21" name="" value="" class="chk" title="내용 선택" />
+		<label for="chk21" class="blind">내용 선택</label>
+		<div class="">
+			<em class="sub-tit">서브제목</em>
+			<p class="sub-desc">서브카피 내용</p>
+		</div>
+	</li>
+</ul>
+			</xmp>
+		</div>
+
+		<div class="__h2">아코디언 리스트</div>		
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>accordion</td>
+					<td>아코디언 기능이 필요한 경우 감싸는 영역에 추가</td>
+				</tr>
+				<tr>
+					<td>acc-wrap.ty2</td>
+					<td>작은 아코디언</td>
+				</tr>
+				<tr>
+					<td>acc-wrap.ty3</td>
+					<td>헤더 gray 아코디언</td>
+				</tr>
+				<tr>
+					<td>acc-wrap.ty4</td>
+					<td>원스탑 - 희망거래선택 아코디언</td>
+				</tr>
+				<tr>
+					<td>acc-wrap.ty5</td>
+					<td>약관 형 toggle</td>
+				</tr>
+				<tr>
+					<td>acc-tit</td>
+					<td>아코디언 제목 영역</td>
+				</tr>
+				<tr>
+					<td>acc-btn</td>
+					<td>아코디언 버튼 영역</td>
+				</tr>
+				<tr>
+					<td>acc-contents</td>
+					<td>아코디언 내용 영역</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<ul class="list">
+	<li class="has-btn ty1 accordion">
+		<div class="acc-tit">
+			<h3>아코디언 리스트 제목</h3>
+			<button type="button" class="btn-fold acc-btn" aria-expanded="false">아코디언 리스트 제목<span class="status">펼치기</span></button>
+		</div>
+		<div class="acc-contents">
+			아코디언 내용입니다.
+		</div>
+	</li>
+	<li class="has-btn ty3 accordion">
+		<div class="acc-tit">
+			<input type="checkbox" id="chk18" name="" value="" class="chk" /><label for="chk18">아코디언 리스트 제목</label>
+			<button type="button" class="btn-fold acc-btn" aria-expanded="false">아코디언 리스트 제목<span class="status">펼치기</span></button>
+		</div>
+		<div class="acc-contents">
+			아코디언 내용입니다.
+		</div>
+	</li>
+</ul>
+<br /><br />
+<div class="acc-wrap ty1 accordion">
+	<div class="acc-tit">
+		<h3>아코디언 제목</h3>
+		<button type="button" class="btn-fold acc-btn" aria-expanded="false">아코디언 제목<span class="status">펼치기</span></button>
+	</div>
+	<div class="acc-contents">								
+		아코디언 내용
+	</div>
+</div>
+<br /><br />
+<div class="acc-wrap accordion">
+	<div class="acc-tit">
+		<input type="checkbox" id="chk22" name="" value="" class="chk" />
+		<label for="chk22">서비스 유의사항 확인</label>
+		<button type="button" class="btn-fold acc-btn" aria-expanded="false">서비스 유의사항 확인<span class="status">펼치기</span></button>
+	</div>
+	<div class="acc-contents">								
+		아코디언 내용
+	</div>
+</div>
+<br /><br />
+<div class="acc-wrap ty2 accordion">
+	<div class="acc-tit">
+		<h3>유의사항</h3>
+		<button type="button" class="btn-fold acc-btn" aria-expanded="false">유의사항<span class="status">펼치기</span></button>
+	</div>
+	<div class="acc-contents">
+		<ul class="list-ty1 gray">
+			<li>반드시 신분증 원본으로 촬영해야 합니다.</li>
+			<li>빛 반사와 흔들림에 주의하여 초점을 잘 맞추어 촬영해주세요.</li>
+			<li>신분증보다 짙은 색 배경위에 신분증을 올려 놓고 촬영해주세요.</li>
+			<li>정보확인이 어렵거나, 훼손/유효하지 않은 신분증은 거래가 제한(거절)될 수 있습니다.</li>
+		</ul>
+	</div>
+</div>
+<br /><br />
+<div class="acc-wrap ty3 accordion">
+	<div class="acc-tit">
+		<em class="sub-tit">선택사항 입력</em>
+		<p class="sub-desc">(예약, CMS 사용)</p>							 
+		<button type="button" class="btn-fold acc-btn" aria-expanded="false">선택사항 입력<span class="status">펼치기</span></button>
+	</div>
+	<div class="acc-contents">	
+		아코디언 내용
+	</div>
+</div>
+<br /><br />
+<div class="acc-wrap ty4 accordion">
+	<div class="acc-tit">
+		<input type="checkbox" id="chk1" name="" value="" class="chk" /><label for="chk1" class="lb-prod1">통장</label>
+		<button type="button" class="btn-fold acc-btn" aria-expanded="false">통장<span class="status">펼치기</span></button>
+	</div>
+	<div class="acc-contents">
+		<strong>유의사항</strong>
+		<ul class="list-ty1">
+			<li>계좌개설의 경우 금융거래한도계좌 개설되지만 증빙서류 스크래핑 가능 고객 및 스타클럽 고객의  경우 정상계좌 개설됩니다.</li>
+			<li>한 달 이내에 전 금융기관 계좌개설 고객의 경우 계좌개설이 제한됩니다.</li>
+		</ul>
+	</div>
+</div>		
+<br /><br />
+<div class="acc-wrap accordion ty5">
+	<div class="acc-tit">
+		<input type="checkbox" id="chk_all" name="" value="" class="chk" />
+		<label for="chk_all">휴대폰 본인인증 전체동의</label>
+		<button type="button" class="btn-fold acc-btn" aria-expanded="false">휴대폰 본인인증 전체동의<span class="status">펼치기</span></button>
+	</div>
+	<div class="acc-contents">								
+		<ul class="list">
+			<li class="has-btn ty3 accordion">
+				<div class="acc-tit">
+					<input type="checkbox" id="chk1" name="" value="" class="chk" /><label for="chk1">개인정보 수집/이용 동의</label>
+					<button type="button" class="btn-fold acc-btn" aria-expanded="false">개인정보 수집/이용 동의<span class="status">펼치기</span></button>
+				</div>
+				<div class="acc-contents">
+					<div class="overflow-y">
+						개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용 개인정보 수집/이용 동의 내용
+					</div>
+				</div>
+			</li>
+		</ul>						
+	</div>
+</div>
+			</xmp>
+		</div>
+
+		<div class="__h2">약관</div>
+		
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>term-tit</td>
+					<td>전체동의 영역</td>
+				</tr>				
+				<tr>
+					<td>chk.required</td>
+					<td>필수 항목에 required 클래스 추가 필요</td>
+				</tr>						
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<!-- term -->
+<div class="term-wrap">
+	<div class="term-tit">
+		<input type="checkbox" id="chk1" name="" value="" class="chk" /><label for="chk1">전체 동의</label>
+		<a href="#" role="button" class="btn-arrow">약관보기</a>
+	</div>
+	<div class="term-group">
+		<div class="term-tit">
+			<input type="checkbox" id="chk2" name="" value="" class="chk" /><label for="chk2">약관</label>
+			<a href="#" role="button" class="btn-arrow">약관보기</a>
+		</div>
+		<ul class="list">						
+			<li class="has-btn ty3">
+				<input type="checkbox" id="chk3_1" name="" value="" class="chk required"><label for="chk3_1"><span>[필수]</span> 은행여신거래기본 약관</label>
+				<a href="#" role="button" class="btn-arrow">약관보기</a>
+			</li>
+			<li class="has-btn ty3">
+				<input type="checkbox" id="chk3_2" name="" value="" class="chk required"><label for="chk3_2"><span>[필수]</span> 전자금융거래기본약관</label>
+				<a href="#" role="button" class="btn-arrow">약관보기</a>
+			</li>
+			<li class="has-btn ty3">
+				<input type="checkbox" id="chk3_3" name="" value="" class="chk required"><label for="chk3_3"><span>[필수]</span> 예금거래기본약관</label>
+				<a href="#" role="button" class="btn-arrow">약관보기</a>
+			</li>						
+		</ul>
+	</div>
+
+	<div class="term-group">
+		<div class="term-tit">
+			<input type="checkbox" id="chk4" name="" value="" class="chk" /><label for="chk4">동의서</label>
+			<a href="#" role="button" class="btn-arrow">약관보기</a>
+		</div>
+		<ul class="list">						
+			<li class="has-btn ty3">
+				<input type="checkbox" id="chk5_1" name="" value="" class="chk" /><label for="chk5_1"><span>[선택]</span> 은행여신거래기본 약관</label>
+				<a href="#" role="button" class="btn-arrow">약관보기</a>
+			</li>
+			<li class="has-btn ty3">
+				<input type="checkbox" id="chk5_2" name="" value="" class="chk" /><label for="chk5_2"><span>[선택]</span> 전자금융거래기본약관</label>
+				<a href="#" role="button" class="btn-arrow">약관보기</a>
+			</li>
+			<li class="has-btn ty3">
+				<input type="checkbox" id="chk5_3" name="" value="" class="chk" /><label for="chk5_3"><span>[선택]</span> 예금거래기본약관</label>
+				<a href="#" role="button" class="btn-arrow">약관보기</a>
+			</li>	
+			<li class="has-btn ty3">
+				<input type="checkbox" id="chk5_4" name="" value="" class="chk" /><label for="chk5_4"><span>[선택]</span> 개인(신용)정보 수집·이용 동의서(상품서비스 안내 등)</label>
+				<a href="#" role="button" class="btn-arrow">약관보기</a>
+			</li>
+			<li>
+				<ul class="term-options">
+					<li>
+						<input type="checkbox" id="chk6_1" name="" value="" class="chk" />
+						<label for="chk6_1">전체</label>
+					</li>
+					<li>
+						<input type="checkbox" id="chk6_2" name="" value="" class="chk" />
+						<label for="chk6_2">문자메시지</label>
+					</li>
+					<li>
+						<input type="checkbox" id="chk6_3" name="" value="" class="chk" />
+						<label for="chk6_3">이메일</label>
+					</li>
+					<li>
+						<input type="checkbox" id="chk6_4" name="" value="" class="chk" />
+						<label for="chk6_4">전화</label>
+					</li>
+					<li>
+						<input type="checkbox" id="chk6_5" name="" value="" class="chk" />
+						<label for="chk6_5">우편</label>
+					</li>
+				</ul>
+			</li>					
+		</ul>
+	</div>
+	<div class="term-agree">
+		<input type="checkbox" id="chk7" name="" value="" class="chk required"><label for="chk7"><span>[필수]</span> 본인은 약관 및 상품설명서를 제공받고 그 내용을 충분히 이해하며 본 상품에 가입함을 확인합니다.</label>
+	</div>
+</div>
+<!--// term -->
+			</xmp>
+		</div>
+
+		<div class="__h2">그리드 리스트</div>
+
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>list-grid</td>
+					<td>그리드 리스트</td>
+				</tr>				
+				<tr>
+					<td>list-grid.ty2</td>
+					<td>그리드 리스트 (테이블 디자인)</td>
+				</tr>						
+				<tr>
+					<td>list-grid.ty3</td>
+					<td>그리드 리스트 (배경 전체 회색)</td>
+				</tr>						
+				<tr>
+					<td>list-grid.ty4</td>
+					<td>그리드 리스트 (dd - text-align:right)</td>
+				</tr>						
+				<tr>
+					<td>list-grid.ty5</td>
+					<td>그리드 리스트 (서브 그리드 리스트)</td>
+				</tr>						
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<dl class="list-grid">
+	<dt>받는분</dt>
+	<dd>김연아</dd>
+	<dt>이체금액</dt>
+	<dd><span class="fc-2">1,000,000</span>원</dd>
+	<dt>출금계좌</dt>
+	<dd>613801-01-354411</dd>
+	<dt>받는분 통장표기</dt>
+	<dd>김연아</dd>
+	<dt>내통장표기</dt>
+	<dd>김국민</dd>
+	<dt>수수료</dt>
+	<dd>면제(면제사유)</dd>
+</dl>
+<br /><br />
+<dl class="list-grid ty2">
+	<dt>받는분</dt>
+	<dd>김연아</dd>
+	<dt>이체금액</dt>
+	<dd><span class="fc-2">1,000,000</span>원</dd>
+	<dt>출금계좌</dt>
+	<dd>613801-01-354411</dd>
+	<dt>받는분 통장표기</dt>
+	<dd>김연아</dd>
+	<dt>내통장표기</dt>
+	<dd>김국민</dd>
+	<dt>수수료</dt>
+	<dd>면제(면제사유)</dd>
+</dl>
+<br /><br />
+<dl class="list-grid ty3">
+	<dt>출금계좌번호</dt>
+	<dd>067-01-0516-771</dd>
+	<dt>요청건수</dt>
+	<dd><strong>2건 (정상 <span class="fc-2">1</span>건 / 오류 <span class="fc-1">1</span>건)</strong></dd>
+	<dt>총 이체금액</dt>
+	<dd><strong class="price">3,000,000,000</strong>원</dd>
+	<dt>총 수수료</dt>
+	<dd>1,000원</dd>
+	<dt>합계</dt>
+	<dd>3,001,000원</dd>
+</dl>
+<br /><br />
+<dl class="list-grid ty4">
+	<dt>출금계좌</dt>
+	<dd><strong>457-24-0335-095</strong></dd>
+	<dt>출금합계액</dt>
+	<dd><strong class="price">300,000</strong>원</dd>
+	<dt>총 수수료</dt>
+	<dd>0원</dd>
+</dl>
+<br /><br />
+<dl class="list-grid ty5">
+	<dt>출금계좌</dt>
+	<dd><strong>457-24-0335-095</strong></dd>
+	<dt>출금합계액</dt>
+	<dd><strong class="price">300,000</strong>원</dd>
+	<dt>총 수수료</dt>
+	<dd>0원</dd>
+</dl>
+			</xmp>
+		</div>
+	</div>
+	
+</div>
+    
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/common_ui.js"></script>
+<script src="../js/common_ui_2019.js"></script>
+</body>
+</html>

@@ -1,0 +1,1358 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common_2019_new.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common_2021.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content_2021.css">
+	<!--// 오픈뱅킹 관련 css 추가-->
+	
+    <script type="text/javascript" src="/mobiz/app/js/library/jquery_lib.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/mbank/common_ui.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/mbank/common_ui_2019.js"></script><!-- 190515 추가 -->
+
+    <!-- 공통 스크립트 영역 START -->
+    <script type="text/javascript" src="/mobiz/app/js/library/jquery_lib.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/library/common.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/common/common-tag.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/common/mb_common.js"></script>
+    <!-- 공통 스크립트 영역 END -->
+    <script type="text/javascript" src="/mobiz/app/js/common/jquery.validity.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/mbank/mbank_common.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/mbank/common_ui.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/plugin/plugin-cert.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/mbank/car_common.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/mbank/transfer_common.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/mbank/cbr_common.js"></script>
+    <script type="text/javascript" src="/mobiz/app/js/mbank/mnbiz_common.js"></script>
+	<link rel="stylesheet" type="text/css" id="big_css" href="/mobiz/app/css/mobj_fs_expansion.css">
+</head>
+<!--
+/*******************************************************************************
+*@ 서비스명     : [전계좌조회]요구불거래내역조회
+*@ 페이지명     : C043728
+*@ HTML NAME   : oTrnhisInqOndmdTableN_M.html
+*@ HTML 작성자  : 양희환
+*@ 확인자       :
+*@ 소속         :
+*@ 작성일       : 2016.08.03
+*@ SendDTOID    :
+*@ ActionID    : [515238]
+********************************************************************************
+ 번호   날짜/시              작성자    변경내역
+********************************************************************************
+  1   2016년 08월 03일       양희환    최초 작성
+  2   2019년 02월 25일       김영일     P20191928686 인터넷뱅킹 거래내역 조건검색 개발의뢰
+  3   2019년 05월 13일       김재진     P20191939125 스마트창구출금 버튼 추가
+  4   2019년 09월 10일       김현우     기업고도화 
+  5   2021년 02월 02일       이인용    P20202067879  다른금융 계좌조회 추가
+*******************************************************************************/
+-->
+<body>
+<div id="wrap" class="fs-expansion">
+    <div data-quics='{"start":"if"}' style="display:none">
+        <div data-quics='{"if":"servicedata.ifRlt9==\"true\""}'>
+            <form name="IBF" id="IBF" method="post" onsubmit="return false;">
+                <input type="hidden" name="nowPage"         data-quics='{"get":"nPageNo"}'/>
+                <input type="hidden" name="STEP"            value="1"/>
+                <input type='hidden' name='해약계좌번호'      value=''/>
+                <input type='hidden' name='출금계좌번호'      value=''/>
+                <input type='hidden' name='계좌조회구분'      value=''/>
+                <input type='hidden' name='출금계좌등록여부'      value=''/>
+                <input type='hidden' name='조회기간버튼'      value=''/>
+                <input type='hidden' name='계좌번호'            data-quics='{"get":"strAcctTemp_q"}'/>
+                <input type='hidden' name='대량계좌구분'      data-quics='{"get":"strMuchAcctGubun"}'/>
+                <input type='hidden' name='예금종류'            data-quics='{"get":"strAcctKind_q"}'/>
+                <input type="hidden" name="조회시작년월일"     value=""/>
+                <input type="hidden" name="조회종료년월일"     value=""/>
+                <input type='hidden' name='조회시작일'           value=''/>
+                <input type='hidden' name='조회종료일'       value=''/>
+                <input type='hidden' name='hi_listURL'      value=''/>
+                <input type='hidden' name='hi_firstCom'     value=''/>
+                <input type="hidden" name="STEP"            value=""/>
+
+                <input type="hidden" name="hi_chk"          value="Y"/>
+                <input type="hidden" name="요청키"/>
+                <input type='hidden' name="strPresentNum"   data-quics='{"get":"strPresentNum"}'/>   <!--현재페이지값-->
+                <input type="hidden" name="토탈로우"            data-quics='{"get":"nTotalRow"}'/>
+                <input type="hidden" name="버퍼로우"            data-quics='{"get":"strCnt"}'/>
+                <input type="hidden" name="pageNo"          data-quics='{"get":"nPageNo"}'/>
+
+                <input type='hidden' name="strPageKeyValue" value=""/> <!--다음거래일련번호 값 모두 저장-->
+                <input type='hidden' name="strPageYmdValue" value=""/> <!--다음거래년월일 값 모두 저장-->
+                <input type="hidden" name="다음거래년월일"     data-quics='{"get":"strNextTranYmd"}'/>
+                <input type="hidden" name="다음거래일련번호"    data-quics='{"get":"strNextTranNum"}'/>
+                <!-- 2010년 2월 23일 화요일 추가 정희중 -->
+                <input type="hidden" name="정기예금계좌번호"/>
+                <input type="hidden" name="취급번호"/>
+
+                <!-- 추가내용 -->
+                <input type="hidden" name="strNextTranNum_q"            data-quics='{"get":"strNextTranNum_q"}'/>
+                <input type="hidden" name="strNextTranYmd_q"            data-quics='{"get":"strNextTranYmd_q"}'/>
+                
+                <!-- content -->
+                <div id="contents" class="u-2019 u-2021">
+
+                <h2 class="blind">계좌내역조회</h2>
+                <!-- info -->
+                <div class="inq-account-info">              
+                    <!-- <label for="sel_bnk" class="blind">계좌</label> -->
+                    <!-- 210129 bottom으로 변경 -->
+                    <!-- 
+                    <div class="sel-wrap">
+                        <select id="acct" name="se_acct" class="sel" onchange="javascript:uf_GoSubmit('기타'); return false;"></select>
+                    </div>
+                     -->
+                    <button type="button" rel="#bs1" class="btn-bank bspop ty2" title="계좌선택" id="sel_bnk">
+                        <!-- <span class="bank icon_bank_004 ico-19"></span>국민 123456-78-123456 : 계좌별명 -->
+                    </button>
+                    <!--// 210129 bottom으로 변경 -->
+                    
+                    <p class="nickname" data-quics='{"get":"strAcctAlias_q"}'></p>
+                    <p class="name"><span class="blind">계좌명</span><em data-quics='{"get":"strValue22"}'></em></p>
+                    <div class="date-wrap ty2" data-quics='{"visiable":"servicedata.noOthAccDisp==\"true\""}'>
+                        <!-- 210129 추가 부족한 금액 충전 -->
+                        <button type="button" id="openBpcBtn" class="btn-charge bspop ty2" rel="#pop_bpc" onclick="uf_bpc_pop();">부족한 금액 충전</button>
+                        <!-- //210129 추가 부족한 금액 충전 -->
+                    </div>
+                    <div class="balance-info">
+                        <dl class="total">
+                            <dt>총 잔액</dt>
+                            <dd><strong class="price" data-quics='{"get":"strValue21"}'></strong>원</dd>
+                        </dl>
+                        <dl>
+                            <dt>출금가능금액</dt>
+                            <dd><span data-quics='{"get":"strValue23"}'></span>원</dd>
+                        </dl>
+                    </div>
+                    
+                    <div class="btn-area full">
+                        <span class="btn-wrap">
+                            <button type="button" class="btn-ty2 lv2" id="계좌상세정보버튼" onclick="javascript:linkDetailInquiry(); return false;">계좌상세정보</button>
+                        </span>
+                        <span class="btn-wrap" data-quics='{"visiable":"servicedata.스마트창구출금계좌여부==\"1\""}' style="display: none;">
+                            <button type="button" class="btn-ty2 lv2" onclick="btn_smart_onclick('C064114');">스마트 창구출금</button>
+                        </span>
+                        <span class="btn-wrap" data-quics='{"visiable":"servicedata.스마트창구출금계좌여부!=\"1\""}' style="display: none;">
+                            <button type="button" class="btn-ty2 lv2" data-quics='{"visiable":"servicedata.스마트창구출금계좌여부!=\"1\""}' style="display: none;" onclick="btn_smart_onclick('C064117');">스마트 창구출금</button>
+                        </span>
+                    </div>
+                    <div class="btn-area full">
+                        <span class="btn-wrap">
+                            <button type="button" class="btn-ty1 lv2" onclick="javascript:uf_link();return false">이체</button>
+                        </span>
+                    </div>
+                </div>
+                <!--// info -->
+
+            <!-- search -->
+            <h3 class="blind">기간 선택 조회</h3>
+            <p class="blind">기간 버튼 선택 시 바로 조회됩니다.</p>
+            <div class="btns-flex mt20" data-quics='{"get":"strBtnArea"}'>
+            </div>
+
+            <div class="accordion inq-search">
+                <div class="acc-tit">
+                    <h3>조건검색</h3>
+                    <button class="acc-btn" aria-expanded="false">펼치기</a>
+                </div>
+                <div class="acc-contents">  
+                    <h4 class="blind">기간</h4>
+                    <div class="form-wrap col-2">
+                        <div id="id_calendar1" class="ipt-wrap calendar"></div>
+                        <span class="bar">~</span>
+                        <div id="id_calendar2" class="ipt-wrap calendar"></div>
+                    </div>
+
+                    <h4 class="blind">조회내용</h4>
+                    <div class="rdo-wrap">
+                        <div id="radioInput1">
+                        </div>
+                        <h4 class="blind">조회결과 순서</h4>
+                        <div class="pt20" id="radioInput2">
+                        </div>
+                    </div>
+                    
+                    <h4 class="blind">검색조건</h4>
+                    <ul class="list ty3" id="상세검색영역">
+                        <li>
+                            <input type="checkbox" id="add2" name="추가검색조건2" value="2" class="chk" /><label for="add2">조회금액</label>
+                            <div id="add2_2" style="display:none">
+                                <div class="ipt-wrap price">
+                                    <label for="ipt_min" class="blind">최소금액</label>
+                                    <input type="tel" id="최소금액" name="최소금액" class="ipt" data-quics='{"get":"최소금액"}' maxlength="17" placeholder="(최소)" title="최소금액" onkeypress="filterInputData('[0-9]', event);" onkeyup="displayComma2(this, this.value);"/>
+                                    <button type="button" class="btn-clear">입력내용 초기화</button>
+                                    <span class="txt-won">원</span>
+                                </div>
+                                <div class="ipt-wrap price">
+                                    <label for="ipt_max" class="blind">최대금액</label>
+                                    <input type="tel" id="최대금액" name="최대금액" class="ipt" data-quics='{"get":"최대금액"}' maxlength="17" placeholder="~ (최대)" onkeypress="filterInputData('[0-9]', event);" onkeyup="displayComma2(this, this.value);"/>
+                                    <button type="button" class="btn-clear">입력내용 초기화</button>
+                                    <span class="txt-won">원</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="div_strCnprtAcno">
+                            <input type="checkbox" id="add3" name="추가검색조건3" value="3" class="chk" /><label for="add3">상대입금계좌</label>
+                            <div id="add2_3" style="display:none">
+                                <div class="ipt-wrap">
+                                    <label for="ipt_account" class="blind">상대입금계좌</label>
+                                    <input type="tel" id="상대계좌번호" name="상대계좌번호" class="ipt" placeholder="(숫자만 입력)" title="상대입금계좌" data-quics='{"get":"상대계좌번호"}' maxlength="16" onkeyup="uf_AccountChk(this, this.value);" onkeypress="filterInputData('[0-9]', event);"/>
+                                    <button type="button" class="btn-clear">입력내용 초기화</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="add4" name="추가검색조건4" value="4" class="chk" /><label for="add4">메모검색</label>
+                            <div id="add2_4" style="display:none">
+                                <div class="ipt-wrap">
+                                    <label for="ipt_memo" class="blind">메모검색</label>
+                                    <input type="text" id="단어검색" name="단어검색" class="ipt" maxlength="21" title="메모검색" placeholder="의뢰인/수취인, 출금계좌메모" data-quics='{"get":"단어검색"}'/>
+                                    <button type="button" class="btn-clear">입력내용 초기화</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="btn-area full">
+                        <button type="button" class="btn-ty1 lv3" onclick="uf_GoSubmit('일반');">조회</button>
+                    </div>
+                </div>
+            </div>              
+            <!--// search -->
+
+            <div class="tit-sub-inq">
+                <p><em id="start_date"></em> ~ <em id="end_date"></em></p>
+                <div class="chk-balance pos-r">
+                    <em>잔액</em>
+                    <div class="chk-toggle pos-r">                  
+                        <input type="checkbox" id="chk_toggle" name="" value="" class="chk" checked="checked" />
+                        <label for="chk_toggle"><span class="blind">잔액보기 여부 선택</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <div data-quics='{"start":"if"}'>
+            <!-- 출금계좌등록인 경우 다 보여준다 -->
+            <div class="total-inq" data-quics='{"if":"servicedata.showAll==\"Y\""}'>
+                <dl>
+                    <dt role="text"><span class="deposit">총 입금</span> (<em data-quics='{"get":"strMnrcvNoitm"}'></em>건)</dt>
+                    <dd><strong class="price" data-quics='{"get":"strInAmtSum"}'></strong>원</dd>
+                    <dt role="text"><span class="withdraw">총 출금</span> (<em data-quics='{"get":"strDrwotNoitm"}'></em>건)</dt>
+                    <dd><strong class="price" data-quics='{"get":"strOutAmtSum"}'></strong>원</dd>
+                </dl>
+            </div>
+            <!-- 입금조회권한만 갖는 경우 -->
+            <div class="total-inq" data-quics='{"elseif":"servicedata.strAcctInqKubun==\"1\""}'>
+                <dl>
+                    <dt role="text"><span class="deposit">총 입금</span> (<em data-quics='{"get":"strMnrcvNoitm"}'></em>건)</dt>
+                    <dd><strong class="price" data-quics='{"get":"strInAmtSum"}'></strong>원</dd>
+                </dl>
+                <p class="txt">※ 출금 조회 권한이 없습니다.</p>
+            </div>
+            <!-- 출금조회권한만 갖는 경우 -->
+            <div class="total-inq" data-quics='{"elseif":"servicedata.strAcctInqKubun==\"2\""}'>
+                <dl>
+                    <dt role="text"><span class="withdraw">총 출금</span> (<em data-quics='{"get":"strDrwotNoitm"}'></em>건)</dt>
+                    <dd><strong class="price" data-quics='{"get":"strOutAmtSum"}'></strong>원</dd>
+                </dl>
+                <p class="txt">※ 입금 조회 권한이 없습니다.</p>
+            </div>
+            <!-- 입출금조회권한 모두 갖는 경우 -->
+            <div class="total-inq" data-quics='{"else":""}'>
+                <dl>
+                    <dt role="text"><span class="deposit">총 입금</span> (<em data-quics='{"get":"strMnrcvNoitm"}'></em>건)</dt>
+                    <dd><strong class="price" data-quics='{"get":"strInAmtSum"}'></strong>원</dd>
+                    <dt role="text"><span class="withdraw">총 출금</span> (<em data-quics='{"get":"strDrwotNoitm"}'></em>건)</dt>
+                    <dd><strong class="price" data-quics='{"get":"strOutAmtSum"}'></strong>원</dd>
+                </dl>
+            </div>
+            </div>
+
+            <!-- list -->
+            <ul class="list-inq" id="webListData_tmp" data-quics='{"getList":"webListData_tmp"}' style="display:none">
+                <li>
+                    <span class="date" data-quics='{"attr":"strValue4"}'></span>
+                    <p class="memo" data-quics='{"attr":"strDisMemo"}'></p>
+                    <dl>
+                        <dt data-quics='{"arrVisiable":"data.strInAmt!=0"}' style="display:none">보낸분</dt>
+                        <dt data-quics='{"arrVisiable":"data.strOutAmt!=0"}' style="display:none">받는분</dt>
+                        <dd><strong data-quics='{"attr":"strRequestUserNm"}'></strong></dd>
+                        <dt data-quics='{"arrVisiable":"data.strInAmt!=0"}' style="display:none">입금금액</dt>
+                        <dt data-quics='{"arrVisiable":"data.strOutAmt!=0"}' style="display:none">출금금액</dt>
+                        <dd data-quics='{"arrVisiable":"data.strInAmt!=0"}' style="display:none"><strong class="price deposit" data-quics='{"attr":"strInAmt"}'></strong>원</dd>
+                        <dd data-quics='{"arrVisiable":"data.strOutAmt!=0"}' style="display:none"><strong class="price withdraw" data-quics='{"attr":"strOutAmt"}'></strong>원</dd>
+                        <dt class="balance">잔액</dt>
+                        <dd class="balance num"><em data-quics='{"attr":"strBalanceAmt"}'></em>원</dd>
+                        <dt>출금계좌메모</dt>
+                        <dd><em data-quics='{"attr":"strDrwotAcnoMemo"}'></em></dd>
+                    </dl>
+                </li>
+                <li class="no_data" data-quics='{"hasNoData":""}'>
+                                                                        조회할 데이터가 없습니다.
+                </li>
+            </ul>
+            <!--// list -->
+
+            <!-- 15건 이상일 경우 -->
+            <div class="btn-area full" id="more1">
+                <button type="button" class="btn-ty3 lv2"><span class="ico-more" onclick="javascript:gotoPage();">더보기</span></button>
+            </div>
+            <!--// 15건 이상일 경우 -->
+            
+            <!-- 210129 bottom add -->
+			<div id="btsPopupList">
+			</div>
+			
+			<div id="pageinclude_C101810">
+			</div>
+            <!--// 210129 bottom add -->
+            
+            </div>
+            <!-- //content -->
+            </form>
+            
+	<form name="FORMDPOST" id="FORMDPOST" method="post" onsubmit="return false;">
+		<input type="hidden" name="계좌번호_tmp"           value="" />
+		<input type="hidden" name="회차번호_tmp"           value="" />
+		<input type="hidden" name="조회시작일_tmp"         value="" />				        
+		<input type="hidden" name="조회종료일_tmp"         value="" />				        
+		<input type="hidden" name="은행코드_tmp"           value="" />
+		<input type="hidden" name="계좌번호파라미터_tmp"   value="" />
+		<input type="hidden" name="출금동의여부_tmp"       value="" />
+		<input type="hidden" name="상품명_tmp"             value="" />
+		<input type="hidden" name="재동의여부_tmp"         value="" />
+		<input type="hidden" name="재인증여부_tmp"         value="" />
+				        
+		<input type="hidden" name="출금계좌번호_tmp"       value="" />
+		<input type="hidden" name="해약계좌번호_tmp"       value="" />
+		<input type="hidden" name="예금종류_tmp"           value="" />
+		<input type="hidden" name="계좌별명_tmp"           value="" />
+		<input type="hidden" name="계좌조회구분_tmp"       value="" />
+		<input type="hidden" name="출금계좌등록여부_tmp"   value="" />
+		<input type="hidden" name="전체계좌구분_tmp"       value="" />
+	</form>
+            
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+// <![CDATA[
+
+var strAcctFormat = "";
+
+/** 개발자 정의 스크립트
+ */
+ $(function() {
+        $('.inq-search').on('click', '.chk', function() {
+            if($(this).is(':checked')) {
+                $(this).siblings('div').show();
+            } else {
+                $(this).siblings('div').hide();
+            }   
+        });
+
+        $('.chk-toggle').on('click', '.chk', function() {
+            if($(this).is(':checked')) {
+                $('.list-inq .balance').show();
+            } else {
+                $('.list-inq .balance').hide();
+            }   
+        });
+    });
+
+ /**
+  * JS로드시 호출 처리
+  * @param p Parameter
+  */
+ function onParam(p) {
+	 quicsIncludePage($("#pageinclude_C101810"), "C101810");//충전하기 include
+ }
+
+function fnTabClick(self) {
+	var showEl = $(self).attr('aria-controls');
+	$(self).parent().siblings().children('a').attr({
+		'title': '',
+		'aria-selected': 'false'
+	});
+	$(self).addClass('active').attr({
+		'title': '선택됨',
+		'aria-selected': 'true'
+	});
+	$(self).parent().parent().parent().siblings('.tabpanel').hide();
+	$('#' + showEl).show();
+}
+
+var obj;
+var obj2;
+ /**
+  * 계좌조회 성공 처리
+  * @param data 데이터
+  */
+ function caq_successCallback(data) {
+     var f = document.IBF;
+    try{
+    	/* 큰글씨 설정여부 체크*/
+        if (!device.platform.match(/Orchestra Simulator/)) {
+           window.UserPreference.getValue(successCallback, failCallback, "_KB_SENIOR_BANK_USE_YN");
+           function successCallback(data) {
+				if('Y' != data) {
+        			$("#big_css").remove();
+        			$("#wrap").removeClass("fs-expansion");
+        		}
+           } 
+           function failCallback(data) {}  
+        }
+    	
+        obj = data.data.msg.servicedata;
+        MBK_ViewCalendar3("startDate", obj.defaultYmdValue1, "id_calendar1", "endDate", obj.defaultYmdValue2, "id_calendar2", "시작일 입력", "종료일 입력");
+        $("#start_date").html(obj.strSYYMMDD1);
+        $("#end_date").html(obj.strEYYMMDD1);
+        
+        if(obj.ifRlt4 == "true"){
+            $("#webListData_tmp").show();
+        }
+        // 20210202 바텀시트로 변경
+        /*
+        if(obj.webListData_tmp2!=undefined && obj.webListData_tmp2.length>0){
+            $.each(obj.webListData_tmp2, function( index, value ) {
+                   $("#acct").append("<option value='"+ value.strValue14+"|"+value.strValue15+"|"+value.strAccountGubun_v+"|"+value.straAcctInqKubun+"|"+value.straAcctDrwotAcnYn+"' "+value.strValue17+">"+ value.strValue14+value.strMobileAlias+"</option>");
+            });
+        }
+        */
+        //console.log(data);
+        createBottomSheet(data);
+        
+        $("#radioInput1").append("<input type='radio' name='조회내용' id='total' checked='checked' value='2' class='rdo' "+obj.strValue18+"/><label for='total'>전체</label>");
+        $("#radioInput1").append("<input type='radio' name='조회내용' id='only_in' value='3' class='rdo' "+obj.strValue19+"/><label for='only_in'>입금만</label>");
+        $("#radioInput1").append("<input type='radio' name='조회내용' id='only_out' value='4' class='rdo' "+obj.strValue20+"/><label for='only_out'>출금만</label>");
+        $("#radioInput2").append("<input type='radio' name='조회결과순서' checked='checked' id='최근거래순' value='2' class='rdo' "+obj.strAckKind1+"/><label for='최근거래순'>최근거래순</label>");
+        $("#radioInput2").append("<input type='radio' name='조회결과순서' id='과거거래순' value='1' class='rdo' "+obj.strAckKind0+"/><label for='과거거래순'>과거거래순</label>");
+        
+        checkPaging(obj);
+        f.elements["조회시작일"].value       = obj.defaultYmdValue1;
+        f.elements["조회시작년월일"].value   = removeChar(obj.defaultYmdValue1,'-');
+        f.elements['조회종료년월일'].value   = removeChar(obj.defaultYmdValue2,'-');
+        f.elements['조회종료일'].value       = obj.defaultYmdValue2;
+        $(".show-hide").hide();
+        if ( data.data.msg.servicedata.추가검색조건2 != "") $("input[name=추가검색조건2]").attr("checked", true);
+        if ( data.data.msg.servicedata.추가검색조건3 != "") $("input[name=추가검색조건3]").attr("checked", true);
+        if ( data.data.msg.servicedata.추가검색조건4 != "") $("input[name=추가검색조건4]").attr("checked", true);
+
+        displayInquryCode();
+        displaySupplInit()
+        displaySupplSerchCndn();
+
+        //추가검색조건 변경 event
+        $('input[id^=add]').each(function(index){
+            $(this).click(function(){
+                displaySupplSerchCndn();
+                
+            });
+        });
+
+		$("input[name=조회내용]").change(function(){
+			displayInquryCode();
+		});
+		
+        
+        var strAckKind = obj.strAckKind;
+        var strInquryCode = obj.strInquryCode;
+        var strSupplSerchCndn2 = obj.strSupplSerchCndn2;
+        var strSupplSerchCndn3 = obj.strSupplSerchCndn3;
+        var strSupplSerchCndn4 = obj.strSupplSerchCndn4;
+        
+        //상세검색 조건 셋팅해서 검색할 경우 상세검색부 펼침
+        if(strAckKind!='2' || strInquryCode!='2' || strSupplSerchCndn2!="" || strSupplSerchCndn3!="" || strSupplSerchCndn4!=""){
+        	//조건검색 펼치기
+            $('.inq-search .acc-btn').trigger('click');
+        	$("#상세검색영역").focus();
+        	fn_focusMove($("#상세검색영역"));
+        }
+    }catch(e){alert("caq_successCallback : "+e);}
+
+ }
+
+ /**
+  * 계좌조회 실패 처리
+  * @param data 로그인 실패 결과
+  */
+ function caq_failCallback(data) {
+    try{
+        caq.error.caq_printError(data);                 // 에러메세지 템플릿 호출함수
+        $("#wrap").hide();
+    }catch(e){alert("caq_failCallback : "+e);}
+ }
+
+ //조회
+ function uf_GoSubmit(flag)
+ {
+    var f = document.IBF;
+    var s_date;
+    var e_date;
+    /*
+    var account     = $("#acct option:selected").val();
+    var idx         = $("#acct option:selected").index();
+    cheSpl = account.split("|");
+    */
+    var strAcctInqGubun = ''; //계좌조회구분
+    var strDrwotAcnYn = ''; //출금계좌등록여부
+    var periodFlag = flag;
+    
+    var tiaccCode = "";
+    var strMuchURL = obj.strMuchURL;
+    
+    if(obj.ifRlt8 == "true"){
+        /*
+    	var acctGubun   = cheSpl[2];
+        strAcctInqGubun = cheSpl[3];
+        strDrwotAcnYn = cheSpl[4];
+        */
+        var acctGubun   = document.FORMDPOST.elements['전체계좌구분_tmp'].value;
+        strAcctInqGubun = document.FORMDPOST.elements['계좌조회구분_tmp'].value;
+        strDrwotAcnYn   = document.FORMDPOST.elements['출금계좌등록여부_tmp'].value;
+        tiaccCode    = obj.strTiaccCodeTemp;
+        
+        if (acctGubun == "1" || acctGubun == "01" || acctGubun == "9" || acctGubun == "09"){
+            pageId = 'C043728'; //A: 요구불 출금계좌, 1:요구불 입금계좌
+        }else if (acctGubun == "2" || acctGubun == "02"){
+            pageId = 'C043782'; //2: 적립식예금
+        }else if (acctGubun == "8" || acctGubun == "08"){
+                pageId = 'C043783';
+                f.elements['취급번호'].value = "1";
+                f.elements['정기예금계좌번호'].value        = removeChar(account,"-");
+        }else if (acctGubun == "6" || acctGubun == "06"){
+            if(strStartDate > dif3MonthDate){
+                $("#조회시작일").val(strStartDate);
+                $("#조회시작년월일").val(strStartDate);
+            }else{
+                $("#조회시작일").val(dif3MonthDate);
+                $("#조회시작년월일").val(dif3MonthDate);
+            }
+            $("#요청키").val("0000000000");
+            pageId = "C043784"; // b029326 //6: 신탁
+        }else if (acctGubun == "5" || acctGubun == "05"){
+            pageId = "C043731"; //5: 대출
+        }else if(acctGubun == "12"){
+            pageId = "C043836"; //12 : 환매조건부채권
+        } else{
+            alert("해당 상품 전용 메뉴에서 상세 내역을 확인하시기 바랍니다.");
+            return;
+        }
+        
+        if(periodFlag == '일반'){
+            s_date   = showConvert(0, $("#startDate").val());
+            e_date   = showConvert(0, $("#endDate").val());
+            if(s_date <= e_date && ((e_date-s_date) <= 10000)) {
+                ;
+            } else {
+                alert("조회기간을 올바르게 지정해주십시오.(최대 조회가능한 기간 단위는 1년 이내 입니다.)");
+                return;
+            }
+        } else if(periodFlag == '당일'){
+            MBK_ChangeDate(7, $('#startDate'), $('#endDate'));
+            s_date   = showConvert(0, $("#startDate").val());
+            e_date   = showConvert(0, $("#endDate").val());
+            f.elements['조회기간버튼'].value = '당일';
+        } else if(periodFlag == '3일'){
+            MBK_ChangeDate(0, $('#startDate'), $('#endDate'));
+            s_date   = showConvert(0, $("#startDate").val());
+            e_date   = showConvert(0, $("#endDate").val());
+            f.elements['조회기간버튼'].value = '3일';
+        } else if(periodFlag == '1주일'){
+            MBK_ChangeDate(1, $('#startDate'), $('#endDate'));
+            s_date   = showConvert(0, $("#startDate").val());
+            e_date   = showConvert(0, $("#endDate").val());
+            f.elements['조회기간버튼'].value = '1주일';
+        } else if(periodFlag == '1개월'){
+            MBK_ChangeDate(2, $('#startDate'), $('#endDate'));
+            s_date   = showConvert(0, $("#startDate").val());
+            e_date   = showConvert(0, $("#endDate").val());
+            f.elements['조회기간버튼'].value = '1개월';
+        } else if(periodFlag == '3개월'){
+            MBK_ChangeDate(3, $('#startDate'), $('#endDate'));
+            s_date   = showConvert(0, $("#startDate").val());
+            e_date   = showConvert(0, $("#endDate").val());
+            f.elements['조회기간버튼'].value = '3개월';
+        } else if(periodFlag == '6개월'){
+            MBK_ChangeDate(8, $('#startDate'), $('#endDate'));
+            s_date   = showConvert(0, $("#startDate").val());
+            e_date   = showConvert(0, $("#endDate").val());
+            f.elements['조회기간버튼'].value = '6개월';
+        } else{
+        	f.elements['조회내용'].value = '2';
+        	if(acctGubun == "1" || acctGubun == "01" || acctGubun == "9" || acctGubun == "09"){
+        		MBK_ChangeDate(2, $('#startDate'), $('#endDate'));
+                s_date   = showConvert(0, $("#startDate").val());
+                e_date   = showConvert(0, $("#endDate").val());
+                f.elements['조회기간버튼'].value = '1개월';
+        	}
+            else if(acctGubun == "5" || acctGubun == "05"){
+            	MBK_ChangeDate(3, $('#startDate'), $('#endDate'));
+                s_date   = showConvert(0, $("#startDate").val());
+                e_date   = showConvert(0, $("#endDate").val());
+                f.elements['조회기간버튼'].value = '3개월';
+        	}
+            
+        }
+        /*
+        f.elements['출금계좌번호'].value    = removeChar(cheSpl[0],"-");
+        f.elements['계좌번호'].value        = removeChar(cheSpl[0],"-");
+        f.elements['해약계좌번호'].value    = removeChar(cheSpl[0],"-");
+        f.elements['예금종류'].value        = cheSpl[1];
+        f.elements['계좌조회구분'].value = strAcctInqGubun;
+        f.elements['출금계좌등록여부'].value = strDrwotAcnYn;
+        */
+        var acctNoTmp   = document.FORMDPOST.elements['계좌번호_tmp'].value;
+        f.elements['출금계좌번호'].value     = removeChar(acctNoTmp,"-");
+        f.elements['계좌번호'].value         = removeChar(acctNoTmp,"-");
+        f.elements['해약계좌번호'].value     = removeChar(acctNoTmp,"-");
+        f.elements['예금종류'].value         = document.FORMDPOST.elements['예금종류_tmp'].value;
+        f.elements['계좌조회구분'].value     = strAcctInqGubun;
+        f.elements['출금계좌등록여부'].value = strDrwotAcnYn;
+
+        //날짜 From~To Check (From은 To보다 작아야 함)
+        if(! (s_date, e_date)) return;
+        //조회기간 12개월 Check (조회기간은 12개월 이내이어야 함) -> 수정 2002-08-13 3개월체크
+        //조회시작일,조회종료일,현재일,체크할개월수
+        //현재일 이후 조회불가 포함되어 있음
+
+        if(e_date > obj.strToday) {
+            alert("영업일 이후로는 조회가 불가능합니다.");
+            return;
+        }
+
+        f.elements["조회시작일"].value       = s_date;
+        f.elements["조회시작년월일"].value   = s_date;
+        f.elements['조회종료년월일'].value   = e_date;
+        f.elements['조회종료일'].value       = e_date;
+
+        //계좌번호 리스트
+        accHidden();
+        
+        if (acctGubun == "07" || acctGubun == "7"){
+            f.elements['요청키'].value = '00000';
+        }else if (acctGubun == "06" || acctGubun == "6") {
+            f.elements['요청키'].value = '0000000000';
+        }
+        
+        
+
+        /* 채권시 계좌내역정보 및 상세정보를 제공하지 않는다.  */
+        if(tiaccCode == "28"){
+            alert("예금종류가 채권의 경우 계좌정보를 제공하지 않습니다. ");
+            return;
+        }
+    }else{
+        var acctGubun = obj.strMuchAcctGubun;
+        f.elements["조회시작일"].value       = s_date;
+        f.elements["조회시작년월일"].value   = s_date;
+        f.elements['조회종료년월일'].value   = obj.strToday;
+        f.elements['조회종료일'].value       = obj.strToday;
+    }
+    //조회시에는 토탈로우와 버퍼로우를 버퍼에서 초기화 해줘야함
+    f.elements['토탈로우'].value       = "0";
+    f.elements['버퍼로우'].value       = "0";
+    f.strPresentNum.value              = "0";
+    f.pageNo.value                     = "1";
+    f.hi_chk.value       = "Y";
+    f.hi_listURL.value   = obj.strListURL;
+    f.hi_firstCom.value  = obj.strFirstCom;
+
+     if (acctGubun == "07" || acctGubun == "7") {
+        f.elements['요청키'].value = '00000';
+    }else if (acctGubun == "06" || acctGubun == "6") {
+        f.elements['요청키'].value = '0000000000';
+    }
+
+     /* 채권시 계좌내역정보 및 상세정보를 제공하지 않는다.  */
+     if(tiaccCode == "28"){
+       alert("예금종류가 채권의 경우 계좌정보를 제공하지 않습니다. ");
+       return;
+     }
+
+    var supplSerchCndn = $("#add4").is(':checked');
+    if(supplSerchCndn){
+        if ( $("#단어검색").val().length < 2 ) {
+            alert("메모검색 : 최소2자리 이상 입력해 주세요")
+            $("#단어검색").focus();
+            fn_focusMove($("#단어검색"));
+            return;
+        }
+    }
+
+     f.elements['다음거래년월일'].value  = "";
+     f.elements['다음거래일련번호'].value = "";
+     window.navi.mnbizNavigate('/mquics?page='+pageId, $("#IBF").serializeJSON(), function(){});
+ }
+
+//기간더보기
+ function gotoPage2(flag)
+ {
+    var f = document.IBF;
+
+    if(flag == 1){ //당일
+
+        f.elements['조회종료년월일'].value   = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작년월일"].value   = shiftDate(f.elements["조회시작일"].value,0,0,-2);
+
+        f.elements["조회종료일"].value = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작일"].value = shiftDate(f.elements["조회시작일"].value,0,0,-2);
+
+    } else if(flag == 2){ //3일
+
+        f.elements['조회종료년월일'].value   = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작년월일"].value   = shiftDate(f.elements["조회시작일"].value, 0, 0, -3);
+
+        f.elements["조회종료일"].value = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작일"].value = shiftDate(f.elements["조회시작일"].value, 0, 0, -3);
+
+    } else if(flag == 3){ //1주일
+
+        f.elements['조회종료년월일'].value   = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작년월일"].value   = shiftDate(f.elements["조회시작일"].value, 0, 0, -7);
+
+        f.elements["조회종료일"].value = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작일"].value = shiftDate(f.elements["조회시작일"].value, 0, 0, -7);
+        
+    } else if(flag == 4){ //1개월
+
+        f.elements['조회종료년월일'].value   = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작년월일"].value   = shiftDate(f.elements["조회시작일"].value, 0, -1, 0);
+
+        f.elements["조회종료일"].value = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작일"].value = shiftDate(f.elements["조회시작일"].value, 0, -1, 0);
+
+    } else if(flag == 5){ //3개월
+
+        f.elements['조회종료년월일'].value   = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작년월일"].value   = shiftDate(f.elements["조회시작일"].value, 0, -3, 0);
+
+        f.elements["조회종료일"].value = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작일"].value = shiftDate(f.elements["조회시작일"].value, 0, -3, 0);
+
+    } else{ //6개월
+
+        f.elements['조회종료년월일'].value   =shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작년월일"].value   = shiftDate(f.elements["조회시작일"].value, 0,-6,0);
+
+        f.elements["조회종료일"].value = shiftDate(removeChar(f.elements["조회시작일"].value, "."),0,0,-1);
+        f.elements["조회시작일"].value = shiftDate(f.elements["조회시작일"].value, 0,-6,0);
+    }
+    
+    
+    $(".show-hide").hide();
+
+    if(obj.ifRlt8 == "true"){
+
+        var acctGubun   = obj.strAcctGubunTemp;
+
+        tiaccCode    = obj.strTiaccCodeTemp;
+
+        f.elements['출금계좌번호'].value    = obj.strAcctTemp_q;
+        f.elements['계좌번호'].value        = obj.strAcctTemp_q;
+        f.elements['해약계좌번호'].value    = obj.strAcctTemp_q;
+        f.elements['예금종류'].value = obj.strAcctKind_q;
+
+        //계좌번호 리스트
+        accHidden();
+
+    }else{
+        var acctGubun = obj.strMuchAcctGubun;
+    }
+
+    f.elements['토탈로우'].value       = "0";
+    f.elements['버퍼로우'].value       = "0";
+    f.strPresentNum.value           = "0";
+    f.pageNo.value                  = "1";
+
+    f.hi_chk.value       = "Y";
+    f.hi_listURL.value   = obj.strListURL;
+    f.hi_firstCom.value  = obj.strFirstCom;
+
+     if (acctGubun == "07" || acctGubun == "7") {
+        f.elements['요청키'].value = '00000';
+    }else if (acctGubun == "06" || acctGubun == "6") {
+        f.elements['요청키'].value = '0000000000';
+    }
+
+    f.elements['다음거래년월일'].value  = "";
+    f.elements['다음거래일련번호'].value = "";
+
+    var param = $("#IBF").serializeJSON();
+    kbstar.connect.request('/mquics?QAction=515238&page=' + asisPageInfo, param, caq_successCallback1, caq_failCallback1, true);
+
+ }
+
+function gotoPage()
+{
+    var f = document.IBF;
+
+    var page = f.pageNo.value;
+
+    var nCnt = 0;
+    nCnt = Number(page);
+    page = nCnt+1;
+
+    var account     = f.elements['계좌번호'].value;
+    var nextNo    = 0;
+    var pageNum = parseInt(f.strPresentNum.value);
+    accunt = removeChar(account,'-');
+
+    nextNo = (pageNum+1)+1;
+
+    if(pageNum == 4 && page == 26){                             //2003. 06. 24 KNY 추가
+        if(obj.strAckKind == 0){
+            alert("고객님 죄송합니다. \n500건 이상 거래내역은 기간별계좌내역조회에서 정순조회 방법을 선택하여 조회하실 수 있습니다");
+            return;
+        }
+    }
+
+    f.hi_listURL.value  = obj.strListURL;
+    f.hi_firstCom.value = obj.hi_firstCom;
+
+    f.hi_chk.value  = "Y";
+    f.pageNo.value = page;
+
+    f.elements['다음거래년월일'].value   = f.elements['다음거래년월일'].value;
+    f.elements['다음거래일련번호'].value = f.elements['다음거래일련번호'].value;
+    f.elements['계좌조회구분'].value = obj.strAcctInqKubun;
+
+  //계좌번호 리스트
+    accHidden();
+
+    var param = $("#IBF").serializeJSON();
+    kbstar.connect.request('/mquics?QAction=515238&page=' + asisPageInfo, param, caq_successCallback1, caq_failCallback1, true);
+}
+
+function caq_successCallback1(data) {
+    obj2 = data.data.msg.servicedata;
+    var f = document.IBF;
+    try{
+        checkPaging(data.data.msg.servicedata);
+
+        $("#start_date").html(obj2.strSYYMMDD1);
+
+        $("#startDate").val(obj2.strSYYMMDD1);
+
+        if(obj2.ifRlt4 == "true"){
+
+            f.elements['다음거래년월일'].value  = obj2.다음거래년월일;
+            f.elements['다음거래일련번호'].value = obj2.다음거래일련번호;
+
+            var $listData = data.data.msg.servicedata["webListData_tmp"];
+            kbstar.DataBinder.quicsArrDataMore($("#webListData_tmp"), $listData);
+            $("#webListData_tmp").show();
+        }
+
+    }catch(e){alert("caq_successCallback1 : "+e);}
+
+ }
+ /**
+  * 패이징실패처리
+  */
+function caq_failCallback1(data) {
+    try{
+        data.msg.common.errorbutton = "0";
+        caq.error.caq_printError(data);                 // 에러메세지 템플릿 호출함수
+    }catch(e){alert("caq_failCallback1 : "+e);}
+}
+
+//즉시이체 페이지이동
+function uf_link() {
+    var f = document.IBF;
+    f.elements['출금계좌번호'].value = f.elements['계좌번호'].value;
+    fn_goMnbizPage("C064622","IBF"); //C042786 -> C064622
+}
+
+//상세조회 Link
+function linkDetailInquiry()
+{
+    var f = document.IBF;
+    account = removeChar(f.elements['계좌번호'].value, '-');
+    param = {"계좌번호" : account};
+    acctCd = obj.과목코드;
+    openPopPageId = "C043400";
+
+    window.appManager.openWebViewWithClose('/mquics?page=' + openPopPageId, param, callPop);
+
+    return false;
+}
+
+function callPop(data){
+	$("#계좌상세정보버튼").focus();
+	fn_focusMove($("#계좌상세정보버튼"));
+}
+
+function checkPaging(jsondata){
+    if(jsondata.추가거래유무 == "1") {
+        $("#more1").show();
+        //$("#more2").hide();
+    } else{
+        //$("#more2").show();
+        $("#more1").hide();
+    }
+}
+
+//=====> 계좌번호 리스트 ======================================================
+function accHidden(){
+    var f = document.IBF;
+    //============================================
+    //두개의 리스트에서 계좌번호를 화면에서 조합해 뿌린후
+    //계좌 상세조회 페이지에 계좌번호를 넘긴다
+    //============================================
+    var str = "";
+    if(obj.strMuchURL == ""){
+        $.each(obj.webListData_tmp2, function( index, value ) {
+               str+="<input type='hidden' name='전체계좌번호["+ index +"]' value='" + value.strValue14 + "'/>";
+               str+="<input type='hidden' name='전체예금종류["+ index +"]' value='" + value.strValue15 + "'/>";
+               str+="<input type='hidden' name='전체계좌구분["+ index +"]' value='" + value.strAccountGubun_v + "'/>";
+               str+="<input type='hidden' name='전체신규일["+ index +"]' value='" + value.startdate + "'/>";
+               str+="<input type='hidden' name='전체만기일["+ index +"]' value='" + value.endDate + "'/>";
+               str+="<input type='hidden' name='전체잔액["+ index +"]' value='" + value.balanceAmt + "'/>";
+               str+="<input type='hidden' name='과목코드["+ index +"]' value='" + value.tiaccCode + "'/>";
+               str+="<input type='hidden' name='전체계좌별명["+ index +"]' value='"+ value.strMobileAlias2 + "'/>";
+               str+="<input type='hidden' name='전체계좌조회구분["+ index +"]' value='"+ value.straAcctInqKubun + "'/>";
+               str+="<input type='hidden' name='전체출금계좌등록여부["+ index +"]' value='"+ value.straAcctDrwotAcnYn + "'/>";
+            });
+    }
+    $("#IBF").append(str);
+    //============================================
+}
+
+function uf_AccountChk(obj, input) {
+    var chars = "-0123456789";
+    var ret = "";
+    for (var inx = 0; inx < input.length; inx++) {
+       if (chars.indexOf(input.charAt(inx)) != -1) {
+            ret += input.charAt(inx);
+       }
+    }
+
+    obj.value = ret;
+}
+
+// 조회구분 변경
+function displayInquryCode(){
+    var inquryCode = $("input[name=조회내용]:checked").val();
+    var supplSerchCndn = $("#add3").is(':checked');
+     
+      //입금내용만
+    if(inquryCode == "3" || inquryCode == "2" ){
+        $("#div_strCnprtAcno").hide()
+        $("#test").removeClass("form_group")
+
+        //추가검색조건이 '상대입금계좌'인 경우 '미선택'으로 초기화
+        if(supplSerchCndn){
+            $("#상대계좌번호").val("");
+            $("#add3").attr("checked", false);
+            $("#상대계좌번호").attr("disabled", true);
+            displaySupplSerchCndn();
+        }
+    }else{
+        $("#test").addClass("form_group")
+        $("#div_strCnprtAcno").show();
+    }
+}
+
+//추가검색조건 변경
+function displaySupplSerchCndn(){
+
+    //조회대상금액
+    if($("#add2").is(':checked')){
+        $("#add2_2").show();
+
+        $("#최소금액").attr("disabled", false);
+        $("#최대금액").attr("disabled", false);
+    } else {
+        $("#add2_2").hide();
+        $("#최소금액").val("");
+        $("#최대금액").val("");
+        $("#최소금액").attr("disabled", true);
+        $("#최대금액").attr("disabled", true);
+    }
+
+    //상대입금계좌
+    if($("#add3").is(':checked')){
+        $("#add2_3").show();
+        $("#상대계좌번호").attr("disabled", false);
+    } else {
+        $("#add2_3").hide();
+        $("#상대계좌번호").val("");
+        $("#상대계좌번호").attr("disabled", true);
+    }
+    //단어검색
+    if($("#add4").is(':checked')){
+        $("#add2_4").show();
+        $("#단어검색").attr("disabled", false);
+    } else {
+        $("#add2_4").hide();
+        $("#단어검색").val("");
+        $("#단어검색").attr("disabled", true);
+    }
+}
+function displaySupplInit() {
+
+    if( !$("#add2").is(':checked') && !$("#add3").is(':checked') && !$("#add4").is(':checked') ){
+
+        $("#add2").attr("checked", false);
+        $("#add3").attr("checked", false);
+        $("#add4").attr("checked", false);
+
+        $("#add2_2").hide();
+        $("#add2_3").hide();
+        $("#add2_4").hide();
+
+        $("#최소금액").attr("disabled", true);
+        $("#최대금액").attr("disabled", true);
+        $("#상대계좌번호").attr("disabled", true);
+        $("#단어검색").attr("disabled", true);
+    }
+}
+
+function btn_smart_onclick( pageId ) {
+    var param = new Object();
+    var f = document.IBF;
+    param.출금계좌번호 = removeChar(f.elements['계좌번호'].value,'-');
+    param.출금계좌번호T = strAcctFormat;
+    window.navi.navigate( "/mquics?page=" + pageId , param , function() {} );
+}
+
+	function createBottomSheet(data) {
+		var noOthAccDisp = data.data.msg.servicedata.noOthAccDisp;
+if (noOthAccDisp == "true") {//개인사업자
+		var xhtml = "";
+		var html = '<div class="bswrap" id="bs1">';
+		html += '		<div class="bs-inner">';
+		html += '			<h2 class="bs-tit">계좌 선택</h2>';
+		html += '			<button type="button" id="btnBottomClose" class="btn-close close">닫기</button>';
+		html += '			<div class="bs-contents selBank pt0 pb0">';
+		html += '				<div class="tab-wrap">';
+		html += '					<ul role="tablist">';  
+		html += '						<li role="none"><a href="#" class="tab" role="tab" aria-selected="true" title="선택됨" aria-controls="pdiv1" onclick="fnTabClick(this);">국민은행</a></li>';
+		html += '						<li role="none"><a href="#" class="tab" role="tab" aria-selected="false" title="" aria-controls="pdiv2" onclick="fnTabClick(this);">다른금융</a></li>';
+		html += '					</ul>';
+		html += '				</div>';
+		html += '				<div id="pdiv1" class="bnkArea tabpanel">';<!-- 국민은행 계좌 -->
+		html += '					<ul class="list">';
+//var accList = data.data.msg.servicedata.arr_당행출금계좌;
+var accList = data.data.msg.servicedata.webListData_tmp2;
+if (accList != 'undefined' && accList != null) {
+	for ( var i = 0; i < accList.length; i++) {
+		var strAlias = ("" != (accList[i].strMobileAlias || "") ? accList[i].strMobileAlias : '');
+		html += '						<li class=" has-btn ty4">';
+		html += '							<a href="javascript:fn_SelRegAcn(\'004\',\'국민\',\'' + accList[i].strValue14 + '\',\'' + accList[i].strMobileAlias + '\',\'' + '' + '\',\'' + '' + '\',\'' + '' + '\',\'' + accList[i].strValue14+'|'+accList[i].strValue15+'|'+accList[i].strAccountGubun_v+'|'+accList[i].straAcctInqKubun+'|'+accList[i].straAcctDrwotAcnYn+ '\');" role="button" class="sub-info">';
+		html += '								<div class="list-item">';
+		html += '									<div class="left">';
+		html += '										<span class="bank icon_bank_004 ico-19"></span>';
+		html += '									</div>';
+		html += '									<div class="right">';
+		html += '										<p class="sub-tit">국민</p>';
+		html += '										<p class="sub-desc"><span class="blind">계좌번호</span>' + accList[i].strValue14 + strAlias + '</p>';
+		html += '									</div>';
+		html += '								</div>';
+		html += '							</a>';
+		html += '						</li>';
+		if (accList[i].strValue17 != null && accList[i].strValue17 != "") {//선택된 계좌
+			xhtml = '<span class="bank icon_bank_004 ico-19"></span>국민 ' + accList[i].strValue14;
+			xhtml += "" != (accList[i].strMobileAlias || "") ? accList[i].strMobileAlias : '';
+			$("#FORMDPOST").children("input[name='계좌번호_tmp']").val(accList[i].strValue14);
+			$("#FORMDPOST").children("input[name='은행코드_tmp']").val("004");//은행코드 국민-004
+			$("#FORMDPOST").children("input[name='출금계좌번호_tmp']").val(removeChar(accList[i].strValue14,"-"));
+			$("#FORMDPOST").children("input[name='해약계좌번호_tmp']").val(removeChar(accList[i].strValue14,"-"));
+			$("#FORMDPOST").children("input[name='예금종류_tmp']").val(accList[i].strValue15);
+			$("#FORMDPOST").children("input[name='계좌별명_tmp']").val(accList[i].strAlias);
+			$("#FORMDPOST").children("input[name='계좌조회구분_tmp']").val(accList[i].straAcctInqKubun);
+			$("#FORMDPOST").children("input[name='출금계좌등록여부_tmp']").val(accList[i].straAcctDrwotAcnYn);
+			$("#FORMDPOST").children("input[name='전체계좌구분_tmp']").val(accList[i].strAccountGubun_v);
+		}
+	}//end for
+}
+		html += '					</ul>';
+		html += '				</div>';
+		//$("#acct").append("<option value='"+ value.strValue14+"|"+value.strValue15+"|"+value.strAccountGubun_v+"|"+value.straAcctInqKubun+"|"+value.straAcctDrwotAcnYn+"' "+value.strValue17+">"+ value.strValue14+value.strMobileAlias+"</option>");
+				
+		html += '				<div id="pdiv2" class="bnkArea tabpanel" style="display: none;">';<!-- 다른 은행 계좌 -->
+		html += '					<ul class="list">';
+var accListOtr = data.data.msg.servicedata.arr_타은행출금계좌;
+var today = data.data.msg.servicedata.strToday;
+var otrCnt = 0;
+if (accListOtr.length > 0) {
+	for ( var i = 0; i < accListOtr.length; i++) {
+		if(accListOtr[i].오픈뱅킹계좌종류구분 != "2"){
+			var reAgrDate = accListOtr[i].재동의일시; 
+			var reCerDate = accListOtr[i].재인증일시; 
+			var reAgrYn = "";
+			var reCerYn = "";
+			if(reAgrDate <= today){
+				reAgrYn = "Y";
+			}
+			if(reCerDate <= today){
+				reCerYn = "Y";
+			}
+			//alert(reAgrYn+"=reAgrYn, reCerYn="+reCerYn);
+			var strAlias  = ("" != (accListOtr[i].회차번호 || "") ? '<span class="cnt_info" title="회차번호">'+accListOtr[i].회차번호+'</span>' : '');
+				strAlias += ("" != (accListOtr[i].별명 || "") ? ' : ' + accListOtr[i].별명 : '');
+			html += '						<li class=" has-btn ty4">';
+			html += '							<a href="javascript:fn_SelRegAcn(\'' + accListOtr[i].은행코드 + '\',\'' + accListOtr[i].은행명 + '\',\'' + accListOtr[i].계좌번호 + '\',\'' + accListOtr[i].별명 + '\',\''+accListOtr[i].상품명 + '\',\''+reAgrYn+ '\',\''+reCerYn+ '\',\'' + accListOtr[i].회차번호 + '\');" role="button" class="sub-info">';
+			html += '								<div class="list-item">';
+			html += '									<div class="left">';
+			html += '										<span class="bank icon_bank_'+accListOtr[i].은행코드+' ico-19"></span>';
+			html += '									</div>';
+			html += '									<div class="right">';
+			html += '										<p class="sub-tit">' + accListOtr[i].은행명 + '</p>';
+			html += '										<p class="sub-desc"><span class="blind">계좌번호</span>' + accListOtr[i].계좌번호V + strAlias + '</p>';
+			html += '									</div>';
+			if(reCerYn == "Y"){
+				html += '								<button class="right-link re-certi-link" onclick="javascript:accInqAgree(\'' + accListOtr[i].은행코드 + '\',\'' + accListOtr[i].계좌번호 + '\',\'' + accListOtr[i].회차번호 + '\',\'' + reAgrYn + '\',\'' + reCerYn + '\');return false;">재인증하기</button>';
+			} else if(reAgrYn == "Y"){
+				html += '								<button class="right-link re-common-link" onclick="javascript:accInqAgree(\'' + accListOtr[i].은행코드 + '\',\'' + accListOtr[i].계좌번호 + '\',\'' + accListOtr[i].회차번호 + '\',\'' + reAgrYn + '\',\'' + reCerYn + '\');return false;">재동의하기</button>';
+			}
+			html += '								</div>';
+			html += '							</a>';
+			html += '						</li>';
+			otrCnt++;
+		}
+	}//end for
+}
+if (otrCnt == 0) {
+	html += '							<li>';
+	html += '								<div class="msg-box ty1">';
+	html += '									<strong class="msg-tit">등록된 다른금융 계좌가 없습니다.</strong>';
+	html += '									<p class="msg-txt"><a href="#" role="button" class="link underline no-arrow" onclick="javascript:callRegOthAcc();">다른금융 계좌등록</a></p>';
+	html += '								</div>';
+	html += '							</li>';
+}
+		html += '					</ul>';
+		html += '				</div>';
+	    
+	    html += '			</div>';
+	    html += '		</div>';
+	    html += '	</div>';
+
+		if (xhtml == "") {
+			xhtml = '<span class="bank icon_bank_004 ico-19"></span>국민 ' + accList[0].strValue14;
+			xhtml += "" != (accList[0].strMobileAlias || "") ? accList[0].strMobileAlias : '';
+			$("#FORMDPOST").children("input[name='계좌번호_tmp']").val(accList[0].strValue14);
+			$("#FORMDPOST").children("input[name='은행코드_tmp']").val("004");//은행코드 국민-004
+			$("#FORMDPOST").children("input[name='출금계좌번호_tmp']").val(removeChar(accList[0].strValue14,"-"));
+			$("#FORMDPOST").children("input[name='해약계좌번호_tmp']").val(removeChar(accList[0].strValue14,"-"));
+			$("#FORMDPOST").children("input[name='예금종류_tmp']").val(accList[0].strValue15);
+			$("#FORMDPOST").children("input[name='계좌별명_tmp']").val(accList[0].strAlias);
+			$("#FORMDPOST").children("input[name='계좌조회구분_tmp']").val(accList[0].straAcctInqKubun);
+			$("#FORMDPOST").children("input[name='출금계좌등록여부_tmp']").val(accList[0].straAcctDrwotAcnYn);
+			$("#FORMDPOST").children("input[name='전체계좌구분_tmp']").val(accList[0].strAccountGubun_v);
+		}
+	    $('#btsPopupList').append(html);
+		$("#sel_bnk").html(xhtml);
+} else {//개인사업자아님
+	var xhtml = "";
+	var html = '<div class="bswrap" id="bs1">';
+	html += '		<div class="bs-inner">';
+	html += '			<h2 class="bs-tit">계좌 선택</h2>';
+	html += '			<button type="button" id="btnBottomClose" class="btn-close close">닫기</button>';
+	html += '			<div class="bs-contents selBank pt0 pb0">';
+	html += '				<div id="pdiv1" class="bnkArea tabpanel no-header">';<!-- 국민은행 계좌 -->
+	
+	html += '					<ul class="list">';
+var accList = data.data.msg.servicedata.webListData_tmp2;
+if (accList != 'undefined' && accList != null) {
+for ( var i = 0; i < accList.length; i++) {
+	var strAlias = ("" != (accList[i].strMobileAlias || "") ? accList[i].strMobileAlias : '');
+	html += '						<li class=" has-btn ty4">';
+	html += '							<a href="javascript:fn_SelRegAcn(\'004\',\'국민\',\'' + accList[i].strValue14 + '\',\'' + accList[i].strMobileAlias + '\',\'' + '' + '\',\'' + '' + '\',\'' + '' + '\',\'' + accList[i].strValue14+'|'+accList[i].strValue15+'|'+accList[i].strAccountGubun_v+'|'+accList[i].straAcctInqKubun+'|'+accList[i].straAcctDrwotAcnYn+ '\');" role="button" class="sub-info">';
+	html += '								<div class="list-item">';
+	html += '									<div class="left">';
+	html += '										<span class="bank icon_bank_004 ico-19"></span>';
+	html += '									</div>';
+	html += '									<div class="right">';
+	html += '										<p class="sub-tit">국민</p>';
+	html += '										<p class="sub-desc"><span class="blind">계좌번호</span>' + accList[i].strValue14 + strAlias + '</p>';
+	html += '									</div>';
+	html += '								</div>';
+	html += '							</a>';
+	html += '						</li>';
+	if (accList[i].strValue17 != null && accList[i].strValue17 != "") {//선택된 계좌
+		xhtml = '<span class="bank icon_bank_004 ico-19"></span>국민 ' + accList[i].strValue14;
+		xhtml += "" != (accList[i].strMobileAlias || "") ? accList[i].strMobileAlias : '';
+		$("#FORMDPOST").children("input[name='계좌번호_tmp']").val(accList[i].strValue14);
+		$("#FORMDPOST").children("input[name='은행코드_tmp']").val("004");//은행코드 국민-004
+		$("#FORMDPOST").children("input[name='출금계좌번호_tmp']").val(removeChar(accList[i].strValue14,"-"));
+		$("#FORMDPOST").children("input[name='해약계좌번호_tmp']").val(removeChar(accList[i].strValue14,"-"));
+		$("#FORMDPOST").children("input[name='예금종류_tmp']").val(accList[i].strValue15);
+		$("#FORMDPOST").children("input[name='계좌별명_tmp']").val(accList[i].strAlias);
+		$("#FORMDPOST").children("input[name='계좌조회구분_tmp']").val(accList[i].straAcctInqKubun);
+		$("#FORMDPOST").children("input[name='출금계좌등록여부_tmp']").val(accList[i].straAcctDrwotAcnYn);
+		$("#FORMDPOST").children("input[name='전체계좌구분_tmp']").val(accList[i].strAccountGubun_v);
+	}
+}//end for
+}
+	html += '					</ul>';
+	html += '				</div>';
+	if (xhtml == "") {
+		xhtml = '<span class="bank icon_bank_004 ico-19"></span>국민 ' + accList[0].strValue14;
+		xhtml += "" != (accList[0].strMobileAlias || "") ? accList[0].strMobileAlias : '';
+		$("#FORMDPOST").children("input[name='계좌번호_tmp']").val(accList[0].strValue14);
+		$("#FORMDPOST").children("input[name='은행코드_tmp']").val("004");//은행코드 국민-004
+		$("#FORMDPOST").children("input[name='출금계좌번호_tmp']").val(removeChar(accList[0].strValue14,"-"));
+		$("#FORMDPOST").children("input[name='해약계좌번호_tmp']").val(removeChar(accList[0].strValue14,"-"));
+		$("#FORMDPOST").children("input[name='예금종류_tmp']").val(accList[0].strValue15);
+		$("#FORMDPOST").children("input[name='계좌별명_tmp']").val(accList[0].strAlias);
+		$("#FORMDPOST").children("input[name='계좌조회구분_tmp']").val(accList[0].straAcctInqKubun);
+		$("#FORMDPOST").children("input[name='출금계좌등록여부_tmp']").val(accList[0].straAcctDrwotAcnYn);
+		$("#FORMDPOST").children("input[name='전체계좌구분_tmp']").val(accList[0].strAccountGubun_v);
+	}
+    $('#btsPopupList').append(html);
+	$("#sel_bnk").html(xhtml);
+	
+}
+	}
+	
+	//BottomSheet계좌선택후 화면변경  
+	function fn_SelRegAcn(parmaBnkCd, parmaBnkNm, parmaAccNo, parmaNick, paramPrdNm, paramReAgrYn, paramReCerYn, paramAccountSeq) { 
+		//alert(paramReAgrYn+"=paramReAgrYn, paramReCerYn="+paramReCerYn);
+		var strBnkCd = parmaBnkCd.toString();
+		var strBnkNm = parmaBnkNm.toString();
+		var strNickAccNo = parmaAccNo.toString();
+		var strNick = parmaNick.toString();
+		var srtAccNo = fnReplaceAll(strNickAccNo, "-", "");
+		var strReAgrYn = paramReAgrYn;
+		var strReCerYn = paramReCerYn;
+		var strPrdNm = "";
+		if ("" == paramPrdNm || undefined == paramPrdNm) { 				
+		}else{
+			strPrdNm = paramPrdNm.toString(); 
+		}
+		var t = $('#bs1').find('.btn_close');
+		
+		var xhtml = '<span class="bank icon_bank_'+strBnkCd+' ico-19"></span>' + strBnkNm + ' ' + parmaAccNo;
+		if ("004" != strBnkCd) {//국민은행
+			xhtml += "" != (paramAccountSeq || "") ? ' <span class="cnt_info" title="회차번호"> '+paramAccountSeq+'</span>' : '';
+			xhtml += "" != (strNick || "") ? ' : ' + strNick : '';
+		} else {
+			xhtml += "" != (strNick || "") ? strNick : '';
+		}
+		
+		$("#FORMDPOST").children("input[name='계좌번호_tmp']").val(srtAccNo);
+		$("#FORMDPOST").children("input[name='은행코드_tmp']").val(strBnkCd);//은행코드 국민-004
+		if ("004" == strBnkCd) {//국민은행
+			//alert("paramAccountSeq==="+paramAccountSeq);
+		    var cheSpl = paramAccountSeq.split("|");
+			$("#FORMDPOST").children("input[name='출금계좌번호_tmp']").val(removeChar(srtAccNo,"-"));
+			$("#FORMDPOST").children("input[name='해약계좌번호_tmp']").val(removeChar(srtAccNo,"-"));
+			$("#FORMDPOST").children("input[name='예금종류_tmp']").val(cheSpl[1]);
+			$("#FORMDPOST").children("input[name='계좌별명_tmp']").val(strNick);
+			$("#FORMDPOST").children("input[name='계좌조회구분_tmp']").val(cheSpl[3]);
+			$("#FORMDPOST").children("input[name='출금계좌등록여부_tmp']").val(cheSpl[4]);
+			$("#FORMDPOST").children("input[name='전체계좌구분_tmp']").val(cheSpl[2]);
+			//$("#acct").append("<option value='"+ value.strValue14+"|"+value.strValue15+"|"+value.strAccountGubun_v+"|"+value.straAcctInqKubun+"|"+value.straAcctDrwotAcnYn+"' "+value.strValue17+">"+ value.strValue14+value.strMobileAlias+"</option>");
+			//fn_goPage("C043474", "FORMDPOST");
+			$("#sel_bnk").html(xhtml);
+			uf_GoSubmit('일반');
+		} else {
+			if (paramReCerYn == "Y") {
+				if (confirm("해당 출금계좌는 재인증 대상으로 재인증 후 이체할 수 있습니다. 재인증하시겠습니까?")) {
+					accInqAgree(strBnkCd, srtAccNo, paramAccountSeq, paramReAgrYn, paramReCerYn);
+				}
+			} else if (paramReAgrYn == "Y") {
+				if (confirm("해당 출금계좌는 재동의 대상으로 재동의 후 이체할 수 있습니다. 재동의하시겠습니까?")) {
+					accInqAgree(strBnkCd, srtAccNo, paramAccountSeq, paramReAgrYn, paramReCerYn);
+				}
+			} else {
+				$("#sel_bnk").html(xhtml);
+				var strSchDay = "3개월";
+				//alert("계좌번호=" + srtAccNo + ", 은행코드=" + strBnkCd + ", 상품명=" + strPrdNm + ", 재동의여부=" + strReAgrYn + ", 재인증여부=" + strReCerYn + ", 조회기간구분=" + strSchDay);
+				param = {
+					"계좌번호" : srtAccNo,
+					"회차번호" : paramAccountSeq,
+					"은행코드" : strBnkCd,
+					"상품명" : strPrdNm ,
+					"재동의여부" : strReAgrYn,
+					"재인증여부" : strReCerYn,
+					"조회기간구분" : strSchDay
+				};
+				targetUrl = "/mquics?page=C101886";  
+				//targetUrl = "/mquics?page=C102198";  
+				var jsonData = JSON.stringify(param);
+				//alert("jsonData="+jsonData);
+				window.navi.navigate(targetUrl, jsonData, function(){});
+			}
+		}
+		
+		$("#btnBottomClose").trigger('click');
+	}
+
+	function uf_bpc_pop(){
+	    var account  = document.FORMDPOST.elements['출금계좌번호_tmp'].value;
+	    openBnkChrg.openBpcPop('E4',account,false);
+	    return false;
+	}
+	
+	function afterBpc(bpcRsltAmt, bpcRsltTotalAmt) {
+		if (bpcRsltAmt > 0) {
+			//alert(bpcRsltAmt+"원을 충전하였습니다.");
+			uf_GoSubmit('일반');
+		}
+	}
+	
+	function callRegOthAcc() {
+		//alert("다른금융 계좌등록");// [C101835] [다른금융 계좌등록]인트로 
+		var targetUrl = "/mquics?page=C101835";
+		var param = {};
+		var jsonData = JSON.stringify(param);
+		window.navi.navigate(targetUrl, jsonData, function(){});
+	}
+	
+	//재인증 재동의
+	function accInqAgree(bnkCd, selAcc, selSeq, reAgrYn, reCerYn){
+		if(reCerYn == "Y"){
+			//재인증 이동 [C101815] [다른금융 계좌등록]조회/출금 동의 
+			var param = new Object();
+				param.등록계좌번호 = selAcc;
+				param.등록회차번호 = selSeq;
+				param.등록은행코드 = bnkCd;
+				param.등록타입 = "재인증";
+			var jsonData = JSON.stringify(param);
+			var gotoUrl = "/mquics?page=C101815";
+			window.navi.navigate(gotoUrl, jsonData, function(){}); 
+		 }else{
+			//재동의 : [C101945] [다른금융 계좌 재동의]재동의 목록(팝업)
+			var param = new Object();
+				param.계좌번호 = selAcc;
+				param.회차번호 = selSeq;
+				param.은행코드 = bnkCd;
+				var jsonData = JSON.stringify(param);
+			var gotoUrl = "/mquics?page=C101945";
+			//window.navi.navigate(gotoUrl, jsonData, function(){}); 
+			window.appManager.openWebViewWithClose(gotoUrl, jsonData, function(data) {
+				if (data.GUBUN == "0") {
+					var strSchDay = "3개월";
+					param = {
+						"계좌번호" : selAcc,
+						"회차번호" : selSeq,
+						"은행코드" : bnkCd,
+						"상품명"   : "",
+						"재동의여부" : "",
+						"재인증여부" : "",
+						"조회기간구분" : strSchDay
+					};
+					targetUrl = "/mquics?page=C101886";  
+					var jsonData = JSON.stringify(param);
+					window.navi.navigate(targetUrl, jsonData, function(){});
+				}
+			});
+		 }
+	}
+
+// ]]>
+</script>
+</body>
+</html>

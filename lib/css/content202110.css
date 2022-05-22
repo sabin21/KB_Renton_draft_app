@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+.write_type01 dd{position:relative;font-size:13px;line-height:18px;color:#333;}
+.flexjust1 {display: flex;justify-content: space-between;}
+.wth31 {width:31%;}
+.tits_tyss01{font-size:18px;line-height:26px;color:#222 !important; font-weight:bold; text-align:center;}
+
+.caution {position:relative;padding-left:14px;color:#888; display:block; margin-top:5px;}
+.caution:before {content:'';position:absolute;left:0;top:4px;width:11px;height:11px;background:url(../../img/icon_caution.gif) no-repeat 0 0;background-size:11px auto;}
+
+.certify_pannel {padding-top:2.8rem; padding-left:5.6rem;}
+.certify_pannel [class^=ico_state_] {position:absolute; left:0; top:2rem; width:4rem; height:4rem; background:url(/mnbank/app/img/common/spr_ico_40x.png) -16rem -4rem no-repeat; background-size:25rem auto;}
+.certify_pannel .ico_state_def {background-position:-16rem -4rem;}
+.certify_pannel .ico_state_renew {background-position:-16rem -8rem;}
+
+/* 안드로이드 밀림 현상 */
+.anheight {position:fixed; top:0px; left:0px; width:100%; height:100%;}
+.write_type02 { display: flex; min-height:35vh; flex-direction: column;position:relative;font-size:13px;line-height:18px;color:#333; }
+.write_type02 dt{margin:18px 0 6px;color:#333;font-size:14px;font-weight:bold;}
+.write_type02 dt:first-child{margin-top:0;}
+.write_type02 dt.long{margin-right:70px;}
+.write_type02 dt.type2{margin-bottom:3px}
+.write_type02 dt .date{display:inline-block;padding-left:6px;margin-bottom:-3px;font-size:12px;color:#777;vertical-align:middle;}
+.write_type02 dt .help_guide{display:inline-block;padding:3px 10px;overflow:hidden;font-size:12px;color:#fff;vertical-align:middle;border-radius:15px;background:#0070e8;background:-webkit-gradient(linear, left top, left bottom, color-stop(95%,#0070e8), color-stop(100%,#2a85ed));}
+
+/* ================ 안드로이드 밀림 현상 */
+.fwb {font-weight:bold;}

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div class="__guide">
+	
+	<div class="__aside">
+		<div class="__component-name">스크립트</div>
+		<div class="__p"></div>
+	</div>
+
+	<div class="__contents u-2019">
+
+		<div class="__h1">화면 토글</div>
+		<div class="__p">레이아웃 순서나 태그 구조는 원하는대로 작성하되, data-toggle-btn 과 data-toggle-contents 의 값은 동일해야 합니다.</div>
+
+		<div class="__preview">
+			<xmp class="__code">
+<button type="button" data-toggle-btn="toggle1" aria-selected="true" title="선택됨">개인사업자</button>
+<button type="button" data-toggle-btn="toggle2">법인사업자</button>
+
+<div data-toggle-contents="toggle1">
+	개인사업자 내용
+</div>
+<div data-toggle-contents="toggle2" style="display:none">
+	법인사업자 내용
+</div>
+			</xmp>
+		</div>
+	</div>	
+</div>
+	
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../../js/library/cay/swiper.jquery.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<script src="../js/common_ui_2019.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,415 @@
+<html lang="ko"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <title>전계좌조회</title>
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    
+    <!-- 공통 스크립트 영역 START -->
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/library/jquery_lib.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/library/common.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/library/common_2018.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/mbank/mnbiz_common.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/common/common-tag.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/common/mb_common.js"></script>
+    <!-- 공통 스크립트 영역 END -->
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/common/jquery.validity.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/mbank/mbank_common.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/mbank/common_ui.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/mbank/common_ui_2019.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/plugin/plugin-cert.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/mbank/car_common.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/mbank/transfer_common.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/mbank/deposit_common.js"></script>
+    <script type="text/javascript" src="https://zmnbiz.kbstar.com/mobiz/app/js/mbank/cbr_common.js"></script>
+    
+    
+    <style>
+    .mrktng-bnr{margin:15px;background:#efefef url('https://zmnbiz.kbstar.com/mobiz/app/img/2018/ico_allcount_bnr.png') no-repeat 15px center;background-size:18px auto;padding:12px 58px 12px 43px;font-size:14px;color:#666;position:relative}
+    .mrktng-bnr a{display:block;}
+    .mrktng-bnr u{font-size:13px;color:#3575d5;position:absolute;right:15px;bottom:12px}
+    </style>
+
+    <!-- [S] 2021/10/25 이벤트 배너 교체 스타일 추가 -->
+    <style>
+        .banner-attend a{position:relative;padding:0;height:70px;background:#e2e9ec url('/mobiz/app/img/2021/img_attend_banner_m_n.png') no-repeat right 12px top 50%;background-size:auto 54px}
+        .banner-attend a:before{content:'';position:absolute;width:100%;height:70px;background:url('/mobiz/app/img/2021/img_attend_banner_txt.png') no-repeat 0 0;background-size:auto 70px}
+        .banner-attend a span{text-indent:-9999px}
+        .banner-attend a .btn{background-color:transparent}
+    </style>
+    <!-- //[E] 2021/10/25 이벤트 배너 교체 스타일 추가 -->
+    </head>
+    <body>
+    <div id="wrap" class="fs-expansion">  
+        <div id="contents" class="u-2019 u-2021 no-btn" style="pointer-events: auto;">
+            <!-- 총 잔액 툴팁 -->
+            <div id="tooltip1" class="tooltip">
+                <em class="tt-tit" tabindex="-1">총 잔액 합계범위</em>
+                    <ul class="list-ty1 gray">
+                        <li>주ID: 국내펀드 잔액이 제외된 예금/신탁 잔액의 총 합계입니다.</li>
+                        <li>부ID: 조회를 설정하신 ID의 입출금이 자유로운 예금계좌의 총 합계입니다.</li>
+                        <li>일반사용자(Sub)는 총 잔액과 계좌수 정보를 볼 수 없습니다.</li>
+                    </ul>
+                    <button type="button" class="btn-close close">닫기</button>
+            </div>
+            <!-- //총 잔액 툴팁 -->
+             
+            <!-- 퇴직연금 툴팁 -->
+            <div id="tooltip2" class="tooltip">
+                <!-- 2021/03/02 워싱반영 -->
+                <em class="tt-tit" tabindex="-1">퇴직연금</em>
+                KB스타기업뱅킹에서는 퇴직연금의 계좌정보만 확인하실 수 있습니다.<br>
+                적립금 현황, 부담금 납부현황 등 상세정보는 퇴직연금 사이버지점에서 확인하실 수 있습니다.
+                <button type="button" class="btn-close close">닫기</button>
+                <!-- //2021/03/02 워싱반영 -->
+            </div>
+            <!-- //퇴직연금 툴팁 -->
+    
+            <!-- 주요 외화 잔액 툴팁 -->
+            <div id="tooltip3" class="tooltip">
+                <em class="tt-tit" tabindex="-1">총 잔액 합계범위</em>
+                    <ul class="list-ty1 gray">
+                        <li>대표 외화 3종이 표시되며, 그 외 통화는 각 계좌에서 확인하시기 바랍니다.</li>
+                        <li>일반사용자(Sub)는 총 잔액과 계좌수 정보를 볼 수 없습니다.</li>
+                    </ul>
+                    <button type="button" class="btn-close close">닫기</button>
+            </div>
+            <!-- //주요 외화 잔액 툴팁 -->
+            
+            <!-- //개인사업자가 아닌 경우 -->
+            <div class="tab-wrap ty2 co-sub" data-quics="{&quot;visiable&quot;:&quot;servicedata.strPpsnBzmanMasterYN!=\&quot;1\&quot;&quot;}" style="display:none">
+            </div>
+            <!-- //개인사업자의 경우 -->
+            <div class="tab-wrap ty2" data-quics="{&quot;visiable&quot;:&quot;servicedata.strPpsnBzmanMasterYN==\&quot;1\&quot;&quot;}" style="">
+                <ul role="tablist">
+                    <li role="none presentation"><a href="#n" role="tab" aria-selected="true"><span>국민은행</span></a></li>
+                    <li role="none presentation"><a href="#n" role="tab" aria-selected="false"><span>다른금융</span><span class="new-open">신규</span></a></li>
+                    <li role="none presentation"><a href="#n" role="tab" aria-selected="false"><span>Star CMS</span></a></li>
+                </ul>
+            </div>
+    
+            <div class="account-inquiry">
+                <div class="info-wrap">
+                    <div class="total-balance">
+                        <div class="show-total-balance">
+                            <span class="toggle-tit">총 잔액</span>
+                            <div class="chk-toggle" style="">
+                                <input type="checkbox" id="chk1" name="" value="" class="chk" checked="checked" data-toggle-btn="toggle1" onclick="javascript:setOnOffVal();">
+                                <label for="chk1"><span class="blind">잔액보기 여부 선택</span></label>
+                            </div>
+                            <div class="chk-toggle" style="display:none">
+                                <input type="checkbox" class="chk" disabled="">
+                            </div>
+                        </div>
+                        <div class="balance-num" id="balance_num" style="visibility: visible;">
+                            <div class="b-inner">
+                                <div class="num" style=""><em>210,239,459</em><span class="unit">원</span></div>
+                                <button type="button" rel="#tooltip1" class="btn-info ty2 bt-tooltip">
+                                    <span class="blind">안내</span>
+                                </button>
+                            </div>
+                            <div style=""><span class="g-txt">자동대출잔액 <em class="num"><em>0</em></em>원</span></div>
+                        </div>
+                        <!-- sub사용자 -->
+                        <div class="account-sub" style="display:none">
+                            <p>일반사용자(Sub)는</p>
+                            <p>총 잔액이 제공되지 않습니다.</p>
+                        </div>
+                    </div>
+                    <span class="circle-btn-area">
+                        <span style="">
+                            <button type="button" class="btn-circle white bspop" rel="#pop_bpc">충전</button>
+                        </span>
+                        <a href="#" role="button" class="btn-circle yellow" style="display:none;">이체</a>
+                        <!-- 기업고도화 -->
+                        <a href="#" role="button"  class="btn-circle yellow" style="">빠른이체</a>
+                    </span>
+                            
+                    <!--subId관련 -->
+                    <div style="">
+                         <div>
+                            <select id="acct" class="btn-sel-box ty2" title="계좌 리스트 선택">
+                                <option value="||우경은=찬규주행" undefined="">우경은=찬규주행님</option>
+                                <option value="2143491421|00000|가나다">가나다님</option>
+                            </select>
+                         </div>
+                    </div>
+                       
+                    <div style="display:none">
+                           <div class="btn-sel-box no-arrow" >우경은=찬규주행</div>
+                       </div>
+                       
+                       <!-- ID통합과 상관없이 무조건 노출 -->
+                       <div style="">
+                           <a href="#" class="link underline an-id mt10">다른 ID를 통합해보세요</a>
+                       </div>
+                       <!--subId관련 -->
+                </div>
+                <!-- 211007 출근이벤트 배너 추가 -->
+                <div class="banner-attend">
+                    <a href="#">                        
+                        <span class="txt">KB기업뱅킹 개편 기념 2차 출근체크 이벤트!</span><!-- 2021/10/25 문구 수정 -->
+                        <span class="btn">이벤트 참여하기 &gt;</span>
+                    </a>
+                </div>
+                <!-- 211007 출근이벤트 배너 추가 -->
+                <!--배너영역 -->
+                <!-- 출근이벤트 진행으로 주석처리
+                      <div class="banner-wrap">
+                    <a href="#"><span class="ban-text"></span></a>
+                </div>
+                -->
+                <!--//배너영역 -->
+                
+                
+                <div class="btn-wrap" style="">
+                    <button type="button" class="btn-add-account" id="다른금융계좌등록">다른금융 계좌등록</button>
+                    <div class="fl-r" style="">
+                        <button type="button" rel="#bs2" class="btn-setting bspop">관리</button>
+                    </div>
+                </div>
+                
+                <!--// info -->
+    
+                <!-- 항목 리스트 -->
+                <div class="list-wrap">
+                    <!-- 예금/신탁 -->
+                    <div class="acc-wrap accordion ty9 active">
+                        <div class="acc-tit acc-btn" role="button" aria-expanded="true">
+                            <em class="sub-tit ty1">예금/신탁</em>
+                            <span class="r-amount" style="">
+                                <span class="txt">잔액</span>
+                                <span class="num"><em>210,239,459</em></span>
+                                <span class="txt">원</span>
+                            </span>
+                            <span class="r-amount" style="display:none">
+                                <span class="txt">잔액</span>
+                                <span class="num"><em>204,989,459</em></span>
+                                <span class="txt">원</span>
+                            </span>
+                            <button type="button" class="btn-fold">
+                                <span class="status"></span>
+                            </button>
+                        </div>                       
+                                                     
+                        <div class="acc-contents" style="display: block;">
+                            <div style=""><!-- test -->
+                                <ul class="list-info ty2">                                   
+                                    <li id="예금신탁리스트" style="display:;">
+                                        <!-- 계좌정보 -->
+                                        <a href="#" class="link-block" id="aAcc1">
+                                            <span class="blind">계좌번호</span>
+                                            <span class="account-num" data-quics="{&quot;attr&quot;:&quot;계좌번호&quot;}">816901-04-292193</span>
+                                            <span class="nickname" data-quics="{&quot;attr&quot;:&quot;계좌별명&quot;}">물보라를일으켜봐닷닷닷닷다다다다</span>
+                                            <span class="account-name" data-quics="{&quot;attr&quot;:&quot;예금종류&quot;}">ONE KB 사업자통장-보통예금</span>
+                                        </a>
+                                        <div class="ex-data">
+                                            <span>신규일: <span>2021.08.11</span></span>
+                                            <span style="display:none">만기일: <span></span></span>
+                                        </div>
+                                        <!-- 최근 거래내역 -->
+                                        <div class="info-detail active">
+        <!-- 	                        		<div class="balance"> -->
+                                            <div class="data-num1">
+                                                <div class="num" style="">잔액<strong data-quics="{&quot;attr&quot;:&quot;잔액&quot;}">100,037,337</strong>원</div>
+                                                <div class="num" style="display:none">원</div>
+                                                <div style="">
+                                                       <button type="button" class="btn" data-toggle="btn" aria-expanded="true" id="eventDetail">입출금내역 접기</button>
+                                                   </div>
+                                            </div>
+                                            <div class="tbl-data" data-toggle="content">
+                                                <ul id="요구불거래내역">
+                                                    <li>
+                                                        <span>10.22 마병기(보뜸장대.진안)</span>
+                                                        <span class="deposit">1,001원 입금</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>10.22 (한)형윤자윤순</span>
+                                                        <span class="deposit">999원 입금</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>10.19 </span>
+                                                        <span class="deposit">10,000원 입금</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>10.19 (한)국보언유다</span>
+                                                        <span class="deposit">779원 입금</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>10.19 (한)국보언유다</span>
+                                                        <span class="deposit">1,004원 입금</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- //최근 거래내역 -->
+                                    
+                                        <!-- 메뉴선택 -->
+                                        <button type="button" rel="#bs3_1" class="btn-menu bspop">메뉴선택</button>
+                                    </li>
+                                    <li id="예금신탁리스트" data-index="1" style="display:;">
+                                        <!-- 계좌정보 -->
+                                        <a href="#" class="link-block" id="aAcc1">
+                                            <span class="blind">계좌번호</span>
+                                            <span class="account-num">816901-04-292180</span>
+                                            <span class="nickname">비번１００４</span>
+                                            <span class="account-name">ONE KB 사업자통장-보통예금</span>
+                                        </a>
+                                        <div class="ex-data">
+                                            <span>신규일: <span>2021.08.11</span></span>
+                                            <span style="display:none">만기일: <span></span></span>
+                                        </div>
+                                        <!-- 최근 거래내역 -->
+                                        <div class="info-detail">
+        <!-- 	                        		<div class="balance"> -->
+                                            <div class="data-num1">
+                                                <div class="num" style="display: block;">잔액<strong>104,952,122</strong>원</div>
+                                                <div class="num" style="display:none">원</div>
+                                                <div style="display: block;">
+                                                    <button type="button" class="btn" data-toggle="btn" aria-expanded="false" id="eventDetail">816901-04-292180</span>펼치기</button>
+                                                </div>
+                                            </div>
+                                            <div class="tbl-data" data-toggle="content">
+                                                <ul id="요구불거래내역">
+                                                    <li>	
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- //최근 거래내역 -->
+                                    
+                                        <!-- 메뉴선택 -->
+                                        <button type="button" rel="#bs3_1" class="btn-menu bspop">메뉴선택</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div> 
+                    <!-- 대출 -->
+                    <div class="acc-wrap accordion ty9">
+                        <div class="acc-tit acc-btn" role="button" aria-expanded="false" onclick="javascript:ClickLoan(); return false;">
+                            <em class="sub-tit ty2">대출</em>
+                            <button type="button" class="btn-fold" id="aAcc2">
+                                <span class="status">펼치기</span>
+                            </button>
+                        </div>
+                        <div class="acc-contents">
+                            <!-- list -->                           
+                            <ul class="list-info" id="대출계좌리스트">
+                            </ul>
+                            <!--// list --> 
+                        </div>
+                    </div>      
+                    <!--// 대출 -->
+    
+                    <!-- 펀드 -->
+                    <div class="acc-wrap accordion ty9">
+                        <div class="acc-tit acc-btn" role="button" aria-expanded="false" onclick="javascript:ClickFund(); return false;">
+                            <em class="sub-tit ty3">펀드</em>
+                            <button class="btn-fold" id="aAcc3">
+                                <span class="status">펼치기</span>
+                            </button>
+                        </div>
+                        <div class="acc-contents">                              
+                            <!-- list -->                           
+                            <ul class="list-info" id="펀드계좌리스트" data-quics="{&quot;getList&quot;:&quot;webListData_mobile3&quot;}">
+                            </ul>
+                            <!--// list -->
+                        </div>
+                    </div>  
+                    <!--// 펀드 -->
+    
+                    <!-- 외환 -->
+                    <div class="acc-wrap accordion ty9" data-quics="{&quot;visiable&quot;:&quot;servicedata.showOtherMenuYn==\&quot;Y\&quot;&quot;}" style="">
+                        <div class="acc-tit acc-btn" role="button" aria-expanded="true" onclick="javascript:ClickFX(); return false;">
+                            <em class="sub-tit ty4">외환</em>
+                            <button type="button" class="btn-fold">
+                                <span class="status">펼치기</span>
+                            </button>
+                        </div>
+                        <div class="acc-contents" id="외환계좌리스트">
+                            
+                        </div>
+                    </div>  
+                    <!--// 외환 -->
+    
+                    <!-- 퇴직연금 -->
+                    <div class="acc-wrap accordion ty9" data-quics="{&quot;visiable&quot;:&quot;servicedata.showOtherMenuYn==\&quot;Y\&quot;&quot;}" style="">
+                        <div class="acc-tit">
+                            <em class="sub-tit ty5">퇴직연금
+                                <button type="button" rel="#tooltip2" class="btn-info ty2 bt-tooltip" id="rtiilePensr" style="display:none">
+                                    <span class="blind">안내</span>
+                                </button>
+                            </em>
+                            <div class="acc-btn full" role="button" aria-expanded="true" onclick="javascript:ClickRtilePensn(); return false;">
+                                <span class="r-amount">
+                                    <span class="txt" id="strTotalMember"></span>
+                                </span>
+                                <button class="btn-fold">
+                                    <span class="status">펼치기</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="acc-contents">
+                            <ul class="list-info" data-quics="{&quot;getList&quot;:&quot;webListData_result2&quot;}">
+                                <li id="퇴직연금계좌리스트" data-index="">            
+                                </li>	
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--// account -->              
+    
+                <!-- tooltip -->
+                <div id="tooltip1" class="tooltip">
+                    <em class="tt-tit">총 잔액 합계범위</em>
+                    <ul class="list-ty1 gray">
+                        <li>주ID : 국내펀드 잔액이 제외된 예금/신탁 총합계입니다.</li>
+                        <li>부ID : 조회를 설정하신 ID의 입출금이 자유로운 예금계좌의 총합계입니다.</li>
+                        <li>Sub사용자는 총 잔액과 계좌수 정보가 제공되지 않습니다.</li>
+                    </ul>
+                    <button type="button" class="btn-close close">닫기</button>
+                </div>
+                <!--// tooltip -->
+            </div>
+    
+    <style>
+    #info_pop_C042549:focus,
+    #info_pop_C042549 .pop-inner:focus,
+    #info_pop_C042549 .pop-inner .pop-tit:focus{outline:0}
+    #info_pop_C042549 dl{overflow:hidden; text-align:left; line-height:23px; border-top:1px solid #dba375; border-bottom:1px solid #dba375; padding:15px 0 10px; margin-top:30px;}
+    #info_pop_C042549 dl dt{float:left; background-color:#e97a30; border-radius:20px; color:#fff; width:78px; text-align:center; margin-bottom:5px;}
+    #info_pop_C042549 dl dd{margin-left:83px; margin-bottom:5px; font-weight:bold;}
+    </style>
+
+    
+    <!-- 이벤트 팝업 -->
+        <style>
+        /* KB 비대면 소상공인대출 (2021-06-14) */
+        .pop_acc_event .layer_posi .pop_20210614{background:url('/mobiz/app/img/2021/20210614_img_eventpop_renew.jpg') 50% 0 no-repeat; background-size:100% auto;}
+        
+        /* KB 비대면 소상공인대출 (2021-06-28) */
+        .pop_acc_event .layer_posi .pop_20210628{background:url('/mobiz/app/img/2021/20210628_img_eventpop_renew.jpg') 50% 0 no-repeat; background-size:100% auto;}
+        
+        /* 스타CMS안내 (2021-07-14) */
+        .pop_acc_event .layer_posi .pop_20210714{background:url('/mobiz/app/img/2021/img_eventpop_20210714.jpg') 50% 0 no-repeat; background-size:100% auto;}
+        
+        /* 「바로ERP 신규약정」 이벤트 (2021-07-21) */
+        .pop_acc_event .layer_posi .pop_20210721{background:url('/mobiz/app/img/2021/img_eventpop_20210721_n.jpg') 50% 0 no-repeat; background-size:100% auto;}
+    
+        /* 「바로ERP 신규약정」 이벤트 2021-07-22 추가 */
+        .pop_acc_event .layer_posi .pop_20210722{background:url('/mobiz/app/img/2021/img_eventpop_20210722_2n.jpg') 50% 0 no-repeat; background-size:100% auto;}
+        
+        /* KB비대면 소상공인대출 팝업 (2021-08-09) */
+        .pop_acc_event .layer_posi .pop_20210811_1{background:url('/mobiz/app/img/2021/20210811_img_eventpop_renew01.png') 50% 0 no-repeat; background-size:100% auto;}
+        .pop_acc_event .layer_posi .pop_20210811_2{background:url('/mobiz/app/img/2021/20210811_img_eventpop_renew02.png') 50% 0 no-repeat; background-size:100% auto;}
+        
+        </style>
+    <!-- 이벤트 팝업 -->
+    </div>
+    </div>     
+    </body>
+    </html>

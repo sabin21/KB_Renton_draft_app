@@ -1,0 +1,244 @@
+/* common Layout ============*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  letter-spacing: 0;
+}
+
+:root {
+  --color-yellow-active: #FFCC00;
+  --color-basic-title: #222222;
+  --color-basic-body: #4C4C4C;
+  --color-basic-caption: #707070;
+  --color-basic-disable: #999999;
+  --color-basic-line: #e5e5e5;
+  --color-basic-bg1: #f8f8f8;
+}
+
+.mo-body {
+  -ms-overflow-style: none;
+}
+
+.mo-body::-webkit-scrollbar {
+  width: 0px;
+}
+
+.mo-body::-webkit-scrollbar-track {
+  display: none;
+}
+
+.mo-body::-webkit-scrollbar-thumb {
+  background: rgba(200, 200, 200, 0.2);
+}
+
+.mo-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard-wrap .dashboard-head {
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-yellow-active);
+}
+
+.dashboard-wrap .items-main {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  position: relative;
+  width: calc(100% - 32px);
+  height: 56px;
+  margin: 16px auto 4px auto;
+}
+
+.section-title h2 {
+  font-size: 16px;
+  padding-top: 1rem;
+  margin-bottom: 0;
+}
+
+.items-list-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-card {
+  position: relative;
+  width: calc(100% - 32px);
+  height: 52px;
+  background-color: #ffffff;
+  margin: 4px auto;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 16px 12px 16px 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.03em;
+  border-radius: 26px;
+}
+
+.item-card .item-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.item-card .item-icon::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.item-card .item-icon.type-01 {
+  background: linear-gradient(180deg, #FFE8DE 0%, #FEF5F0 100%);
+}
+
+.item-card .item-icon.type-01::after {
+  background-image: url(../img/item_icon_01.png);
+}
+
+.item-card .item-icon.type-02 {
+  background: linear-gradient(180deg, #D3EEE7 0%, #E8F7F2 100%);
+}
+
+.item-card .item-icon.type-02::after {
+  background-image: url(../img/item_icon_02.png);
+}
+
+.item-card .item-icon.type-03 {
+  background: linear-gradient(180deg, #E2F8F4 0%, #B9F2E8 100%);
+}
+
+.item-card .item-icon.type-03::after {
+  background-image: url(../img/item_icon_03.png);
+}
+
+.item-card .item-icon.type-04 {
+  background: linear-gradient(180deg, #FEE9CC 0%, #FCE7FA 100%);
+}
+
+.item-card .item-icon.type-04::after {
+  background-image: url(../img/item_icon_04.png);
+}
+
+.item-card .item-icon.type-05 {
+  background: linear-gradient(180deg, #CCFBFE 0%, #CCF4E8 100%);
+}
+
+.item-card .item-icon.type-05::after {
+  background-image: url(../img/item_icon_05.png);
+}
+
+.item-card .item-icon-wrap {
+  position: relative;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 0;
+}
+
+.item-card .item-icon-wrap span {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
+  color: var(--color-basic-caption);
+  display: none;
+}
+
+.item-card .item-body {
+  position: relative;
+  width: 100%;
+  padding: 16px 16px;
+}
+
+.item-card .item-body .num-big {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.item-card .item-body .item-detail {
+  width: 100%;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+
+.item-card .item-body .due-date {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 16px;
+  font-size: 12px;
+}
+
+.item-card.open {
+  height: 96px;
+  border-radius: 12px;
+}
+
+.item-card.open .item-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.item-card.open .item-icon-wrap span {
+  display: block;
+}
+
+.item-card.open .item-body .num-big {
+  font-size: 20px;
+}
+
+.item-card.open .item-body .item-detail {
+  display: block;
+}
+
+.item-card.open .item-body .due-date {
+  top: -2px;
+}
+
+.trigger-wrap {
+  position: fixed;
+  width: 20px;
+  height: 50%;
+  right: 0;
+  top: 20%;
+  background-color: red;
+  opacity: 0;
+  user-select: none;
+}

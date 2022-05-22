@@ -1,0 +1,341 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>건물 수정</title>
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/content.css">
+	<!-- 190515 추가 -->
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/common_2019.css">
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/common_2019_new.css">
+	<!--// 190515 추가 -->
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/common_2021.css">
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/content_2021.css">
+	<link rel="stylesheet" type="text/css" href="https://obiz.kbstar.com/mobiz/app/css/content_renton_2022.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content_renton_2022.css">
+	<!--// 190515 추가 -->
+	
+	<!-- 공통 스크립트 영역 START -->
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/library/jquery_lib.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/library/common.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/mnbiz_common.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/common/mb_common.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/common/common-tag.js"></script>
+	<!-- 공통 스크립트 영역 END -->
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/mbank_common.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/common_ui.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com/mobiz/app/js/mbank/common_ui_2019.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<form method="post" name="IBF" id="IBF" onsubmit="return false;">
+		<div id="contents" class="u-2019 u-2021 u-bizcontent renton">
+			
+			<div class="tar has-prev">
+				<a href="#" role="button" class="link link-prev">뒤로</a>
+				<a href="#" role="button" class="link underline fc-1">건물삭제</a>
+			</div>
+
+			<div class="has-edit icon-area">
+				<p class="icon-preview"><span class="yellow icon-buliding01"></span></p>
+				<button type="button" class="btn-edit">내건물 이름 수정</button>
+				<div class="icon-wrap">
+					<ul class="icon-box">
+						<li class="gradiant-box yellow active"><button type="button" class="icon icon-buliding01"></button></li>
+						<li class="gradiant-box blue"><button type="button" class="icon icon-buliding02"></button></li>
+						<li class="gradiant-box pupple"><button type="button" class="icon icon-buliding03"></button></li>
+						<li class="gradiant-box yellow"><button type="button" class="icon icon-buliding01"></button></li>
+						<li class="gradiant-box green"><button type="button" class="icon icon-buliding02"></button></li>
+						<li class="gradiant-box blue"><button type="button" class="icon icon-buliding02"></button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail-info-wrap">
+				<div class="has-edit">
+					<p class="tit tac"><span class="ipt-value">국민 101호</span> <button type="button" class="btn-edit">내건물 이름 수정</button></p>
+					<div class="ipt-wrap">
+						<input type="text" id="" name="" class="ipt renton-requierdVal" value="" maxlength="" title="필드 제목" placeholder="내 건물의 이름을 정해 주세요(예-국민101호)" />
+						<button type="button" class="btn-clear">입력내용 초기화</button>
+					</div>
+					<span class="txt-msg error" style="display: none;">내 건물 중 동일한 이름이 존재해요.</span>
+					<!-- <span class="txt-msg">정상 텍스트 메시지</span> -->
+				</div>
+				<div class="mt10 has-edit">
+					<p class="tit-desc tac"><span class="ipt-value">스타부동산스타부동산스타부동산스타부동산스타부동산</span> <button type="button" class="btn-edit">메모 수정</button></p>
+					<div class="ipt-wrap">
+						<input type="text" id="" name="" class="ipt" value="" maxlength="" title="필드 제목" placeholder="필요사항을 메모해 보세요(예-세입자/중개인)" />
+						<button type="button" class="btn-clear">입력내용 초기화</button>
+					</div>
+				</div>
+			</div>
+			<div class="space-line mt30">
+				<div class="btns-tab-wrap mt15 ta-c cf">
+					<button type="button" data-toggle-btn="toggle1" aria-selected="true" title="선택됨" class="btn-ty2 lv2 on">임대 중이에요</button>
+					<button type="button" data-toggle-btn="toggle2" class="btn-ty2 lv2">공실이에요</button>
+				</div>
+			</div>
+			<div class="tab01 mt30 form_list" data-toggle-contents="toggle1">
+				<div class="form-wrap mt30">
+					<div class="list-grid detail-list">
+						<ul class="list">
+							<li class="has-btn has-edit ty2">
+								<dl>
+									<dt>임대료</dt>
+									<dd>
+										<p class="ipt-value price fc-7">1,200,000원</p>
+										<div class="ipt-wrap price">
+											<input type="tel" id="payMonthVal" name="" class="ipt fc-7 basicPayVal renton-requierdVal" data-quics='' maxlength="17" placeholder="월 임대료를 입력해 주세요" onkeyup="javascript:inputMoneyText(this,'money')" />
+											<button type="button" class="btn-clear">입력내용 초기화</button>
+											<span class="txt-won">원</span>
+										</div>
+										<div  id="payMonthBtn" class="btns-flex hide">
+											<button type="button" class="btn-ty3 lv4" onclick="javascript:setAmt2(document.IBF.elements['월 임대료'], 5000); displayComma2(document.IBF.elements['월 임대료'], document.IBF.elements['월 임대료'].value); return false;">+5천</button>					
+											<button type="button" class="btn-ty3 lv4" onclick="javascript:setAmt2(document.IBF.elements['월 임대료'], 10000); displayComma2(document.IBF.elements['월 임대료'], document.IBF.elements['월 임대료'].value); return false;">+1만</button>
+											<button type="button" class="btn-ty3 lv4" onclick="javascript:setAmt2(document.IBF.elements['월 임대료'], 50000); displayComma2(document.IBF.elements['월 임대료'], document.IBF.elements['월 임대료'].value); return false;">+5만</button>
+											<button type="button" class="btn-ty3 lv4" onclick="javascript:setAmt2(document.IBF.elements['월 임대료'], 100000); displayComma2(document.IBF.elements['월 임대료'], document.IBF.elements['월 임대료'].value); return false;">+10만</button>				
+											<button type="button" class="btn-ty3 lv4" onclick="javascript:setAmt2(document.IBF.elements['월 임대료'], 500000); displayComma2(document.IBF.elements['월 임대료'], document.IBF.elements['월 임대료'].value); return false;">+50만</button>				
+										</div>
+									</dd>
+								</dl>
+								<button type="button" class="btn-edit">임대료 수정</button>
+							</li>
+							<li class="">
+								<dl>
+									<dt>계약기간</dt>
+									<dd class="flex-wrap">
+										<!-- 개발용 --
+										<div id="id_calendar1" class="ipt-wrap calendar"></div>
+										--// 개발용 -->
+										<div id="id_calendar1" class="ipt-wrap calendar">
+											<input type="tel" class="renton-requierdVal" name="" id="" value="" title="날짜 입력" readonly="readonly" placeholder="계약 시작일">
+											<a href="#none" id="" class="btn_calendar"><span id="startdate_cal-btn">날짜 입력달력</span></a>
+										</div>
+										<span class="bar"> ~ </span>
+										<!-- 개발용 --
+										<div id="id_calendar2" class="ipt-wrap calendar"></div>
+										--// 개발용 -->
+										<div id="id_calendar2" class="ipt-wrap calendar">
+											<input type="tel" class="renton-requierdVal" name="" id="" value="" title="날짜 입력" readonly="readonly" placeholder="계약 만기일">
+											<a href="#none" id="" class="btn_calendar"><span id="startdate_cal-btn">날짜 입력달력</span></a>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="">
+								<dl>
+									<dt>받는 방법</dt>
+									<dd>
+										<div class="btns-pay-wrap">
+										<ul class="btns-pay cf">
+											<li><input type="radio" id="rdo1" name="rdo1" value="" class="blind" checked="checked" /><label for="rdo1" class="btn-ty1 lv2">선불</label></li>
+											<li><input type="radio" id="rdo2" name="rdo1" value="" class="blind" /><label for="rdo2" class="btn-ty1 lv2">후불</label></li>
+										</ul>
+										<div class="tooltip_con">
+											<a href="" class="btn-info tooltip"><span class="blind">안내</span></a>
+											<div class="tooltip_wrap">
+												<p>
+													<strong>선불 : </strong><span>임대 시작 첫 달부터 임대료를 받아요.</span>
+												</p>
+												<p>
+													<strong>후불 : </strong><span>임대 시작 다음 달부터 임대료를 받아요.</span>
+												</p>
+											</div>
+										</div>
+									</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="">
+								<dl class="renton-date-wrap">
+									<dt>임대료 받는날</dt>
+									<dd>
+										<div class="sel-wrap">
+											<button type="button" class="sub-text btn-selector">매월 24일</button>
+											<input id="selDateValue" type="hidden" value="">
+											<ul class="date-list">
+												<li><button>1일</button></li>
+												<li><button>2일</button></li>
+												<li><button>3일</button></li>
+												<li><button>4일</button></li>
+												<li><button>5일</button></li>
+												<li><button>6일</button></li>
+												<li><button>7일</button></li>
+												<li><button>8일</button></li>
+												<li><button>9일</button></li>
+												<li><button>10일</button></li>
+												<li><button>11일</button></li>
+												<li><button>12일</button></li>
+												<li><button>13일</button></li>
+												<li><button>14일</button></li>
+												<li><button>15일</button></li>
+												<li><button>16일</button></li>
+												<li><button>17일</button></li>
+												<li><button>18일</button></li>
+												<li><button>19일</button></li>
+												<li><button>20일</button></li>
+												<li><button>21일</button></li>
+												<li><button>22일</button></li>
+												<li><button>23일</button></li>
+												<li class="active"><button>24일</button></li>
+												<li><button>25일</button></li>
+												<li><button>26일</button></li>
+												<li><button>27일</button></li>
+												<li><button>28일</button></li>
+												<li><button>29일</button></li>
+												<li><button>30일</button></li>
+												<li><button>말일</button></li>
+											</ul>
+										</div>	
+									</dd>
+								</dl>
+							</li>
+							<li class="has-btn has-edit ty2">
+								<dl>
+									<dt>보증금</dt>
+									<dd>
+										<p class="ipt-value price fc-7">73,200,000원</p>
+										<div class="ipt-wrap price">
+											<input type="tel" id="보증금" name="보증금" class="ipt fc-7" data-quics='' maxlength="17" placeholder="보증금을 입력해 주세요" onkeyup="javascript:inputMoneyText(this,'money')"/>
+											<button type="button" class="btn-clear">입력내용 초기화</button>
+											<span class="txt-won">원</span>
+										</div>
+									</dd>
+								</dl>
+								<button type="button" class="btn-edit lv3">보증금 수정</button>
+							</li>
+							<li class="has-btn ty4">
+								<dl>
+									<dt>연결계좌</dt>
+									<dd>
+										<p class="f_15">
+											<a href="#">계좌 연결하기</a>
+										</p>
+									</dd>
+								</dl>
+							</li>
+							<!-- 연결된 계좌가 있을경우
+							<li class="has-btn ty2">
+								<dl>
+									<dt>연결계좌</dt>
+									<dd>
+										<p class="f_15">
+											<span>무슨은행</span><br/>
+											<strong>4930-403-40302-4030</strong>
+										</p>
+									</dd>
+								</dl>
+								<button type="button" class="btn-ty2 lv3">변경</button>
+							</li> 
+							-->
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<div class="tab02" data-toggle-contents="toggle2" style="display:none">
+				<div class="msg-box ty3">
+					<strong class="msg-tit">새로운 세입자와 임대 계약이 <br>완료되면 임대 정보를 입력해 주세요</strong>
+				</div>
+			</div>
+			<div class="btn-area full fixed ty1">
+				<button type="button" class="btn-ty1" >저장</button>
+			</div>
+		</div>
+	</form>
+</div>
+<script>
+	$(document).ready(function(){
+		$('.gradiant-box').on('click',function(e){
+			e.preventDefault();
+			$('.icon-box li').removeClass('active');
+			$(this).closest('li').addClass('active');
+
+			var iconBg = $(this).attr('class').split(' ');
+			var iconSrc = $(this).children('button').attr('class');
+
+			$('.icon-preview span').attr('class','');
+			$('.icon-preview span').addClass(iconBg[1] + ' ' +iconSrc);
+		});
+		$('.has-edit .btn-edit').on('click',function(e){
+			e.preventDefault();
+			$(this).parents('.has-edit').addClass('on')
+			$(this).parents('.has-edit').find('.ipt-wrap > input').focus()
+		});
+		$('.has-edit .ipt-wrap input').on('focusout',function(e){
+			if($(this).val().length > 0){
+				if(!$(this).parents('.has-edit').find('.ipt-value').hasClass('price')){
+					console.log($(this).parents('.has-edit').find('.ipt-value').hasClass('price'))
+					$(this).parents('.has-edit').find('.ipt-value').text($(this).val())
+				}else{
+					$(this).parents('.has-edit').find('.ipt-value').text($(this).val() + '원')
+				}
+			}
+			$(this).parents('.has-edit').removeClass('on')
+		});
+
+		$('#payMonthVal').focus(function() {
+			$('#payMonthBtn').removeClass('hide');
+		});
+		//입력필드 포커스아웃시 금액추가버튼 비표시
+		$('#payMonthVal').focusout(function() {
+			$('#payMonthBtn').addClass('hide');
+		});
+
+
+		$('.btn-selector').on('click',function(){
+			$(this).siblings('.date-list').toggleClass('active');
+		});
+		$('.date-list li button').on('click' , function(){
+			var selecetDate = $(this).text()
+			$(this).parent().addClass('active').siblings().removeClass('active')
+			$('.renton-date-wrap .sel-wrap #selDateValue').val(selecetDate)
+			$('.btn-selector').text('매월 '+ selecetDate)
+			$('.date-list').removeClass('active')
+		});
+
+	});
+	function inputMoneyText(obj, type) {
+		var pay = $(obj).val();
+		var wagePay = 0;
+
+		if(pay != '') {
+			pay = pay.replace(/[^0-9]/g,'');
+			pay = pay.replace(/,/g,'');
+			
+			if(type == 'money') {
+				$(obj).val(Number(pay).toLocaleString("en"));
+			}else {
+				$(obj).val(Number(pay));
+			}
+		}
+		else {
+			$(obj).val('');
+		}
+	}
+	
+	function payMonthClick(pMoney) {
+		event.preventDefault(); //기본급 입력칸 포커스아웃 발생으로인해 버튼 감춰지는거 방지
+		
+		var money = $('#payMonthVal').val();
+		
+		if(money != '') {
+			money = money.replace(/[^0-9]/g,'');
+			money = money.replace(/,/g,'');
+			
+			$('#payMonthVal').val((money*1)+(pMoney*1));
+		}
+		else {
+			$('#payMonthVal').val(pMoney);
+		}
+		
+		inputMoneyText($('#payMonthVal'),'money');
+		
+		//nextBtnAative();
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div class="__guide">
+	
+	<div class="__aside">
+		<div class="__component-name">리스트</div>
+		<div class="__p">ol, ul 태그에 사용한다.</div>
+	</div>
+
+	<div class="__contents u-2019">
+
+		<div class="__h1">리스트</div>
+		<div class="__p">목록 및 주석에 사용하며 단독 또는 중첩 사용이 가능하다.</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>list-ty1</td>
+					<td>list-type : ●</td>
+				</tr>
+				<tr>
+					<td>list-ty1.gray</td>
+					<td>list-type : ●</td>
+				</tr>
+				<tr>
+					<td>list-ty2</td>
+					<td>list-type : ㅡ</td>
+				</tr>
+				<tr>
+					<td>list-ty3</td>
+					<td>list-type : ○</td>
+				</tr>
+				<tr>
+					<td>list-ty4</td>
+					<td>dl > dt + dd (정의 목록)</td>
+				</tr>
+				<tr>
+					<td>list-ty5</td>
+					<td>원문자(①, ②, ③....) li </td>
+				</tr>
+				<tr>
+					<td>list-cmt</td>
+					<td>주석</td>
+				</tr>
+				<tr>
+					<td>txt-cmt</td>
+					<td>한 줄 주석 ex) &lt;p&gt; 태그 등에 사용</td>
+				</tr>
+				<tr>
+					<td>txt-cmt.ty2</td>
+					<td>한 줄 주석 ex) &lt;p&gt; 태그 등에 사용. 하지만 *이 없고 좀 더 작음 (13/16)</td>
+				</tr>
+				<tr>
+					<td>list-mark</td>
+					<td>부가설명 (*)</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview">
+			<xmp class="__code">
+<ul class="list-ty1">
+	<li>리스트 1
+		<ul class="list-ty2">
+			<li>리스트 1-1<br>두줄두줄두줄두줄두줄두줄
+				<ul class="list-ty3">
+					<li>리스트 1-1-1<br>두줄두줄두줄두줄두줄두줄</li>
+					<li>리스트 1-1-2</li>
+				</ul>
+			</li>
+			<li>리스트 1-2<br>두줄두줄두줄두줄두줄두줄</li>
+			<li>리스트 1-3</li>
+		</ul>
+	</li>
+	<li>리스트 2<br>두줄두줄두줄두줄두줄두줄</li>
+	<li>리스트 3<br>두줄두줄두줄<br>세줄세줄세줄세줄세줄</li>
+</ul>
+<br><br>
+<ul class="list-ty1">
+	<li>리스트 1-1</li>
+	<li>리스트 1-2</li>
+</ul>
+<br><br>
+<ul class="list-ty1 gray">
+	<li>리스트 1-1</li>
+	<li>리스트 1-2</li>
+</ul>
+<br><br>
+<ul class="list-ty2">
+	<li>리스트 2-1</li>
+	<li>리스트 2-2</li>
+</ul>
+<br><br>
+<ul class="list-ty3">
+	<li>리스트 3-1</li>
+	<li>리스트 3-2</li>
+</ul>
+<br><br>
+<dl class="list-ty4">
+	<dt>정의 1-1</dt>
+	<dd>정의내용 1-1</dd>
+	<dt>정의 1-2</dt>
+	<dd>정의내용 1-2</dd>
+	<dt>정의 1-3</dt>
+	<dd>정의내용 1-3</dd>
+</dl>
+<br><br>
+<ul class="list-ty5">
+	<li>리스트 5-1</li>
+	<li>리스트 5-2
+		<ul class="list-ty2">
+			<li>리스트 5-2 리스트 5-2 리스트 5-2</li>
+		</ul>
+	</li>
+</ul>
+<br><br>
+<ul class="list-cmt">
+	<li>주석 텍스트 입니다.</li>
+	<li>주석 텍스트 입니다. 주석 텍스트 입니다. 주석 텍스트 입니다. <br>주석 텍스트 입니다. 주석 텍스트 입니다.</li>
+</ul>
+<br><br>
+<p class="txt-cmt">한 줄 주석입니다. 나는 한 줄이야.</p>
+<br><br>
+<p class="txt-cmt ty2">한 줄 주석입니다. 나는 한 줄이야. input 밑 설명이 들어갈 경우 사용하는 듯</p>
+<br><br>
+<ul class="list-mark">
+	<li>텍스트 입니다.</li>
+	<li>텍스트 입니다. 텍스트 입니다. 텍스트 입니다. <br>텍스트 입니다. 텍스트 입니다.</li>
+</ul>
+			</xmp>
+		</div>
+
+	</div>
+	
+</div>
+    
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/common_ui.js"></script>
+<script src="../js/common_ui_2019.js"></script>
+
+</body>
+</html>

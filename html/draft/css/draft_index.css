@@ -1,0 +1,51 @@
+/* common Layout ============*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  letter-spacing: 0;
+}
+
+html {
+  height: 100%;
+}
+
+.index-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+}
+
+.side-header {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid gray;
+}
+
+.preview-wrap-phone {
+  width: calc(100% - 240px);
+  margin-left: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-frame {
+  position: relative;
+  width: 360px;
+  height: 680px;
+  margin-top: 80px;
+  border-radius: 40px;
+  border: 1px solid gray;
+  padding-top: 80px;
+}

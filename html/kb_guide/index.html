@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <div class="__container">
+        <div class="__nav">
+            <div class="__shortcut">
+                <a href="../listmap/index.html" class="__shortcut__link">리스트맵</a>
+                <span class="__shortcut__link -active">가이드</span>
+            </div>
+
+            <div class="__title"><span class="__title__brand">KB국민은행</span>기업 디지털금융<br />비대면 채널고도화<br /><div class="__title__sub">스타기업뱅킹</div></div>
+
+            <div class="__gnb">
+                <div class="__gnb__group">
+                    <div class="__gnb__title">퍼블리싱 가이드 <button type="button" class="__expand"></button></div>
+                    <div class="__gnb__list">
+                        <div class="__gnb__item -active"><a href="./html/pub_guide.html" target="iframe" class="__gnb__link">퍼블리싱 가이드</a></div>
+                    </div>
+                </div>
+
+                <div class="__gnb__group">
+                    <div class="__gnb__title">공통가이드<button type="button" class="__expand"></button></div>
+                    <div class="__gnb__list">
+                        <div class="__gnb__item"><a href="./html/layout.html" target="iframe" class="__gnb__link">레이아웃</a></div>
+                        <div class="__gnb__item"><a href="./html/font_title.html" target="iframe" class="__gnb__link">폰트/타이틀</a></div>                        
+                        <div class="__gnb__item"><a href="./html/box.html" target="iframe" class="__gnb__link">박스</a></div>
+                        <div class="__gnb__item"><a href="./html/button.html" target="iframe" class="__gnb__link">버튼/링크</a></div>
+                        <div class="__gnb__item"><a href="./html/step_tab.html" target="iframe" class="__gnb__link">스텝/탭</a></div>
+                        <div class="__gnb__item"><a href="./html/list.html" target="iframe" class="__gnb__link">리스트</a></div>
+                        <div class="__gnb__item"><a href="./html/data_list.html" target="iframe" class="__gnb__link">데이터 리스트</a></div>
+                        <div class="__gnb__item"><a href="./html/table.html" target="iframe" class="__gnb__link">테이블</a></div>
+                        <div class="__gnb__item"><a href="./html/form.html" target="iframe" class="__gnb__link">폼</a></div>         
+                        <div class="__gnb__item"><a href="./html/calendar.html" target="iframe" class="__gnb__link">달력</a></div>                        
+                        <div class="__gnb__item"><a href="./html/script.html" target="iframe" class="__gnb__link">스크립트</a></div>
+                        <div class="__gnb__item"><a href="./html/popup.html" target="iframe" class="__gnb__link">팝업</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="__frame">
+            <iframe src="./html/pub_guide.html" name="iframe" class="__iframe" frameBorder="0"></iframe>
+        </div>
+    </div>
+    
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        /* ----------------------------------------------------------------------------------------
+            RESPONSIVE NAV
+           ---------------------------------------------------------------------------------------- */
+
+        function responsiveNav() {
+            this.$nav = $('.__nav');
+
+            this.addEvent();
+        }
+
+        responsiveNav.prototype.addEvent = function() {
+            this.$nav.on('click', this.onClick);
+            this.$nav.on('mouseleave', this.onMouseleave);
+        };
+
+        responsiveNav.prototype.onClick = function(e) {
+            $(e.currentTarget).addClass('-active');
+        };
+        responsiveNav.prototype.onMouseleave = function(e) {
+            $(e.currentTarget).removeClass('-active');
+        };
+
+        new responsiveNav();
+
+        /* ----------------------------------------------------------------------------------------
+            TOGGLE NAV
+           ---------------------------------------------------------------------------------------- */
+
+        function toggleNav() {
+            this.$button = $('.__expand');
+
+            this.addEvent();
+        }
+
+        toggleNav.prototype.addEvent = function() {
+            this.$button.on('click', this.onClick);
+        };
+
+        toggleNav.prototype.onClick = function(e) {
+            $(this).parents('.__gnb__group').toggleClass('-fold');
+
+            e.preventDefault();
+        };
+
+        new toggleNav();
+
+        /* ----------------------------------------------------------------------------------------
+            GNB
+           ---------------------------------------------------------------------------------------- */
+
+        $('.__iframe').attr('src', $('.__gnb .-active').children().attr('href'));
+
+        $('.__gnb__link').bind('click', function(e) {
+            $('.__gnb__link').each(function(index, element) {
+                if($(element).parent().hasClass('-active')) {
+                    $(element).parent().removeClass('-active');
+                }
+
+                $(e.currentTarget).parent().addClass('-active');
+            });
+        });
+    </script>
+</script>
+</body>
+</html>

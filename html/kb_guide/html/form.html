@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+<body>
+
+<div id="wrap" class="__guide">
+
+	<div class="__aside">
+		<div class="__component-name">폼</div>
+		<div class="__p"><span class="__highlight">&lt;label&gt; for 와 &lt;input&gt; id 는 동일</span>해야 합니다. &lt;label&gt;를 사용하지 않을 경우 &lt;input&gt;에 <span class="__highlight">title 속성을 추가</span>해야 합니다.</div>
+	</div>
+
+	<div id="contents" class="__contents u-2019">		
+        <div class="__h1">텍스트필드</div>		
+		<div class="__h2">기본</div>				
+		<div class="__p">각 형태에 맞는 type을 사용해야 합니다.<br />ex) 숫자 : type="tel", 이메일 : type="email"</div>
+		
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>list-form</td>
+					<td>폼 리스트일 경우 리스트를 해당 클래스 &lt;div&gt;로 감싸야 합니다.</td>
+				</tr>
+				<tr>
+					<td>ipt-wrap</td>
+					<td>textfield 감싸는 클래스</td>
+				</tr>
+				<tr>
+					<td>ipt</td>
+					<td>textfield 기본 클래스</td>
+				</tr>
+				<tr>
+					<td>btn-clear</td>
+					<td>입력 내용 초기화 버튼(X)</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<div class="list-form">
+	<div class="ipt-wrap">
+		<input type="text" id="" name="" class="ipt" value="" maxlength="" title="필드 제목" placeholder="필드 내용" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+
+	<label for="ipt1" class="tit">유형 2. Readonly</label>
+	<div class="ipt-wrap">
+		<input type="text" id="ipt1" name="" class="ipt" value="Readonly" maxlength="" readonly="readonly" placeholder="필드 내용" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+
+	<label for="ipt2" class="tit">유형 3. Disabled</label>
+	<div class="ipt-wrap">
+		<input type="text" id="ipt2" name="" class="ipt" value="Disabled" maxlength="" disabled="disabled" placeholder="필드 내용" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+</div>
+			</xmp>
+		</div>
+
+		<div class="__h2">타이틀 + 텍스트 필드</div>
+		<div class="__preview">
+			<xmp class="__code">
+<label for="ipt3" class="tit">유형 4. 타이틀 + 텍스트 필드<span class="txt-required">필수 항목</span></label>
+<div class="ipt-wrap">
+	<input type="text" id="ipt3" name="" class="ipt" value="" maxlength="" placeholder="필드 내용" />
+	<button type="button" class="btn-clear">입력내용 초기화</button>
+</div>
+
+<div class="ipt-wrap">
+	<input type="text" id="" name="" class="ipt" value="" maxlength="" title="필드 제목" placeholder="필드 내용" />
+	<button type="button" class="btn-clear">입력내용 초기화</button>
+</div>
+			</xmp>
+		</div>
+
+		<div class="__h2">금액</div>
+		<div class="__preview">
+			<xmp class="__code">
+<em class="tit">유형 5. 금액</em>
+<div class="btns-flex">															
+	<button type="button" class="btn-ty3 lv4">전액</button>
+	<button type="button" class="btn-ty3 lv4">+1000만</button>					
+	<button type="button" class="btn-ty3 lv4">+100만</button>					
+	<button type="button" class="btn-ty3 lv4">+50만</button>
+	<button type="button" class="btn-ty3 lv4">+10만</button>
+	<button type="button" class="btn-ty3 lv4">+5만</button>					
+</div>
+<div class="ipt-wrap price">
+	<input type="tel" id="" name="" class="ipt" value="" maxlength="" title="이체금액" placeholder="필드 내용" />
+	<button type="button" class="btn-clear">입력내용 초기화</button>
+	<span class="txt-won">원</span>
+</div>
+<input type="text" id="" name="" value="300만원" class="ipt-transfer" title="한글금액" readonly="readonly" aria-hidden="true" />
+			</xmp>
+		</div>	
+
+		<div class="__h2">날짜조회</div>
+		<div class="__preview">
+			<xmp class="__code">
+<em class="tit">유형 5. 날짜조회</em>
+<div class="btns-flex">
+	<button type="button" class="btn-ty3 lv4">당일</button>
+	<button type="button" class="btn-ty3 lv4">1주일</button>
+	<button type="button" class="btn-ty3 lv4">1개월</button>
+	<button type="button" class="btn-ty3 lv4">3개월</button>
+	<button type="button" class="btn-ty3 lv4">6개월</button>
+</div>
+<div class="form-wrap col-2">
+	<!-- 개발용 --
+	<div id="id_calendar1" class="ipt-wrap calendar"></div>
+	--// 개발용 -->
+	<div id="id_calendar1" class="ipt-wrap calendar">
+		<input type="tel" class="in_w33" name="" id="" value="2019.06.19" title="날짜 입력">
+		<a href="#none" id="" class="btn_calendar"><span id="startdate_cal-btn">날짜 입력달력</span></a>
+	</div>
+	<span class="bar">-</span>
+	<!-- 개발용 --
+	<div id="id_calendar2" class="ipt-wrap calendar"></div>
+	--// 개발용 -->
+	<div id="id_calendar2" class="ipt-wrap calendar">
+		<input type="tel" class="in_w33" name="" id="" value="2019.06.19" title="날짜 입력">
+		<a href="#none" id="" class="btn_calendar"><span id="startdate_cal-btn">날짜 입력달력</span></a>
+	</div>
+</div>
+
+<!-- 개발용 --
+<div id="id_calendar1" class="ipt-wrap calendar"></div>
+--// 개발용 -->
+<div id="id_calendar1" class="ipt-wrap calendar">
+	<input type="tel" class="in_w33" name="" id="" value="2019.06.19" title="날짜 입력">
+	<a href="#none" id="" class="btn_calendar"><span id="startdate_cal-btn">날짜 입력달력</span></a>
+</div>
+			</xmp>
+		</div>	
+
+		<div class="__h2">분할</div>
+		<div class="__preview">
+			<xmp class="__code">
+<label for="ipt_jumin1" class="tit">주민등록번호</label>
+<div class="form-wrap col-2">
+	<div class="ipt-wrap">
+		<input type="tel" id="ipt_jumin1" name="" class="ipt" value="" maxlength="6" placeholder="앞 6자리" title="주민등록번호 앞 6자리" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+	<span class="bar" aria-hidden="true">-</span>
+	<div class="ipt-wrap">
+		<input type="tel" id="" name="" class="ipt" value="" maxlength="7" placeholder="뒤 7자리" title="주민등록번호 뒤 7자리" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+</div>
+
+<em class="tit">사업자등록번호</em>
+<div class="form-wrap col-3">
+	<div class="ipt-wrap">
+		<input type="tel" id="" name="" class="ipt" value="" maxlength="3" placeholder="3자리" title="사업자등록번호 앞 3자리" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+	<span class="bar" aria-hidden="true">-</span>
+	<div class="ipt-wrap">
+		<input type="tel" id="" name="" class="ipt" value="" maxlength="2" placeholder="2자리" title="사업자등록번호 중간 2자리" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+	<span class="bar" aria-hidden="true">-</span>
+	<div class="ipt-wrap">
+		<input type="tel" id="" name="" class="ipt" value="" maxlength="5" placeholder="5자리" title="사업자등록번호 뒤 5자리" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+</div>
+
+<em class="tit">이메일</em>
+<div class="form-wrap col-2">
+	<div class="ipt-wrap">
+		<input type="email" id="" name="" class="ipt" value="" maxlength="" placeholder="" title="이메일 아이디" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+	<span class="at">@</span>
+	<div class="ipt-wrap">
+		<input type="email" id="" name="" class="ipt" value="" maxlength="" placeholder="" title="이메일 도메인" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+</div>
+<div class="sel-wrap">
+	<select id="" class="sel" title="이메일 도메인 선택">
+		<option value=""></option>
+	</select>
+</div>
+
+<label for="ipt-addr" class="tit">주소</label>
+<div class="form-wrap col-post">
+	<div class="ipt-wrap">
+		<input type="tel" id="ipt-addr" name="" class="ipt" value="" maxlength="3" placeholder="" title="우편번호 앞자리" readonly="readonly" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+	</div>
+	<span class="bar" aria-hidden="true">-</span>
+	<div class="ipt-wrap">
+		<input type="tel" id="" name="" class="ipt" value="" maxlength="3" placeholder="" title="우편번호 뒷자리" readonly="readonly" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>						
+	</div>
+	<button type="button" class="btn-ty2 lv3">우편번호검색</button>
+	<!--
+	<button type="button" class="btn-ty1 lv3">초기화</button>
+	-->
+</div>
+<div class="ipt-wrap">
+	<input type="email" id="" name="" class="ipt" value="" maxlength="" placeholder="" title="주소" readonly="readonly" />
+	<button type="text" class="btn-clear">입력내용 초기화</button>
+</div>
+<div class="ipt-wrap">
+	<input type="text" id="" name="" class="ipt" value="" maxlength="" placeholder="" title="상세 주소" />
+	<button type="button" class="btn-clear">입력내용 초기화</button>
+</div>
+
+<label for="" class="tit">비밀번호</label>
+<div class="form-wrap">
+	<div class="ipt-wrap btns">
+		<input type="tel" id="" name="" class="ipt" value="" maxlength="" placeholder="숫자 4자리" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+		<button type="button" class="btn-ty2 lv3">확인</button>
+	</div>
+</div>
+			</xmp>
+		</div>	
+
+		<div class="__h2">텍스트필드 + 메시지</div>
+		<div class="__preview">
+			<xmp class="__code">
+<label for="ipt4" class="tit">유형 6. 오류 메시지 알림</label>
+<div class="ipt-wrap">
+	<input type="text" id="ipt4" name="" class="ipt" value="" maxlength="" placeholder="필드 내용" />
+	<button type="button" class="btn-clear">입력내용 초기화</button>
+</div>
+<span class="txt-msg">정상 텍스트 메시지</span>
+<span class="txt-msg error">오류 텍스트 메시지</span>
+			</xmp>
+		</div>
+
+		<div class="__h2">휴대폰 본인인증</div>
+		<div class="__preview">
+			<xmp class="__code">
+<div class="list-form">
+	<label for="lb_agent" class="tit">통신사</label>
+	<div class="sel-wrap">
+		<select id="lb_agent" class="sel">						
+			<option value="" selected="selected">SKT</option>
+			<option value="">KT</option>
+			<option value="">LG U+</option>
+			<option value="">SKT알뜰폰</option>
+			<option value="">KT알뜰폰</option>
+			<option value="">LG U+알뜰폰</option>
+		</select>
+	</div>
+
+	<label for="ipt_phone" class="tit">휴대폰 번호</label>	
+	<div class="form-wrap">
+		<div class="ipt-wrap btns ty2">
+			<input type="tel" id="ipt_phone" name="" class="ipt" value="" maxlength="" placeholder="휴대폰 번호 입력" />
+			<button type="button" class="btn-clear">입력내용 초기화</button>
+			<button type="button" class="btn-ty2 lv3">인증번호 요청</button>
+			<!-- 인증번호 요청 버튼 클릭 시
+			<button type="button" class="btn-ty2 lv3">인증번호 재요청</button>
+			-->
+		</div>
+	</div>
+
+	<label for="lb_auth" class="tit">인증번호</label>							
+	<div class="ipt-wrap auth-timer">
+		<input type="tel" id="lb_auth" name="" class="ipt" value="" maxlength="6" placeholder="숫자 6자리 입력" />
+		<button type="button" class="btn-clear">입력내용 초기화</button>
+		<span class="timer">5:00</span>
+	</div>
+	<span class="txt-msg">인증에 성공했습니다.</span>
+	<span class="txt-msg error">인증에 실패했습니다. 인증번호를 재요청하여 다시 인증해주세요.</span>
+
+	<div class="btn-area full"><button type="button" class="btn-ty2 lv2">인증확인</button></div>
+	<!-- 인증 완료
+	<div class="btn-area full"><button type="button" class="btn-ty2 lv2">인증확인 완료</button></div>
+	-->
+</div>
+			</xmp>
+		</div>
+		
+		
+        
+        <div class="__h1">체크박스</div>	        
+        <div class="__p">분할/복합 리스트는 데이터 리스트 참고</div>
+        
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>chk</td>
+					<td>체크박스 기본 클래스</td>
+				</tr>
+			</tbody>
+		</table>
+        	
+		<div class="__preview">
+			<xmp class="__code">
+<ul class="list">
+    <li><input type="checkbox" id="chk1" name="" value="" class="chk" /><label for="chk1">체크박스 Default</label></li>
+    <li><input type="checkbox" id="chk2" name="" value="" class="chk" checked="checked" /><label for="chk2">체크박스 Check</label></li>
+    <li><input type="checkbox" id="chk3" name="" value="" class="chk" disabled="disabled" /><label for="chk3">체크박스 Disabled</label></li>
+    <li><input type="checkbox" id="chk4" name="" value="" class="chk" disabled="disabled" checked="checked" /><label for="chk4">체크박스 Disabled Check</label></li>
+</ul>
+			</xmp>
+        </div>
+        
+        <div class="__h1">라디오버튼</div>			
+        <div class="__p">분할/복합 리스트는 데이터 리스트 참고</div>
+
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>rdo</td>
+					<td>라디오버튼 기본 클래스</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="__preview">
+			<xmp class="__code">
+<ul class="list">
+    <li><input type="radio" id="rdo1" name="rdo1" value="" class="rdo" /><label for="rdo1">라디오 Default</label></li>
+    <li><input type="radio" id="rdo2" name="rdo1" value="" class="rdo" checked="checked" /><label for="rdo2">라디오 Select</label></li>
+    <li><input type="radio" id="rdo3" name="rdo1" value="" class="rdo" disabled="disabled" /><label for="rdo3">라디오 Disabled</label></li>
+    <li><input type="radio" id="rdo4" name="rdo1" value="" class="rdo" disabled="disabled" checked="checked" /><label for="rdo4">라디오 Disabled Select</label></li>
+</ul>
+			</xmp>
+		</div>
+        
+        <div class="__h1">셀렉트박스</div>			
+        
+		<table class="__table">
+            <colgroup>
+                <col style="width: 20%" />
+                <col style="width: 80%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">클래스</th>
+                    <th scope="col">설명</th>
+                </tr>  
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sel-wrap</td>
+                    <td>셀렉트박스 감싸는 클래스</td>
+                </tr>
+                <tr>
+                    <td>sel</td>
+                    <td>셀렉트박스 기본 클래스</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="__preview">
+            <xmp class="__code">
+<label for="sel1" class="tit">예약이체시간</label>
+<div class="sel-wrap">
+    <select id="sel1" class="sel">
+        <option value="">01:00</option>
+        <option value="">02:00</option>
+        <option value="">03:00</option>
+    </select>
+</div>
+
+<div class="sel-wrap">
+    <select class="sel" readonly="readonly" title="예약이체시간">
+        <option value="">Readonly</option>
+        <option value="">02:00</option>
+        <option value="">03:00</option>
+    </select>
+</div>
+
+<div class="sel-wrap">
+    <select class="sel" disabled="disabled" title="예약이체시간">
+        <option value="">Disabled</option>
+        <option value="">02:00</option>
+        <option value="">03:00</option>
+    </select>
+</div>
+            </xmp>
+        </div>
+    </div>
+</div>
+    
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/common_ui.js"></script>
+<script src="../js/common_ui_2019.js"></script>
+
+</body>
+</html>

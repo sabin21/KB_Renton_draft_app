@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <!-- FACEBOOK 공통 메타 START -->
+    <meta property="og:title" content="렌트온">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="렌트온">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <!--  meta http-equiv="Cache-Control" content="no-cache; no-store; no-save" -->
+    <!-- FACEBOOK 공통 메타 END -->
+    <title>렌트온</title>
+
+    <link rel="stylesheet" type="text/css" href="../../lib/css/style_guide.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common_2019_new.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common_2021.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content_2021.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content_renton_2022.css">
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script type="text/javascript" src="../../lib/js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="../../lib/js/scripts.js"></script>
+    <script type="text/javascript" src="../../lib/js/common_ui.js"></script>
+    <script type="text/javascript" src="../../lib/js/common_ui_2019.js"></script>
+</head>
+<body>
+    <!-- s:header -->
+    <header id="headerWrap">
+    </header>
+    <!-- //e:header -->
+    <!-- s:wrap -->
+    <div id="wrap">
+        <div id="contents" class="u-2019 u-2021 u-bizcontent renton">
+            <div class="fixed-wrap">
+                <div class="sg-tit">
+                    <h1>Design Style Guide</h1>
+                    <span>렌트온 <span class="divide"></span> 인스팟</span>
+                </div>
+                <div class="global-tab of-hi mt30">
+                    <ul class="nav nav-tabs of-hi">
+                        <li class="active"><a href="#basic">basic</a></li>
+                        <li><a href="#html">html</a></li>
+                        <li><a href="#colors">colors</a></li>
+                        <li><a href="#typography">typography</a></li>
+                        <li><a href="#button">button</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2 id="basic" class="sg-h2">basic</h2>
+            <h3 class="sg-h3">CSS 파일 네이밍</h3>
+            <dl class="mb16">
+                <dt>default.css</dt>
+                <dd>모든 요소의 공통적인 스타일을 정의</dd>
+                <dt>main.css</dt>
+                <dd>메인 페이지의 스타일을 정의</dd>
+                <dt>layout.css</dt>
+                <dd>서브 페이지 공통 레이아웃 스타일을 정의</dd>
+                <dt>content.css</dt>
+                <dd>서브 페이지 내의 콘텐츠 영역의 특정 스타일을 정의</dd>
+                <dt>print.css</dt>
+                <dd>프린트 페이지 스타일을 정의</dd>
+            </dl>
+            <h3 class="sg-h3">ID, Class 네이밍 기본 규칙</h3>
+            <ul class="mb16">
+                <li><u>ID는 카멜 케이스(ex: headerWrap) 규칙을 기본으로 사용한다.</u></li>
+                <li><u>Class는 하이픈(-)을 사용한다. (ex: btn-circle)</u></li>
+                <li>영문, 숫자만 사용할 수 있다.</li>
+                <li>활성활 상태를 나타낼 경우 Class이름을 active로 사용한다.</li>
+            </ul>
+            <h3 class="sg-h3">이미지 네이밍</h3>
+            <ul class="mb16">
+                <li>이미지 예약어는 네이밍 규칙에 근거하여 작성한다.</li>
+                <li>같은 분류의 이미지가 두 개 이상이면 파일 이름 마지막에 숫자를 추가하여 구분한다.</li>
+                <li>이미지 네이밍을 확장해야 할 때는 이미지 네이밍 조합 규칙을 준수한다.</li>
+                <li>의미를 잘 살린 이미지의 naming은 이미지를 보지 않아도 대강의 의미를 알 수 있다.</li>
+                <li>이는 규모가 큰 프로젝트일 경우 다수의 작업자들이 중복된 이미지를 저장하는 것에 대한 예방을 목적으로 한다.</li>
+            </ul>
+            <h3 class="sg-h3">이미지 네이밍 예약어</h3>
+            <div class="paragraph-wrap mb24">
+                <table width="100%" class="table">
+                    <caption></caption>
+                    <colgroup>
+                        <col width="50%">
+                        <col width="*">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">예약어</th>
+                            <th scope="col" class="text-center">분류</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="correct">tit_</td>
+                            <td>제목</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">gnb_, lnb_, snb_</td>
+                            <td>네비게이션</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">tab_</td>
+                            <td>탭 메뉴</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">btn_</td>
+                            <td>버튼</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">bull_</td>
+                            <td>불릿</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">icon_</td>
+                            <td>아이콘</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">bg_</td>
+                            <td>배경 이미지</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">img_</td>
+                            <td>일반 이미지</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">active</td>
+                            <td>상태 변화</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">temp_</td>
+                            <td>임시 이미지</td>
+                        </tr>
+                        <tr>
+                            <td class="correct">desc_, txt_, stxt_</td>
+                            <td>텍스트 이미지</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="sg-h3">Cross Browser 검사</h3>
+            <div class="paragraph-wrap mb16">
+                <table width="100%" class="table">
+                    <caption></caption>
+                    <colgroup>
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">IE</th>
+                            <th scope="col" class="text-center">FireFox</th>
+                            <th scope="col" class="text-center">Chrome</th>
+                            <th scope="col" class="text-center">Safari</th>
+                            <th scope="col" class="text-center">Opera</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10/11/12</td>
+                            <td>최신버전</td>
+                            <td>최신버전</td>
+                            <td>최신버전</td>
+                            <td>최신버전</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="mb24">
+                <li>ie8.0 - 인스팟내에 있는 ie8.0 TestPC 이용 또는 아래 방법 이용</li>
+                <li>ie8.0 ~ ie11.0 - 메뉴 &gt; 도구 &gt; 개발자 도구 / F12키로 활성화</li>
+                <li>Firefox - Firebug (메뉴 &gt; 도구 &gt; 부가기능 &gt; Firebug 다운로드) 웹페이지에서 우클릭 후 요소검사 / F12키로 활성화</li>
+                <li>Safari - 메뉴 &gt; 페이지 &gt; 개발자용 &gt; 웹속성 보기 / 웹페이지에서 우클릭 후 구성 요소 점검</li>
+                <li>Chrome - 웹페이지에서 우클릭 후 요소검사 / F12키로 활성화</li>
+            </ul>
+            <hr  class="dashed">
+            <h2 class="sg-h2" id="html">html</h2>
+            <ul class="mb24">
+                <li class="mb16">
+                    전체적인 마크업은 HTML5 을 기본으로 한다.
+                </li>
+                <li class="mb16">
+                    inline 스타일(&lt; div style="....." &gt; )은 되도록이면 자제
+                    <p class="guide_box">
+                        &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+                    </p>
+                </li>
+                <li class="mb16">
+                    의미에 맞는 구조 설계 (Semantic Markup)
+                    <p class="guide_box">
+                        Table 레이아웃을 배제하며 의미있는 구조의 태그를 사용합니다.<br>
+                        &lt;h1&gt;(머릿말), &lt;p&gt;(문단), &lt;ul&gt;(목록), &lt;dl&gt;(용어 정의 목록)
+                    </p>
+                </li>
+                <li class="mb16">
+                    종료 태그 표기
+                    <p class="guide_box">
+                        HTML은 종료태그가 없는 것을 허용하였으나 XHTML은 반드시 종료태그를 갖습니다.<br>
+                        HTML은 태그의 중첩이 잘못된 것을 허용하였으나 XHTML은 잘못된 중첩을 허용하지 않습니다.<br>
+                        &lt;/p&gt; &lt;input /&gt; &lt;img /&gt;
+                    </p>
+                </li>
+                <li class="mb16">
+                    요소와 속성은 소문자로 표기
+                    <p class="guide_box">
+                        HTML은 요소와 속성에 대소문자를 함께 사용하는 것을 허용하였으나 XHTML의 마크업 '요소'와 '속성'들은 반드시 소문자로 표기되어야 합니다. 단, 속성의 '값'에는 대소문자 혼합 표기가 가능합니다. 하지만 대소문자를 명확하게 구분하기 때문에 대문자로 구성된 '값'과 소문자로 구성된 '값'은 동일하지 않고 확실히 구별됩니다.
+                    </p>
+                </li>
+                <li class="mb16">
+                    속성값은 따옴표로 감싸서 표기
+                    <p class="guide_box">
+                        HTML의 경우 속성 값들을 따옴표로 감싸지 않는 것을 허용하였지만 XHTML 에서는 반드시 속성 "값"은 따옴표 안에 있어야 합니다.
+                    </p>
+                </li>
+                <li class="mb16">
+                    특수문자는 Entity 코드로 변환
+                    <p class="guide_box">
+                        " (&amp;quot;), &amp;(&amp;amp;), &lt;(&amp;lt;), &gt;(&amp;gt;)
+                    </p>
+                </li>
+                <li class="mb16">
+                    모든 이미지와 이미지 맵에는 alt, title 속성을 부여해 주어 해당 이미지와 컨텐츠의 의미를 반영
+                    <p class="guide_box">
+                        &lt;img class="pic" src="../../../../images/mokpo/kr/common/ic_new.gif" alt="new" /&gt;
+                    </p>
+                </li>
+                <li class="mb16">
+                    0을 제외한 모든 값들은 단위를 표기
+                    <p class="guide_box">
+                        width="0" height="150px"
+                    </p>
+                </li>
+                <li class="mb16">
+                    Html 주석 가이드
+                    <p class="guide_box">
+                        그룹화하는 시작과 끝에 삽입하며 주석과 관련된 버그를 피하기 위하여 주석 기호와 코멘트 사이에는 빈 공간을 두어야 합니다.<br>
+                        &lt;!-- s:주석시작 --&gt; <br>
+                        &lt;!-- //e:주석끝 --&gt;
+                    </p>
+                </li>
+            </ul>
+            <hr  class="dashed">
+            <h2 id="colors">colors</h2>
+            <h3 class="sg-h3">Font colors</h3>
+            <!-- .color에 색상 코드 ex)#F9F9F9만 입력 -->
+            <div class="paragraph-wrap">
+                <div class="grid3 mb16">
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#232E54</p>
+                    </div>
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#D7AA68</p>
+                    </div>
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#839AB7</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="sg-h3">Bg colors</h3>
+            <div class="paragraph-wrap">
+                <div class="grid3 mb8">
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#232E54</p>
+                    </div>
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#D7AA68</p>
+                    </div>
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#839AB7</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="sg-h3">Base colors</h3>
+            <div class="paragraph-wrap">
+                <p class="mb5">본문, 테이블 등에 사용하는 기본색 </p>
+                <div class="grid3 mb8">
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#222222</p>
+                    </div>
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#444444</p>
+                    </div>
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#666666</p>
+                    </div>
+                </div>
+                <div class="grid3 mb8">
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#888888</p>
+                    </div>
+                </div>
+                <div class="grid3 mb16">
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#cccccc</p>
+                    </div>
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#F0F0F0</p>
+                    </div>
+                    <div>
+                        <p class="color-square"></p>
+                        <p class="color">#F6F6F6</p>
+                    </div>
+                </div>
+            </div>
+            <hr  class="dashed">
+            <h2 class="sg-h2" id="typography">Typography</h2>
+            <h3 class="sg-h3">Body 기본설정</h3>
+            <ul class="mb16">
+                <li>폰트 2가지 내외사용 권장 (※ 필요시에 따라 지정해서 써주세요.)</li>
+                <li>SpocaNeo를 기본으로며 특수 영문의 경우 albertus를 사용</li>
+                <li>기본폰트 : font-family: SpocaNeo;</li>
+            </ul>
+            <!-- css에서 typo1~ 변경하여 사용 -->
+            <!-- <div class="paragraph-wrap mb16">
+                <div class="mb8">
+                    <p class="font48">동해물과 백두산이 마르고 닳도록</p>
+                    <p class="detail">
+                        <span class="typo-style"></span><br>
+                        <span class="typo-size"></span><br>
+                        <span class="typo-lh"></span><br>
+                        <span class="typo-ls"></span>
+                    </p>
+                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font48"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                </div>
+                <div class="mb8">
+                    <p class="font42">동해물과 백두산이 마르고 닳도록</p>
+                    <p class="detail">
+                        <span class="typo-style"></span><br>
+                        <span class="typo-size"></span><br>
+                        <span class="typo-lh"></span><br>
+                        <span class="typo-ls"></span>
+                    </p>
+                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font42"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                </div>
+                <div class="mb8">
+                <p class="font36">동해물과 백두산이 마르고 닳도록</p>
+                <p class="detail">
+                    <span class="typo-style"></span><br>
+                    <span class="typo-size"></span><br>
+                    <span class="typo-lh"></span><br>
+                    <span class="typo-ls"></span>
+                </p>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font36"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            </div>
+            <div class="mb8">
+                <p class="font28">동해물과 백두산이 마르고 닳도록</p>
+                <p class="detail">
+                    <span class="typo-style"></span><br>
+                    <span class="typo-size"></span><br>
+                    <span class="typo-lh"></span><br>
+                    <span class="typo-ls"></span>
+                </p>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font28"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            </div>
+            <div class="mb8">
+                <p class="font24">동해물과 백두산이 마르고 닳도록</p>
+                <p class="detail">
+                    <span class="typo-style"></span><br>
+                    <span class="typo-size"></span><br>
+                    <span class="typo-lh"></span><br>
+                    <span class="typo-ls"></span>
+                </p>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font24"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            </div>
+            <div class="mb8">
+                <p class="font20">동해물과 백두산이 마르고 닳도록</p>
+                <p class="detail">
+                    <span class="typo-style"></span><br>
+                    <span class="typo-size"></span><br>
+                    <span class="typo-lh"></span><br>
+                    <span class="typo-ls"></span>
+                </p>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font20"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            </div>
+            <div class="mb8">
+                <p class="font18">동해물과 백두산이 마르고 닳도록</p>
+                <p class="detail">
+                    <span class="typo-style"></span><br>
+                    <span class="typo-size"></span><br>
+                    <span class="typo-lh"></span><br>
+                    <span class="typo-ls"></span>
+                </p>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font18"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            </div>
+            <div class="mb8">
+                <p class="font16">동해물과 백두산이 마르고 닳도록</p>
+                <p class="detail">
+                    <span class="typo-style"></span><br>
+                    <span class="typo-size"></span><br>
+                    <span class="typo-lh"></span><br>
+                    <span class="typo-ls"></span>
+                </p>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font16"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            </div>
+            <div class="mb8">
+                <p class="font14">동해물과 백두산이 마르고 닳도록</p>
+                <p class="detail">
+                    <span class="typo-style"></span><br>
+                    <span class="typo-size"></span><br>
+                    <span class="typo-lh"></span><br>
+                    <span class="typo-ls"></span>
+                </p>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">p</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"font14"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>동해물과&nbsp;백두산이&nbsp;마르고&nbsp;닳도록<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">p</span><span style="color:#f0f0f0">&gt;</span></div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            </div> -->
+        <!-- </div> -->
+            <hr  class="dashed">
+            <h2 class="sg-h2" id="button">button</h2>
+            <h3 class="sg-h3">접근성 주의사항</h3>
+            <ul class="mb16">
+                <li>URL를 ‘연결‘하기 위한 버튼으로서 &lt;a href="#url"&gt; 형식으로 마크업하며 a 태그에는 반드시 href 속성을 넣어준다.(부득이하게 onclick 등으로 작동될 경우 웹접근성을 위해 href="#의미" 로 작성)</li>
+                <li>href 속성이 없거나 href="" 일 경우 스크린리더가 버튼으로 인식 못함.</li>
+                <li>새창이 열리는 버튼일 경우 웹접근성 작업으로 title="새창열림" 을 반드시 넣어준다.</li>
+                <li>URL를 연결하지 않고 단순하게 사용자 인터페이스만를 ‘조작‘하기 위한 버튼으로서 &lt;button type="button"&gt; 엘리먼트로 마크업 합니다.  type을 명시하지 않으면 어떤 브라우저는 Form Submit 기능을 실행하기 때문에 반드시 type 속성을 button으로 지정해 주어야 합니다.</li>
+            </ul>
+            <h3 class="sg-h3" class="mb8">Basic button</h3>
+            <div class="paragraph-wrap mb16">
+                <div class="mb20">
+                    <div class="btn-area full ty1"> <!-- fixed 추가 -->
+                        <button type="button" class="btn-ty1">다음</button>
+                    </div>
+                </div>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"btn-area&nbsp;full&nbsp;fixed&nbsp;ty1"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"button"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"btn-ty1"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>다음<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4f;text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            
+                <div class="mb20">
+                    <div class="btn-area full ty1"> 
+                        <button type="button" class="btn-ty3">이전</button>
+                        <button type="button" class="btn-ty1 disabled" disabled>다음</button>
+                    </div>
+                </div>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"btn-area&nbsp;full&nbsp;fixed&nbsp;ty1"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"button"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"btn-ty3"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>이전<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"button"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"btn-ty1 disabled"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">disabled</span><span style="color:#f0f0f0">&gt;</span>다음<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4f;text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>  
+            </div> 
+            <hr  class="dashed">
+            <h2 class="sg-h2" id="Data-Entry">Data Entry</h2>
+            <h3 class="sg-h3">접근성 주의사항</h3>
+            <ul class="mb16">
+                <li>label은 눈에 보이지 않게 제공할 수 있고, 폼 콘트롤 요소에 title로도 제공 가능함. label의 for와 input의 id 일치</li>
+                <li>매칭할 대체 텍스트가 있는 경우에는 반드시 label을 제공해야 함</li>
+                <li>매칭할 대체 텍스트가 없는 경우 input에 title 제공</li>
+            </ul>
+            <h3 class="sg-h3">Input</h3>
+            <div class="paragraph-wrap mb16">
+                <div class="mb20">
+                    <div class="list-form"><!-- 2022.02.25 .space-ty4 수정 -->
+                        <label for="ipt_name" class="tit pt10">성명</label>
+                        <div class="ipt-wrap">
+                            <input type="text" id="ipt_name" name="" class="ipt" value="" maxlength="10" placeholder="예) 김국민" autocomplete="off"/ onchange="javascript:nameChage();"  data-quics='{"get":"성명"}'>
+                            <button type="button" class="btn-clear">입력내용 초기화</button>					
+                        </div>
+                        <span class="txt-cmt">이름이 정확하지 않을 경우, 명세서를 다시 작성해야해요</span><!-- 2022.02.25 위치 변경 -->
+                    </div>
+                </div>
+                <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div><div style="line-height:130%">8</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"list-form"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#999999"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">label</span>&nbsp;<span style="color:#a8ff58">for</span>=<span style="color:#ffd500">"ipt_name"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"tit&nbsp;pt10"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>성명<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">label</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"ipt-wrap"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">input</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"text"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">id</span>=<span style="color:#ffd500">"ipt_name"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"ipt"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">maxlength</span>=<span style="color:#ffd500">"10"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">placeholder</span>=<span style="color:#ffd500">"예)&nbsp;김국민"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">autocomplete</span>=<span style="color:#ffd500">"off"</span><span style="color:#a8ff58">/</span>&nbsp;<span style="color:#a8ff58">onchange</span>=<span style="color:#ffd500">"javascript:nameChage();"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">data-quics</span>=<span style="color:#ffd500">'{"get":"성명"}'</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">button</span>&nbsp;<span style="color:#a8ff58">type</span>=<span style="color:#ffd500">"button"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"btn-clear"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>입력내용&nbsp;초기화<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">button</span><span style="color:#f0f0f0">&gt;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">span</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"txt-cmt"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>이름이&nbsp;정확하지&nbsp;않을&nbsp;경우,&nbsp;명세서를&nbsp;다시&nbsp;작성해야해요<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">span</span><span style="color:#f0f0f0">&gt;</span><span style="color:#999999"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4f;text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                <hr  class="dashed">
+                <h2 class="sg-h2" id="Data-Entry">Data Entry</h2>
+                <h3 class="sg-h3">Input</h3>
+                <div class="paragraph-wrap mb16">
+                    <div class="mb20">
+                        <div class="sel-wrap">
+                            <select class="select" name="" id="">
+                                <option value="옵션1">옵션1</option>
+                                <option value="옵션1">옵션1</option>
+                                <option value="옵션1">옵션1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"sel-wrap"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">select</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"select"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">name</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">id</span>=<span style="color:#ffd500">""</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"옵션1"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>옵션1<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"옵션1"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>옵션1<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">option</span>&nbsp;<span style="color:#a8ff58">value</span>=<span style="color:#ffd500">"옵션1"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>옵션1<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">option</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">select</span><span style="color:#f0f0f0">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4ftext-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                </div>
+                <hr  class="dashed">
+                <h3 class="sg-h3">바텀시트</h3>
+                <div class="paragraph-wrap mb16">
+                    <div class="" data-quics='{"visiable":"servicedata.showOtherMenuYn==\"Y\""}'>
+                        <button type="button" rel="#bs2" class="btn-setting bspop">관리</button>
+                    </div>
+
+                        <div id="bs2" class="bswrap">
+                        <div class="bs-inner">
+                            <h2 class="bs-tit" tabindex="-1">관리</h2>
+                            <button type="button" class="btn-close close" name="a1">닫기</button>
+                            <div class="bs-contents pt10 mlm16">
+                                <ul class="bs-menu-list">
+                                    <li><a href="#" onclick="javascript:openPopAccChange('1','01');return false;">예금 계좌 순서변경</a></li>
+                                    <li><a href="#" onclick="javascript:openPopAccChange('1','04');return false;">대출 계좌 순서변경</a></li>
+                                    <li><a href="#" onclick="javascript:openPopAccChange('1','02');return false;">펀드 계좌 순서변경</a></li>
+                                    <li data-quics='{"visiable":"servicedata.strPpsnBzmanMasterYN==\"1\" && servicedata.showOtherMenuYn==\"Y\""}' style="display:none"><a href="#" onclick="javascript:hideAcnMgt();return false;">숨긴 계좌 관리</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr  class="dashed">
+                <h3 class="sg-h3">달력</h3>
+                <div class="paragraph-wrap mb16">
+                    <div class="form-wrap col-2">
+                        <div id="id_calendar1" class="ipt-wrap calendar"></div>
+                        <span class="bar">~</span>
+                        <div id="id_calendar2" class="ipt-wrap calendar"></div>
+                    </div>
+                </div>
+                <hr  class="dashed">
+                <h3 class="sg-h3">스텝</h3>
+                <div class="paragraph-wrap mb16">
+                    <div class="step-wrap ty2" role="img" aria-label="총 4단계 중 1단계(입금명세서 작성)">
+                        <ol>
+                            <li class="on"><p>직원정보</p></li>
+                            <li><p>기본정보</p></li>
+                            <li><p>지급내역</p></li>
+                            <li><p>공제내역</p></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- //e:wrap -->
+    <footer id="footerWrap">
+    </footer>
+    <script type="text/javascript">
+        $(".nav-tabs li a").click(function(event){
+            $(".nav-tabs li").removeClass('active');
+            $(this).parent().addClass('active');
+            event.preventDefault();
+            var scrollPosition = $($(this).attr("href")).offset().top-160;
+            $('html,body').animate({scrollTop:scrollPosition},1000);
+        });
+        $(window).on('scroll', function() {
+            // $('.sg-h2').each(function() {
+            //     if($(window).scrollTop() >= $(this).offset().top-160) {
+            //         var id = $(this).attr('id');
+            //         $('.nav-tabs li').removeClass('active');
+            //         $('.nav-tabs li a[href=#'+ id +']').parent().addClass('active');
+            //     }
+            // });
+        });
+        $('.color').each(function(){
+            var _picker = $(this).text();
+            $(this).siblings('.color-square').css('background-color',_picker);
+        });
+        $('[class*="font"],[class*="title"]').each(function(){
+            var _style = $(this).css('font-family');
+            var _size = $(this).css('font-size');
+            var _lineheight = $(this).css('line-height');
+            var _letterspacing = $(this).css('letter-spacing');
+            $(this).siblings('.detail').find('.typo-style').text("style : "+_style);
+            $(this).siblings('.detail').find('.typo-size').text("size : "+_size);
+            $(this).siblings('.detail').find('.typo-lh').text("lineheight : "+_lineheight);
+            $(this).siblings('.detail').find('.typo-ls').text("letter-spacing : "+_letterspacing);
+        });
+        
+    </script>
+</body>
+</html>

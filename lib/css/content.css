@@ -1,0 +1,2213 @@
+@charset "utf-8";
+@import url("/mobiz/app/css/content_320.css");
+
+/* #### main ######################## */
+/* my메뉴 설정(팝업) */
+/* 슬라이드배너 type02 */
+.mbanner.type02 .swiper-menu{overflow:hidden;height:75px}
+.mbanner.type02 .swiper-slide a {background-color:#fff; text-align:center}
+.mbanner.type02 .swiper-slide {padding:0 8px; box-sizing:border-box}
+.mbanner .menu_list li {width:25%; float:left}
+.mbanner .menu_list:after {display:block; content:""; clear:both}
+.menu_list a .mi {display:inline-block; width:34px; height:34px; background:url('/mobiz/app/img/mbank/ico_bnmenu.png') no-repeat; background-size:auto 34px; text-indent:-9999em;}
+.menu_list a .mn_txt {display:block; height:24px; font-size:11px; font-weight:bold; color:#5d4d41; line-height:24px}
+.menu_list a .mn_txt.line2 {line-height:1}
+.menu_list a .mi.m01 {background-position:0 0;}
+.menu_list a .mi.m02 {background-position:-34px 0;}
+.menu_list a .mi.m03 {background-position:-68px 0;}
+.menu_list a .mi.m04 {background-position:-102px 0;}
+.menu_list a .mi.m05 {background-position:-136px 0;}
+.menu_list a .mi.m06 {background-position:-170px 0;}
+.menu_list a .mi.m07 {background-position:-204px 0;}
+.menu_list a .mi.m08 {background-position:-238px 0;}
+.menu_list a .mi.m09 {background-position:-272px 0;}
+.menu_list a .mi.m10 {background-position:-306px 0;}
+.menu_list a .mi.m11 {background-position:-340px 0;}
+.menu_list a .mi.m12 {background-position:-374px 0;}
+.menu_list a .mi.m13 {background-position:-408px 0;}
+.menu_list a .mi.m14 {background-position:-442px 0;}
+.menu_list a .mi.m15 {background-position:-476px 0;}
+.menu_list a .mi.m16 {background-position:-508px 0;}
+.menu_list a .mi.m17 {background-position:-542px 0;}
+.menu_list a .mi.m18 {background-position:-578px 0;}
+
+.mbanner.type02 {margin-bottom:10px}
+.mbanner.type02 .swiper-pagination-wrap {top:75px}
+.mbanner.type02 .menu_left, .mbanner.type02 .menu_right {position:absolute;top:-62px; width:30px;height:34px;margin:0;padding:0}
+.mbanner.type02 .menu_left {left:-10px;background:url('/mobiz/app/img/mbank/menu_btnban02.png') no-repeat 10px 50%;background-size:auto 17px}
+.mbanner.type02 .menu_right{right:-10px;background:url('/mobiz/app/img/mbank/menu_btnban02.png') no-repeat -10px 50%;background-size:auto 17px}
+h2.mm_tit {font-size:18px; font-weight:bold; color:#333 !important}
+.tit_wrap02:after {display:block; content:""; clear:both}
+.tit_wrap02 h2, .tit_wrap02 .mm_info {float:left}
+.tit_wrap02 .mm_info {margin:20px 0 0 7px; color:#777; font-size:12px;}
+.list_mm {border-top: 1px solid #a0958a;}
+.list_mm li {position:relative; padding:10px 0 10px 10px; border-bottom: 1px solid #e4e4e4;}
+.list_mm li span.tit {color:#666}
+.list_mm li a.mm_del {display:block; position:absolute; top:50%; right:5px; width:28px; height:28px; margin-top:-14px; padding:0 !important; background:url('/mobiz/app/img/mbank/ico_mm_delete.png') no-repeat 50% 50%;background-size:18px; text-indent:-9999em;z-index:10}
+
+.layerarea01.type02 {margin: 0 20px 0 20px;padding: 25px 0 21px;background: #fff;}
+.layer_acc {padding:0 5px 0 20px;}
+.layer_acc .recent_account_wrap {margin-right:15px}
+.layer_acc .layer_acc_scroll {position: relative; overflow-y:scroll; height:295px; margin:0px; padding-right:5px;}
+
+.layer_acc .recent_account{position:relative;}
+.layer_acc .chk_wrap {position:absolute; top:10px; right:5px; z-index:120}
+.layer_acc .chk_wrap.tp02 {top:-3px; right:-10px;}
+.layer_acc .acc_title {height:39px;}
+.layer_acc .acc_title h2 {background:#fff;text-align:left;}
+.layer_acc .acc_title h2 a {padding:12px 0 12px 8px; background:#fff;}
+.layer_acc .acc_title h2 a, .layer_acc .agree_area01 li span {font-weight:normal; color:#666 !important;}
+.layer_acc .acc_title.acc_open h2 a {font-weight:bold;}
+.layer_acc .acc_title.no_dep h2 a {font-weight:normal;}
+
+.layer_acc .recent_account .acc_title h2 span, .layer_acc .recent_account .acc_open h2 span {position:absolute;top:50%;right:18px;display:inline-block;width:9px;height:5px;overflow:hidden;text-indent:-9999px;}
+.layer_acc .recent_account .acc_title h2 span {background:url('/mobiz/app/img/mbank/arrow_mm.png') no-repeat 0 0;background-size:cover;}
+.layer_acc .recent_account .acc_open h2 span {background: url('/mobiz/app/img/mbank/arrow_mm.png') no-repeat 0 -5px;background-size:cover;}
+
+.layer_acc .account_list {padding:18px 15px 19px; background:#f9f9f9}
+.layer_acc .agree_area01 {margin:0}
+.layer_acc .agree_area01 li {margin-bottom:15px; padding-left:0px}
+.layer_acc .agree_area01 li:last-child {margin-bottom:0px}
+
+/* my메뉴 순서변경 */
+.guide_box.type02 {margin-bottom:0;border:none}
+.guide_box.type02 .notice {color:#555; text-align:center}
+.guide_box.type02 .btn_center {margin:12px 0 0}
+.list_type01 li .txt04 {font-size:13px; color:#666}
+.list_type01.mm_type {border-top:none}
+.mn_list.list_type01.mm_type > li {border-top:1px solid #cecece; margin-top:-1px}/* 2016-09-09 메뉴순서변경하기 */
+.mn_list.list_type01.mm_type > li:first-child {border-top:1px solid rgba(255, 255, 255, 0) ; margin-top:0px}/* 2016-09-09 메뉴순서변경하기 */
+.mn_list.mm_type .rbtn03 {position:absolute; right:10px; top:50%; margin-top:-12px;}
+.mn_list.mm_type .mn_btn01 {display:inline-block; width:23px; height:23px;border:0;background:url('/mobiz/app/img/mbank/arrow_mm02.png') no-repeat 0 0;text-indent:-9999px;overflow:hidden;vertical-align:middle;background-size:auto 23px;cursor:pointer;margin-right:2px;}
+.mn_list.mm_type .mn_btn02 {display:inline-block; width:23px; height:23px;border:0;background:url('/mobiz/app/img/mbank/arrow_mm02.png') no-repeat 100% 0;text-indent:-9999px;overflow:hidden;vertical-align:middle;background-size:auto 23px;cursor:pointer;margin-right:2px;}
+
+/* #### inquery ######################## */
+.tab-inquery li:first-child{width:25% !important}
+.tab-inquery li:nth-child(2){width:17% !important}
+.tab-inquery li:nth-child(3){width:17% !important}
+.tab-inquery li:nth-child(4){width:17% !important}
+.tab-inquery li:last-child{width:24% !important}
+
+.tab-inquery li:last-child a:after{width:104%}
+
+.tab-inquery + .inquery .list_type01,
+.tab-inquery + #content .inquery_title h2 {border-top:none;}
+
+.tab-inquery + .inquery .list_type01{margin-top:8px}
+
+/* toggle */
+.show-hide{display:none; padding: 14px;}
+.toggle-set .right_txt{bottom:0; top:7px !important}
+.show-hide .btn_center{margin: 13px 0px 14px 0px;}
+.dd_desc_btn + .show-hide {padding:0;} /*2016-09-27 추가*/
+.dd_desc_btn + .show-hide > .list_type01 {margin:0 -16px;}  /*2016-09-27 추가*/
+
+/*전계좌조회 상단*/
+.account-info .total_amount dt{font-size:13px; color:#555;font-weight:bold;}
+.account-info .total_amount dd{margin-top:8px;font-weight:bold;}
+.account-info .total_amount dd .won {font-weight:normal}
+.account-info .total_amount dd .amount{font-size:24px; line-height:20px;}
+
+.total_amount dl {margin-bottom:14px;}
+.total_amount .amount {margin-top:10px; font-size:24px; color:#333;}
+.total_amount .amount > .won {margin-left:0; } 
+.total_amount .fnd_group {margin-bottom:10px} 
+
+.tab_content > .inquery_list {border-top:none;}
+.inquery_list{margin-bottom:-1px; border-top:1px solid #cecece}  
+.inquery_list li{position:relative; border-bottom:1px solid #d6d6d6; line-height:1;}
+.inquery_list.view li{padding:20px; background:#fff;}
+.inquery_list li a{display:block; padding:14px 60px 14px 20px; background: url("/mobiz/app/img/mbank/arrow-right.png") no-repeat right center; background-size: 27px; }
+.inquery_list.view_type a{background:none;}
+.inquery_list li .no-alist{display:inline-block;padding:20px;}
+.inquery_list .won{font-weight:bold;}
+#content .inquery_title h2{color:#333;font-size: 14px; border-top:1px solid #d8d8d8; margin:0; padding:15px 16px 6px 16px;}
+#content .inquery_title:first-child h2{padding-top:22px}
+.inquery_tit .status {position:relative; top:-3px;}
+.p_sp {margin:4px 0 !important;}
+
+/*조회공통텍스트*/
+.inquery_stit{font-size:13px;color:#555;font-weight:bold;}/*계좌명*/
+.inquery_stit > strong {font-weight:bold; line-height:18px;}
+.inquery_tit{font-size:20px;color:#333;font-weight:bold;}/*계좌번호*/
+.inquery_tit > span {position:relative; top:-1px;}
+.inquery_stit + .inquery_tit {margin-top:7px; margin-bottom:8px;} /*2016-08-16 추가 by.kyr*/
+.inquery_tit + .inquery_stit {margin-top:8px;} /*2016-08-17 추가 by.kyr*/
+.inquery_tit .mark {font-size:13px;}
+.inquery_nic{margin-top:7px;font-size:12px;color:#555; line-height:1;}/*계좌별명*/
+.inquery_date{margin-top:12px;font-size:12px;color:#888;}
+
+.t_blue_b{font-size:19px;color:#0070e8; font-weight:bold}/*돈 파랑 큰*/
+.t_blue_m{font-size:15px;color:#0070e8; font-weight:bold}/*돈 파랑 중간*/
+.t_blue_s{font-size:14px;color:#0070e8; font-weight:bold}/*돈 빨강 작은*/
+
+.info_list .t_blue{font-size:15px;color:#0070e8;}
+.info_list .t_red{font-size:15px;color:#ef0000;}
+
+.t_red_b{font-size:19px;color:#ef0000;font-weight:bold}/*돈 빨강 중간*/
+.t_red_m{font-size:15px;color:#ef0000;font-weight:bold}/*돈 빨강 중간*/
+.t_red_s{font-size:14px;color:#ef0000;font-weight:bold}/*돈 빨강 작은*/
+
+.inquery_toggle{position:relative; min-height:38px; overflow:hidden; margin-top:-38px;}
+.inquery_toggle .toggle-btn-section{text-align:center; background:#fbfaf8; border-top:1px solid #e7e4de; margin-top:37px;}
+.btn04.trans{background:#FBD20C url("/mobiz/app/img/mbank/ico-trans1.png") no-repeat 4px center; background-size:25px; padding-left:28px;}
+.btn05.smart {color:#333;border:1px solid #d6d6d6;background:#fdfdfd;} /* 스마트창구출금 버튼수정 (2019-05-13) */
+
+/*계좌상세*/
+.account-info .account-stit{}
+.account-info .account-tit{padding-right:0 !important;}
+.account-info .account-num{padding-right:0 !important;}
+.account-info .account-num a{display:block; background:url("/mobiz/app/img/mbank/account-num_arrow.png") no-repeat right 3px; background-size:8px 17px;}
+.account-info .account-num,
+.account-info .account-num a{font-weight:bold;}
+.account-info{position:relative; padding:25px 16px 21px 16px; border-bottom:1px solid #d8d8d8; line-height:1;}
+
+.account-info .total_amount .detail_list .tit{position:relative;top:0px}
+.account-info .total_amount .detail_list .t_black{position:relative;top:-2px}
+.account-info .total_amount .detail_list .won{position:relative;top:-0.5px}
+
+.account-info .total_amount .btn_transfer{position:absolute;right:16px;top:17px;margin-top:0px;text-align:center;}
+.account-info .total_amount .btn_transfer a{display:block;width:52px;height:52px;padding-top:10px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#ffcc00;box-sizing:border-box;}
+.account-info .total_amount .btn_transfer a:before{content:'';display:inline-block;width:17px;height:17px;background:url('/mobiz/app/img/2018/sp_btn.png') no-repeat -205px -120px;background-size:250px auto;}
+.account-info .total_amount .btn_transfer span{display:block;margin-top:1px;font-size:12px;font-weight:bold;line-height:1;}
+
+.account-info .total_amount .btn_transfer2{position:absolute;right:16px;top:43%;margin-top:-26px;text-align:center;}
+.account-info .total_amount .btn_transfer2 a{display:block;width:52px;height:52px;padding-top:10px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#ffcc00;box-sizing:border-box;}
+.account-info .total_amount .btn_transfer2 a:before{content:'';display:inline-block;width:17px;height:17px;background:url('/mobiz/app/img/2018/sp_btn.png') no-repeat -205px -120px;background-size:250px auto;}
+.account-info .total_amount .btn_transfer2 span{display:block;margin-top:1px;font-size:12px;font-weight:bold;line-height:1;}
+
+.tab_st03 + .inquery .account-info{padding-top:22px}
+
+.account-info.no_bd{border:none}
+.account-info .account-tit,
+.account-info .account-stit{font-size:13px;color:#333;font-weight:bold;}/*계좌명*/
+.account-info .account-num{margin-top:8px;font-size:20px;color:#333 !important;padding-right:100px;}/*계좌번호*/
+.account-info .account-nic{margin-top:8px; color:#777;}/*계좌별명*/ /*by.kyr 2016-08-12 수정 */
+.account-info + .period_set_section,
+.account-info + .inquery_title h2 {border-top:none !important;}
+.account-info.no-bb + .period_set_section {border-top:1px solid #d8d8d8 !important;}
+.account-info + .inquery_list,
+.account-info + .hide + .inquery_list,
+.account-info + section > .inquery_list, .account-info + section > .hide + .inquery_list{border-top:none;} /*by.kyr 2016-08-18 추가*/
+.account_group{margin-top:11px;}
+.account-info .btn_left button{margin-bottom:2px}
+.account-tit{ padding-right:100px;}
+.account-sub-tit{ margin-bottom:5px; color:#777;}
+.account-num{font-size:20px; color:#454545; }
+.account-info .d-info p{}
+.account-info .d-info .txt01{display:inline-block; width:70px; margin-right:20px;}
+.account-info .common_box{background:#fefefe; margin-top:25px;}
+.account-info.no-bb{border-bottom:none; box-shadow:none;}
+.account-info+.con_sp_middle .txt_desc{margin-top:0px}
+.txt_desc_sp + .account-info {padding-top:0;} /*by.kyr 2016-08-17 추가 */
+
+.account-num.no-ex{margin-bottom:6px;}
+.d-info p{margin:2px 0;min-height:20px;line-height:19px;font-size:15px;}
+.title{width:64px; font-size:13px;}
+.title{display:inline-block !important; font-size:13px; color:#777;}
+.account-info .btn_left{margin-top:11px}
+
+/*삭제예정*/
+/*.w02 .title{width:40px !important;} 
+.w03 .title{width:52px !important;}
+.w03_01 .title{width:51px !important;}
+.w04 .title{width:64px !important;}
+.w05 .title{width:76px !important;}
+.w05_01 .title{width:85px !important;}
+.w06 .title{width:86px !important;}
+.w06_01 .title{width:88px !important;}
+.w07 .title{width:97px !important;}
+.w07_01 .title{width:101px !important;}
+.w07_02 .title{width:104px !important;}
+.w08 .title{width:117px !important;}*/
+
+
+/*.w02 .txtwrap{padding-left:40px !important;}
+.w03 .txtwrap{padding-left:52px !important;}
+.w03_01 .txtwrap{padding-left:51px !important;}
+.d-info .txtwrap{padding-left:62px;}
+.w04 .txtwrap{padding-left:64px;}
+.w05 .txtwrap{padding-left:76px;}
+.w05_01 .txtwrap{padding-left:85px;}
+.w06 .txtwrap{padding-left:86px;}
+.w06_01 .txtwrap{padding-left:88px;}
+.w07 .txtwrap{padding-left:97px;min-height:17px;}
+.w07_01 .txtwrap{padding-left:101px;min-height:17px;}
+.w07_02 .txtwrap{padding-left:104px;min-height:17px;}
+.w08 .txtwrap{padding-left:117px;}*/
+/*//삭제예정*/
+
+.write_type01.w_type{width:300px;}
+.account-info .btn_center{margin:20px 0 0 0;}
+
+.period_set_section{overflow:hidden; background:#f5f1ed; position:relative;}
+.period_set_section .lcon{ float:left; width:100%; padding:12px 15px 9px;  font-size:12px;  color:#555;}
+.period_set_section .rcon{ float:right; background:#fbfaf8; text-align:right; width:100%;}
+.period_set_section .btn_period_set{position:absolute; top:6px; right:15px; display:block; color:#777; font-size:12px; border-radius:50px; border:1px solid #cecece; padding:5px 10px 4px 10px; background:#fff; cursor:pointer;}
+.period_set_section .btn_period_set span{display:inline-block; text-indent:-9999px !important; width:0}
+.period_set_section .search-section{position:relative; top:0; text-align:left ; border-top:1px solid #e7e4de;}
+.period_set_section .search-section input.in_w33, .view-more .show-hide input.in_w33, .period-set .show-hide input.in_w33{width:98px;}
+.period_set_section .show-hide{padding:15px 16px 0 16px; /*text-align:center;*/}
+.period_set_section .show-hide .write_type01{display:inline-block; margin:0 auto; text-align:left;}
+
+.view-more .show-hide, .period-set .show-hide{padding:15px 0;}
+.period-set{margin: 13px 0 7px 0; padding: 0 15px; overflow:hidden;/*position:relative;*/}
+.period-set>button{display:block; width:25%; float:left; padding: 2px 0px 0px 0px; text-align:center; line-height:35px; color:#333; border-radius:0; border:1px solid #cbc5c0; background-color:#f5f1ed; white-space:nowrap; cursor:pointer;-webkit-box-sizing:border-box; border-right:none;}
+.period-set>button:first-child{border-top-left-radius:3px; border-bottom-left-radius: 3px;}
+.period-set>button:nth-child(4n){border-right:1px solid #ccc; border-top-right-radius:3px; border-bottom-right-radius:3px;}
+.period-set .btn_period_set span{display:inline-block; text-indent:-9999px !important; width:0}
+.view-more{margin: 13px 0 7px 0; padding: 0 15px; overflow:hidden;}
+.view-more .lbutton{ float:left; width:60%;}
+.view-more .rbutton{float:right; width:39%;}
+.view-more .lbutton img,
+.view-more .rbutton img{margin-top:-4px} 
+.view-more .btn_period_set span{display:inline-block; text-indent:-9999px !important; width:0}
+.clfix:after{content: "."; display: block; height: 0px; clear: both; visibility: hidden;}
+.clfix	{display: inline-block;}
+.search-section{position:relative; left:0;}
+.view-more.toggle-set .show-hide.clfix{position:relative; left:0;width:100%; /*text-align:center;*/}
+.view-more.toggle-set .show-hide.clfix .write_type01{display:inline-block; text-align:left; width:300px;}
+.period-set.toggle-set .show-hide.clfix{position:relative; left:0;width:100%; /*text-align:center;*/}
+.period-set.toggle-set .show-hide.clfix .write_type01{display:inline-block; text-align:left; width:300px;}
+
+.tline{color:#777; padding-left:8px; margin-left:4px; background:url("/mobiz/app/img/mbank/img-mbar.gif") no-repeat 0 49%; display:inline-block;}
+.tline.type2 {color:#333}
+.right-button{position:absolute; right:15px; top:50%; margin-top:-14px;}
+
+.inc01{margin-bottom:6px;text-align:left;}
+.inc02{margin-bottom:4px;text-align:left;}
+.inc03{text-align:left;}
+
+.won{display:inline-block;position:relative;top:-1px;font-size:12px; color:#333; margin-left:3px;} /*by.kyr 2016-08-12 수정*/
+.bluetxt{font-size:15px; color:#0070e8; float:none !important; display:inline-block;}
+.boldtxt{font-size:18px; color:#333;}
+.redtxt{font-size:18px; color:#ef0000;}
+.color_blue_s{font-size:13px; color:#0b76e1; position:relative; top:-1px;}
+.color_red_s{font-size:13px; color:#ef0000;position:relative; top:-1px;}
+.pay_amount{font-size:12px;color:#777;}
+.tra_limit{font-size:12px;color:#777;}
+.sum_amount{margin-top:6px;padding-left:10px;font-size:12px;color:#0b76e1;}
+.remainder{font-size:12px;color:#777;}
+[class^="inner_txt"]{display:inline-block;width:110px;font-weight:normal;}
+.img-box {text-align:center}
+.img-box img{width: 100%; max-width: 406px; border: 1px solid #ccc;}
+.bi_num{display: inline-block; text-align:center; width:19px; height:19px; margin-left: 5px; padding:1px 0 0; font-size: 13px; color: #fff; font-weight: bold; border-radius: 15px; background: #ef0000; box-sizing:border-box;} /*2016-09-01 원 찌그러짐 수정 by.kyr*/
+.inq_group{margin-top:10px; line-height:1;}
+.inq_group .accountSum li+li{margin-top:4px}
+.inq_group .accountSum li span{margin-left:8px}
+/*.inq_group .t_blue_b{font-weight:normal;}*/
+
+/*계좌상세*/
+.info_list{overflow:hidden;}
+.info_list li{overflow:hidden; padding:0 0 0 0 !important; border-bottom:none !important; line-height:18px;}
+.info_list li:last-child{padding-bottom:0 !important;}
+.info_list li .tit{float:left; width:43px; margin-top:0!important;font-size:13px; color:#777; word-wrap:break-word}
+.info_list li .cont{padding-left:58px; font-size:13px; color:#333;}
+.info_list li .cont .t_blue_b, .info_list li .cont .t_red_b{font-size:15px !important;}
+.info_list li .cont .t_red_b{font-size:15px !important;}
+.info_list li .cont .bluetxt{font-weight:bold;}
+
+.inquery_list li .detail_list li, .detail_list li{border:none !important;}
+.inquery_list .detail_list.first{margin-top:0;}
+.fnd_group {margin-top:12px;}
+.fnd_group .detail_list li{margin-top:10px;}
+.fnd_group .detail_list li .won{vertical-align:top;top:0px;}
+/*.fnd_group .detail_list li > span, .fnd_group .detail_list li > p{display:table-cell !important;vertical-align:bottom !important;}*/
+
+.toptit{margin-bottom:12px; color:#333;}
+.toptit02{margin-bottom:12px !important; font-size:15px; color:#333;  position:relative;}
+.bottxt{margin-top:12px; color:#777;}
+.inquery_list li ul li,
+.list_type01 .detail_list li,
+.inquery_list .nolinelist .accountSum li{background:none; border:none !important;}
+.inquery_list .nolinelist .accountSum li{padding-bottom:4px; font-size:17px !important;}
+.inquery_list .nolinelist .accountSum li:last-child{margin-bottom:0 !important;}
+.inquery_list .nolinelist .accountSum{margin-top:10px;}
+.list_type01 .rbtn01{position:absolute;right:15px;top:38%;}
+.statusnow{margin-top:-18px;}
+.red-status{font-size:11px; color:#ef0000; border:1px solid #ef0000; border-radius:15px; padding:1px 7px 0; display:inline-block; position:relative;}
+.list03 .detail_list{margin-top:0;}
+
+/* 채권조회 */
+.inquery_list.list_toggle li{position:relative;}
+.inquery_list.list_toggle li .btn05{display:inline-block; padding:1px 9px 0}
+.inquery_list.list_toggle li .btn_discount{display:inline-block; padding:1px 8px 0 !important; box-sizing:border-box}
+
+.inquery_list.list_toggle .inquery_toggle{overflow:initial; margin-top:-10px; min-height:auto;}
+.inquery_list.list_toggle .inquery_toggle .btn-toggle{position:absolute; top:-38px;}
+.inquery_list.list_toggle .inquery_toggle .toggle-btn-section{margin-top:0; padding:10px 20px; text-align:left;}
+.inquery_list.list_toggle .inquery_toggle .detail_list{margin-top:0;}
+
+/* #### business ######################## */
+.status{display: inline-block; font-size:12px; margin-left: 5px; height:20px; line-height:20px; padding:0 6px; color:#fa3232; border: 1px solid #fa3232; border-radius:15px;}
+.status02{display: inline-block; position:absolute; top:-3px; margin-left:10px; border: 1px solid #bcbcbc; color:#777; font-size:12px; border-radius:15px;height: 20px; line-height:20px; padding:2px 10px 0;}
+.status.normal{color:#006feb !important; border:1px solid #006feb !important}
+.business button:disabled {cursor:inherit; background:#dedede; border-color:#d0d0d0; color:#777;}
+
+/*삭제예정*/
+/*.business .tbl_view01{overflow:initial;}
+.business .tbl_view01 .is_rbtn{position:relative;}
+.business .tbl_view01  .rbtn01{position:absolute; top:0; right:10px;}
+.business .tbl_view01 + .ps01 {margin-top:15px !important;}
+*/
+
+/* #### bill ######################## */
+.bill .giro_box{text-align:center; margin-top: 15px;}
+.bill .giro_box img{width:100%; max-width:480px; border:1px solid #ccc;}
+.bill .bi_num{display:inline-block;margin-left:5px;padding:1px 0 0;font-size:13px;color:#fff;border-radius:15px;background:#ef0000;}
+.bill .bi_day{margin-bottom:2px;}
+.bill .bi_type label{line-height:20px;}
+.bill .detail_list li{line-height:17px; min-height:17px;}
+.bill .bill_box{position:relative;padding:10px 15px 15px 15px;border:1px solid #bbb;}
+.bill .bill_box h2{text-align:center;margin:10px 0 25px !important;letter-spacing:-1px;}
+.bill .bill_box h2.line2{margin-top:11px !important;} /*2016-10-12 어태원차장 요청 css수정 */ 
+.bill .bill_box h2.h2_micr{text-align:center;margin:10px 0 25px !important;padding-left:20px;}
+.bill .bill_box .ocr_mark{position:absolute;left:15px;top:20px;width:36px;height:22px;overflow:hidden;background:url('/mobiz/app/img/mbank/bi_ocr.gif') no-repeat left top;background-size:36px 22px;text-indent:-9999px;}
+.bill .bill_box .micr_mark{position:absolute;left:15px;top:20px;width:36px;height:22px;overflow:hidden;background:url('/mobiz/app/img/mbank/bi_micr.gif') no-repeat left top;background-size:36px 22px;text-indent:-9999px;}
+.bill .bill_box01{padding:10px 0 0 0;}
+.bill .bill_box_inner{padding:0 15px 0 15px;}
+.bill .bi_w01{width:108px; padding:1px;}
+.bill .bill_box .list_box {margin-bottom:16px}/* 2016-08-23 추가 */
+.bill input.tax_num01,.bill input.tax_num02,.bill input.tax_num03,.bill input.tax_num04{width:58px;padding:0 3px;}
+.bill input.tax_num01:focus,.bill input.tax_num02:focus,.bill input.tax_num03:focus,.bill input.tax_num04:focus{padding:0 5px 0 5px;}
+.bill .tbl_inner .color_blue,.bill .tbl_view01 .color_blue,.bill .tbl_list01 .color_blue{color:#333 !important;}
+.bill input.ele01{width:70px;}
+.bill input.ele02{width:180px;}
+.bill input.ele03{width:70px;}
+.bill input.ele04{width:195px;}
+.bill input.ele05{width:35px;}
+.bill input.ele06{width:70px; padding:0 2px;}
+.bill input.ele07{width:100px; padding:0 2px;}
+
+/* 지로납부조회 */
+.giro_toggle{display:none;}
+.giro_toggle.active{display:block;}
+
+/* #### deposit ######################## */
+
+/* #### fund ######################## 2016-09-09 추가 */ 
+.fund .dlist01 dt {font-size:15px !important;}
+.fund .tbl_view03 th,.fund .tbl_view03 td {vertical-align:top;}
+.fund .tbl_view03 th > span {display:block; font-size:12px; padding-top:3px;}
+.fund .tbl_view03 td > .t_black {font-size:15px; }
+.fund .tbl_view03 + .item_desc {margin-top:10px;}
+.fund .write_type01 dd + dd {margin-top:5px;}
+
+/* #### loan ######################## */
+/*2016-10-10 개발요청 css 예외처리추가*/
+.loan #HomeAddr .add_w25.intype {margin:0 5px 0 0;}
+.loan #HomeAddr .add_w25.intype:nth-child(2) {margin-left:5px;}
+.loan .btn_ars {margin-bottom:20px;}
+.loan .btn_ars > a {display:block; padding:25px 0; text-align:center; background:#fdfdfd; border:1px solid #dadada; border-radius:3px;}
+.loan .btn_ars > a span {position:relative; padding-right:60px;}
+.loan .btn_ars > a span:after {content:''; width:46px; height:46px; background:url('/mobiz/app/img/mbank/ars_ico.png') no-repeat; background-size:100% auto; position:absolute; right:0; top:50%; margin-top:-23px;}
+
+/* #### trust ######################## */
+.trust .join-section>ul>li{width:100%; float:none;}
+.trust .join-section>ul>li>a{border-bottom:none;}
+.trust .join-section>ul>li.on a{border-bottom:1px solid #ccc;}
+
+/* #### foreign ######################## */
+.branch_mapbox {position:relative; overflow:hidden; height:204px; margin:10px 0; border:1px solid #c9c9c9; border-radius:3px;}
+.branch_mapbox .map {height:204px;}
+.branch_mapbox .info {position:absolute; width:190px; padding:10px 10px; background:#fff; border:1px solid #aaaaaa; border-radius:3px;z-index:2; box-shadow:0 1px 2px 0 #e4e4e4;-webkit-box-sizing:border-box;-webkit-appearance:none;}
+.branch_mapbox .info strong {display:block; font-size:15px; color:#333333; margin-bottom:8px;}
+.branch_mapbox .info span {display:block; color:#666666; font-size:12px;}
+.branch_mapbox .info .info_arr {position:absolute; bottom:-11px; left:50%; margin-left:-7px;}
+.branch_mapbox .info .info_arr img {width:14px;}
+.branch_mapbox .info .btn_box {text-align:center; margin-top:11px;}
+.branch_mapbox .info .btn_close {position:absolute; right:10px; top:10px; display:block; width:16px; height:16px; background:url('/mobiz/app/img/mbank/btn_x.png') no-repeat 0 0; background-size: 16px; text-indent:-10000px; overflow:hidden;}
+.branch_mapbox .map .pointer {position:absolute; display:block; z-index:2;}
+.branch_mapbox .map .pointer img {width:32px; height:37px;}
+.branch_mapbox .map_btn a {position:absolute; display:block; left:10px; width:31px; height:31px; text-indent:-10000px; overflow:hidden; z-index:9999;}
+.branch_mapbox .map_btn a.btn_myposition {top:15px; background:url('/mobiz/app/img/mbank/btn_myposition.png') no-repeat 0 0; background-size:31px;}
+.branch_mapbox .map_btn a.btn_refresh {top:53px; background:url('/mobiz/app/img/mbank/btn_refresh.png') no-repeat 0 0; background-size:31px;}
+.branch_mapbox .map_btn a.btn_zoomin {bottom:53px; background:url('/mobiz/app/img/mbank/btn_zoomin.png') no-repeat 0 0; background-size:31px;}
+.branch_mapbox .map_btn a.btn_zoomout {bottom:15px; background:url('/mobiz/app/img/mbank/btn_zoomout.png') no-repeat 0 0; background-size:31px;}
+
+.foreign .for_tel01{width:140px;}
+.foreign .for_tel02{width:85px;}
+.foreign .foreign_list{border:1px solid #ccc;border-left:none;border-right:none;}
+.foreign .foreign_list .date{overflow:hidden;padding:15px; font-size:12px; color:#777;background:#fbfbfd;border-radius:3px;}
+.foreign .foreign_list .no_data{background:none;}
+.foreign .foreign_list li{border-top:1px solid #d0d0d0; background:url(/mobiz/app/img/mbank/arrow2.png) no-repeat right 50%; background-size:28px auto;}
+.foreign .foreign_list li a{padding:18px 15px ;display:block; background:url('/mobiz/app/img/mbank/arrow_list.png') no-repeat right 50%; background-size:auto 20px;}
+.foreign .foreign_list li .txtline1{ margin-bottom:5px;}
+.foreign .foreign_list li .txtline1 span{margin-right:5px;}
+.foreign .foreign_list li .txtline2 span{font-size:16px;  color:#0b76e1;}
+.foreign_list li div{padding-left:45px; background-image:url(/mobiz/app/img/mbank/img_flag.png); background-repeat:no-repeat;  background-size:34px auto;}
+.foreign_list li .usd{background-position:0 8px;}
+.foreign_list li .jpy{background-position:0 -41px;}
+.foreign_list li .eur{background-position:0 -90px;}
+.foreign_list li .gbp{background-position:0 -139px;}
+.foreign_list li .chf{background-position:0 -188px;}
+.foreign_list li .cad{background-position:0 -238px;}
+.foreign_list li .aud{background-position:0 -287px;}
+.foreign_list li .nzd{background-position:0 -336px;}
+.foreign_list li .hkd{background-position:0 -385px;}
+.foreign_list li .cny{background-position:0 -433px;}
+.foreign_list li .sek{background-position:0 -484px;}
+.foreign_list li .dkk{background-position:0 -533px;}
+.foreign_list li .nok{background-position:0 -582px;}
+.foreign_list li .sar{background-position:0 -632px;}
+.foreign_list li .kwd{background-position:0 -681px;}
+.foreign_list li .bhd{background-position:0 -730px;}
+.foreign_list li .aed{background-position:0 -779px;}
+.foreign_list li .thb{background-position:0 -828px;}
+.foreign_list li .sgd{background-position:0 -878px;}
+.foreign_list li .idr{background-position:0 -927px;}
+.foreign_list li .zar{background-position:0 -976px;}
+.foreign_list li .rub{background-position:0 -1024px;}
+.foreign_list li .huf{background-position:0 -1073px;}
+.foreign_list li .pln{background-position:0 -1124px;}
+.foreign_list li .inr{background-position:0 -1173px;}
+.foreign_list li .myr{background-position:0 -1222px;}
+.foreign_list li .pkr{background-position:0 -1270px;}
+.foreign_list li .bdt{background-position:0 -1321px;}
+.foreign_list li .php{background-position:0 -1370px;}
+.foreign_list li .egp{background-position:0 -1419px;}
+.foreign_list li .mxn{background-position:0 -1468px;}
+.foreign_list li .brl{background-position:0 -1518px;}
+.foreign_list li .bnd{background-position:0 -1567px;}
+.foreign_list li .twd{background-position:0 -1616px;}
+.foreign_list li .ils{background-position:0 -1665px;}
+.foreign_list li .jod{background-position:0 -1715px;}
+.foreign_list li .vnd{background-position:0 -1764px;}
+.foreign_list li .kzt{background-position:0 -1813px;}
+.foreign_list li .try{background-position:0 -1862px;}
+.foreign_list li .czk{background-position:0 -1911px;}
+.foreign_list li .mnt{background-position:0 -1961px;}
+.foreign_list li .qar{background-position:0 -2010px;}
+.foreign .foreign_info{position:relative; height:111px;padding:20px 15px; box-sizing:border-box; border-bottom:1px solid #cecece;}
+.foreign .foreign_info .tit{margin-bottom:10px; font-size:15px; font-weight:bold; color:#333;}
+.foreign .foreign_info dl{overflow:hidden;}
+.foreign .foreign_info dt{position:absolute; margin-bottom:5px;  color:#777;}
+.foreign .foreign_info dd{padding-left:90px; margin-bottom:5px;}
+.foreign .foreign_info div{position:absolute; top:22px; right:10px; width:58px; height:42px; background-image:url(/mobiz/app/img/mbank/img_flag.png); background-repeat:no-repeat; background-size:58px auto;}
+.foreign_info .usd{background-position:right 0px;}
+.foreign_info .jpy{background-position:right -84px !important;}
+.foreign_info .eur{background-position:right -168px;}
+.foreign_info .gbp{background-position:right -252px;}
+.foreign_info .chf{background-position:right -336px;}
+.foreign_info .cad{background-position:right -420px;}
+.foreign_info .aud{background-position:right -504px;}
+.foreign_info .nzd{background-position:right -588px;}
+.foreign_info .hkd{background-position:right -672px;}
+.foreign_info .cny{background-position:right -756px;}
+.foreign_info .sek{background-position:right -840px;}
+.foreign_info .dkk{background-position:right -924px;}
+.foreign_info .nok{background-position:right -1008px;}
+.foreign_info .sar{background-position:right -1092px;}
+.foreign_info .kwd{background-position:right -1176px;}
+.foreign_info .bhd{background-position:right -1260px;}
+.foreign_info .aed{background-position:right -1344px;}
+.foreign_info .thb{background-position:right -1428px;}
+.foreign_info .sgd{background-position:right -1512px;}
+.foreign_info .idr{background-position:right -1596px;}
+.foreign_info .zar{background-position:right -1680px;}
+.foreign_info .rub{background-position:right -1764px;}
+.foreign_info .huf{background-position:right -1848px;}
+.foreign_info .pln{background-position:right -1932px;}
+.foreign_info .inr{background-position:right -2016px;}
+.foreign_info .myr{background-position:right -2100px;}
+.foreign_info .pkr{background-position:right -2184px;}
+.foreign_info .bdt{background-position:right -2268px;}
+.foreign_info .php{background-position:right -2352px;}
+.foreign_info .egp{background-position:right -2436px;}
+.foreign_info .mxn{background-position:right -2520px;}
+.foreign_info .brl{background-position:right -2604px;}
+.foreign_info .bnd{background-position:right -2688px;}
+.foreign_info .twd{background-position:right -2772px;}
+.foreign_info .ils{background-position:right -2856px;}
+.foreign_info .jod{background-position:right -2940px;}
+.foreign_info .vnd{background-position:right -3024px;}
+.foreign_info .kzt{background-position:right -3108px;}
+.foreign_info .try{background-position:right -3192px;}
+.foreign_info .czk{background-position:right -3276px;}
+.foreign_info .mnt{background-position:right -3360px;}
+.foreign_info .qar{background-position:right -3444px;}
+.foreign .check_list td{padding:16px 0 16px 16px;}
+
+.desc_box > .tit + .ulist01 {margin-top:6px;}
+.ineq {display:inline-block; width:7px; height:8px; padding-bottom:1px; background:url('/mobiz/app/img/mbank/bg_inequality.png') no-repeat; background-size:auto 8px; text-indent:-9999px; vertical-align:middle}/* 부등호 */
+
+/* 고시환율 추가 */
+.check_top{margin-bottom:10px;}
+.check_bottom{margin-top:10px;}
+
+/* 2016-08-22 정보제공동의 관련 스타일 추가 */
+.strong_box .radblock{text-align:center; margin-top:15px; margin-bottom:8px}
+.strong_box .radblock label{margin:0 15px 0 5px;}
+
+/* #### retirement ######################## */
+/* 퇴직연금 by.kyr 2016-08-18 */
+.retirement .layerwrap .write_type01 {display:table;width:100%;margin:0 auto;}
+.retirement .layerwrap .guide_box + .write_type01 {margin:initial; display:initial;}
+.list_top {overflow:hidden; background:#f4f4f4; padding-bottom:6px; border-top:1px solid #cecece; border-bottom:1px solid #cecece;}
+.list_top .tbl_view03 {border:none;}
+.list_top .tbl_view03 th {letter-spacing:0; background:none;}
+.list_top .tbl_view03 td {background:none;}
+.list_top h2.h3_st {margin-top:15px !important;}
+.list_top + .list_type01,
+.list_top + .hide + .list_type01 {border-top:none;}
+.retirement .show-hide .btn_center {margin-bottom:0;}
+.strong_box > strong {display:block; font-size:15px; margin-bottom:14px;}
+.retirement .tab_st01 {margin:20px 16px 15px;} /* 퇴직연금 탭 관련 css추가 by.kyr 2016-08-26 */
+/*.retirement .tab_st01_01 {overflow:inherit;}*/
+.retirement .tabwrap01 .tabcont {padding:0; border:none; top:75px;}
+.retirement .tabwrap01 li.litype:first-child a {margin-top:20px; margin-left:16px; margin-bottom:15px;}
+.retirement .tabwrap01 li.litype:nth-child(2) a {margin-top:20px;}
+.retirement .tabwrap01 li.litype:last-child a {margin-top:20px; margin-right:16px; margin-bottom:15px;}
+.retirement .tabwrap01 .list_link02 li > a, .retirement .tabwrap01 .list_link02 li > a,
+.retirement .tabwrap01 .list_more a{margin:0 !important;}
+.retirement .tit_wrap h2.mt5 {margin-top:0 !important;}
+.retirement .tab_3 .list_type01 li:last-child {width:auto !important;}
+.retirement select.mob01, .retirement select.mob02, .retirement select.mob03 {font-size:14px;}
+
+.layerwrap .jumin01,.layerwrap .jumin02 {width:45%;}
+.retirement .write_type01 dd + dd {margin-top:5px;}
+.typew_btn {position:relative;}
+.typew_btn > span {display:block; padding-right:55px;}
+.typew_btn input[type=tel], .typew_btn input[type=text], .typew_btn input[type=password] {width:46%;}
+.typew_btn > button {position:absolute; right:0; top:0;}
+.con_sp_middle .list_type01 {margin:0 -16px;} 
+
+/* #### asset ######################## */
+/* 자금관리 by.kyr 2016-08-18 */
+.asset textarea.textarea {height:320px;}
+.calender_tit {border-top:1px solid #cecece; text-align:center; font-size:17px; font-weight:bold; padding:15px 0; background:#f6f6f6;}
+.asset .list_link01 li a, .asset .list_link02 li a {padding:14px 40px 14px 16px;}
+.asset .list_type01 li .bluetxt03 .won {vertical-align:bottom;}
+.asset .btn_right {margin-top:21px;} 
+
+/* #### payment ######################## */
+
+/* #### goods ######################## */
+/*금융상품 메인 by.kyr 2016-08-30*/
+.goods_main > * {letter-spacing:-0.5;}
+.goods_bn ul {overflow:hidden; padding:0 16px; background:#ffffff;}
+.goods_bn ul li {float:left; width:25%;}
+.goods_bn ul li a {display:block; text-align:center; font-size:13px; color:#5d4d41; line-height:42px;}/* 2016-10-04 디자인수정 */
+.marketing_bn {height:280px; background:url('/mobiz/app/img/mbank/gs_topbg.jpg') no-repeat; background-size:cover; overflow:hidden;}
+.marketing_bn .mbanner{padding-top:110px;}
+.marketing_bn .mbanner .tit {display:block; padding-bottom:5px; font-size:15px; color:#000; }
+.marketing_bn .mbanner .cont {font-size:12px; color:#767676; padding-right:20px; line-height:16px;}
+.marketing_bn .mbanner .detail_view {font-size:11px; color:#d45232; position:absolute; left:22px; bottom:15px;}
+.marketing_bn .mbanner .swiper-menu{height:155px;}
+.marketing_bn .mbanner .banner_wrap{position:relative;}
+.marketing_bn .mbanner .swiper-slide{position:relative;float:left;}
+.marketing_bn .mbanner .swiper-slide .swiper-box{display:block; position:relative; height:155px; margin:0 40px; padding:18px 19px 13px 24px; background:#fff; border-radius:3px; box-shadow:0px 6px 15px -1px rgba(0, 0, 0, 0.2); -webkit-box-shadow:0px 6px 15px -1px rgba(0, 0, 0, 0.2); box-sizing:border-box;}
+.marketing_bn .mbanner .swiper-slide .swiper-box > a {display:block; height:124px; box-sizing:border-box;} /*2016-10-11 배너 a 전체영역 변경 css 추가*/
+/* 2016-10-04 이효훈 C044892:H 디자인결함 배너별 아이콘 추가 */
+.marketing_bn .mbanner .swiper-slide .swiper-box.bn01 > a {background:url('/mobiz/app/img/mbank/gs_bnimg04.png') no-repeat right bottom; background-size:53px auto;}
+.marketing_bn .mbanner .swiper-slide .swiper-box.bn02 > a {background:url('/mobiz/app/img/mbank/gs_bnimg02.png') no-repeat right bottom; background-size:53px auto;}
+.marketing_bn .mbanner .swiper-slide .swiper-box.bn03 > a {background:url('/mobiz/app/img/mbank/gs_bnimg03.png') no-repeat right bottom; background-size:53px auto;}
+.marketing_bn .mbanner .swiper-pagination-wrap{position: absolute;top:68px;z-index:10;width: 100%;text-align: center;line-height:5px;}
+.marketing_bn .mbanner .swiper-pagination {display:none;}
+.marketing_bn .mbanner .swiper-pagination span{display:inline-block;margin-left:4px;margin-right:4px;width:5px;height:5px;border-radius:3px;background-color:#c6c6c6}
+.marketing_bn .mbanner .swiper-pagination span.swiper-active-switch{background-color:#444}
+.marketing_bn .mbanner .menu_left,
+.marketing_bn .mbanner .menu_right{position:absolute; width:12px;height:24px;text-indent:-9999em}
+/*2016-10-20 배너 화살표 영역 늘림 (터치잘안되는문제)*/
+.marketing_bn .mbanner .menu_left{padding:10px; left:3px; top:-10px;}
+.marketing_bn .mbanner .menu_right{padding:10px; right:3px; top:-10px;}
+.marketing_bn .mbanner .menu_left > span {display:block; width:100%; height:100%; background:url('/mobiz/app/img/mbank/gs_arrow01.png') no-repeat 0 0;background-size:cover;}
+.marketing_bn .mbanner .menu_right > span {display:block; width:100%; height:100%; background:url('/mobiz/app/img/mbank/gs_arrow02.png') no-repeat 100% 0;background-size:cover;}
+#content [class^="goods_"] h2 {font-size:20px; font-weight:normal;}
+#content [class^="goods_"] h2 > strong {font-size:24px;}
+.goods_commend {background:#e9dac7; margin-top:10px; padding:24px 0 20px; line-height:1;}
+#content .goods_commend h2 {color:#6c573c; padding:0 16px; margin:0 0 22px 0;}
+.goods_commend [class^="sort"] {font-size:13px; }
+.goods_commend .rolling_container .rolling_wrap .rollingbox > a {position:relative; display:block; box-sizing:border-box; padding:20px;} /*2016-10-20 글씨짤림 height값 삭제*/
+.goods_commend .sort-loan {color:#d45232; }
+.goods_commend .sort-deposit {color:#3d60af; }
+.goods_commend [class^="tit"] {display:block; width:100%; font-size:15px; color:#222; line-height:16px; margin:10px 0 8px 0; position:relative; }
+.goods_commend .tit-new:after {content:'NEW'; font-size:12px; padding-left:5px; color:#dc0808; vertical-align:top;}
+.goods_commend .txt_sub {display:block; height:85px; margin:0; font-size:12px; color:#555555; line-height:16px; } /*2016-10-20 글씨짤림 height값 수정*/
+.goods_commend .txt_subbott { color:#555555; position:absolute; bottom:22px;}
+.slick-track:before, .slick-track:after {content:''; display:table;}
+.rolling_container {position:relative; margin:0 0 0 16px;}
+.rolling_container .rolling_wrap {overflow:hidden; margin:0 0 30px; width:9999px}
+.rolling_container .rolling_wrap .rollingbox {float:left; position:relative; margin:0 10px 0 0; box-sizing:border-box; background:#fff; border-radius:3px; font-size:12px} /*2016-10-20 글씨짤림 height값 삭제*/
+.rolling_container .rolling_wrap .rollingbox:last-child {margin-right:0;}
+.rolling_container .rolling_wrap .slick-track:after {display:block; content:""; clear:both;}
+.rolling_wrap .slick-dots {position:absolute; bottom:-10px; left:0; right:0; text-align:center;}
+.rolling_wrap .slick-dots:after {display:block; content:""; clear:both;}
+.rolling_wrap .slick-dots > li {display:inline-block; margin-left:5px;}
+.rolling_wrap .slick-dots > li:first-child {margin-left:0;}
+.rolling_wrap .slick-dots > li button {display:inline-block; overflow:hidden; text-indent:-999px; width:8px; height:8px; background:#f4ede3; border-radius:50%; border:0; cursor:pointer}
+.rolling_wrap .slick-dots > li.slick-active button {background:#fff}
+.goods_commend .rolling_wrap {overflow:initial; width:82%;}
+.goods_commend .rolling_container {overflow:hidden;}
+.goods_commend .rolling_container .slick-slider {position:static;}
+.goods_commend .rolling_container .slick-list {overflow:visible}
+.goods_commend .rolling_wrap .slick-dots {position:absolute; bottom:0; left:0; right:0; text-align:center;}
+.goods_commend .rolling_wrap.sepecialWrap  {overflow:initial; width:100%;}
+.goods_commend .rolling_wrap.sepecialWrap .rollingbox {height:auto;}
+.goods_commend .rolling_wrap.sepecialWrap .rollingbox a {height:auto;}
+.goods_best {padding:30px 16px 20px;}
+#content .goods_best h2 {color:#444444; margin:0 0 8px 0;}
+#content .goods_best h2 > strong {vertical-align:top;}
+.goods_best .sub_txt {font-size:11px; color:#555555; line-height:1;}
+.goods_best .best_list {margin-top:19px; border-top:1px solid #eceef0;}
+.goods_best .best_list li {border-bottom:1px solid #eceef0; position:relative;}
+.goods_best .best_list li a {padding:14px 0; display:block;}
+.goods_best .best_list li a .num {position:absolute; left:10px; top:50%; margin-top:-14px; color:#ed471e; font-size:26px; line-height:1;}
+.goods_best .best_list li a .per {position:absolute; right:6px; top:14px; text-align:right; color:#777777; font-size:12px; line-height:20px;}
+.goods_best .best_list li a .per > strong {display:block; font-size:20px; color:#ed471e;}
+.goods_best .best_list li a .tit {display:table-cell; height:36px; padding:0 6px 0 35px; font-size:14px; vertical-align:middle; }
+.goods_best .best_list li a .per + .tit {padding-right:110px;}
+
+.goods_best .best_list.list_link02 a{background-size:auto 17px}
+
+.themagoods .tabcont ul {background:none;}
+.themagoods .dlist01 dt {font-size:14px;}
+
+/*기획요청 상담안내 관련 추가 2016-09-29 */
+.themagoods .goods_noti {padding:11px 15px; background:#fdfdfd; border:1px solid #cecece; border-radius:3px; position:relative;}
+.themagoods .goods_noti dl {font-size:13px; }
+.themagoods .goods_noti dl > dt {float:left; padding:4px 18px 4px 0;}
+.themagoods .goods_noti dl > dd {padding:4px 0;}
+.themagoods .goods_noti dl > dd.num {font-size:16px;}
+.themagoods .goods_noti .call_btn {position:absolute; right:15px; top:50%; margin-top:-15px; padding:0; width:30px; height:30px; background:url(/mobiz/app/img/mbank/ico_call.png); background-size:100% auto;}
+
+/* 투자정보 분석 (금융상품 > 펀드 > 가입전확인 ~ 투자자정보등록) - .investmentInfo */
+.investmentInfo {}
+.investmentInfo button.fn, a.fn {width:80%} 
+.investmentInfo .nextHead {font-size:14px; color:#333; font-weight:bold}
+.investmentInfo .referTxt {margin:0 0 20px; font-size:13px}
+.investmentInfo .referTxt.typeB {color:#0070e8}
+.investmentInfo .referTxt.typeG {color:#555}
+.investmentInfo .stockBox {overflow: hidden; padding:13px 15px; margin:0; background: #f7fdff; border: 1px solid #cbe3ec; border-radius:3px;}
+.investmentInfo .stockBox .stockName {font-size:16px; font-weight:bold; color:#2182ed}
+.investmentInfo .stockBox .bisnessCst {margin:11px 0 0; font-size:13px; color:#555}
+.investmentInfo .stockBox .stockBox_info {margin:11px 0 0}
+.investmentInfo .stockBox .stockBox_info li {margin:5px 0 0; font-size:13px; color:#333; text-align:left}
+.investmentInfo .stockBox .stockBox_info li:first-child {margin:0}
+.investmentInfo .stockBox .stockBox_info li .riskCase {display:inline-block; margin:0 21px 0 0}
+
+/* 펀드신규_투자성향분석결과쪽 */
+.investmentInfo .stockBox .stockBox_info.type2 .riskCase {display:inline-block; margin:0 21px 0 0; width:110px}
+.investmentInfo .strong_box.Que {margin:17px 0}
+.investmentInfo .strong_box.Que .quetitle {padding:0 0 0 20px; font-size:13px; color:#0070e8; text-indent:-20px}
+.investmentInfo .stockGuide {padding: 13px 15px; margin:0 0 15px; background: #f8f8f8; border: 1px solid #cecece; border-radius: 3px; font-size:13px; color:#555}
+.investmentInfo .stockGuide strong {display:block; margin:0 0 13px}
+
+.investmentInfo .queClause dt {margin:20px 0 0; padding:0 0 0 23px; font-size:13px; font-weight:bold; color:#333; text-indent:-23px}
+.investmentInfo .queClause dt:first-child {margin-top:0}
+.investmentInfo .queClause dd {position:relative; margin-top:10px; font-size:13px; color:#333; line-height: 18px} 
+.investmentInfo .queClause dd .chkQue_list {}
+.investmentInfo .queClause dd .chkQue_list li {position:relative; display:table; padding:0 0 0 35px; margin:6px 0 0; height:28px; font-size:13px; color:#555;}
+.investmentInfo .queClause dd .chkQue_list li:first-child {margin:0}
+.investmentInfo .queClause dd .chkQue_list li input[type="radio"],
+.investmentInfo .queClause dd .chkQue_list li input[type="checkbox"] {position:absolute; top:0; left:0}
+.investmentInfo .queClause dd .chkQue_list li label{display:table-cell; vertical-align:middle}
+.investmentInfo .question_Head {font-size:13px; color:#555}
+.investmentInfo .question_Head h3 {margin:11px 0 6px}
+
+/* 투자정보 분석 -(금융상품 > 펀드 > 투자자성향결과) */
+.investmentResult {font-size:13px}
+.investmentResult .resultHead {margin:0 0 13px; text-align:center}
+.investmentResult .resultHead h2 {margin:0 0 13px; font-size:17px; font-weight:bold; color:#333 !important}
+.investmentResult .resultHead p {font-size:13px; color:#555}
+.investmentResult .resultGarpeBox {padding:13px 15px; margin:0 0 15px; background:#f8f8f8; border:1px solid #bbb; border-radius:3px;}
+.investmentResult .resultGarpeBox .result_cutType {margin:16px 0 0;}
+.investmentResult .resultGarpeBox .result_cutType dt {display:block; padding:0 0 12px; border-bottom:1px solid #dadada; font-size:16px; font-weight:bold; color:#019157; text-align:center}
+.investmentResult .resultGarpeBox .result_cutType dd {padding:11px 0; font-size:13px; color:#333}
+.investmentResult .resultGarpeBox .btn05 {background-color:#fdfdfd}
+.investmentResult .cutChk_answer > h3 {margin:17px 0 6px; font-size:14px; color:#333}
+.investmentResult_pop .deriveInfo .der_tit {margin:21px 0 0; font-size: 14px; font-weight:bold; color: #333}
+.investmentResult_pop .deriveInfo .derInfo_list dt {margin:12px 0 7px; font-size: 13px; font-weight: bold; color: #555;} 
+
+/* 투자성향분석(파생상품) */
+.investmentInfo .stemProduct_view {margin:17px 0 0}
+.investmentInfo .stemProduct_view .tbl_view01 {margin:0 0 17px}
+.investmentInfo .stemProduct_view .whiteBox_info {margin:0 0 17px}
+.investmentInfo .stemProduct_view .btn05,  
+.investmentInfo .stemProduct_view .btn04 {width:60%}
+.investmentInfo .stemProduct_view .btn05:first-child {margin:0 0 5px}
+
+/* 공통사용(펀드) */
+.whiteBox_info {overflow: hidden; margin:0; padding: 13px 15px; background: #fff; border: 1px solid #cecece; border-radius: 3px; font-size:13px}
+.whiteBox_info li {margin:13px 0 0; font-size:13px; color:#555}
+.whiteBox_info li:first-child {margin:0}
+.whiteBox_info li strong {display:block; margin:0 0 6px}
+
+/* 투자자성향분석 팝업  */
+.investmentResult_pop .deriveInfo .der_tit {margin:18px 0 0; font-size: 14px; font-weight:bold; color: #333}
+.investmentResult_pop .deriveInfo .der_tit.type2 {margin:12px 0 0; }
+.investmentResult_pop .deriveInfo .derInfo_list dt {margin:12px 0 7px; font-size: 13px; font-weight: bold; color: #555;} 
+.investmentResult_pop .deriveInfo .derInfo_list .ulist01 li{padding-left:0px;background:none}
+
+/* 2016-08-24 금융상품 > 상품목록 추가 */
+.good_list_wrap {margin-top: 15px;}
+.tit_wrap + .good_list_wrap {margin-top: 0px;}
+.good_list li {position: relative;border-bottom: 1px solid #d3d3d3;}
+.good_list li:first-child {border-top: 1px solid #d3d3d3;}
+.good_list li > a,
+.good_list li > .goods_box {display: block; min-height:50px; padding: 18px 80px 18px 16px; background: #fff; font-size: 12px; color: #666;}/* 2016-10-04 이효훈 C043147:H 디자인결함 조치 */
+.good_list .good_name {max-height:36px; line-height: 18px; font-weight: bold; font-size: 15px; color: #333; overflow: hidden;}
+.good_list .good_name.new:after {content:'NEW'; font-size:12px; color:#dc0808; display:inline-block; padding-left:3px;}  /*2016-09-28 기획요청 css 수정*/
+.good_list .good_name span {display: inline-block; color: #f00;}
+.good_list .good_info {margin-top: 4px; letter-spacing: -1px;}/* 2016-10-04 이효훈 C043147:H 디자인결함 조치 */
+.good_list .good_info strong {font-size: 12px; color: #333;}
+.good_list .good_info strong.color_red {font-size:14px;}
+.good_list .good_info.trust strong.color_red, 
+.good_list .good_info.trust strong.color_blue {display:inline-block; padding:0 1px; font-size: 14px; vertical-align: bottom;}
+.good_list .good_info span {white-space: nowrap;}
+.good_list .good_info p {margin-top: 6px;}
+.good_list .good_info p span.color_red {font-size:12px}
+.good_list .star-grade,
+.good_list .grade {width: 56px; background: url('/mobiz/app/img/mbank/star_blank.png') no-repeat 0 50%; -webkit-background-size: 56px; background-size: 56px;}
+.good_list .star-grade .grade {background-image: url('/mobiz/app/img/mbank/star_full.png');}
+.good_list .star-grade .txt-grade {left: 60px; font-size: 14px; color: #ef0000;}
+.good_list .good_label {position: absolute; display: table; box-sizing: border-box; bottom: 18px; right: 16px; padding:0; width: 50px; height: 50px; border-radius:50%; box-shadow:none; background:#ffde00; text-align:center;}
+.good_list .good_label * {display: table-cell; padding-top:2px; line-height: 13px; font-weight: bold; font-size: 11px; color: #555; vertical-align:middle;}
+.good_list .good_label.sales {background:#ebebeb;} /*기획요청 css 추가*/
+.good_list .good_label .store {letter-spacing: -1px; color: #777;}
+.good_list .good_label.btn {right: 15px;}
+.good_list .good_label.detail {right: 15px;}
+.good_list .no_data {padding:90px 0 50px !important; background-position:50% 50px !important; border-top:1px solid #d3d3d3;}  /*2016-09-30 기획요청 css 수정*/
+
+.good_list.card {padding: 0; background: none;}
+.good_list.card a {display: block; padding: 17px 15px; background: #fff; border-radius:3px; box-shadow: 2px 2px 0 #dcdcdc; font-size: 12px; color: #666;}
+.good_list.card .theme {display: block; margin-bottom: 4px; line-height: 12px; font-size: 11px; color: #666;}
+
+.themegoods {padding-top: 41px;}
+.theme_menu {position: absolute; top: 0; left: 0; box-sizing:border-box; width: 100%; height: 41px; padding-right: 40px; border-bottom: 1px solid #e7e7e7; overflow: hidden; z-index: 2; background: #fff;}
+.theme_menu.oneType select {width:100%}
+.theme_menu select {float: left; width: 50%; height: 40px; line-height: 38px; margin: 0; padding-left: 13px; border: none; border-left: 1px solid #e7e7e7; border-radius:0; background: url('/mobiz/app/img/template/bullet_down_theme.png') no-repeat right 50%; -webkit-background-size: auto 5px; background-size: auto 5px; font-size: 14px; color: #596f8c;}
+.theme_menu select option {float:left;}
+.theme_menu select.no_depth {width: 100%;}
+.theme_menu button,
+.theme_menu a {position: absolute; right: 0; top: 0; width: 40px; height: 40px; border: none; border-left: 1px solid #e7e7e7; background-image: url('/mobiz/app/img/template/bg_theme_search.png'); background-repeat: no-repeat; -webkit-background-size: 18px auto;background-size: auto 19px; background-position: 11px 50%; cursor:pointer; background-color: #fff;}
+.theme_menu .btn_search_detail {background-position: -65px 50%;}
+.theme_menu .btn_keyword_search {right: 40px; border: none;}
+.theme_menu .serach_keyword {display: none; position: absolute; top: 0; left: 0; box-sizing:border-box; width: 100%; height: 40px; padding-right: 80px; overflow: hidden;}
+.theme_menu .serach_keyword * {background-color: #ffde00 !important;}
+.theme_menu .serach_keyword input {border: none; height: 40px; line-height: 18px; padding: 10px; border-radius:0; box-shadow: none; font-size: 12px; color: #7e6d56;}
+.theme_menu .serach_keyword input::-webkit-input-placeholder {color: #7e6d56;}
+.theme_menu .serach_keyword .btn_search_toggle {background-position: -26px 50%;}
+.theme_menu.detail {padding-right: 80px;}
+.theme_menu.detail >.btn_search_toggle {right: 40px;}
+.theme_sort {margin-top:16px; font-size: 11px; color: #333; overflow: hidden;}
+.theme_sort .result {display: table; width: 100%; margin-bottom: 7px; letter-spacing: -1px;}
+.theme_sort .result p {display:table-cell; height: 20px; vertical-align: middle;}
+.theme_sort .total span {font-size: 15px; color: #7e6d56; vertical-align: top;}
+.theme_sort .right_txt {text-align: right; color: #666;}
+.theme_sort .right_txt span {position: relative; top: 1px; font-size: 12px;}
+.theme_sort .sorting {width: 190px;}
+.theme_sort .sorting + select {width: 94px; margin-top:0;}
+.theme_sort select + select {margin-top:5px;} /*2016-09-07 기획변경에따른 css추가*/
+.theme_tab {margin-top: 10px;}
+.theme_tab .tab_st01 {margin: 0;}
+.theme_tab .tab_st01 li {width: 30%; letter-spacing: -1px;}
+.theme_tab .tab_st01 li:first-child {width: 70%;}
+.theme_tab .pention {display: none; position: relative; margin: 20px 0 0; padding-bottom: 35px; background: url('/mobiz/app/img/mbank/pention.jpg') no-repeat right top; -webkit-background-size: 111px; background-size: 111px; font-size: 12px; color: #666;}
+.theme_tab .pention p {margin-bottom: 25px; font-weight: bold; font-size: 15px; color: #333;}
+.theme_tab .pention button {position: absolute; right: 0; bottom: 12px; height: 16px; line-height: 16px; padding-right: 12px; border: none; background: none; font-size: 11px; color: #333;}
+.theme_tab .pention button:after {content: ""; position: absolute; right: 0; top: 0; display: block; width: 12px; height: 16px; background: url('/mobiz/app/img/template/good_icon_more.png') no-repeat right 50%; -webkit-background-size: 10px; background-size: 10px;}
+.theme_tab .pention button.active:after {-webkit-transform: rotate(-180deg); transform: rotate(-180deg);} 
+
+.good_list_wrap .list_more {padding: 0 15px;}
+.good_list_wrap .list_more a {position: relative; top: -1px; display:block; height: 16px; padding: 6px 0 8px; border: 1px solid #d3d3d3; background: #fff; box-shadow : 2px 2px 0 #e5e5e5; text-align: center; font-weight: bold; font-size:12px; color: #333;}
+.good_list_wrap .list_more .btnMore {padding: 0 20px 0 0; background: url('/mobiz/app/img/template/good_icon_more.png') no-repeat right 50%; -webkit-background-size: 10px;background-size: 10px;}
+
+/* > 상품목록 - 상세검색페이지 */
+.themagoods .tabwrap02 .tabcont {top:49px}
+.themagoods .tabcont {line-height:130%}
+.themagoods .tabcont.posi01 {padding: 15px !important;}
+.themagoods .tabcont.posi01 .profit_rate {margin-top: 12px;}
+.themagoods .ui-slider {height: 4px; border: none; border-radius:0; background: #ffde00;}
+.themagoods .ui-slider .ui-slider-range {background: #a67c52;}
+.themagoods .ui-state-default, 
+.themagoods .ui-widget-content .ui-state-default, 
+.themagoods .ui-widget-header .ui-state-default {width: 18px; height: 18px; border-radius:50%; border: none; background: #a67c52;}
+.themagoods .input_age {position: relative;}
+.themagoods .input_age .age {position: absolute; top: 12px; right: 8px; color: #888; font-size: 15px;}
+.themagoods .plist01 {padding-left:7px;margin-bottom:5px;font-size:13px;color:#333;background:url('/mobiz/app/img/mbank/bullet01.gif') no-repeat left 7px;background-size:3px} /*2016-09-29 css 추가*/
+
+/* >  js css 부분  */
+.slider-range-wrap {padding:10px 8px 20px 8px;height:45px; box-sizing:border-box;}
+.profit_rate {overflow:hidden;margin-top:7px;font-size:11px;padding:0 8% 0 8.5%;}
+.profit_rate span.pr_rate {float:left;width:20%;text-align:center;}
+.profit_rate span.profit_down {position:absolute;left:16px;}
+.profit_rate span.profit_up {position:absolute;right:11px;}
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.6em; height: 1.6em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+.ui-slider-horizontal { height: .85em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.5em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+.ui-widget-content { border: 1px solid #c7c7c7; background: #ccc; color: #222222; }
+.ui-widget-content a { color: #222222; }
+.ui-widget-header { border: 1px solid #c7c7c7; background: #ffc301; color: #222222;}
+.ui-widget-header a { color: #222222; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border:1px solid #ccc; background:#fff;border-radius:15px;box-shadow:0 -6px 3px -5px rgba(208,208,208,.9) inset;}
+.ui-corner-all { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+
+.themagoods .tab_st05_01, .fund .tab_st05_01, .gold .tab_st05_01{border-top:1px solid #ccc;}
+.themagoods .tabwrap02 .tabcont, .fund .tabwrap02 .tabcont, .gold .tabwrap02 .tabcont{border:none;}
+.themagoods.detail_pop .tab_st05_01{border:1px solid #ccc}
+/* -- E// 2016-08-24 금융상품 > 상품목록 추가 */
+
+/* -- 2016-08-24 금융상품 > 상품상세 추가 */
+.star-grade {background:url('/mobiz/app/img/mbank/star-blank3.png') no-repeat 0 0; background-size:auto 17px; width:90px; height: 17px; position:relative;}
+.star-grade .grade {position:absolute; width:90px; height: 17px; background: url('/mobiz/app/img/mbank/star-full3.png') no-repeat 0 0; background-size:auto 17px; font-size:0 !important; text-indent:-999px; }
+.star-grade .txt-grade {position:absolute; top:2px; left:100px;color:#333; font-size:17px; font-weight:bold; width:55px; }
+.star-grade .partin {position:absolute; left:137px; top: auto; bottom: 0; width:150px;}
+.star-grade .partin button {/*background:#fff; font-size:11px; color:#6c6c6c; border:1px solid #b7b7b7; border-radius:15px; padding: 2px 7px ; display:inline-block; font-size:!2px;*/ position:relative; top:-9px; cursor:pointer;}
+.star-grade.inline {display:inline-block; background-size:68px; width:68px; position:relative; top:7px;}
+.star-grade.inline .grade {width:68px; background-size: 68px;}
+.star-grade.inline .txt-grade {left:77px; font-size:12px; margin-top:-3px}
+.property  {margin-bottom:15px !important;}
+.property2{margin-bottom:5px !important;}
+.property *, .property2 * {font-size:12px; color:#03867b !important; }
+.g-status {margin-top:2px; font-size:11px; color:#6c6c6c; border:1px solid #b7b7b7; border-radius:15px; padding:2px 7px 0; display:inline-block; margin-left:5px; position:relative; top:-2px; cursor:pointer;}
+button.g-status {background:#fff; padding:3px 7px; font-size:11px; color:#6c6c6c }
+
+.join-section {overflow:hidden; border:1px solid #6cc7bf; border-radius:3px; margin: 20px 0; position:relative;}
+.join-section>ul{border-radius:3px 3px 0 0; background:url('/mobiz/app/img/mbank/bg_tab_btn02.png') repeat-x 0 0; background-size:auto 42px;}
+.join-section>ul>li {display:inline-block; width:50%; float:left; }
+.join-section>ul>li>a {display:block;  height:41px; line-height:43px; text-align:center; border-right:1px solid #6cc7bf;}
+.join-section>ul>li.on>a{height:42px;border-bottom:0; background:#fff;}
+.join-section>ul>li:last-child a {border-right:none;}
+.join-section>ul>li>a>span {margin-right:4px; position:relative; top:5px; overflow:inherit;}
+.join-section.deposit>ul{display:-webkit-box; display:-moz-box; display:-webkit-box; display:box; width:100%;}
+.join-section.deposit>ul>li {float:none; display:block; width:33.3%; box-orient :horizontal;-moz-box-orient:horizontal; -webkit-box-orient:horizontal; box-flex:1; -moz-box-flex:1; -webkit-box-flex:1}
+.join-section .litype {}
+.join-section .litype.on {background:#fff;}
+.join-section .tabcont .btn_center {margin: 17px 0 0 0}
+.join-section .tabcont .tac a {display:inline-block; margin-right:9px;}
+.join-section .tabcont .tac a:last-child {margin-right:0;}
+.join-section .join-txt {display:inline-block; height:0; font-size:0; text-indent:-9999px;}
+
+/* 금융상품 상세 */
+.summary-info {padding-bottom:30px}
+.summary-info h2#prdName {margin:0 0 12px !important; color:#333 !important; font-size:16px !important;}
+.summary-info .midTitle {margin:13px 0 2px; font-size:12px !important; color:#333;}
+.summary-info .midTitle:first-child {margin-top:0}
+
+.summary-info .btnwrap {text-align:center}
+.summary-info .btnwrap .btnCycle {display:inline-block; width:40px; height:40px; border-radius:50%; font-size:11px; line-height:40px; text-align:center; letter-spacing:-1px}
+.summary-info .btnwrap .btnCycle.type01 {background:#9b8f7e; border:1px solid #9b8f7e; color:#fff;}
+.summary-info .btnwrap .btnCycle.type02 {background:#fff; border:1px solid #333; color:#333;}
+
+.summary-info .simpleInfo {margin-bottom:18px; color:#666}
+.summary-info .simpleInfo .rate {font-size:20px; color:#d25f6c}
+.summary-info .simpleInfo.dlist01 dd {font-size:12px}
+
+/* stick_head */
+.summary-info .stick_head {position:relative;padding:23px 66px 17px 16px; width:100%; background:#fff; border-bottom:1px solid #e5e5e5; box-sizing:border-box; transform:translate3d(0,0,0);}
+.summary-info .stick_head.active, .summary-info .stick_head.non_act {z-index:20; position:fixed; top:0}
+.summary-info .porperties_list {overflow:hidden}
+.summary-info .porperties_list ul {overflow:hidden;}
+.summary-info .porperties_list li {float:left; padding:0 6px 0 0; margin:0 5px 0 0;  background:url('/mobiz/app/img/mbank/bg_porperties_list.gif') no-repeat 100% 5px; font-size:11px; color:#555; background-size:1px 10.5px;}
+.summary-info .porperties_list li:last-child {background:none}
+.summary-info .stick_head .good_label {position: absolute; display: table; box-sizing: border-box; top: 50%; right: 16px; margin-top:-25px; padding:0; width: 50px; height: 50px; border-radius:50%; box-shadow:none; background:#ffde00; text-align:center;}
+.summary-info .stick_head .good_label * {display: table-cell; padding-top:2px; line-height: 13px; font-weight: bold; font-size: 11px; color: #555; vertical-align:middle;}
+.summary-info .stick_head .good_label.sales {background:#ebebeb;} /*기획요청 css 추가*/
+.summary-info .stick_head .good_label .store {letter-spacing: -1px; color: #777;}
+
+.summary-info .sum_hcont {padding:11px 16px 0}
+.summary-info .sum_hcont.non_act {padding:85px 15px 0}/* 외화예금신규 상품상세 상단여백 */
+
+.summary-info .fundInfo {margin:0 0 20px}
+.summary-info .fundInfo .tbl_list01 {margin-bottom:0}
+.summary-info .fundInfo .detail_list {font-size:12px;}
+.summary-info .fundInfo li .tit {color:#333}
+.summary-info .fundInfo li .cont {color:#666}
+.summary-info .fundInfo li .standard {font-size:20px; color:#d25f6c}  
+.summary-info .fundInfo li .stdinfo {display:inline-block; margin:0 0 0 5px; color:#7e6d56}
+
+.summary-info .star-grade {z-index:10; background:url('/mobiz/app/img/mbank/star-blank4.png') no-repeat 0 0; background-size: auto 15px;}
+.summary-info .star-grade .grade {background:url('/mobiz/app/img/mbank/star-full4.png') no-repeat 0 0; background-size: auto 15px;}
+.summary-info .star-grade .txt-grade {display:inline-block; top:-1px; left:97px; width:20px; font-size:14px; font-weight:bold; color:#d25f6c}
+.summary-info .star-grade .partin {display:inline-block; margin:0; top:-3px; left:125px; width:50px}
+.summary-info .star-grade .partin button {margin:0; top:0; padding:3px 9px; border:1px solid #e5e5e5; color:#666}
+
+.sumdetail-section {position:inherit; z-index:1; overflow:hidden; margin:-27px 0 0; border:none; border-radius:0;}
+.sumdetail-section .tabwrap02 {min-height:40px !important}
+.sumdetail-section.deposit > ul {background:none}
+.sumdetail-section.deposit > ul > li {float:none;}
+.sumdetail-section.deposit > ul > li > a {position:absolute; display:block; width:38px; padding:10px 0 5px; height:auto; border:none; box-sizing:border-box; line-height:0; text-align: center}
+.sumdetail-section.deposit > ul > li.state > a {right:65px}
+.sumdetail-section.deposit > ul > li.sns > a {right:27px}
+.sumdetail-section.deposit > ul > li.cart > a {right:-11px}
+.sumdetail-section.deposit > ul > li > a > span {overflow:inherit; margin:0; display:inline-block; position:static; top:inherit}
+.sumdetail-section.deposit > ul > li > a > span.stateIcon {width:16px; height:15px; background:url('/mobiz/app/img/mbank/bg_ico-stats_off.png') no-repeat; background-size:16px 15px}  
+.sumdetail-section.deposit > ul > li > a > span.snsIcon {width:12px; height:15px; background:url('/mobiz/app/img/mbank/bg_ico-sns_off.png') no-repeat; background-size:12px 15px}  
+.sumdetail-section.deposit > ul > li > a > span.cartIcon {width:16px; height:15px; background:url('/mobiz/app/img/mbank/bg_ico-cart_off.png') no-repeat; background-size:15px 15px}  
+.sumdetail-section.deposit > ul > li.on > a > span.stateIcon {background-image:url('/mobiz/app/img/mbank/bg_ico-stats_on.png')} 
+.sumdetail-section.deposit > ul > li.on > a > span.snsIcon {background-image:url('/mobiz/app/img/mbank/bg_ico-sns_on.png')} 
+.sumdetail-section.deposit > ul > li.on > a > span.cartIcon {background-image:url('/mobiz/app/img/mbank/bg_ico-cart_on.png')} 
+.sumdetail-section.deposit > ul > li .tabcont {overflow:hidden; padding:19px !important; border:1px solid #cdcdcd; border-radius:3px} 
+.sumdetail-section.deposit > ul > li .tabcont .tac {margin:6px 0 0}
+.sumdetail-section.deposit > ul > li .tabcont h3.h3_first {margin-top:0 !important}
+.sumdetail-section.deposit .tabwrap02 {padding:0 0 30px}
+.sumdetail-section.deposit .tabwrap02 .tabcont {top:41px !important}
+.sum_tabwrap .tab_3 ul.list_desc {display:block !important; margin-bottom:5px; background:none}
+.sum_tabwrap .tab_3 ul.list_desc li {float:none !important; -webkit-box-flex:auto !important; -moz-box-flex:auto !important; box-flex:auto !important}
+.sum_tabwrap .tab_3 ul.list_desc li:last-child {width:100% !important}
+.sum_tabwrap .tab_st05_01.sumifno {margin:0 0 0}
+.sum_tabwrap .tab_st05_01.sumifno .tabwrap02 > li {width:33.33% !important}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont {padding:17px 16px !important;font-size:12px; color:#333}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont h3.h3_first {margin-top:0 !important}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont h3 {font-size:13px; color:#333}
+
+/*추가수정*/
+.sum_tabwrap .tab_st05_01.sumifno .tabcont p {font-size:12px; color:#333}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont p,
+.sum_tabwrap .tab_st05_01.sumifno .tabcont li {font-size:12px; color:#333}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont ul {display:block !important;width:100% !important;}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont > ul {display:block !important;}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont > ul > li{background:none;text-indent:-6px;line-height:18px;}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont > ul > li:before{content: "-";padding-right:1px}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont > ul > li:last-child{width:100% !important}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont > ul > li > ul.list_depth{}
+.sum_tabwrap .tab_st05_01.sumifno .tabcont > ul > li > ul.list_depth > li{margin-bottom:2px;text-indent:0px}
+
+/*금융상품 펀드 상품상세*/
+.summary-info .s-d-info {overflow:hidden;}
+.summary-info .s-d-info dt, .summary-info .s-d-info dd {padding-bottom:5px;}
+.summary-info .s-d-info dt{float:left; color: #777; background: url('/mobiz/app/img/mbank/bullet01.gif') no-repeat left 7px; background-size: 3px; padding-left:7px; font-weight:bold; width:20%; width:55px;}
+.summary-info .s-d-info dd{padding-left:70px;}
+.summary-info .s-d-info dd:after{content: "."; display: block; height: 0px; clear: both; visibility: hidden;}
+
+.summary-info .s-d-info .up {color:#ef0000; background: url('/mobiz/app/img/mbank/fn_icon_rhigh.png') no-repeat 1px 3px; background-size:14px 10px; padding-left:17px; font-size:15px; font-weight:bold;}
+.summary-info .s-d-info .down {color:#0b76e1; background: url('/mobiz/app/img/mbank/fn_icon_brow.png') no-repeat 1px 3px; background-size:14px 10px; padding-left:17px; font-size:15px; font-weight:bold;}
+
+.summary-info .s-d-info.w05 dt {width:75px !important}
+.summary-info .s-d-info.w05 dd {padding-left:80px !important;}
+.summary-info .s-d-info.w06 dt {width:85px !important; }
+.summary-info .s-d-info.w06 dd {padding-left:90px !important;}
+.summary-info .s-d-info.w07 dt {width:95px !important; }
+.summary-info .s-d-info.w07 dd {padding-left:100px !important;}
+
+/* #### news ######################## */
+
+/* #### certificate ######################## */
+.steplist_box{overflow:hidden;border:1px solid #ccc;border-radius:3px;}
+.steplist_box .topBox{padding:15px 15px 0 15px;}
+.steplist_box li{position:relative; padding:14px 15px 15px 35px; background:url("/mobiz/app/img/mbank/sc_bg_step.gif") no-repeat 50% 0px, url("/mobiz/app/img/mbank/sc_bg_cust_step.gif") repeat-x 0 0; background-size:auto 5px;}
+.steplist_box li:first-child{background:none;}
+.steplist_box li .chk_num{position:absolute; left:15px; top:15px; display:inline-block; height:15px; width:15px; text-align:center; font-size:12px; color:#fff; border-radius:15px; background:#006feb;line-height:15px}
+.steplist_box .endLine{padding:10px 15px; border-top:1px solid #ccc;}
+.certificate .otp_box{position:relative;overflow:hidden;padding:10px 20px 12px;border:1px solid #ccc;border-radius:3px;}
+.certificate .otp_box .img{text-align:center;}
+.certificate .otp_box .img img{width:175px;max-width:480px;}
+.certificate .otp_box ul{margin-top:10px;}
+.certificate .otp_box li{padding:0 0 10px 22px; position:relative;}
+.certificate .otp_box .chk_num span{position:absolute; top:0px; left:0px; padding: 2px 5px 1px; font-size: 12px; color:#fff; border-radius: 15px; background:#006feb;} 
+
+/* 인증센터 by.kyr 2016-08-12 */
+.fullpop-wrap h2 {text-align:center;}
+.fullpop-wrap p {color:#555555; font-size:13px;}
+.security_noti {margin-top:8px;}
+.security_noti li {padding-left:24px; padding-bottom:8px; color:#555555; font-size:13px; position:relative; }
+.security_noti li:before {content:''; display:block; width:18px; height:18px; position:absolute; left:0; top:0;}
+.security_noti li:first-child:before {background:url(/mobiz/app/img/mbank/sc_num01.gif) no-repeat; background-size:100% auto;}
+.security_noti li:nth-child(2):before {background:url(/mobiz/app/img/mbank/sc_num02.gif) no-repeat; background-size:100% auto;}
+.security_img img {max-width:200px;}
+.certificate .olist01 li {font-size:13px; color:#555; text-indent:-22px; margin-left:0; margin-bottom:10px; padding-left:22px; list-style:none;}
+.certificate .olist01.imgnum span {text-indent:0; margin-top:-3px; margin-right:4px; color:#fff; width:18px; height:18px; line-height:19px; border-radius:50px; background:#0070e8; display:inline-block; text-align:center; font-size:12px; }
+.certificate .con_dlist01 {margin-top:6px;}
+.certificate .con_dlist01 dd {text-indent:0;}
+.certificate .tabcont {border:none; padding:0;}
+.certificate .tabcont li:last-child {width:auto !important;}
+.certificate .tbl_idlist {clear:both;}
+.certificate .tbl_idlist table {width:100%;}
+.certificate .tbl_idlist tr.head td {font-weight:bold; padding:9px 0 13px 0;color:#0b76e1;font-size:25px;text-align:center;border:1px solid #a6a6a6;background:#fff;}
+.certificate .tbl_idlist td {padding:2px 0;color:#333;text-align:center;font-size:11px;border:1px solid #a6a6a6;background:#fff;}
+
+/* #### manage ######################## */
+.mn_list.list_type01 {border-top:none}
+.mn_list.list_type01 > li {border-top:1px solid #cecece; margin-top:-1px}
+.mn_list.list_type01 > li:first-child {border-top:1px solid #cecece; margin-top:0px}
+.mn_list .rbtn03 {position:absolute;right:10px;top:50%;margin-top:-16px}
+.mn_list .rbtn03 > span {display:inline-block;}
+.mn_list .mn_btn01 {display:inline-block;width:32px;height:33px;border:0;background:url('/mobiz/app/img/mbank/arrow_up01.png') no-repeat left top;text-indent:-9999px;overflow:hidden; vertical-align:middle;background-size:32px auto;cursor:pointer;margin-right:2px}
+.mn_list .mn_btn02 {display:inline-block;width:32px;height:33px;border:0;background:url('/mobiz/app/img/mbank/arrow_down01.png') no-repeat left top;text-indent:-9999px;overflow:hidden; vertical-align:middle;background-size:32px auto;cursor:pointer;}
+.mn_list .mn_btn03 {margin-right:12px;display:inline-block;width:15px;height:15px;border:0;background:url('/mobiz/app/img/mbank/btn_list_delete.png') no-repeat left top;text-indent:-9999px;overflow:hidden; vertical-align:middle;background-size:15px;cursor:pointer;}
+.mn_list .selected {background:#e7f3fe; border-top:1px solid #cecece !important; border-bottom:1px solid #cecece !important; z-index:10}
+.mn_list.type02 li {position:relative;padding:15px 140px 15px 15px; margin-top:-1px; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1;}/* 2016-09-09 수정 */
+.mn_list.type02 li:first-child {border-top:1px solid #b7b7b7;margin-top:0px}/* 2016-09-09 추가 */
+.mn_list li .default {line-height:32px;}
+.mn_list .left_btn {position:absolute;top:17px;right:15px;}
+.mn_list .detail_list {padding-right:70px}
+
+/* #### mykb ######################## */
+/* MyKB by.kyr 2016-09-07 추가 */
+.mykb .main_vis{position:relative;background:url('/mobiz/app/img/mbank/ma_vis.png') no-repeat 0 0;background-size:cover;text-align:center; padding:21px 23px; box-sizing:border-box;}
+.main_vis.type2 h1{margin-top:21px;width:144px;height:23px}
+.main_vis.type2 .main_vis_ct{position:relative;text-align:left}
+.main_vis.type2 .main_vis_ct>span{position:absolute;left:0;top:0;width:40px;height:40px;}
+.main_vis.type2 .main_vis_ct>span img{width:100%;height:100%}
+
+.main_vis.type2 .main_vis_ct>span.uimg {display:block;width:40px;height:40px;padding:7px;box-sizing:border-box;border-radius:50%;background:#fff}
+.main_vis.type2 .main_vis_ct>span.uimg img {overflow:hidden;width:100%;height:100%;text-align:center;border-radius:0}
+
+.main_vis.type2 .main_vis_ct>dl{margin-left:56px;letter-spacing:-0.5px}
+.main_vis.type2 .main_vis_ct>dl dt{padding-bottom:4px;font-size:16px;color:#343332;font-weight:bold;}
+.main_vis.type2 .main_vis_ct>dl dd{position:relative;padding-left:7px;font-size:12px;color:#666;line-height:17px}
+.main_vis.type2 .main_vis_ct>dl dd:before{content: " ";position:absolute;left:0px;top:6px;width:3px;height:3px;background-color:#786c64;border-radius:1.5px}
+.main_vis.type2 .main_vis_ct>dl dd span{font-size:12px;color:#666}
+
+.main_vis.tablet_login{position:relative;height:114px;background:url('/mobiz/app/img/mbank/ma_vis_tablet2.png') no-repeat 0 0; background-size:cover;text-align:center; padding:30px 23px 21px; box-sizing:border-box;}
+
+.user-state {background:url(/mobiz/app/img/mbank/statetop_bg.jpg) no-repeat; background-size:100% 100%; padding:10px 16px 21px; height:88px; box-sizing:border-box;}
+.user-state .phishing-img {width:40px; height:40px; display:block; position:absolute; left:23px; top:10px;}
+.user-state .state-info {padding-left:63px;}
+.user-state .state-info > strong {display:block; font-size:16px; color:#343332; padding-bottom:9px;}
+.user-state .ulist01 li {color:#666666; font-size:12px; background-position:2px center; line-height:1; margin-bottom:6px; padding-left:8px;}
+.user-state .tline {color:#666666; background:none; border-left:1px solid #a6a6a6; margin-left:4px; padding-left:5px;}
+#content.mykb h2.h3_st {margin:21px 0 10px;}
+[class^='mylist'] {border:1px solid #cecece; border-radius:3px; }
+.mylist-basic ul {padding:0 14px; background:#f6f6f6; }
+.mylist-basic ul > li:first-child {border-top:none;}
+.mylist-basic ul > li {padding:15px 0; border-top:1px solid #e2e2e2; font-size:13px; line-height:24px;}
+.mylist-basic ul > li .label {line-height:1;}
+.mylist-basic ul > li .txt {float:right; padding-right:52px; position:relative;}
+.mylist-basic ul > li .txt:after {content:''; display:block; width:42px; height:26px; background:url(/mobiz/app/img/mbank/push_chk.png); background-size:42px auto; position:absolute; top:0; right:5px;}
+.mylist-basic ul > li .txt.on:after {background-position:0 -26px;}
+.mylist-basic .bottom_info {padding:15px 14px;}
+#content.mykb .bottom_info > h3 {margin:0 0 15px 0; font-size:12px; color:#555555;}
+/* 2016-10-06 myKB 기본정보 수정 */
+#content.mykb .bottom_info > dl {padding-bottom:7px;}
+#content.mykb .bottom_info > dl:last-child {padding-bottom:0;}
+#content.mykb .bottom_info dl dt, #content.mykb .bottom_info dl dd {display:inline-block; font-size:12px;}
+#content.mykb .bottom_info > dl > dt.tit {min-width:115px; color:#777;}
+
+.mykb .account_list.type2 li.no_data {border:none !important; background-color:transparent !important;}
+
+.mykb .acc_title {margin:0; height:auto; border:none; border-top:1px solid #e7e4de;} /*2016-09-06 깨짐수정*/
+.mykb .acc_title:first-child {border-top:0;}
+.mykb .acc_title h2 {border-bottom:none;} /* 2016-09-06 깨짐수정 */
+.mykb .acc_title h2 a {background:#44556b; color:#fefefe !important;}
+.mykb .acc_title h2 a > span {width:13px; height:7px; background:url(/mobiz/app/img/mbank/my_arrow02.png) 0 -21px; background-size:13px auto;}
+.mykb .acc_title.acc_open h2 a > span {background-position:0 0;}
+.mykb .acc_dep .txt_desc {margin:0; padding:21px 16px 10px 16px; font-size:13px; } /*2016-09-06 깨짐수정*/
+.mykb .account_list .txt01 {margin-left:16px;}
+.mykb .account_list.type2 > li {position:relative;}
+.mykb .account_list.type2 > li:last-child {border-bottom:none;} /*2016-09-06 깨짐수정*/
+.mykb .account_list.type2 > li .btn_center {margin-bottom:0;}
+.mykb .no_data02 {text-align:center; line-height:18px; padding:30px 0;}
+.mykb .no_data02 > p {margin-top:14px;}
+.history_list {margin:13px 16px 30px;}
+.history_list li > a {display:block; padding:17px 0 8px 3px; border-bottom:1px solid #e4e4e4;}
+.history_list li .tit {font-size:12px; color:#666666;}
+.history_list li .num {float:right; font-size:12px; color:#666666; padding-right:25px; position:relative; }
+.history_list li .num:after {content:''; width:16px; height:16px; display:block; position:absolute; right:0; top:3px; background:url(/mobiz/app/img/mbank/my_arrow.png); background-size:16px auto;}
+.history_list li .num > span {font-size:20px; color:#3d4a86; padding-right:5px;}
+.mykb .tab_st01 {margin:0; border-radius:0; background:#617a9a;}
+.mykb .tab_st01 li a {padding:0;border:none; background:#617a9a; color:#ffffff; font-size:12px; border-radius:0 !important; }
+.mykb .tab_st01 li.on a {border:none; background:#617a9a; color:#ffffff; font-weight:bold; font-size:13px; position:relative; box-shadow:none;} /*2016-09-06 깨짐수정*/
+.mykb .tab_st01 li.on a:after {content:''; width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:5px solid #fff; position:absolute; left:50%; margin-left:-6px; bottom:0;}
+.mykb .tabwrap01 {height:auto;}
+.mykb .tabwrap01 .tabcont {padding:0; border:none;}
+.mykb .tabcont .con_sp_first + .list_type01 {border-top:1px solid #cecece;} /* 2016-10-21 아코디언 내부 리스트 안내문구추가에 따른 border 수정 */
+.mykb .list_type01 {border-top:none;}
+.mykb .list_type01 .t_black_m {color:#333; font-size:17px; font-weight:bold;} 
+.mykb .list_type01 .t_blue_b {font-size:19px;} 
+.mykb .list_type01 li {margin-top:0; border-top:1px solid #cecece; border-bottom:none}/* 2016-10-17 아코디언 내부 리스트 border 수정 */
+.mykb .list_type01 li:first-child {border-top:none}/* 2016-10-17 아코디언 내부 리스트 border 수정 */
+.mykb .list_type01 li:last-child {border-bottom:none; width:100% !important;}
+.mykb .list_type01 li.no_data {border:none}/* 2016-10-17 아코디언 내부 리스트 border 수정 */
+.user_info {margin:30px 0; text-align:center;}
+.user_info p {line-height:18px; margin-bottom:13px;}
+.tab_box {padding:0 16px 21px;} 
+.tab_box .alert_box {padding:15px; border:1px solid #cecece; border-radius:3px; text-align:center; line-height:23px;}
+.tab_box .alert_box > span {color:#0070e8; font-size:19px; vertical-align:bottom;}
+#content.mykb .tab_box h3 {margin:21px 0 9px 0; color:#555;}
+.mykb .detail_list:after {content:''; clear:both; display:block;}
+.mykb .inquery_tit .stxt {font-size:13px; color:#666; top:-3px; font-weight:normal; vertical-align:bottom;} /*2016-10-05 기획요청 css 추가*/
+.mykb .fnd_group {margin-top:10px;}/*2016-10-05 기획요청 css 추가*/
+
+/* #### service ######################## */
+.push_box{padding:14px 16px;border:1px solid #ccc;border-radius:3px}
+.push_box dl{}
+.push_box dl dt,
+.push_box dl dd{font-size:13px;color:#555}
+.push_box dl dt{margin-top:12px;font-weight:bold;padding-bottom:2px}
+.push_box dl dt:first-child{margin-top:0px;}
+.push_box dl dd{line-height:18px}
+.push_box dl dd+dd{margin-top:4px}
+
+/* #### customer ######################## */
+/* 고객센터 by.kyr 2016-08-18 */
+.customer .list01.list01_type01 {margin-top:10px; border-radius:3px}
+.customer .list01.list01_type01 li {padding:19px 15px; position:relative; border-left:1px solid #d0d0d0; border-right:1px solid #d0d0d0}
+.customer .list01.list01_type01 li .tit {width:69px; font-weight:bold;}
+.customer .list01.list01_type01 li .call_btn {position:absolute; right:15px; top:50%; margin-top:-15px; padding:0; width:30px; height:30px; background:url(/mobiz/app/img/mbank/ico_call.png); background-size:100% auto;}
+[class^='list_colm']:after {content:''; display:block; clear:both;}
+[class^='list_colm'] li {width:50%; float:left; text-align:center;}
+[class^='list_colm'] li .wp {display:block; height:141px; padding:15px; border:1px solid #d0d0d0; border-radius:3px; background:#fdfdfd; box-sizing:border-box;}
+[class^='list_colm'] .tit {font-weight:bold;}
+[class^='list_colm'] .tit:before {content:''; display:block; margin:0 auto; margin-bottom:8px;}
+[class^='list_colm'] .tit, [class^='list_colm'] .txt {display:block;}
+[class^='list_colm'] .txt {margin-top:3px; line-height:18px;}
+[class^='list_colm'] .txt a {display:block;} /*2016-09-07 기획요청 css추가*/
+[class^='list_colm'] .txt_01 {display:block; padding-top:10px;}
+.list_colm01 .tit:before {width:50px; height:50px;}
+.list_colm01 li:first-child .wp {margin-right:5px;}
+.list_colm01 li:nth-child(2) .wp {margin-left:5px;}
+.list_colm01 li:first-child .tit:before {background:url(/mobiz/app/img/mbank/ico_call01.png); background-size:100% auto;}
+.list_colm01 li:nth-child(2) .tit:before {background:url(/mobiz/app/img/mbank/ico_call02.png); background-size:100% auto;}
+.list_colm02 li {width:33%;}
+.list_colm02 li .wp {padding:16px 0 8px; height:105px; font-weight:bold;}
+.list_colm02 li:first-child .wp {margin-right:7px;}
+.list_colm02 li:nth-child(2) .wp {margin-right:3px; margin-left:3px;}
+.list_colm02 li:nth-child(3) .wp {margin-left:7px;}
+.list_colm02 .wp:before {margin:0 auto; content:''; display:block; width:41px; height:35px; margin-bottom:4px;}
+.list_colm02 li:first-child .wp:before {background-image:url(/mobiz/app/img/mbank/ico_set01.png); background-size:100% auto;}
+.list_colm02 li:nth-child(2) .wp:before {background:url(/mobiz/app/img/mbank/ico_set02.png); background-size:100% auto;}
+.list_colm02 li:nth-child(3) .wp:before {background:url(/mobiz/app/img/mbank/ico_set03.png); background-size:100% auto;}
+
+/* #### setting ######################## */
+.setting .line_box {border:1px solid #cecece; border-radius:3px; padding:15px; margin-top:15px;}
+.setting .line_box * {letter-spacing:-0.5px;}
+.setting .line_box p {color:#555555;}
+.setting .line_box p:first-child {margin-top:0;}
+.setting .line_box p > strong {display:block; margin-bottom:5px; color:#333;}
+.setting .line_box .btn_center + p  {margin-top:20px;}
+.setting .line_box > .btn_center {margin-top:15px;}
+.setting .line_box > .btn_center button {margin-bottom:0;}
+
+/* #### fastinq ######################## */
+
+/* #### mobjoin ######################## */
+/* 권유직원 선택박스 */
+.box_type01 .sel_list01 {padding:15px}
+.box_type01 .sel_list01 li {padding:0 0 0 34px}
+.box_type01 .sel_list01 li + li {margin-top:10px}
+.box_type01 .sel_list01 .left_sel01 {left:0px; top:50%; margin-top:-14px;}
+.box_type01 .sel_list01 li .txt01, .box_type01 .sel_list01 li .txt02 {color:#777 !important}
+
+/* #### vat ######################## */
+
+/* #### etc ######################## */
+/* 2016-08-23 결재반송 textarea 관련 스타일 추가 */
+.layerwrap textarea.textarea {height:119px; padding:15px; margin-top:10px;}
+
+/* 2016-08-24 동의 박스 */
+.desc_box .agree_area01 {margin:0}
+.agreement_area .list_type01 {margin:5px -15px 0 -15px; }
+.agreement_area .detail_list {margin:0;}
+.agreement_area .detail_list li {margin-bottom:0;}
+
+/*2016-08-26 디바이스체크 오류 css 수정*/
+.foreign select + div > select {margin-top:5px;}
+.transfer .list_type01 .inc01 {overflow:inherit;}
+.inquery_stit + .fnd_group {margin-top:11px;}
+.total_amount > .fnd_group > .detail_list .t_black {padding-right:2px;}
+[class^="end_box"] .tit + .mt10 {margin-top:0 !important;}
+
+/* OTP입력안내 팝업 */
+.img_otp {margin-top:10px;}
+
+/* 금융상품 탭 */
+.tab_st02.goods ul{background:#596f8c;}
+.tab_st02.goods li {height:39px;}
+.tab_st02.goods li a{color:#fff;font-size:13px;}
+.tab_st02.goods li.on a{color:#ffdd54;font-size:13px;}
+
+/* 마이딜링룸 메인 추가 */
+.myDealingRoom_main .visual_area {position:relative;overflow:hidden;clear:both;height:200px;box-sizing:border-box;z-index:1;}
+.myDealingRoom_main .visual_area .visual_list_wrap {position:absolute;width:100%;height:100%;top:0;left:0;box-sizing:border-box;overflow:hidden;}
+.myDealingRoom_main .visual_area .visual_list_wrap .slick-prev {position:absolute;top:50%;left:1px;width:39px;height:48px;margin-top:-24px;text-indent:-9999px;background:url(/mobiz/app/img/mbank/gs_arrow01.png) no-repeat 50% 50%;background-size:13px auto;border:0;cursor:pointer;z-index:100;}
+.myDealingRoom_main .visual_area .visual_list_wrap .slick-next {position:absolute;top:50%;right:1px;width:39px;height:48px;margin-top:-24px;text-indent:-9999px;background:url(/mobiz/app/img/mbank/gs_arrow02.png) no-repeat 50% 50%;background-size:13px auto;border:0;cursor:pointer;z-index:100;}
+.myDealingRoom_main .visual_area .visual_list_wrap .slick-slide {height:100%;}
+.myDealingRoom_main .visual_area .visual_list_wrap .slick-slide:after {display:block;content:"";clear:both;}
+.myDealingRoom_main .visual_area .visual_list_wrap .visualtxtGroup {float:left;overflow:visible;position:relative;width:100%;height:200px;padding-top:60px;box-sizing:border-box;}
+.myDealingRoom_main .visual_area .visual_list_wrap .visualtxtGroup.bg_1 {background:url('/mobiz/app/img/2017/main/bg_mydealingroom_visual_1.jpg') no-repeat 0 0;background-size:cover;}
+.myDealingRoom_main .visual_area .visual_list_wrap .visualtxtGroup.bg_2 {background:url(/mobank/app/img/2016/main/bg_mydealingroom_visual_2.jpg) no-repeat 0 0;background-size:cover;}
+.myDealingRoom_main .visual_area .visual_list_wrap .visualtxtGroup.bg_3 {background:url(/mobank/app/img/2016/main/bg_mydealingroom_visual_3.jpg) no-repeat 0 0;background-size:cover;}
+.myDealingRoom_main .visual_area .visual_list_wrap .visualtxtGroup .visual_tit {font-size:18px;color:#fefefe;line-height:22px;text-align:center;}
+.myDealingRoom_main .visual_area .visual_list_wrap .visualtxtGroup .visual_tit strong {font-size:23px;color:#ffcc00;font-weight:normal;}
+.myDealingRoom_main .visual_area .visual_list_wrap .visualtxtGroup .visual_txt {padding-top:86px;font-size:12px;color:#fff;text-align:center;}
+    /* 외환시황 */
+.myDealingRoom_main .banner {position:relative;margin:10px 15px 0;font-size:10px;color:#333;}
+.myDealingRoom_main .banner dt {position:absolute;top:0;left:0;display:inline-block;width:48px;height:19px;text-align:center;;background:#f7c92a;border-radius:8px;letter-spacing:-1px;}
+.myDealingRoom_main .banner dd {display:block;width:100%;padding-left:55px;box-sizing:border-box;font-size:13px;line-height:19px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+    /* 게시판링크 */
+.myDealingRoom_main .expList {overflow:hidden;margin:15px 15px 20px;border:1px solid #e5e5e5;border-radius:3px;}
+.myDealingRoom_main .expList li {float:left;width:33.3%;height:84px;text-align:center;font-size:12px;color:#333;}
+.myDealingRoom_main .expList li a {position:relative;display:block;padding:53px 0 14px;}
+.myDealingRoom_main .expList li a:after {content:'';position:absolute;top:15px;left:50%;margin-left:-16px;width:35px;height:33px;background:url('/mobiz/app/img/2017/main/ico_explist.png') no-repeat;background-size:auto 33px;}
+.myDealingRoom_main .expList li:nth-child(1) a:after {background-position:0 0;}
+.myDealingRoom_main .expList li:nth-child(2) a:after {background-position:-50px 0;}
+.myDealingRoom_main .expList li:nth-child(3) a:after {background-position:-100px 0;}
+    /* KB외화상품 */
+.myDealingRoom_main h2 {margin:0 !important;padding:0 15px 10px;font-size:14px !important;color:#000 !important;}
+.myDealingRoom_main .productList {position:relative;overflow:hidden;margin:0;padding:0 12px 0 10px;}
+.myDealingRoom_main .productList .prod_list {position:static;overflow:initial;width:100%;margin:0;}
+.myDealingRoom_main .productList .prod_list .slick-list {overflow:visible;}
+.myDealingRoom_main .productList .prod_list .rollingbox {width:85px;height:60px;margin:0 4px 0 5px;background:#e1e1e6;}
+.myDealingRoom_main .productList .prod_list .rollingbox > a {display:block;height:100%;padding:10px;font-size:11px;color:#333;letter-spacing:-1px;line-height:12px;box-sizing:border-box;}
+.myDealingRoom_main .productList .prod_list .rollingbox > a .icon {position:absolute;right:6px;bottom:0;display:block;background:url('/mobiz/app/img/2017/main/ico_productList_bg.png') no-repeat;background-size:409px 44px;}
+.myDealingRoom_main .productList .prod_list .rollingbox > a.prdList01 .icon {width:33px;height:44px;background-position:0 0;}
+.myDealingRoom_main .productList .prod_list .rollingbox > a.prdList02 .icon {width:51px;height:44px;background-position:-78px 0;}
+.myDealingRoom_main .productList .prod_list .rollingbox > a.prdList03 .icon {width:42px;height:44px;background-position:-180px 0;}
+.myDealingRoom_main .productList .prod_list .rollingbox > a.prdList04 .icon {width:55px;height:44px;background-position:-260px 0;}
+.myDealingRoom_main .productList .prod_list .rollingbox > a.prdList05 .icon {width:44px;height:44px;background-position:-365px 0;}
+
+/* 2017-03-28 : 환율/외환 원클릭주문*/
+.tbl_list01.oneClick {margin-top:15px;}
+.tbl_list01.oneClick .tit {margin:0 12px;}
+.tbl_list01.oneClick .tit .fl {width:55%;}
+.tbl_list01.oneClick .tit .fl select {height:33px; line-height:33px; font-size:15px;}
+.tbl_list01.oneClick .tit .fr {width:40%; text-align:right; font-size:13px; color:#333; line-height:33px;}
+.tbl_list01.oneClick .tit .fr .red {padding-left:13px; background:url('/mobiz/app/img/2017/oneclick/ico_oneclick_arrow_red.png') no-repeat 0 8px; background-size:9px auto; color:#ef0000;}
+.tbl_list01.oneClick .tit .fr .blue {padding-left:13px; background:url('/mobiz/app/img/2017/oneclick/ico_oneclick_arrow_blue.png') no-repeat 0 8px; background-size:9px auto; color:#0e76eb;}
+.tbl_list01.oneClick .number {margin:0 12px 10px;}
+.tbl_list01.oneClick .number:after {content:""; display:block; clear:both;}
+.tbl_list01.oneClick .number .fl {width:20%; text-align:left; line-height:42px; font-size:15px; color:#454545;}
+.tbl_list01.oneClick .number .fr {width:80%; text-align:right;}
+.tbl_list01.oneClick .number .fr input:first-child {text-align:right;}
+.tbl_list01.oneClick .actionbg {background:#f7f7f7;}
+.tbl_list01.oneClick .action em {display:block; line-height:20px; font-weight:bold; font-size:13px; color:#454545;}
+.tbl_list01.oneClick .action strong {display:block; margin:5px 0; line-height:28px; font-weight:bold; font-size:22px;}
+.tbl_list01.oneClick .action strong.updateRed {background:#ef0000; color:#fff !important;}
+.tbl_list01.oneClick .action strong.updateBlue {background:#006feb; color:#fff !important;}
+.tbl_list01.oneClick .action button {margin:5px 0;}
+.tbl_list01.oneClick .action span {display:block; line-height:18px; font-size:12px; color:#454545;}
+
+.updateRed {background:#ef0000; color:#fff !important;}
+.updateBlue {background:#006feb; color:#fff !important;}
+
+.autoBtn {margin-top:15px;}
+.autoBtn:after {content:""; display:block; clear:both;}
+.autoBtn p {float:left; line-height:24px;}
+.autoBtn span {float:right; line-height:20px;}
+.autoBtn span button {width:46px; height:20px; margin-left:10px; padding:0; border:0; background:url('/mobiz/app/img/2017/oneclick/ico_onclick_checkbox_btn.png') no-repeat; background-size:46px auto; text-indent:-999em;}
+.autoBtn span button.on {background-position:0 -20px;}
+.autoBtn.typeTable {float:right; text-align:right;}
+.autoBtn.typeTable span {display:inline-block; line-height:20px;}
+.autoBtn.typeTable span button {width:46px; height:20px; margin-left:5px; padding:0; border:0; background:url('/mobiz/app/img/2017/oneclick/ico_onclick_checkbox_btn.png') no-repeat; background-size:46px auto; text-indent:-999em;}
+.autoBtn.typeTable span button.on {background-position:0 -20px;}
+
+.list_desc.type2 li {font-size:12px;}
+
+/* 대출 > 상담예약신청(2017-04-03) */
+.manage .mn_pass_wrap {overflow:hidden;padding-bottom:3px;-webkit-box-sizing:border-box;}
+.manage .password_yes {float:left;width:48%;margin-right:2%;height:125px;border-radius:2px;border:1px solid #ccc;box-shadow:0 1px 2px 0 #d6d6d6;
+background:#fefefe;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#f8f8f9));}
+.manage .password_no {float:right;width:48%;height:125px;border-radius:2px;border:1px solid #ccc;box-shadow:0 1px 2px 0 #d6d6d6;
+background:#fefefe;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#f8f8f9));}
+.manage .password_yes a {display:block;text-align:center;font-size:14px;font-weight:bold;padding:73px 0 18px 0;color:#333;background:url('/mobiz/app/img/2017/password_yes.png') no-repeat 50% 19px;background-size:53px 47px;}
+.manage .password_no a {display:block;text-align:center;font-size:14px;font-weight:bold;padding:73px 0 18px 0;color:#333;background:url('/mobiz/app/img/2017/password_no.png') no-repeat 50% 19px;background-size:53px 47px;}
+.manage .mn_pass_wrap .mn_txt {display:block;font-size:12px;font-weight:normal;}
+.mn_pass_wrap.loan-app .password_yes a{background:url('/mobiz/app/img/mbank/bg_password_newchg01_m.gif') no-repeat center 16px;background-size: 53px 51px;}
+.mn_pass_wrap.loan-app .password_no  a{background:url('/mobiz/app/img/mbank/bg_password_newchg02_m.gif') no-repeat center 16px;background-size: 53px 51px;}
+
+/* 환율/외환 원클릭주문 추가수정(2017-04-21) */
+.c_exchange_wrap:after {content:""; display:block; clear:both;}
+.c_exchange_wrap strong {float:left;}
+.c_exchange_wrap .autoBtn.typeTable {margin-top:0; font-size:12px;}
+
+/*  외환 KB환율픽(Pick) 환율차트 열고접기 (2017-05-02) */
+.opnCls .tit{background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#f8f8f8));border:1px solid #e5e5e5;margin:0 15px 15px;border-radius:3px;}
+.opnCls .tit a{display:block;padding:10px 35px 10px 15px;font-size: 15px;line-height: 120%;background: url('/mobiz/app/img/mbank/arrow-down.png') no-repeat right 50%;background-size: 32px auto;}
+.opnCls .tit.active a{background: url('/mobiz/app/img/mbank/arrow-up2.png') no-repeat right 50%;background-size: 32px auto;}
+.opnCls .tit a strong:after {content: ' 펼쳐보기';}
+.opnCls .tit.active a strong:after {content: ' 접기';}
+.opnCls .txt{display:none;}
+
+/* 외환환율 > 마이딜링룸 > 바로가기배너 신규 (2017-04-28) */
+.dealingroom-bnr {margin:0 15px;}
+.dealingroom-bnr ul li {float:left; width:50%; height:45px;}
+.dealingroom-bnr ul li a {display:block; height:37px; padding:8px 0 0 11px; border-radius:3px; line-height:14px; letter-spacing:-.5px; font-size:10px; color:#fff;}
+.dealingroom-bnr ul li:first-child a {margin-right:3px; background:url('/mobiz/app/img/2017/bnr_mydealingroom_link01.png') no-repeat 100% 100% #3c777e; background-size:42px auto;}
+.dealingroom-bnr ul li:nth-child(2) a {margin-left:3px; background:url('/mobiz/app/img/2017/bnr_mydealingroom_link02.png') no-repeat 100% 100% #4c6890; background-size:42px auto;}
+.dealingroom-bnr ul li a strong {display:block; font-size:13px;}
+
+/* 여신신청 진행현황 (2017-11-09) */
+.b-none{border:none !important;}
+.stepLoan{margin-top:15px;}
+.stepLoan>ol{padding:1px 0 0 1px;overflow:hidden;}
+.stepLoan>ol>li{float:left;width:33%;border:1px solid #dbdbdb;margin-left:-1px;margin-top:-1px;box-sizing:border-box;text-align:center;position:relative;padding:15px 0 10px;}
+.stepLoan>ol>li:nth-child(3n+1){clear:both;}
+.stepLoan>ol>li:nth-child(3n+2){width:34%;}
+.stepLoan>ol>li:before{width:16px;height:16px;border-radius:8px;background-color:#9e9d9d;content:'';position:absolute;left:7px;top:7px;}
+.stepLoan>ol>li.active:before{background-color:#0070e8;}
+.stepLoan>ol>li:after{width:16px;height:16px;position:absolute;left:7px;top:7px;color:#fff;font-size:11px;text-align:center;line-height:15px;}
+.stepLoan>ol>li:nth-child(1):after{content:'1'}
+.stepLoan>ol>li:nth-child(2):after{content:'2'}
+.stepLoan>ol>li:nth-child(3):after{content:'3'}
+.stepLoan>ol>li:nth-child(4):after{content:'4'}
+.stepLoan>ol>li:nth-child(5):after{content:'5'}
+.stepLoan>ol>li:nth-child(6):after{content:'6'}
+.stepLoan>ol>li:nth-child(7):after{content:'7'}
+.stepLoan>ol>li:nth-child(8):after{content:'8'}
+.stepLoan>ol>li:nth-child(9):after{content:'9'}
+.stepLoan>ol>li:nth-child(10):after{content:'10'}
+.stepLoan>ol>li img{width:auto;height:34px}
+.stepLoan>ol>li>p{font-size:13px;color:#555;padding-top:2px;}
+.stepLoan>ol>li.active>p{color:#000;font-weight:bold;}
+.stepLoan>ol>li>p:before{content:'';width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:6px solid #dbdbdb;position:absolute;right:-6px;top:50%;margin-top:-3px;background-color:#fff;z-index:1;}
+.stepLoan>ol>li>p:after{content:'';width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:6px solid #fff;position:absolute;right:-5px;top:50%;margin-top:-3px;z-index:2;}
+.stepLoan>ol>li:nth-child(3n)>p:before{display:none;}
+.stepLoan>ol>li:nth-child(3n)>p:after{display:none;}
+
+/* 2017-11-21 상환관련 지수정보 */
+.refund-index.tbl_write01 table thead th{border-bottom:1px solid #e9e9eb;} 
+.refund-index.tbl_write01 table th{padding:5px 4px;font-size:12px;border-left:1px solid #e9e9eb}
+.refund-index.tbl_write01 table th:first-child{border-left:0 none;}
+.refund-index.tbl_write01 table td{padding:5px 2px;font-size:12px;text-align:center;border-left:1px solid #e9e9eb}
+
+/* 2018 css 추가*/
+.tab-inquery-new{position:relative;}
+.tab-inquery-new .tab-wrapper{width:100%;box-sizing:border-box;position:relative;overflow:hidden;height:40px;}
+.tab-inquery-new ul{width:100%;}
+.tab-inquery-new .swiper-slide{position:relative;float:left;box-sizing:border-box;}
+.tab-inquery-new li{width:33.3%;display:block;}
+.tab-inquery-new li a{display:block;padding-top:10px;}
+.tab-inquery-new li:nth-child(2n){width:33.4%}
+.tab-inquery-new .tab-nav{overflow:hidden;position:absolute;top:0;width:25px;height:39px;border:0;margin:0;padding:0;text-indent:-999em;z-index:12;}
+.tab-inquery-new .tab-nav.left{left:0;background:url('/mobiz/app/img/2018/btn_tab_left.png') no-repeat center center ;background-size:auto 10px;vertical-align:middle;}
+.tab-inquery-new .tab-nav.right{right:0;background:url('/mobiz/app/img/2018/btn_tab_right.png') no-repeat center center ;background-size:auto 10px;vertical-align:middle;}
+
+.account-info .total_amount dd .amount{letter-spacing:-1px;}
+.inquery_list .inquery_stit{line-height: 18px;}
+.inquery_stit + .inquery_stit{margin-top:5px;}
+.inquery_list .inquery_tit {margin-top:5px;}
+.inquery_list .inquery_tit > span{top:2px;}
+.inquery_tit small{display:inline-block;margin-left:3px;font-size:12px;margin-top:-2px;font-weight:normal;}
+.inquery_date_info {padding-left:20px;padding-bottom:10px;line-height:20px;}
+.inquery_date_info a{display:inline-block!important;padding:0!important;background:none!important;;color:#ef0000;text-decoration:underline;vertical-align:top;}
+.inquery_list.list_check .inquery_date_info,
+.list_type01 .inquery_date_info {padding:0;}
+
+.inquery_date + .inquery_date{margin-top:5px;}
+.account-info + .inquery_info_box{margin-bottom:20px;}
+.inquery_info_box{margin: 22px 16px 7px;text-align:right;}
+.con_sp_first .inquery_info_box{margin:22px 0 7px;}
+.inquery_info_box p{text-align:left;margin-bottom: 10px;font-size: 13px;color: #777;}
+.inquery_info_box select{margin-top:10px;}
+
+.fnd_group .count{font-weight:bold;}
+
+.account-info .account-stit+.account-stit,
+.account-info .account-stit+.account-tit{margin-top:10px;}
+.account-info .account-num small{display:inline-block;margin-left:5px;font-size:12px;font-weight:normal;}
+
+#content.inquery .error_tooltip,
+#content.sales .error_tooltip,
+#content.card .error_tooltip{top:15px;margin-top:0;}
+#content.card .list_type01 .check_ps01 li{padding:0;border:0;}
+#content.card .con_sp_middle[style="display: none;"] + .inquery_list,
+#content.card .con_sp_middle[style="display:none;"] + .inquery_list{margin-top:15px;}
+#content.sales .txt_desc+.tbl_view01{margin-top:7px;}
+
+.list_type01 li .inc04 .redtxt02,
+.list_type01 li .inc04 .bluetxt02{float:none;margin-top:3px;}
+.list_type01 li .inc04 .sname{margin-left:0;}
+.tab_st01+.check_list_box {margin-top:20px;}
+.check_list_box {overflow:hidden;border-radius:3px;border:1px solid #cecece;border-top:0;}
+.check_list_box li{position:relative;float:left;padding:0 9px;width:50%;height:40px;box-sizing:border-box;-webkit-box-sizing:border-box;}
+.check_list_box li:before{display:inline-block;height:40px;vertical-align:middle;content:'';}
+.check_list_box li span{position:relative;width:100%;max-height:40px;display:inline-block;vertical-align:middle;}
+.check_list_box li span input[type="checkbox"]{position:absolute;left:0;top:50%;margin-top:-12.5px;}
+.check_list_box li span input[type="checkbox"]+label{display:block;padding-left:30px;}
+.check_list_box li:nth-child(odd){border-right:1px solid #cecece;}
+.check_list_box li:nth-child(odd):after{position:absolute;left:0;top:0;width:250%;height:1px;background:#cecece;content:'';z-index:10;}
+.inq_group .sm_txt{display:inline-block;position:relative;top:-1px;font-size:12px;color:#333;margin-right:3px;} 
+.inq_group .sm_txt ~ *{letter-spacing:-1px;}
+
+.inquery_list.list_check > li{position:relative;padding:10px 10px 10px 55px;}
+.inquery_list.list_check > li .left_check01{position: absolute;left: 15px;top: 50%;margin-top: -13px;}
+.list_type01 ~ .inquery_title h2{border-top:0!important;}
+
+.list_toggle.toggle-type2{margin-top:30px;}
+.list_toggle.toggle-type2 .toggle-section{padding-right:0;}
+.list_toggle.toggle-type2 .toggle-section .detail_list{padding-right:40px;}
+.list_toggle.toggle-type2 .btn-toggle.close ~ div.toggle-section{margin-top:-30px;}
+
+.service_info{overflow:hidden;margin-top:20px;border:1px solid #cecece;border-radius:3px;}
+.service_info li{padding:20px 15px;}
+.service_info li + li{border-top:1px solid #cecece;}
+.service_info li strong{font-size:17px;color:#4b6b94;}
+.service_info li p.info_txt01{margin-top:5px;}
+.service_info li p.info_txt02{margin-top:5px;font-size:12px;color:#666;}
+.service_info li p ~ div{margin-top:10px;}
+
+.write_type01.review_top{margin-top:20px;}
+.write_type01.review_top li {display:inline-block;color:#777;margin-left:8px;}
+.write_type01.review_top li:first-child{margin-left:0;}
+.write_type01.review_top li span{color:#333;font-weight:bold;}
+.review_wrap .tab_st01{margin-top:0;}
+.review_wrap .tab_st01 li a{display:block;padding-top:10px;border-radius:0!important;}
+.review_wrap .tab_st01 li{display:block;}
+.review_wrap .tab_st01 li:first-child a{border-left:0;}
+.review_wrap .tab_st01 li:last-child a{border-right:0;}
+.review_wrap .tab_st01 .tabcont{border:0;padding:0;}
+.review_wrap .franchisee_review_list li{overflow:hidden;position:relative;width:auto!important;height:120px;border-bottom:1px solid #cecece;}
+.review_wrap .franchisee_review_list li .item{padding:15px;}
+.review_wrap .franchisee_review_list li .fr_tit{display:block;margin-bottom:5px;}
+.review_wrap .franchisee_review_list li .name{}
+.review_wrap .franchisee_review_list li .item .name{display:block;}
+.review_wrap .franchisee_review_list li .item .date{display:inline-block;vertical-align:middle;}
+.review_wrap .franchisee_review_list li .date{}
+.review_wrap .franchisee_review_list li .rate{overflow:hidden;display:inline-block;margin-top:3px;width:65px;height:10px;background:url('/mobiz/app/img/2018/bg_rate.png') no-repeat 0 0;background-size:65px 20px;vertical-align:middle;}
+.review_wrap .franchisee_review_list li .rate span{display:inline-block;height:10px;background:url('/mobiz/app/img/2018/bg_rate.png') no-repeat 0 100%;background-size:65px 20px;text-indent:-999em;}
+.review_wrap .franchisee_review_list li .review{padding-right:30px;margin-top:10px;color:#777;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.review_wrap .franchisee_review_list li .review br {display:none;}
+.review_wrap .franchisee_review_list li .review_answer{display:none;margin-top:10px;}
+.review_wrap .franchisee_review_list li .review_answer .review_input{display:none;}
+.review_wrap .franchisee_review_list li .review_answer .ceo_answer{margin-top:-10px;padding:15px;background-color:#f3f3f3;}
+.review_wrap .franchisee_review_list li .review_answer .ceo_answer .date{margin-left:12px;}
+.review_wrap .franchisee_review_list li .review_answer .ceo_answer p{margin-top:10px;color:#777;}
+.review_wrap .franchisee_review_list li.current{height:auto;}
+.review_wrap .franchisee_review_list li.current .review_answer{display:block;}
+.review_wrap .franchisee_review_list li.current .review{white-space: normal;}
+.review_wrap .franchisee_review_list li.current .review br {display:block;}
+
+.review_wrap .franchisee_review_list li .btn_review_toggle{position:absolute;right:15px;top:60px;margin-top:-6px;width:20px;height:12px;background:url('/mobiz/app/img/2018/btn_review_toggle.png') no-repeat 0 0;background-size:20px 23px;text-indent:-999em;}
+.review_wrap .franchisee_review_list li .btn_review_toggle.active{background-position:0 100%;}
+.review_wrap .review_notice{text-align:center;}
+.review_wrap .review_notice p{padding:15px;}
+
+.btn_tit_box{overflow:hidden;border: 1px solid #cecece;border-radius: 3px;}
+.btn_tit_box ~ .btn_tit_box{margin-top:10px;}
+.btn_tit_box .box_top{width:100%;display:table;padding:10px 0;table-layout:fixed;}
+.btn_tit_box .box_top strong{display:table-cell;padding-left:15px;vertical-align:middle;}
+.btn_tit_box .box_top .top_btn{display:table-cell;text-align:right;width:110px;padding-right:15px;vertical-align:middle;}
+.tbl_view01 ~ .btn_tit_box .top_btn{width:80px;}
+.btn_tit_box .box_text{padding:15px;}
+.btn_tit_box .box_top + div{border-top:1px solid #cecece;}
+.btn_tit_box .nodata{padding:45px 15px;text-align:center;color:#777;}
+
+.inquery .inquery_list li a,
+.global .inquery_list li a{padding:14px 30px 14px 20px;}
+.global .inquery_list .inquery_toggle .toggle-section{margin-top:5px;padding:20px;}
+.global .inquery_list .inquery_toggle .btn-toggle.close{bottom:0;}
+.global .inquery_date .tline,
+.global .inquery_stit .tline,
+.global .txt_date .tline{display:inline;margin-left:6px;}
+/*.global .inquery_stit {display:table;width:100%;}
+.global .inquery_stit span:not(.hide){display:table-cell;white-space:nowrap;padding-right:7px;width:5%;}
+.global .inquery_stit strong{display:table-cell;background-position: 0 6px;}*/
+
+.list_type01 .tooltip_in{overflow:visible;}
+.list_type01 .tooltip_in:after{content:'';display:block;clear:both;}
+
+.tooltip_con{position:relative;display:inline-block;margin-top:-6px;vertical-align:middle;}
+.tooltip_con  a span{color:#ef0000;text-decoration:underline;}
+.tooltip_con .tooltip_wrap{display:none; position:absolute; top:15px; right:-10px; min-width: 160px;max-width:280px; padding:6px 10px; background:#fff; border:1px solid #777; border-radius:5px; box-sizing:border-box; z-index:10;font-size: 11px; color: #777;white-space:nowrap;}
+.tooltip_con.active .tooltip_wrap{display:block;}
+
+.common_box.global{overflow:visible;}
+.icon_tooltip.global .btn_tooltip{text-align:center;}
+.icon_tooltip.global .tooltip_layer{margin-left:-130px;z-index:10;}
+
+.ico_status{}
+.ico_status:before{content:'-';color:#333;margin-right:2px;}
+.ico_status.dec .stat_num{color: #0070e8;}
+.ico_status.dec:before{content:'▼';color:#0070e8;;}
+.ico_status.inc .stat_num{color: #ef0000;}
+.ico_status.inc:before{content:'▲';color:#ef0000;}
+
+.chart_wrap {margin-top:7px;padding-top:16px;border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;}
+.chart_wrap .tit_wrap h3{margin-top:0!important;}
+.chart_wrap ~ .chart_wrap{margin-top:-1px;}
+.chart_wrap[style*="none"]+.chart_wrap{margin-top:7px;}
+.chart_wrap .chart_detail{padding:16px;background-color:#f8f8f8;}
+
+.chart_wrap h2.h3_st, .chart_wrap h3{margin-bottom:0;}
+.rMateH5__rMateChart > .rMateH5__ContentPane{padding-top:0 !important;}
+
+.report .no_data{margin:15px 0;}
+
+.btn_center.card_new div+div{margin-top:5px;}
+.btn_center.card_new button, 
+.btn_center.card_new a{padding:2px 10px;width:110px;}
+.inquery .no_data_tab{margin-top:0;border-top:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;}
+
+.agree_box01.box_modify{border-radius:3px 3px 0 0 ;}
+
+/* rMate Chart 수정 */
+.rMateH5__Legend, .rMateH5__SubLegend{
+	border:0!important;
+	background-color:transparent!important;
+}
+/*placeholder 보정*/
+input[type=tel], 
+input[type=text], 
+input[type=password], 
+input[type=search], 
+input[type=email], 
+input[type=file], 
+textarea{padding:8px 5px;line-height:normal;}
+
+/*약관 스타일 추가*/
+#content.agreement_new .agreement_area h2{color:#333;}
+#content.agreement_new .agreement_area .ag_tit_ct1{display:block;font-weight:bold;font-size:15px;text-align:center;margin:25px 0 10px;font-weight:bold;}
+#content.agreement_new .agreement_area .ag_tit_ct2{display:block;font-weight:bold;font-size:14px;text-align:center;margin:15px 0 10px;font-weight:bold;}
+
+
+
+/*비대면 가입프로세스 NEW(2018-06-07_2018-07-27)======================================================================*/
+.mt25{margin-top:25px !important;}
+
+/*step-style NEW */
+.notftof .step02{text-align:right;margin:-10px 2px 13px 0;}
+.notftof .step02 *{vertical-align:middle;}
+.notftof .step02 span {font-size:12px;color:#757575;font-family:'AppleSDGothicNeo';padding-right:7px;letter-spacing:-1px;position:relative;}
+.notftof .step02 span:last-child{padding-right:0;}
+.notftof .step02 span:after {content:'';display:block;width:1px;height:11px;background:#b6b6b6;position:absolute;right:0;top:3px;}
+.notftof .step02 span:last-child:after{background:none;}
+.notftof .step02 span strong{display:inline-block;padding:2px 1px 0;height:13px;width:13px;line-height:11px;font-size:12px;text-align:center;color:#fff;border-radius:13px;background:#757575;font-weight:normal;font-family:'malgun gothic';}
+
+
+.notftof input[type=tel],
+.notftof input[type=text],
+.notftof input[type=password],
+.notftof input[type=search]{font-size:16px;height:45px;padding:1px 12px 0 12px;border:1px solid #e0e0e0;border-radius:0;background:#fff;line-height:100%;color:#000;box-shadow:none}
+
+::-webkit-input-placeholder{font-size:16px;color:#a2a2a2;}
+
+.notftof input[type=text]:focus,
+.notftof input[type=search]:focus,
+.notftof input[type=email]:focus,
+.notftof input[type=password]:focus,
+.notftof input[type=email]:focus,
+.notftof input[type=tel]:focus,
+.notftof input[type=password][readonly]:focus{border:1px solid #ffde00;background:#fff;}
+
+.notftof input[type=radio]{width:20px;height:20px;border:0;border-radius:0;background:url('/mobiz/app/img/2018/radio.png') no-repeat;background-size:20px auto; outline:none;}
+.notftof input[type=radio]:checked{background-position:0 -45px}
+.notftof input[type=checkbox] {width:20px;height:20px;margin-right:10px;border:0;border-radius:0;background:url('/mobiz/app/img/2018/sp_speed_chk.png') no-repeat 0 0;background-size:70px 20px;-webkit-appearance:none;}
+.notftof input[type=checkbox]:checked {background-position:-25px 0;}
+
+.notftof select{margin-bottom:0;padding:0 25px 0 12px;border:1px solid #e0e0e0;border-radius:0;background:#fff url(/mobiz/app/img/2018/bu_down01.gif) no-repeat 96% 50%;background-size:11px 7px;font-size:16px}
+
+
+/* 가입확인체크 */
+.notftof .agree_area03{padding-left:29px;letter-spacing:-1px;position:relative;margin-bottom:8px;}
+.notftof .agree_area03 input[type=checkbox]{position:absolute;top:0px;margin-top:0px;left:0}
+
+/* 약관동의 */
+.notftof .agree-type3{margin-top:11px;background:#fff;color:#111;}
+.notftof .agree-type3 *{vertical-align:top;}
+.notftof .agree-type3 .check_agree{width:20px;height:20px;margin-right:10px;border:0;border-radius:0;background:url('/mobiz/app/img/2018/sp_speed_chk.png') no-repeat 0 0;background-size:70px 20px}
+[data-device=i] .notftof .agree-type3 .check_agree{position:relative;top:-2px;}
+.notftof .agree-type3 .check_agree:checked{background-position:-25px 0;}
+
+.notftof .agree-type3 .agree-total{position:relative;border-bottom:1px solid #333;height:inherit;padding:7px 0;cursor:pointer;}
+[data-device=i] .notftof .agree-type3 .agree-total .check_agree{top:-1px;}
+.notftof .agree-type3 .agree-total label{font-size:14px;font-weight:bold;}
+.notftof .agree-type3 .agree-total label strong{margin-left:-4px;}
+.notftof .agree-type3 .agree-total label:after{content:'';position:absolute;top:0;right:0;width:100%;height:39px;margin-top:-4px;background:url('/mobiz/app/img/2018/icon_list_arrow02.png') no-repeat right 50%;background-size:16px 9px;}
+
+.notftof .agree-type3 .agree-list a, .notftof .agree-type3 .agree-list span.a{display:block;overflow:hidden;position:relative;padding:11px 0 12px 29px;border-top:0;border-bottom:1px solid #ececec;}
+.notftof .agree-type3 .agree-list a em{font-size:13px;color:#444;letter-spacing:-1px;font-style:normal;}
+.notftof .agree-type3 .agree-list a em:after{content:'';position:absolute;top:0;right:0;width:100%;height:42px;background:url('/mobiz/app/img/2018/icon_list_arrow02.png') no-repeat right 50%;background-size:16px 9px;}
+.notftof .agree-type3 .agree-list a em span{color:#1b75db;}
+
+.notftof .agree-type3 .agree-list span.a em{font-size:13px;color:#444;letter-spacing:-1px;font-style:normal;display:table;}/* 2019-04-04 : 클릭없는 약관리스트 */
+.notftof .agree-type3 .agree-list span.a em:after{content:'';position:absolute;top:0;right:0;width:100%;height:42px;background:none;}
+.notftof .agree-type3 .agree-list span.a em span{display:table-cell;color:#1b75db;width:33px}
+
+.notftof .agree-type3 .readed{background:url('/mobiz/app/img/2018/ico_readed.png') no-repeat 0 10px;background-size:20px}
+
+.notftof .agree-type3 .agree-list .agree-section{overflow:hidden;position:relative;padding:11px 0 12px 29px;border-top:0;border-bottom:1px solid #ececec}
+.notftof .agree-type3 .agree-list .agree-section label{font-size:13px;color:#444;letter-spacing:-1px;}
+.notftof .agree-type3 .agree-list .agree-section label:after{content:'';position:absolute;top:0;right:0;width:100%;height:42px;background:url('/mobiz/app/img/2018/icon_list_arrow02.png') no-repeat right 50%;background-size:16px 9px;}
+.notftof .agree-type3 .agree-list .agree-section:last-child label:after, .agree-type3 .agree-list .agree-section:nth-last-child(2) label:after {background:none;}
+.notftof .agree-type3 .agree-list .agree-section label span{color:#1b75db}
+.notftof .agree-type3 .agree-list .agree-section input{float:none;position:absolute;left:0;top:12px;width:20px;}
+
+.notftof .agree-type3 .agree-list .agree-section .agreeCont{font-size:12px;color:#666;clear:both;height:auto;padding:8px 25px 0 0;letter-spacing:-1px;}
+
+
+/* 하단버튼 */
+.notftof .full-btn .btn_area{text-align: center;}
+.notftof .full-btn .btn_area .btn02{display:inline-block;min-width:auto !important;padding:0;line-height:36px;font-size:15px;font-weight:bold;color:#000;border-radius:0;border:1px solid #ffde00;border-top:1px solid #ffde00;border-bottom:1px solid #ffde00;background:#ffde00;height:45px;box-sizing:border-box;}
+.notftof .full-btn .btn_area> button{width:100%;}
+.notftof .full-btn .btn_area>.group{display:-webkit-flex;display:flex;margin-top:5px}
+.notftof .full-btn .btn_area>.group:first-child{margin-top:0}
+.notftof .full-btn .btn_area>.group .btn02{min-width:auto !important;padding:0;height:45px;box-sizing:border-box;-webkit-flex:1;flex:1}
+.notftof .full-btn .btn_area>.group .btn_type01{display:block;width:100%;height:45px;border:1px solid #ddd;background:#fff;font-size:15px;font-weight:bold;line-height:45px;color:#000;box-sizing:border-box;-webkit-flex:1;flex:1}
+.notftof .full-btn .btn02_{display:block;min-width:auto !important;height:45px;box-sizing:border-box;-webkit-flex:1;flex:1;margin:0;padding:0;border:none;border-radius:0;background:#d1d1d1;font-size:15px;font-weight:bold;line-height:45px;color:#a3a3a3;text-align:center;box-shadow:none;box-sizing: border-box;white-space: nowrap;cursor: pointer;}/*비활성화*/
+.notftof .btn04_{display:inline-block;min-width:65px;padding:1px 8px 0;line-height:26px;font-size:13px;margin:0 1px;border-radius:0;border:1px solid #d1d1d1;white-space:nowrap;cursor:pointer;background:#d1d1d1;color:#a3a3a3}
+
+.notftof .full-btn .btn_area>.group button:nth-child(even){margin-right:0;margin-left:3px;}
+.notftof .full-btn .btn_area>.group button:nth-child(odd){margin-left:0;margin-right:3px;}
+
+
+/* 약관교부-이메일주소로받기 */
+.notftof .input_box{border:none;padding:0;}
+.notftof .input_box dt{color:#444;letter-spacing:-1px;}
+.notftof .input_box dt span{color:#444;}
+
+
+/* 서식폼 */
+.notftof .write_type01{margin-top:20px !important;}
+.notftof .write_type01.mt0{margin-top:0px !important;}
+.notftof .write_type01 dt{margin:20px 0 0;font-size:14px;}
+.notftof .write_type01.mt0 dt:first-child{margin:15px 0 0 !important;}
+.notftof .write_type01 dd{position:relative;margin-top:7px}
+
+.notftof .write_type01 input[type=text],
+.notftof .write_type01 input[type=password],
+.notftof .write_type01 input[type=tel]::-webkit-input-placeholder{padding-top:2px;}
+
+[data-device=i] .notftof .write_type01 input[type=text],
+[data-device=i] .notftof .write_type01 input[type=tel],
+[data-device=i] .notftof .write_type01 input[type=password]{padding:14px 12px 12px 12px}
+
+.notftof .write_type01 .won_wrap{position:relative;margin-top:0px;}
+.notftof .write_type01 .won_wrap input[type=tel]{padding-right:26px;text-align:right;}
+.notftof .write_type01 .won_wrap input[type=tel]::-webkit-input-placeholder{font-weight:normal;text-align:left}
+.notftof .write_type01 .won_wrap .won{color:#666 !important}
+.notftof .write_type01 .unit-area{text-align:right;}
+.notftof .write_type01 .unit-area .btn-unit {display:inline-block;text-align:center;line-height:20px;font-size:12px;color:#888;border-radius:0;border:0;border-bottom:1px solid #ddd;white-space:nowrap;cursor:pointer;background:transparent;margin-left:12px;}
+.notftof .write_type01 .unit-area .btn-unit:first-child{margin-left:0;}
+
+.notftof .write_type01 .chk-tit, .notftof .chk-tit{margin-right:6px !important;}
+.notftof .write_type01 dd.detail-view a{display:inline-block;padding-bottom:1px;font-size:12px;color:#1673db;text-align:right;position:absolute;bottom:7px;right:0;border-bottom:1px solid #1673db;}
+.notftof .write_type01 dd.detail-view a:after{content:' 〉';}
+
+.notftof .write_type01 dd .pay_amount {font-size:11px;color:#666;line-height:16px;font-weight:normal;text-align:right;}
+.notftof .write_type01 dd .pay_amount .color_blue {color: #1673db !important;}
+
+.notftof input.lts2{padding-right:39px !important;}/*input 안에 단위가 두글자일경우(ex.개월)*/
+.notftof input.lts3{padding-right:52px !important;}/*input 안에 단위가 세글자일경우(ex.OOO)*/
+
+
+/* 권유직원선택 */
+.notftof .box_type01 {border:1px solid #eee;border-radius:0px;background:#f9f9f9;margin-bottom:6px;}
+.notftof .box_type01 .sel_list01 li {padding:4px 15px 4px 35px;}
+.notftof .box_type01 .sel_list01 .left_sel01 {left:10px;top:15%;}
+.notftof .box_type01 .sel_list01 li .tit01 {color:#000;}
+.notftof .box_type01 .sel_list01 li .txt01{color:#666;}
+.notftof .box_type01 .sel_list01 li .txt02{color:#666;background:none;padding-left:0px;margin-left:0px;}
+.notftof .box_type01 .sel_list01 li .txt02:before{content:'| ';color:#737373;}
+
+
+/* 검색 */ 
+.notftof .invi_input_btn {position:relative;padding:0 58.5px 0 0;margin-top:6px;}
+.notftof .invi_input_btn .rigth_btn {position:absolute;top:0;right:0;}
+.notftof .invi_input_btn .btn-search {display:inline-block;padding:0 9px;min-width:54px;text-align:center;line-height:45px;font-size:12px;font-family:NGB;color:#fff;border:0;white-space:nowrap;cursor:pointer;background:#777;vertical-align:middle;}
+
+
+/* 가이드박스 */
+.notftof .guide_box {border-radius:0px;}
+
+
+/*타이틀*/
+.notftof h3{font-size:14px !important;}
+
+
+/* 테이블 */
+.notftof .tbl_view01{clear:both;border-top:1px solid;border-left:none;border-right:none;border-top-color:#333;border-bottom-color:#e0e0e0;overflow:hidden;border-radius:0px;}
+.notftof .tbl_view01 table {width:100%;}
+.notftof .tbl_view01 thead th{background-color:#fafafa;font-size:12px;color:#777;font-weight:bold;}
+.notftof .tbl_view01 tbody th {padding:7px 10px;color:#666;text-align:left;border-top:1px solid #e0e0e0;background:#fafafa;font-size:12px;}
+.notftof .tbl_view01 tbody td {padding:7px 10px;color:#010000;text-align:left;border-top:1px solid #e0e0e0;background:#fff;font-size:14px;}
+.notftof .tbl_view01 tbody tr:first-child th, .notftof .tbl_view01 tbody tr:first-child td {border-top:0;}
+
+
+/* 완료박스 */
+.notftof .end_box {display:block;padding:23px;margin-bottom:13.5px;font-size:12px;color:#463f3a;border:1px solid #cbe3ec;overflow:hidden;border-radius:0px;background-image:none;background-color:#f7fdff;text-align:center;line-height:20px;letter-spacing:-1px;}
+.notftof .end_box .tit {font-size:17px;color:#1673db;line-height:20px;font-weight:bold;margin-bottom:12px;padding:0;display:block;}
+
+
+/* [팝업]비과세종합저축 특약 */
+.notftof .con_list01 li{font-size:12px;}
+
+
+/*신규추천번호, 부가서비스*/
+.notftof .box-style{border:1px solid #e0e0e0;padding:15px;}
+.notftof .box-style .txt{font-size:11.5px;color:#333;line-height:19px;text-align:center;}
+.notftof .box-style .newnum{margin-top:8px;text-align:center;}
+.notftof .box-style .con_dlist01{letter-spacing:-1px;}
+.notftof .box-style .con_dlist01 dt{font-size:13px;margin-top:15px !important;}
+.notftof .box-style .con_dlist01 dt:first-child{margin-top:0px !important;}
+
+
+/* 정보입력 */
+.notftof .write_type01.mt10{margin-top:10px !important}
+.notftof .write_type01.mt15{margin-top:15px !important}
+
+.notftof .item_desc strong{font-weight:normal;display:inline;}
+
+.notftof .chk-info{position:relative;padding-left:26px;letter-spacing:-1px;margin-bottom:8px;line-height:19px;}
+.notftof .chk-info input[type=checkbox]{position:absolute;top:0px;margin-top:0px;left:0}
+
+/* 스마트창구 출금 (2019-03-29) */
+.a-time {border:1px solid #d6d6d6; border-radius:3px; padding:7px 15px; width:180px; margin: 25px auto 25px;}
+.a-time strong {display:inline-block; margin-right:8px;}
+
+
+
+/* 대출 외부스크래핑(2019-04-15 : 개인스뱅 copy) */
+#ext-scrapping {min-height:100%; padding-bottom:70px; background:#eaedf1; line-height:18px; font-size:12px; color:#4c4c4c;}
+#ext-scrapping #header h1 {display:none;}
+#ext-scrapping .tit-page {padding:26px 17px; background:#eaedf1; text-align:center;}
+#ext-scrapping .tit-page h1 {padding-top:24px; line-height:32px; font-weight:normal; font-size:22px;}
+#ext-scrapping .tit-page p {line-height:17px; font-size:11px;}
+#ext-scrapping .tit-page .mes-tip {margin:17px 0 0 0; padding:0; text-align:left;}
+#ext-scrapping .tit-page .mes-tip li {list-style-type: none; padding-left:20px; background:url('/mobiz/app/img/2019/ico_blue_excl.png') no-repeat 0 2px; background-size:15px; line-height:17px; font-size:11px; color:#658aaf;}
+#ext-scrapping .info-process {text-align:center;line-height:16px;}
+#ext-scrapping .info-process dt {position:absolute;left:-9999px;top:-9999px;}
+#ext-scrapping .info-process dd {position:relative;display:inline-block;font-size:1.2rem;vertical-align:top;}
+#ext-scrapping .info-process dd span,
+#ext-scrapping .info-process dd strong {overflow:hidden;position:relative;display:inline-block;width:16px;height:0;padding:16px 0 0 0;vertical-align:top;}
+#ext-scrapping .info-process dd span:before,
+#ext-scrapping .info-process dd strong:before,
+#ext-scrapping .info-process dd strong:after {content:'';position:absolute;top:0;border-radius:50%;}
+#ext-scrapping .info-process dd span:before,
+#ext-scrapping .info-process dd strong:before {top:4px;left:4px;width:8px;height:8px;background:#3d444b;}
+#ext-scrapping .info-process dd strong ~ span:before {background:#b8babd;}
+#ext-scrapping .info-process dd strong:after {left:0;width:12px;height:12px;border:2px solid #3d444b;}
+#ext-scrapping .btn-close {position:absolute; display:block; width:44px; height:44px; color:rgba(0,0,0,0); right:0; top:0;}
+#ext-scrapping .btn-close:before {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); transform: rotate(45deg);}
+#ext-scrapping .btn-close:after {-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg);}
+#ext-scrapping .btn-close:before,
+#ext-scrapping .btn-close:after {margin:-12px 0 0; width:1px; height:24px; background:#666;}
+#ext-scrapping .btn-close:before,
+#ext-scrapping .btn-close:after {content:""; position:absolute; left:50%; top:50%; display:block;}
+
+#ext-scrapping .mes-type2 {padding-top:140px; line-height:18px; font-size:12px;}
+#ext-scrapping .mes-type2.icon1 {background:url('/mobank5/app/img/2017/visual_mes01.png') no-repeat 50% 20px; background-size:120px auto;}
+#ext-scrapping .mes-type2 strong {display:block; line-height:23px; font-size:16px;}
+#ext-scrapping .info-state {position:relative;}
+#ext-scrapping .info-state dt {position:absolute; left:-9999px;}
+#ext-scrapping .info-state dt + dd {font-size:16px; color:#00a2bb; font-weight:bold;}
+#ext-scrapping .info-state dd {line-height:21px; font-size:11px; color:#4c4c4c; font-weight:bold;}
+#ext-scrapping .info-state dt + dd ~ dd {position:absolute; right:0; top:0;}
+#ext-scrapping .info-state dt + dd ~ dd strong {color:#fa6132;}
+#ext-scrapping .ui-tab-con {display:none;}
+#ext-scrapping .ui-tab-con.on {display:block;}
+#ext-scrapping div.info-data3,
+#ext-scrapping .info-data3 > li {position:relative; margin:10px auto; background:#fff; text-align:left; font-size:12px; line-height:20px;}
+#ext-scrapping .info-data3 a,
+#ext-scrapping .info-data3 dl,
+#ext-scrapping .info-data3 > p {min-height:76px;padding:17px 35px 17px 68px;}
+#ext-scrapping .info-data3 a:before,
+#ext-scrapping .info-data3 dl:before,
+#ext-scrapping .con-login .info-data3 > p:before {content:"";position:absolute;left:22px;top:20px;width:35px;height:40px;background:url('/mobiz/app/img/2019/ico_gray_certi.png') no-repeat ;background-size:35px auto;}
+#ext-scrapping .info-data3 a:before {background-position:0 0;}
+#ext-scrapping .info-data3 dl,
+#ext-scrapping .info-data3 a {display:block;}
+#ext-scrapping .info-data3 dl > dt {overflow:hidden;height:22px;font-weight:bold;font-size:16px;line-height:22px;color:#000;text-overflow:ellipsis;}
+#ext-scrapping .info-data3 dl > dd {display:inline-block;font-size:11px;color:#000;}
+#ext-scrapping .info-data3 dl > dt + dd + dd {position:relative;margin:0 0 0 3px;padding:0 0 0 6px;}
+#ext-scrapping .info-data3 dl > dt + dd + dd:before {content:'';position:absolute;left:0;top:50%;width:1px;height:10px;margin:-5px 0 0;background:#ccc;}
+#ext-scrapping .info-data3 dl > dt + dd + dd ~ dd {display:block;font-size:11px;line-height:17px;color:#4c4c4c;}
+#ext-scrapping .info-data3 dl > dt + dd + dd + dd {margin:2px 0 0;}
+#ext-scrapping .info-data3 dl > dd:last-child {display:block;margin:0;padding:0;color:#f36406;}
+#ext-scrapping .info-data3 dl > dd:last-child:before {display:none;}
+#ext-scrapping .info-data3 a {font-weight:bold;font-size:16px;line-height:76px;color:#000;text-decoration:none;}
+#ext-scrapping .info-data3 a:before {top:50%;margin-top:-18px;}
+#ext-scrapping .info-data3 a:after {content:'';position:absolute;right:20px;top:50%;width:9px;height:9px;margin:-5px 0 0 -0.6rem;border-left:1px solid #969696;border-bottom:1px solid #969696; -webkit-transform:rotate(-135deg); -moz-transform:rotate(-135deg); transform:rotate(-135deg);}
+#ext-scrapping .info-data3 dl + a {position:absolute;display:block;width:auto;height:auto;left:-1px;right:-1px;top:-1px;bottom:-1px;padding:0;text-indent:-9999px;overflow:hidden;}
+#ext-scrapping .info-data3 dl + a:before {display:none;}
+#ext-scrapping .info-data3 > p {min-height:auto;padding-right:19px;font-size:14px;line-height:20px;}
+#ext-scrapping .info-data3 > p strong {display:block;margin:0 0 8px;font-size:15px;line-height:21px;color:#000;letter-spacing:-1px;}
+#ext-scrapping .info-data3 > p:before {background-position:-40px -57px;}
+#ext-scrapping .con-login .mes-tip:first-child {margin:15px 0 0;}
+#ext-scrapping .con-login .info-data3 > p:after {content:'';position:absolute;left:-1px;top:-1px;right:-1px;bottom:-1px;border:1px solid #f56400;z-index:1;}
+#ext-scrapping .con-login div.info-data3 {border:1px solid #969696;background:#f9f9f9;}
+#ext-scrapping .con-login .info-data3 dl {background:#fff;}
+#ext-scrapping .con-login .info-data3 dl + a {border:1px solid #07a2b9;}
+#ext-scrapping .con-login .form-con1 ~ p {margin:6px 0 0;color:#969696;font-size:11px;line-height:18px;}
+#ext-scrapping .con-login .txt-c1 {color:#00a2bb;}
+#ext-scrapping .con-login .text.keypad {width:100%; height:43px;}
+#ext-scrapping .con-login + .btn-area1 {margin-top:28px;}
+#ext-scrapping .btn-area1:last-child {margin-bottom:0;}
+#ext-scrapping .btn-area1 {text-align:center; margin:20px 0; box-sizing:border-box;}
+#ext-scrapping .btn-com.c2,
+#ext-scrapping .btn-sub1.c2,
+#ext-scrapping .btn-sub2.c2,
+#ext-scrapping .btn-sub3.c2 {border-color:#07a2b9; background:#07a2b9; color:#fff;}
+#ext-scrapping .btn-area1 > a,
+#ext-scrapping .btn-area1 > button {float:left; width:49%; width:-webkit-calc(50% - 5px); width:-moz-calc(50% - 5px); width:calc(50% - 5px); box-sizing:border-box; padding:0;}
+#ext-scrapping .btn-com {padding:0 10px; border:1px solid #808080; font-size:15px; line-height:42px;}
+#ext-scrapping .btn-com,
+#ext-scrapping .btn-sub1,
+#ext-scrapping .btn-sub2,
+#ext-scrapping .btn-sub3,
+#ext-scrapping .btn-sub4 {overflow:visible; display:inline-block; border:1px solid #ccc; background:#fff; color:#3a3a3a; vertical-align:middle; text-align:center; font-weight:bold; white-space:nowrap; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+#ext-scrapping .btn-area1 > a + a,
+#ext-scrapping .btn-area1 > button + a,
+#ext-scrapping .btn-area1 > button + button,
+#ext-scrapping .btn-area1 > a + button {float:right;}
+#ext-scrapping .mes-type1 {margin:0 0 17px; padding:17px 17px 0 17px; text-align:center; font-size:11px; line-height:17px;}
+#ext-scrapping #certList .info-data3 {margin:0 17px;}
+#ext-scrapping #certList .info-data3 > p:before {content:"";position:absolute;left:22px;top:20px;width:35px;height:40px;background:url('/mobiz/app/img/2019/ico_red_certi.png') no-repeat ;background-size:35px auto;}
+#ext-scrapping #certList .info-data3 dl:before {content:""; position:absolute; left:22px; top:20px; width:40px; height:41px; background:url('/mobiz/app/img/2019/ico_blue_certi.png') no-repeat; background-size:35px auto;}
+
+/* 20190903 AS-IS 페이지 TO-BE 디자인 가이드로 수정 */
+/* step */
+.step {position:relative;margin:0 -16px;padding:0 0 13px;font-size:0;font-weight:bold;text-align:center;counter-reset:step}
+.step > span {display:inline-block;height:20px;margin:0 3px;border:0;border-radius:0;background:transparent none;vertical-align:top;text-indent:0}
+.step > span.on {background:transparent none;border:0;border-radius:0}
+.step > span:before {counter-increment:step;content:counter(step);display:block;position:relative;overflow:hidden;width:20px;height:20px;border-radius:50%;font-size:0;line-height:0;color:#fff;background:url('/mobiz/app/img/2019/sp_icon.png') #ddd no-repeat 0 0;background-size:250px 90px}
+.step > span.on:before, .step > span.on ~ span:before {counter-increment:step;content:counter(step);font-size:12px;line-height:20px;background:#ddd}
+.step > span.on:before {background:#ffcc00;color:#222}
+
+/* tab */
+.tab_st03 li a {height:48px;border-left:0;background:#fff;font-size:13px;color:#707070;box-shadow:none}
+.tab_st03 li.on a {color:#222;border-left:0}
+.tab_st03 li.on a:after {top:auto;bottom:0;height:2px;background:#fc0}
+
+/* box type */
+.guide_box, 
+.strong_box,
+.desc_box {border-radius:0;border:1px solid #ddd}
+.end_box,
+.end_box02,
+.error_box,
+.error_box02,
+.error_box03 {border-radius:0}
+
+/* list */
+.inquery_toggle .btn-toggle.close {bottom:55px}
+
+/* table */
+div[class^="tbl_"] {border-radius:0 !important;border:none !important}
+div[class^="tbl_"] > table {border-top:1px solid #ddd !important;border-bottom:1px solid #ddd !important}
+div[class^="tbl_"] th {background-color:#eee !important}
+.tbl_list01 tbody th, .tbl_list01 tbody th, .tbl_view03 th {background-color:#fff !important} /* 기존 색상 유지 - th 에 화이트배경 이미지가 있는 페이지가 있음 */
+div[class^="tbl_"] th,
+div[class^="tbl_"] td {padding:12px !important;border-top:1px solid #ddd;border-left:1px solid #ddd;font-size:14px !important;color:#222 !important}
+div[class^="tbl_"] tr:first-child td:first-child, div[class^="tbl_"] tr th:first-child, div[class^="tbl_"] tr td:first-child {border-left:none}
+div[class^="tbl_"] td div[class^="tbl_"] {border-top:none !important;border-bottom:none !important}
+div[class^="tbl_"] td.color_txt02 {display:table-cell;color:#0070e8 !important}
+.tbl_view01 tr:first-child th,
+.tbl_view01 tr:first-child td {border-top:none !important}
+.tbl_view01 thead th {border-left:1px solid #ddd} /* list형 테이블인데 view 클래스로 잘못 쓴 페이지가 있어 수정 */
+.common_box, 
+.bill_box {border-radius:0 !important}
+
+/* button */
+[class^=btn0],
+[class^=btn_],
+button.fn,
+a.fn {border-radius:0;border:none;color:#222}
+.btn01_1,
+.btn03 {border:1px solid #ddd;line-height:30px}
+.btn05 {background-color:#eee !important}
+.btn_disable {background-color:#eee !important}
+.btn_date,
+.btn_day,
+.btn_amount {background-color:#ddd}
+.btn_modify, .btn_search, .btn_side02 {color:#fff}
+.btn_side01 {line-height:29px}
+.btn_side02 {line-height:29px}
+.btn_side03 {line-height:29px}
+.btn_side04 {line-height:28px}
+.btn_side04_1 {line-height:28px}
+.btn_side04_2 {line-height:28px}
+.btn_side05 {line-height:29px;border:1px solid #ddd}
+.btn_address{line-height:29px;border:1px solid #ddd}
+.btn_search{line-height:29px}
+.btn_calendar {width:20px;height:20px;background:url('/mobiz/app/img/2018/sp_btn2.png') no-repeat -170px -5px;background-size:250px auto}
+.test_box .test_inp .btn_test_action {height:31px;line-height:0.9}
+.period-set>button:first-child {border-radius:0 !important}
+.period-set>button:nth-child(4n) {border-radius:0 !important}
+.progress_box button {border-radius:0}
+
+/* input */
+input[type=tel], input[type=text], input[type=password], input[type=search], input[type=email], input[type=file], textarea {height:31px;padding-left:0;padding-right:0;color:#222;border:0;border-bottom:1px solid #bbb;border-radius:0;font-weight:bold;background:#fff;box-shadow:none}
+textarea {border:1px solid #bbb}
+input[type=tel]::-webkit-input-placeholder, input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type=search]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=file]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {font-weight:normal;font-size:14px;color:#707070}
+input[type=password][readonly] {border:0;border-bottom:1px solid #bbb;background:#eee}
+input[type=text]:focus, input[type=search]:focus, input[type=email]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password][readonly]:focus {border:0;border-bottom:1px solid #bbb;background:#ffcc00} 
+input[type=text][readonly]:focus, input[type=tel][readonly]:focus {padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;border:0;border-bottom:1px solid #bbb;background-color:#eee}
+input[type=text][disabled] {color:#707070}
+input[readonly], input[type=text][disabled] {border:0;border-bottom:1px solid #bbb;background-color:#eee;color:#333;opacity:1;box-shadow:none}
+
+/* radio */
+input[type=radio] {display:inline-block;width:24px;height:24px;margin:0 3px 0 0;border:0;border-radius:15px;background:url('/mobiz/app/img/2018/radio2.png') #fff no-repeat 0 0;background-size:auto 24px;outline:none;color:#222}
+input[type=radio]:checked {background-position:-48px 0}
+input[type=radio]:disabled {background-position:-24px 0;background-color:#fff}
+input[type=radio] + label {display:inline;margin:0;padding:12px 12px 10px 0;vertical-align:middle;box-sizing:border-box}
+input[type=radio]:disabled + label {color:#999}
+
+/* checkbox */
+input[type=checkbox] {display:inline-block;width:24px;height:24px;margin:0 3px 0 0;border:0;border-radius:0;background:url('/mobiz/app/img/2018/checkbox.png') #fff no-repeat 0 0;background-size:auto 24px;outline:none;color:#222}
+input[type=checkbox]:checked {background-position:-48px 0}
+input[type=checkbox]:disabled {background-position:-24px 0;background-color:#fff}
+input[type=checkbox] + label {display:inline;margin:0;padding:12px 12px 10px 0;vertical-align:middle;box-sizing:border-box}
+input[type=checkbox]:disabled + label {color:#999}
+
+/* selectbox */
+select {width:100%;height:31px;margin:0;padding:0 24px 0 0;border:0;border-bottom:1px solid #bbb;border-radius:0;background:url('/mobiz/app/img/2018/select2.png') no-repeat right center;background-size:auto 8px;font-weight:bold;line-height:30px;color:#222;text-align:left}
+option {padding:0}
+select[readonly], select[disabled]{border:0;border-bottom:1px solid #bbb;background-color:#eee !important;color:#333;opacity:1;box-shadow:none}
+select[disabled]{color:#707070}
+.address_input select.add_input {border:0;border-bottom:1px solid #bbb}
+
+/* 한글금액 */
+.acc_input, .pay_sum {color:#4c4c4c !important;font-weight:normal !important}
+.acc_input {text-align:right} 
+
+/* input + 원 */
+.write_type01 dd .won {right:0;color:#222;font-weight:bold}
+.unit_wrap .unit_won, .unit_wrap .unit_times{top:9px}
+
+/* input radio col3 (33.3% / 30%) */
+.check_ps02 input[type=radio] + label, .check_ps04 input[type=radio] + label {padding-right:0}
+
+/* title */
+[class^="h_area"] {min-height:40px}
+[class^="h_area"] h2 {margin-top:-20px !important}
+
+/* 펀드신규_투자성향분석결과쪽 */
+.investmentInfo .queClause dd .chkQue_list li label {padding-top:0;padding-bottom:0}
+
+/***** 추후 확인 필요 *****/
+.notftof input[type=checkbox] + label {padding:0}
+.notftof select {height:36px;font-weight:normal;line-height:34px}
+.notftof .write_type01 .won_wrap .won {right:8px;font-weight:normal}
+
+/* 2줄 버튼 */
+.btn_double {line-height:1.5}
+.btn03.btn_double {padding-top:6px;padding-bottom:4px}
+
+
+/* ##########################################################
+	# 2019 비대면 차세대 UI/UX구축
+	# 공통UI 신규가이드 추가
+########################################################## */
+/* --------------------------------------------------------------------------------
+	# 플로팅버튼
+-------------------------------------------------------------------------------- */
+.nav_aside2 {position:fixed;right:0;bottom:0;left:0;z-index: 1001;}
+.nav_aside2.close > .btns_area {margin-top:0; margin-bottom:40px; -webkit-transform:translateX(100%); transform:translateX(100%); -webkit-transition:all 0.5s ease-out; transition:all 0.5s ease-out;}
+.nav_aside2.close > .btns_area .ui_btn {display:block; position:relative; height:53px; margin:0 16px;padding:16px 21px 16px 60px;border-radius:25px;background:#fff;text-align:left;color:#222;font-weight:bold;font-size:15px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,.5); box-shadow: 0 0 15px rgba(0,0,0,.5); -webkit-box-sizing:border-box; box-sizing:border-box;}
+.nav_aside2.close > .btns_area .ui_btn::before,
+.nav_aside2.close > .btns_area .ui_btn::after {content:""; display:block; position:absolute; }
+.nav_aside2.close > .btns_area .ui_btn::before {top:5px; left:5px; width:43px; height:43px; border-radius:50%; background:#ffde5c;}
+.nav_aside2.close > .btns_area .ui_btn::after {top:14px; left:17px; width:19px; height:21px; background:url('/mobiz/app/img/2020/ico_helpbanner_alarm.png') no-repeat center; background-size:100% auto; -webkit-transform-origin:top center; transform-origin:top center;}
+.nav_aside2.close > .btns_area .nav_close {position:absolute; top:0; right:16px; width:60px; height:50px; overflow:hidden; text-indent:-999px; text-align:left;}
+.nav_aside2.close > .btns_area .nav_close::before,
+.nav_aside2.close > .btns_area .nav_close::after {content:""; display:block; position:absolute; top:17px; left:30px; width:2px; height:15px; background:#222 !important; -webkit-transform-origin:center; transform-origin:center;}
+.nav_aside2.close > .btns_area .nav_close::before {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+.nav_aside2.close > .btns_area .nav_close::after {-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
+.nav_aside2:not(.close) > .btns_area {display:none;}
+.nav_aside2:not(.close) + .dim {position:fixed;left:0;top:0;right:0;bottom:0;z-index:1000;background-color:rgba(34,34,34,.5); opacity:1 !important;}
+.nav_aside2.show {opacity:1; -webkit-transition:all 0.5s ease-out; transition:all 0.5s ease-out}
+.nav_aside2.show > .btns_area {-webkit-transform:translateX(0);transform:translateX(0); -webkit-transition:all .8s ease-out; transition:all .8s ease-out;}
+.nav_aside2.show > .btns_area .ui_btn::after {-webkit-animation: floating_alram infinite;animation: floating_alram infinite; -webkit-animation-duration: 2s; animation-duration: 2s;}
+.nav_aside2.show > .btns_area .ui_btn2::after {-webkit-animation: floating_alram infinite;animation: floating_alram infinite; -webkit-animation-duration: 2s; animation-duration: 2s;}
+.nav_aside2.show > .btns_area .ui_btn3::after {-webkit-animation: floating_alram infinite;animation: floating_alram infinite; -webkit-animation-duration: 2s; animation-duration: 2s;}
+.nav_aside2.show > .btns_area .ui_btn4::after {-webkit-animation: floating_alram infinite;animation: floating_alram infinite; -webkit-animation-duration: 2s; animation-duration: 2s;}
+
+@-webkit-keyframes floating_alram {
+	0% {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+	5% {-webkit-transform:rotate(-20deg);transform:rotate(-20deg);}
+	10% {-webkit-transform:rotate(20deg);transform:rotate(20deg);}
+	15% {-webkit-transform:rotate(-20deg);transform:rotate(-20deg);}
+	20% {-webkit-transform:rotate(20deg);transform:rotate(20deg);}
+	25% {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+}
+@keyframes floating_alram {
+	0% {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+	5% {-webkit-transform:rotate(-20deg);transform:rotate(-20deg);}
+	10% {-webkit-transform:rotate(20deg);transform:rotate(20deg);}
+	15% {-webkit-transform:rotate(-20deg);transform:rotate(-20deg);}
+	20% {-webkit-transform:rotate(20deg);transform:rotate(20deg);}
+	25% {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+}
+
+.nav_aside2 .cont {position:relative;background:#fff;}
+.nav_aside2 .cont p.sub {padding:28px 40px 13px;font-weight:bold;font-size:20px;line-height:1.5;color:#111;text-align: center;}
+.nav_aside2 .cont .btns_area {position:absolute;top:0;right:0;}
+.nav_aside2 .cont .btns_area a {display:block;width:56px;height:56px;text-indent:-999px;overflow:hidden;}
+.nav_aside2 .cont .btns_area a::before,
+.nav_aside2 .cont .btns_area a::after {content:"";display:block;position:absolute;top:27px;left:20px;width:14px;height:1px;background:#666;transform-origin:center;}
+.nav_aside2 .cont .btns_area a::before {transform:rotate(45deg);}
+.nav_aside2 .cont .btns_area a::after {transform:rotate(-45deg);}
+.nav_aside2 .cont ul {position:relative; top:0; padding:0 20px 20px; -webkit-transition:all 0.7s; transition:all 0.7s; -webkit-transition-delay: .1s; transition-delay: .1s; opacity:1;}
+.nav_aside2.close .cont ul {top:35px; opacity:0.5;}
+.nav_aside2 .cont ul li {height:48px; border-radius:8px; background:#f6f6f6;}
+.nav_aside2 .cont ul li + li {margin-top:10px;}
+.nav_aside2 .cont ul li a {display:block;padding:15px;font-size:16px;color:#000;line-height:18px; text-align:center;}
+.nav_aside2.close .cont {height:0; max-height:0; padding:0 !important; overflow:hidden;}
+.nav_aside2:not(.close) .cont {height:auto; max-height:600px; -webkit-transition: all 1s; transition: all 1s;}
+
+/* type2 */
+.nav_aside2 .cont.type2 p.sub {padding-top:24px;text-align:center;font-size:14px;color:#000;font-weight:normal;}
+.nav_aside2 .cont.type2 p.sub em {display:block;position:relative;font-size:20px;font-weight:bold;padding-top:5px;}
+.nav_aside2 .cont.type2 p.sub a {color:#0e5acc; vertical-align: top;}
+.nav_aside2 .cont.type2 ul {display:block;padding-bottom:40px;text-align:center;font-size:0; overflow:hidden; clear:both;}
+.nav_aside2 .cont.type2 ul li {display:inline-block;height:auto;border-top:none; background:none; vertical-align: top;}
+.nav_aside2 .cont.type2 ul li + li {margin-top:0; margin-left:12px;}
+.nav_aside2 .cont.type2 ul li a {position:relative;min-width:56px;padding:60px 0 0;text-align:center;font-size:16px;color:#000; text-decoration:underline;}
+.nav_aside2 .cont.type2 ul li a::before,
+.nav_aside2 .cont.type2 ul li a::after {content:"";display:block;position:absolute;}
+.nav_aside2 .cont.type2 ul li a::before {top:0;left:50%;width:56px;height:56px;margin-left:-28px;border-radius:50%;background:#f8f9f9;}
+.nav_aside2 .cont.type2 ul li a::after {top:17px;left:50%;width:22px;height:22px;margin-left:-11px;background:url(/mobiz/app/img/2021/ico_helpbanner_n.png) no-repeat;background-size:auto 22px;}
+.nav_aside2 .cont.type2 ul li.ic1 a::after {background-position:0 0;} /* 전화 */
+.nav_aside2 .cont.type2 ul li.ic2 a::after {background-position:-22px 0;} /* 채팅 */
+.nav_aside2 .cont.type2 ul li.ic3 a::after {background-position:-44px 0;} /* 이메일 */
+.nav_aside2 .cont.type2 .btns_area.fill{position:relative;}
+.nav_aside2 .cont.type2 .btns_area.fill div {display:flex;}
+.nav_aside2 .cont.type2 .btns_area.fill button {flex:1;height: 56px;border: none;background-color: #fc0;display: inline-block;padding: 0 10px;font-size: 17px;font-weight: bold;color: rgb(36, 31, 31);}
+.nav_aside2:not(.close) .cont.type2 .btns_area.fill {display:block!important; top:0; position:relative; width:100% !important; -webkit-animation: floatingNav 1; animation: floatingNav 1; -webkit-animation-duration: .8s; animation-duration: .8s;}
+@-webkit-keyframes floatingNav {
+	0% {top:150px; opacity:0;}
+	100% {top:0; opacity:1;}
+}
+@keyframes floatingNav {
+	0% {top:150px; opacity:0;}
+	100% {top:0; opacity:1;}
+}
+
+.nav_aside2 .cont.type3 > a {display:block; clear:both; overflow:hidden;}
+.nav_aside2 .cont.type3 > a img {width:100%; height:auto;}
+.nav_aside2 .cont.type3 .btns_area {position:absolute; top:20px; right:16px; width:16px; height:16px; background:rgba(0,0,0,.3)}
+.nav_aside2 .cont.type3 .btns_area a {display:block; position:absolute; top:-20px; right:-16px; width:56px; height:56px;}
+.nav_aside2 .cont.type3 .btns_area a::before,
+.nav_aside2 .cont.type3 .btns_area a::after {top:27px; left:26px; width:13px; background:#fff;}
+
+.nav_aside2 .cont.type4 {padding:30px; box-sizing:border-box;}
+.nav_aside2 .cont.type4 img {max-width:100%;}
+
+	/*캠페인플로팅배너 적용*/
+	.nav_aside2.close > .btns_area .ui_btn > .detail_area { width: 90%;}
+
+	.nav_aside2.close > .btns_area .ui_btn2 {display:block; position:relative; height:53px; margin:0 16px;padding:6px 21px 16px 60px;border-radius:25px;background:#fff;text-align:left;color:#222;font-weight:bold;font-size:15px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,.5); box-shadow: 0 0 15px rgba(0,0,0,.5); -webkit-box-sizing:border-box; box-sizing:border-box;}
+	.nav_aside2.close > .btns_area .ui_btn2::before,
+	.nav_aside2.close > .btns_area .ui_btn2::after {content:""; display:block; position:absolute; }
+	.nav_aside2.close > .btns_area .ui_btn2::before {top:5px; left:5px; width:43px; height:43px; border-radius:50%; background:#ffde5c;}
+	.nav_aside2.close > .btns_area .ui_btn2::after {top:14px; left:17px; width:19px; height:21px; background:url('/mobiz/app/img/2020/ico_helpbanner_alarm.png') no-repeat center; background-size:100% auto; -webkit-transform-origin:top center; transform-origin:top center;}
+	.nav_aside2.close > .btns_area .ui_btn2 > .detail_area {margin-top: 1px; width: 90%;}
+	
+	.nav_aside2.close > .btns_area .ui_btn3 {display:block; position:relative; height:53px; margin:0 16px;padding:16px 21px 16px 60px;border-radius:25px;background: rgb(76, 76, 76);text-align:left;color:rgb(255, 255, 255);font-weight:bold;font-size:15px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,.5); box-shadow: 0 0 15px rgba(0,0,0,.5); -webkit-box-sizing:border-box; box-sizing:border-box;}
+	.nav_aside2.close > .btns_area .ui_btn3::before,
+	.nav_aside2.close > .btns_area .ui_btn3::after {content:""; display:block; position:absolute; }
+	.nav_aside2.close > .btns_area .ui_btn3::before {top:5px; left:5px; width:43px; height:43px; border-radius:50%; background:#ffde5c;}
+	.nav_aside2.close > .btns_area .ui_btn3::after {top:14px; left:17px; width:19px; height:21px; background:url('/mobiz/app/img/2020/ico_helpbanner_alarm.png') no-repeat center; background-size:100% auto; -webkit-transform-origin:top center; transform-origin:top center;}
+	.nav_aside2.close > .btns_area .ui_btn3 > .detail_area {width: 90%;}
+	
+	.nav_aside2.close > .btns_area .ui_btn4 {display:block; position:relative; height:53px; margin:0 16px;padding:6px 21px 16px 60px;border-radius:25px;background: rgb(76, 76, 76);text-align:left;color:rgb(255, 255, 255);font-weight:bold;font-size:15px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,.5); box-shadow: 0 0 15px rgba(0,0,0,.5); -webkit-box-sizing:border-box; box-sizing:border-box;}
+	.nav_aside2.close > .btns_area .ui_btn4::before,
+	.nav_aside2.close > .btns_area .ui_btn4::after {content:""; display:block; position:absolute; }
+	.nav_aside2.close > .btns_area .ui_btn4::before {top:5px; left:5px; width:43px; height:43px; border-radius:50%; background:#ffde5c;}
+	.nav_aside2.close > .btns_area .ui_btn4::after {top:14px; left:17px; width:19px; height:21px; background:url('/mobiz/app/img/2020/ico_helpbanner_alarm.png') no-repeat center; background-size:100% auto; -webkit-transform-origin:top center; transform-origin:top center;}
+	.nav_aside2.close > .btns_area .ui_btn4 > .detail_area {margin-top: 1px; width: 90%;}
+	
+	.nav_aside2.close > .btns_area .nav_close2 {margin-top:4px;position:absolute; top:0; right:16px; width:60px; height:50px; overflow:hidden; text-indent:-999px; text-align:left;}
+	.nav_aside2.close > .btns_area .nav_close2::before,
+	.nav_aside2.close > .btns_area .nav_close2::after {content:""; display:block; position:absolute; top:17px; left:30px; width:2px; height:15px; background:#222; -webkit-transform-origin:center; transform-origin:center;}
+	.nav_aside2.close > .btns_area .nav_close2::before {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+	.nav_aside2.close > .btns_area .nav_close2::after {-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
+	
+	.nav_aside2.close > .btns_area  .nav_close3 {position:absolute; top:0; right:16px; width:60px; height:50px; overflow:hidden; text-indent:-999px; text-align:left;}
+	.nav_aside2.close > .btns_area  .nav_close3::before,
+	.nav_aside2.close > .btns_area  .nav_close3::after {content:""; display:block; position:absolute; top:17px; left:30px; width:2px; height:15px; background:#fff; -webkit-transform-origin:center; transform-origin:center;}
+	.nav_aside2.close > .btns_area  .nav_close3::before {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+	.nav_aside2.close > .btns_area  .nav_close3::after {-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
+	
+	.nav_aside2.close > .btns_area  .nav_close4 {margin-top:4px;position:absolute; top:0; right:16px; width:60px; height:50px; overflow:hidden; text-indent:-999px; text-align:left;}
+	.nav_aside2.close > .btns_area  .nav_close4::before,
+	.nav_aside2.close > .btns_area  .nav_close4::after {content:""; display:block; position:absolute; top:17px; left:30px; width:2px; height:15px; background:#fff; -webkit-transform-origin:center; transform-origin:center;}
+	.nav_aside2.close > .btns_area  .nav_close4::before {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+	.nav_aside2.close > .btns_area  .nav_close4::after {-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
+	
+	.nav_aside2.close > .btns_area > .review_area {text-align:right;width: 95%;font-weight:bold; zoom:1.3}
+    
+    /* 캠페인플로팅레이어 심풀버전 : 2021-09-01 */
+.nav_aside2.type_n{position: fixed; bottom: 0; left: 0; width: 100%; background-color: #fff; border-radius: 15px 15px 0 0; opacity:1; transform: translate(0px, 100%); box-sizing: border-box; padding: 10px 22px 58px; will-change: transform; transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); will-change: transform; }
+.nav_aside2.type_n > .btns_area{position:relative; bottom: 0; left: 0; width: 100%; margin:0; padding-top:20px; background-color: #fff;    transform: translate(0px, 0px); }
+.nav_aside2.type_n + .dimmask{opacity:0; position:fixed; left:0; top:0; width:100%; height:100%; z-index:1000; background-color:#000; will-change:opacity; transition:0.5s}
+.nav_aside2.type_n.close > .btns_area .closeBtn{position: absolute; right: 3px; top: 0px; font-weight: bold; color: #222222; font-size: 15px; padding-right: 19px; margin:0; text-indent:0px; width:auto; height:auto; z-index:3}
+.nav_aside2.type_n.close > .btns_area .closeBtn::before{content:''; right:5px; left:auto; top:3px; width:1px; height:14px; transform: rotate(45deg); display: block; position: absolute; transform-origin: center; background-color:#222;}
+.nav_aside2.type_n.close > .btns_area .closeBtn::after{content:''; right:5px; left:auto; top:3px; width:1px; height:14px; transform: rotate(-45deg);  display: block; position: absolute; transform-origin: center; background-color:#222;}
+.nav_aside2.type_n.close > .btns_area > .review_area{text-align:left; width:auto; font-weight:normal; zoom:1; position:absolute; left:3px; top:0}
+.nav_aside2.type_n.close > .btns_area > .review_area input[type="checkbox"] {width: 20px; height: 20px; background-size: auto 20px;}
+.nav_aside2.type_n.close > .btns_area > .review_area input[type="checkbox"]:checked{background-position:-40px 0;}
+.nav_aside2.type_n.close > .btns_area > .review_area label{margin-left:8px; font-size:14px;}
+.nav_aside2.type_n.close > .btns_area #ui_btn{border-top: 1px solid #f1f1f1; padding: 19px 0 20px 63px; height:auto; margin:8px 0 0 0; border-radius:0; box-shadow:0 0 0 0; display: block; font-weight: bold; color: #222222; text-align:left; position:relative;}
+.nav_aside2.type_n.close > .btns_area #ui_btn .detail_area{font-size:16px; line-height:22px; width:auto; margin-right:8px; display:inline; vertical-align:middle;}
+.nav_aside2.type_n.close > .btns_area #ui_btn .detail_area em{background: linear-gradient(180deg, #fff 0%, #fff 70%, #ffcc00 70%, #ffcc00 100% );}
+@media all and (device-width: 375px){
+	.nav_aside2.type_n.close > .btns_area #ui_btn .detail_area em{background: linear-gradient(180deg, #fff 0%, #fff 60%, #ffcc00 60%, #ffcc00 60%, #ffcc00 85%, #fff 85%);}
+}
+.nav_aside2.type_n.close > .btns_area #ui_btn .go_page{font-size: 14px; line-height:22px; color: #0700ff; display: inline; vertical-align:middle; margin-left: 0px; position: relative; padding-right: 9px; margin-right: 8px; letter-spacing: -0.5px; white-space: nowrap;}
+.nav_aside2.type_n.close > .btns_area #ui_btn .go_page:before{content:''; position:absolute; right:0px; left:auto; top:50%; margin-top:-4px; width:1px; height:5px; background-color:#0700ff; transform: rotate(-53deg);}
+.nav_aside2.type_n.close > .btns_area #ui_btn .go_page:after{content:''; position:absolute;right:0px; left:auto; top:50%; margin-top:-1px; width:1px; height:5px; background-color:#0700ff; transform: rotate(53deg);}
+.nav_aside2.type_n.close > .btns_area #ui_btn::before{content:''; display: block; position: absolute; top:50%; width:46px; height:46px; left:0; margin-top:-23px; border-radius: 50%; background: #ffde5c;}
+.nav_aside2.type_n.close > .btns_area #ui_btn::after{ content:'';  display: block; position: absolute;top:50%; width:46px; height:46px; left:0; margin-top:-23px; animation-duration:0s; background: url('/mobank5/app/img/2020/ico_helpbanner_alarm.png') no-repeat center; background-size:19px 21px; }
+.nav_aside2.type_n.show{transform: translate(0px, 0%);  transition-delay: 0.2s;}
+.nav_aside2.type_n.show + .dimmask{opacity:0.4}
+@media all and (-webkit-device-pixel-ratio: 3) and (min-device-width:375px){
+	.nav_aside2.type_n{padding: 10px 22px 80px;}
+}
+
+/* 캠페인플로팅레이어 풀버전 : 2021-09-01 */
+.nav_aside2.type_full{position: fixed; bottom: 0; left: 0; width: 100%; opacity:1; transform: translate(0px, 100%); box-sizing: border-box; will-change: transform; transition:0s}
+.nav_aside2.type_full > .btns_area{position:relative; bottom: 0; left: 0; width: 100%; margin:0; padding:30px 22px 58px; box-sizing:border-box; background-color: #fff;    transform: translate(0px, 100%);  background-color: #fff; border-radius: 15px 15px 0 0; transition:0.3s  0.2s cubic-bezier(0.22, 0.61, 0.36, 1);}
+.nav_aside2.type_full > .btns_area .nav_close{position: absolute; right: 25px; top: 10px; font-weight: bold; color: #222222; font-size: 15px; padding-right: 19px; margin:0; text-indent:0px; width:auto; height:auto; z-index:3}
+.nav_aside2.type_full > .btns_area .nav_close::before{content:''; right:5px; left:auto; top:3px; width:1px; height:14px; transform: rotate(45deg); display: block; position: absolute; transform-origin: center; background-color:#222;}
+.nav_aside2.type_full > .btns_area .nav_close::after{content:''; right:5px; left:auto; top:3px; width:1px; height:14px; transform: rotate(-45deg);  display: block; position: absolute; transform-origin: center; background-color:#222;}
+.nav_aside2.type_full > .btns_area .ui_btn{border-top: 1px solid #f1f1f1; padding: 19px 0 20px 63px; height:auto; margin:8px 0 0 0; border-radius:0; box-shadow:0 0 0 0; display: block; font-weight: bold; color: #222222; text-align:left; position:relative;}
+.nav_aside2.type_full > .btns_area .ui_btn >span{font-size:16px; line-height:22px; width:100%; margin-right:8px; display:block; vertical-align:middle; transform: translateY(0%);}
+
+.nav_aside2.type_full > .btns_area .ui_btn > .detail_area em{background: linear-gradient(180deg, #fff 0%, #fff 70%, #ffcc00 70%, #ffcc00 100% );}
+@media all and (device-width: 375px){
+	.nav_aside2.type_full > .btns_area .ui_btn > .detail_area em{background: linear-gradient(180deg, #fff 0%, #fff 60%, #ffcc00 60%, #ffcc00 60%, #ffcc00 85%, #fff 85%);}
+}
+
+.nav_aside2.type_full > .btns_area .ui_btn .go_page{font-size: 14px; line-height:22px; color: #0700ff; display: inline; vertical-align:middle; margin-left: 0px; position: relative; padding-right: 9px; margin-right: 8px; letter-spacing: -0.5px; white-space: nowrap;}
+.nav_aside2.type_full > .btns_area .ui_btn .go_page:before{content:''; position:absolute; right:0px; left:auto; top:50%; margin-top:-4px; width:1px; height:5px; background-color:#0700ff; transform: rotate(-53deg);}
+.nav_aside2.type_full > .btns_area .ui_btn .go_page:after{content:''; position:absolute;right:0px; left:auto; top:50%; margin-top:-1px; width:1px; height:5px; background-color:#0700ff; transform: rotate(53deg);}
+.nav_aside2.type_full > .btns_area .ui_btn::before{content:''; display: block; position: absolute; top:50%; width:46px; height:46px; left:0; margin-top:-23px; border-radius: 50%; background: #ffde5c;}
+.nav_aside2.type_full > .btns_area .ui_btn::after{ content:'';  display: block; position: absolute;top:50%; width:46px; height:46px; left:0; margin-top:-23px; animation-duration:0s; background: url('/mobank5/app/img/2020/ico_helpbanner_alarm.png') no-repeat center; background-size:19px 21px; }
+.nav_aside2.type_full > .cont{transform:translate(0px, 330px); background-color: #fff; border-radius: 15px 15px 0 0; padding-bottom:58px;}
+.nav_aside2.type_full > .cont p.sub{transition:0s; padding:34px 16px 20px;}
+.nav_aside2.type_full > .cont p.sub + .btns_area{right:-10px; top:-5px; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+.nav_aside2.type_full > .cont ul{transition:0s}
+.nav_aside2.type_full + .dim{opacity:0 !important; position:fixed; left:0; top:0; width:100%; height:100%; z-index:1000; background-color:#000; will-change:opacity; transition:0.5s}
+
+@media all and (-webkit-device-pixel-ratio: 3) and (min-device-width:375px){
+	.nav_aside2.type_full > .btns_area{padding-bottom: 80px;}
+	.nav_aside2.type_full > .cont{padding-bottom:80px}	
+}
+.nav_aside2.type_full.show{transform: translate(0px, 0%);}
+.nav_aside2.type_full.show > .btns_area{ transform: translate(0px, 0%);  }
+.nav_aside2.type_full.show + .dim{opacity:0.4 !important}
+.nav_aside2.type_full:not(.close) > .btns_area{display:block; padding:0; position:absolute; overflow:hidden; height:0; transition-duration:0.15s; transition-delay:0s}
+.nav_aside2.type_full:not(.close) > .cont{transform:translate(0px, 0px); transition:0.4s cubic-bezier(0.22, 0.61, 0.36, 1); transition-delay:0.1s}
+.nav_aside2.type_full:not(.close) > .cont.type2 .btns_area.fill{animation:0s}
+	
+/*2022-01-10 예금보험 상품 안내 로고 추가*/
+.protection-logo-wrap{position:absolute;width:auto;height:auto;background-color:#fff;top:25px;right:16px;}
+.protection-logo-wrap img {width:74px;height:48px;box-sizing:border-box;border:none;-ms-interpolation-mode:bicubic;}
+.protection-logo-wrap img:nth-of-type(1) {display: inline;}
+.protection-logo-wrap img:nth-of-type(2) {display: none;}
+/*----------------------------------------------*/
+/*2022-02-11 예금보험 상품 안내 로고 추가 작업*/
+.protection-logo-wrap.ty-bottom:after{content:"";display:block;width:100%;height:0;clear:both;}
+.protection-logo-wrap.ty-bottom{position:relative;margin-top:15px;top:0;right:0;}
+.protection-logo-wrap.ty-bottom>img{display:none;width:63px;height:40px;}
+.protection-logo-wrap.ty-bottom>p{display:none;width:calc(100% - 79px);margin-top:-6px;float:right;word-break:keep-all;line-height:24px;font-size:12px;letter-spacing:-1px;color:#777;}
+.protection-logo-wrap.ty-bottom>img:nth-of-type(1){display:inline;}
+.protection-logo-wrap.ty-bottom>p:nth-of-type(1){display:block;}
+.none.protection-logo-wrap.ty-bottom>img:nth-of-type(1){display:none;}
+.none.protection-logo-wrap.ty-bottom>p:nth-of-type(1){display:none;}
+.none.protection-logo-wrap.ty-bottom>img:nth-of-type(2){display:inline;}
+.none.protection-logo-wrap.ty-bottom>p:nth-of-type(2){display:block;}
+/*------------------------------------------------------*/
+/* 예금보험 상품 안내 로고 추가 작업(외환) */
+.inq-account-info .protection-logo-wrap{background:transparent;}
+
+/* 2022-03-08 권유직원, 지점, 직원번호 검색 시 리스트 내 선택가능, 선택불가능 label(span) 표현 요소 추가 */
+.list01.list01_type02>li>a>.possible_label{display:inline-block;border:1px solid #adc1db;border-radius:2px;color:#4b6b94;padding:0px 8px;margin-left:10px;margin-right:10px;font-size:11px;font-weight:600;letter-spacing:-1px;}
+.list01.list01_type02>li>a>.impossible_label{display:inline-block;border:1px solid #d0d0d0;border-radius:2px;color:#cecece;padding:0px 8px;margin-left:10px;margin-right:10px;font-size:11px;font-weight:600;letter-spacing:-1px;}

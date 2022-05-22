@@ -1,0 +1,170 @@
+@charset "utf-8";
+@import url("./content_renton_2022_2.css");
+
+
+/* renton  */
+
+.ta-c { text-align: center; }
+
+/* renton bgColor */
+.bg-FCEFC2 { background-color: #FCEFC2; }
+.bg-FFB41F { background-color: #FFB41F; }
+.bg-97835B { background-color: #97835B; }
+.bg-DA3A3A { background-color: #DA3A3A; }
+
+/* renton fontColor */
+.color-999999 { color: #999999 !important; }
+.color-222222 { color: #222222 !important; }
+.color-707070 { color: #707070 !important; }
+.color-666666 { color: #666666 !important; }
+
+/* renton fontSize */
+.font20 { font-size: 20px; }
+
+
+/* title */
+.u-2019.u-2021.u-bizcontent.renton .tit-dep2.has-txt-dep .txt-dep { margin-left: 4px; font-size: 13px; }
+
+
+/* button */
+/* .u-2019.u-2021.u-bizcontent.renton .btn-area .btn-ty1.disabled:disabled { background-color: #eeeeee; color: #888888; } */
+.u-2019.u-2021.u-bizcontent.renton .has-prev { position: relative; }
+.u-2019.u-2021.u-bizcontent.renton .has-prev .link-prev { position: absolute; left: 0; top: 0; padding-left: 15px; color: #666666; }
+.u-2019.u-2021.u-bizcontent.renton .has-prev .link-prev::before { content: ""; position: absolute; left: 0; top: 1px;  width: 12px; height: 100%; background: url(https://obiz.kbstar.com/mobiz/app/img/2019/sp_icon.png) -430px -62px; background-size: 250px 90px; transform: rotate(90deg);}
+/* space-line */
+.u-2019.u-2021.u-bizcontent.renton .space-line { position: relative; padding-top: 9px; }
+.u-2019.u-2021.u-bizcontent.renton .space-line:before { content: ''; display: block; position: absolute; top: 0; left: -16px; right: -16px; height: 1px; background-color: #e5e5e5; }
+
+/* sel Custom */
+
+
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .txt-dep-desc { margin-left: 0; }
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap { width: calc(100% - 110px); border-bottom: 1px solid #bbb; position: relative; }
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap:before { top: 9px; }
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap button { border: none; background-color: transparent; }
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap .sub-text { font-size: 17px; font-weight: 700; color: #222; padding-bottom: 14px; width: 100%; text-align: left; position: relative; }
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap .date-list { display: none; position: absolute; top: 36px; left: 0; width: 100%; height: 18vh; background-color: #ffffff; max-height: 262px; overflow-y: auto; border: 1px solid #999999; box-shadow: 4px 4px 32px rgba(0, 0, 0, 0.1); z-index: 1;  }
+/* .u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap .date-list::after { content: ''; display: block; position: absolute; top: 19px; right: 16px; width: 13px; height: 7px; background: url("https://obiz.kbstar.com/mobiz/app/img/2019/sp_icon.png") no-repeat -185px -30px;background-size: 250px 90px; } */
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap .date-list.active { display: block; }
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap .date-list li button { display: block; width: 100%; padding: 10px 16px; font-size: 15px; color: #999999; text-align: left; }
+.u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap .date-list li.active button { color: #222222; background-color: #F8F8F8; }
+/* .u-2019.u-2021.u-bizcontent.renton .renton-date-wrap .sel-wrap .date-list li { padding: 10px 16px; color: #999999; } */
+
+/* 건물등록01 */
+.u-2019.u-2021.u-bizcontent.renton .tit-dep2 { font-weight: 500; }
+
+.u-2019.u-2021.u-bizcontent.renton a.link { font-weight: 700; margin-top: 16px; }
+.u-2019.u-2021.u-bizcontent.renton a.link:after { display: none; }
+
+.u-2019.u-2021.u-bizcontent.renton .icon-preview { width: 87px; height: 87px; border-radius: 50%; overflow: hidden; margin: 33.5px auto 32px; }
+.u-2019.u-2021.u-bizcontent.renton .icon-preview span { display: block; width: 100%; height: 100%; position: relative; background-repeat: no-repeat; background-position: center; background-size: 90px; }
+
+.u-2019.u-2021.u-bizcontent.renton .icon-box { overflow-x: auto; overflow-y: hidden; display: flex; display: -webkit-flex; -webkit-overflow-scrolling: touch; position: relative; max-width: max-content; margin: 0 auto 35px; padding-bottom: 20px; }
+.u-2019.u-2021.u-bizcontent.renton .icon-wrap li { width: calc(20vw - 16px); height: calc(20vw - 16px); max-width: 118px; max-height: 118px; border-radius: 50%; flex-shrink: 0; }
+.u-2019.u-2021.u-bizcontent.renton .icon-wrap li + li { margin-left: 6px; }
+.u-2019.u-2021.u-bizcontent.renton .icon-wrap .icon { position: relative; display: inline-block; width: calc(16vw - 15px); height: calc(16vw - 15px); max-width: 90px; max-height: 90px;  border-radius: 50%; border: none; overflow: hidden; background-repeat: no-repeat; background-position: center; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); background-size: cover; }
+
+.u-2019.u-2021.u-bizcontent.renton .gradiant-box.yellow .icon, .u-2019.u-2021.u-bizcontent.renton .icon-preview .yellow { background-color: #FFC120; }
+.u-2019.u-2021.u-bizcontent.renton .gradiant-box.blue .icon, .u-2019.u-2021.u-bizcontent.renton .icon-preview .blue { background-color: #09BAE0; }
+.u-2019.u-2021.u-bizcontent.renton .gradiant-box.pupple .icon, .u-2019.u-2021.u-bizcontent.renton .icon-preview .pupple { background-color: #D18EF0; }
+.u-2019.u-2021.u-bizcontent.renton .gradiant-box.green .icon, .u-2019.u-2021.u-bizcontent.renton .icon-preview .green { background-color: #68C92D; }
+.u-2019.u-2021.u-bizcontent.renton .gradiant-box .icon::after, .u-2019.u-2021.u-bizcontent.renton .icon-preview span::after { content: ""; display: block; width: 50%; height: 100%; background-color: rgba(255,255,255,0.2); position: absolute; top: 0; right: 0; }
+
+.u-2019.u-2021.u-bizcontent.renton .icon-buliding01 { background-image: url('../../img/temp/tmp-ico1_fill.png'); }
+.u-2019.u-2021.u-bizcontent.renton .icon-buliding02 { background-image: url('../../img/temp/tmp-ico2_fill.png'); }
+.u-2019.u-2021.u-bizcontent.renton .icon-buliding03 { background-image: url('../../img/temp/tmp-ico3_fill.png'); }
+
+.u-2019.u-2021.u-bizcontent.renton .icon-wrap li.yellow.active { border: 2px solid #FFB800; }
+.u-2019.u-2021.u-bizcontent.renton .icon-wrap li.blue.active { border: 2px solid #09BAE0; }
+.u-2019.u-2021.u-bizcontent.renton .icon-wrap li.pupple.active { border: 2px solid #D18EF0; }
+.u-2019.u-2021.u-bizcontent.renton .icon-wrap li.green.active { border: 2px solid #68C92D; }
+
+
+/* 건물등록02 */
+.u-2019.u-2021.u-bizcontent.renton .btns-tab-wrap { border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; background-color: #E5E5E5; }
+.u-2019.u-2021.u-bizcontent.renton .btns-tab-wrap button { border: none; color: #999999; float: left; width: 50%; background-color: transparent; }
+.u-2019.u-2021.u-bizcontent.renton .btns-tab-wrap button.on { background-color: #fff; border: 1px solid #E5E5E5; color: #000000; font-weight: bold; box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.05); border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; }
+.u-2019.u-2021.u-bizcontent.renton .tab01 .txt-msg.info { color: #999999; }
+.u-2019.u-2021.u-bizcontent.renton .tab01 .txt-msg.info::before { width: 18px; height: 18px; background: url('https://obiz.kbstar.com/mobiz/app/img/2019/sp_icon.png') -230px -2px; background-size: 250px 90px; }
+/* .u-2019.u-2021.u-bizcontent.renton .tab01 .btns-flex { display: none; } */
+.u-2019.u-2021.u-bizcontent.renton .tab01 .btns-pay-wrap { display: flex; align-items: center; }
+.u-2019.u-2021.u-bizcontent.renton .tab01 .btns-pay-wrap .btns-pay { display: inline-block; margin-right: 10px; }
+.u-2019.u-2021.u-bizcontent.renton .tab01 .btns-pay-wrap .btns-pay li { float: left; }
+.u-2019.u-2021.u-bizcontent.renton .tab01 .btns-pay-wrap .btns-pay li input[type="radio"] + label { width: 50px; height: 34px; line-height: 30px; font-size: 14px; color: #707070; border: 1px solid #D1D5DB; background-color: #F3F4F6; }
+.u-2019.u-2021.u-bizcontent.renton .tab01 .btns-pay-wrap .btns-pay li input[type="radio"]:checked + label { background-color: #FFCC00; border: 1px solid #FFBC00; color: #000000; }
+.u-2019.u-2021.u-bizcontent.renton .tab01 .btns-pay-wrap .btns-pay li:first-child input[type="radio"] + label { border-radius: 5px 0px 0px 5px; -webkit-border-radius: 5px 0px 0px 5px; -moz-border-radius: 5px 0px 0px 5px; -ms-border-radius: 5px 0px 0px 5px; -o-border-radius: 5px 0px 0px 5px; }
+.u-2019.u-2021.u-bizcontent.renton .tab01 .btns-pay-wrap .btns-pay li:last-child input[type="radio"] + label { border-radius: 0px 5px 5px 0px; -webkit-border-radius: 0px 5px 5px 0px; -moz-border-radius: 0px 5px 5px 0px; -ms-border-radius: 0px 5px 5px 0px; -o-border-radius: 0px 5px 5px 0px; }
+
+.u-2019.u-2021.u-bizcontent.renton .btns-pay-wrap .tooltip_con { margin-top: 0; text-align: center; }
+.u-2019.u-2021.u-bizcontent.renton .btns-pay-wrap .tooltip_con .tooltip { padding: 0; left: 0; margin-top: 0; max-width: 100%; }
+.u-2019.u-2021.u-bizcontent.renton .btns-pay-wrap .tooltip_con .tooltip_wrap { top: 30px; left: 50%; right: initial; text-align: left; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); }
+
+.u-2019.u-2021.u-bizcontent.renton .msg-box.success { padding-top: 60px; }
+.u-2019.u-2021.u-bizcontent.renton .msg-box.success .msg-tit { font-size: 26px; }
+.u-2019.u-2021.u-bizcontent.renton .msg-box.success .msg-txt { font-size: 20px; line-height: 26px; }
+.u-2019.u-2021.u-bizcontent.renton .msg-box.success::before { display: none; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support { min-height: 218px; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support li { position: relative; padding: 18px 26px; border: 1px solid #E5E5E5; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.07), 2px 2px 40px rgba(0, 0, 0, 0.08); border-radius: 12px; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support li + li {  margin-top: 8px;}
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support .icon-wrap { display: flex; display: -webkit-flex; width: 100%; align-items: center; padding-right: 64px; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support.build-success li::after { content: ""; position: absolute; display: block;  right: 34px; top: 50%; width: 28px; height: 28px; transform: translateY(-50%); background: url("https://obiz.kbstar.com/mobiz/app/img/2019/sp_icon.png") -92px -7px; background-size: 470px 190px; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support .list.icon-wrap {  margin-left: 0; margin-right: 0; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support .icon-wrap .gradiant-box { position: relative; width: 45px; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support .icon-wrap .gradiant-box .icon { max-width: 45px; max-height: 45px; transform: translateX(-50%); }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support .icon-wrap .list-txt { width: calc(100% - 45px); padding-left: 16px; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support .icon-wrap .list-txt .sub-tit { width: 100%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.u-2019.u-2021.u-bizcontent.renton .list-wrap .list-support .icon-wrap .list-txt span { display: block; }
+
+.u-2019.u-2021.u-bizcontent.renton .has-edit .btn-edit { display: inline-block; width: 15px; height: 15px; padding: 0; background: url('../../img/renton_img/ic_edit.png') no-repeat right center/15px; border: 0; text-indent: -9999px; }
+.u-2019.u-2021.u-bizcontent.renton .has-edit .ipt-wrap { display: none; }
+.u-2019.u-2021.u-bizcontent.renton .has-edit .ipt-wrap input { margin-top: 0; padding-top: 0; }
+.u-2019.u-2021.u-bizcontent.renton .has-edit .icon-wrap { display: none; }
+.u-2019.u-2021.u-bizcontent.renton .has-edit.on .btn-edit { display: none; }
+.u-2019.u-2021.u-bizcontent.renton .has-edit.on .ipt-value { display: none; }
+.u-2019.u-2021.u-bizcontent.renton .has-edit.on .ipt-wrap { display: block; }
+.u-2019.u-2021.u-bizcontent.renton .has-edit.on .icon-wrap { display: block; }
+.u-2019.u-2021.u-bizcontent.renton .icon-area { position: relative; }
+.u-2019.u-2021.u-bizcontent.renton .icon-area .btn-edit { position: absolute; left: calc(50% + 14px); top: 0; width: 22px; height: 22px; border-radius: 100%; background-color: #FFFFFF; box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2); -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; background-position: center; }
+
+.u-2019.u-2021.u-bizcontent.renton .detail-info-wrap .tit { font-size: 23px; color: #222222; font-weight: 600;}
+.u-2019.u-2021.u-bizcontent.renton .detail-info-wrap .tit-desc { font-size: 17px; color: #222222; font-weight: 500;}
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list { border-top: 0 none; border-bottom: 0 none; overflow: visible; margin: 0; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul { border-top: 0 none; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li.has-btn { padding-right: 80px; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li.has-btn.has-edit.on { padding-right: 16px; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li.has-btn.ty4 { padding-right: 0; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li.has-btn.ty4 dt { padding: 18px 16px 16px; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li.has-btn.ty4 a::after { content: ""; position: absolute; display: block; right: 20px; top: 50%; width: 7px; height: 13px; transform: translateY(-50%); background: url(https://obiz.kbstar.com/mobiz/app/img/2019/sp_icon.png) 0px -25px; background-size: 250px 90px;}
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl { display: flex; display: -webkit-flex; align-items: center; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl dt { font-size: 14px; width: 101px; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl dd { width: calc(100% - 101px); overflow: visible; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl dd.flex-wrap { display: flex; display: -webkit-flex; align-items: center; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl dd.flex-wrap .bar { padding: 0 8px; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl dd .date-wrap .sel-wrap { padding-left: 32px; width: auto; border-bottom: 0 none; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl.renton-date-wrap dd .sel-wrap { width: auto; border-bottom: 0 none; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl.renton-date-wrap dd .sel-wrap::before { left: 80px; right: initial; top: 12px; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl.renton-date-wrap dd .sel-wrap .sub-text { padding-bottom: 4px; }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl dd .ipt-wrap.calendar {  }
+.u-2019.u-2021.u-bizcontent.renton .list-grid.detail-list > ul > li > dl dd .ipt-wrap.calendar input { margin-top: 0; padding-top: 0; height: 34px; font-size: 15px; border-bottom: 0 none; }
+
+/* .u-2019.u-2021.u-bizcontent.renton .form-wrap .tbl_view04 { width : 100%; }
+.u-2019.u-2021.u-bizcontent.renton .form-wrap .tbl_view04 table { width : 100%; table-layout : fixed; border-top : 0 none !important; }
+.u-2019.u-2021.u-bizcontent.renton .form-wrap .tbl_view04 table tr:first-child th , .u-2019.u-2021.u-bizcontent.renton .form-wrap .tbl_view04 table tr:first-child td  { border-top : 0 none; } 
+.u-2019.u-2021.u-bizcontent.renton .form-wrap .tbl_view04 table tr th { width:88px; text-align : left; background-color : #ffffff !important; }
+.u-2019.u-2021.u-bizcontent.renton .form-wrap .tbl_view04 table tr td { width: 80%; border-left : 0 none } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

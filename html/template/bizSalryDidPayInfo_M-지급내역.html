@@ -1,0 +1,410 @@
+<!--
+*******************************************************************************
+* @ ���񽺸�	: [BIZ������]�ӱݸ����������_�ӱ����޹��
+* @ �������ڵ�  : C107135
+* @ �����ڵ�	: 
+* @ ���ϸ�		: bizSalryDidemplInfo_M.html
+* @ �ۼ���		: ������
+* @ �Ҽ�		: 
+* @ �ۼ��� 		: 2022.02.17
+********************************************************************************
+��¥/��			�ۼ���		���泻��
+********************************************************************************
+2022.02.17		������		�űԵ��
+-->
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>Biz������</title>
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common_2019_new.css" />
+	<link rel="stylesheet" type="text/css" href="../../lib/css/common_2021.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/css/content_2021.css"><!-- ���������� ���� �߰�-->
+	
+	<script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/library/jquery_lib.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/mbank/common_ui.js"></script>
+    <script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/mbank/common_ui_2019.js"></script>
+    
+    <script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/mbank/mbank_common.js"></script>
+    
+    <!-- ���� ��ũ��Ʈ ���� START -->		
+	<script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/library/jquery_lib.js"></script>
+	<script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/library/common.js"></script>
+    <script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/common/common-tag.js"></script>
+    <script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/common/mb_common.js"></script>
+    <script type="text/javascript" src="https://obiz.kbstar.com//mobiz/app/js/mbank/mnbiz_common.js"></script>
+    <!-- ���� ��ũ��Ʈ ���� END -->
+
+</head>
+<style>
+	.u-2019 .calendar-wrap {
+		margin: 0px 0px !important;
+	}
+	.u-2019 .calendar-wrap .top-area {
+		margin-bottom: 15px;
+	}	
+	.u-2019 .calendar-wrap .top-area .date {
+		float: left;
+		margin-left: 5%;
+		width: fit-content;
+	}
+	/* .u-2019 .calendar-wrap .top-area .date:after {
+		content: '';
+		height: 0;
+		width: 0;
+		position: absolute;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-top: 15px solid black;
+		margin-left: 13px;
+		margin-top: 10px;
+	} */
+	.u-2019 .calendar-wrap .top-area .monthBtn {
+		float: right;
+		margin-right: 5%;
+	}
+	.schedule .active {
+		color: black !important;
+		background: orange;
+	}
+	
+	#contents #datePopup {
+		display: none;
+	}
+	
+	#contents #datePopup .dim {
+		z-index: 98;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgb(0,0,0,0.5);
+		position: absolute;
+	}
+	
+	#contents #datePopup .dateSubmitBtn {
+		z-index: 99;
+	}
+	
+	#contents #datePopup .dateYM {
+		z-index: 99;
+		width: 100%;
+		height: 50%;
+		bottom: 56px;
+		left: 0;
+		position: absolute;
+		background: white;
+		border-top-left-radius: 2em;
+		border-top-right-radius: 2em;
+	}
+	#contents #datePopup .dateYM .dateYM-wrap{
+		height: 100%;
+		width: 100%;
+	}
+	#contents #datePopup .dateYM .dateYM-wrap ul{
+		width: 50%;
+    	height: 100%;
+    	display: inline-block;
+    	float: left;
+    	overflow-y: scroll;
+	}
+	#contents #datePopup .dateYM .dateYM-wrap li {
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px 0px 10px 0px;
+	}
+	
+	#contents #datePopup .dateYM .dateYM-wrap .selecDate {
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		background: rgb(255, 204, 0, 0.3);
+		top: 50%;
+	}
+	
+</style>
+<script>
+    $(function() {      
+    	inputCalendarShow_m('KOR','paycalendar','',$('#������').val(),'',true);
+    	
+    	$('.btns-pay-wrap').on('click', 'button', function(e) {
+            var this_btn = $(this); 
+            var idx = this_btn.index();
+    
+            $('.btns-pay-wrap').find('button').removeClass('on');
+            this_btn.addClass('on');
+        });        
+    });
+    
+    function onParam(data) {
+    	$('#�޿�������').val(data.�޿�������);
+		$('#���޾��հ�').val(data.���޾��հ�);
+		$('#�������հ�').val(data.�������հ�);
+		$('#�����޾�').val(data.�����޾�);
+		$('#����').val(data.����);
+		$('#���޹��').val(data.���޹��);
+		$('#������').val(data.������);
+		$('#�ӱ��׸�').val(data.�ӱ��׸�);
+		$('#�ӱ��׸�����').val(data.�ӱ��׸�����);
+		$('#�����׸�').val(data.�����׸�);
+		$('#�����׸�����').val(data.�����׸�����);
+		$('#����׸�').val(data.����׸�);
+		$('#��곻��').val(data.��곻��);
+		$('#������޾�').val(data.������޾�);
+    }
+    
+    function goPage(pageCode) {
+		var payType = $('.btn-ty2.lv2.on').attr('value');
+    	var dateObj = $('#calendarWrap').find('#paycalendar-table').find('a.active');
+    	var payMonth = $(dateObj).attr('year') + '�� ' + $(dateObj).attr('month') + '�� ';
+    	var payDay = $(dateObj).attr('year') + '�� ' + $(dateObj).attr('month') + '�� ' + $(dateObj).attr('day') + '��';
+    	
+    	$('#���޹��').val(payType);
+    	$('#������').val(payDay);
+    	$('#�޿�������').val(payMonth);
+    	
+    	var param = $('#IBF').serializeJSON();
+		
+		window.navi.navigate('/mquics?page='+pageCode, param, function(){});
+    }
+    
+    function inputCalendarShow_m(lang, idCal, idDate, dateVal, callback, flag){
+        var tempHtml = '<div id="'+idCal+'" style="display:none;"></div>';
+        $("#calendarWrap").html(tempHtml);
+        var strDate  = dateVal;
+        var year     = "";
+        var month    = "";
+        var date     = "";
+        if(caq.util.isDate(strDate)){
+          if(strDate.length == 8) {
+              year  = strDate.substring(0,4);
+              month = strDate.substring(4,6);
+              date  = strDate.substring(6);
+          } else {
+              year  = strDate.substring(0,4);
+              month = strDate.substring(5,7);
+              date  = strDate.substring(8);
+          }
+        }else{
+          var today = new Date();
+          year  = today.getFullYear();
+          month = today.getMonth()+1;
+          date  = today.getDate();
+        }
+        month = Number(month);
+        makeInputCalendar_m(lang, idCal, idDate, year, month, date, dateVal, callback, flag);
+        $('#' + idCal).show();
+      }
+    
+    function makeInputCalendar_m(lang, idCal, idD, valY, valM, valD, dateVal, callback, flag) {
+        idCal_m   = idCal;
+        idDate_m  = idD;
+        valY_m    = valY;
+        valM_m    = valM;
+        valD_m    = caq.util.getLastDayOfMonth(valY,valM-1) < valD ? caq.util.getLastDayOfMonth(valY,valM-1) : valD;
+        var calendar = $("#"+idCal);
+
+        if(flag == "true") {
+            valY_m    = parseInt(dateVal.substring(0, 4), 10);
+            valM_m    = dateVal.substring(5, 7);
+            valD_m    = dateVal.substring(8);
+
+            if(valM_m.substring(0,1)=="0") valM_m = valM_m.substring(1);
+            if(valD_m.substring(0,1)=="0") valD_m = valD_m.substring(1);            
+        }
+        var today    = new Date( valY_m , valM_m-1 , valD_m );
+        var year     = today.getFullYear();
+        var nextyear = year +1;
+        var lastyear = year -1;
+        var beforeYear = year;
+        var afterYear = year;
+        var month    = today.getMonth();
+        var date     = today.getDate();
+        var strMonth = month+1 < 10 ? '0' + (month+1) : (month+1);
+        var beforeMonth = (Number(strMonth)-1);
+        if(beforeMonth == 0){
+            beforeYear = year - 1;
+            beforeMonth = 12;
+        }
+        var afterMonth = (Number(strMonth)+1);
+        if(afterMonth == 13){
+            afterYear = year + 1;
+            afterMonth = 1;
+        }
+        var day;
+        if('KOR'==lang){
+            day=new Array("��","��","ȭ","��","��","��","��");
+            txtYearMonth =  year + "�� "+ strMonth + "�� ";
+            txtCaption = "�޷�";
+            txtConfirm = "Ȯ��";
+            txtCancle = "���";
+        }else{
+            day=new Array ("S","M","T","W","T","F","S");
+            txtYearMonth =  strMonth + "/"+year;
+            txtCaption = "Calendar";
+            txtConfirm = "Confirm";
+            txtCancle = "Cancel";
+        }
+        var firstOfMonth = new Date(year,month,1);
+        var firstDay     = firstOfMonth.getDay();
+        var lastDate     = caq.util.getLastDayOfMonth(year,month);
+
+        try{
+            var text  = "";
+            text += "  <div class='con_sp01 calendar calendar-wrap' style='position:relative; left:0px; top:0px;'>";
+            text += "    <div class='top-area'>";
+            //text += "      <a href='javascript:void(0);' class='first' onclick=\"makeInputCalendar_m('"+lang+"','"+idCal+"','"+idD+"'," +lastyear+ "," +(Number(strMonth))+ ", " +date+ ",'"+dateVal+"','"+callback+"','false'); return false;\">���⵵</a>";
+            /* text += "      <span class='date' id='dateYMspan' onclick='javascript:datePopupTogle(1); '>"; */
+            text += "      <span class='date' id='dateYMspan'>";
+            text += "        " + txtYearMonth + " ";
+            text += "      </span>";
+            text += "      <span class='monthBtn'>";
+            text += "      <a href='javascript:void(0);' class='ico-prev' onclick=\"makeInputCalendar_m('"+lang+"','"+idCal+"','"+idD+"'," +beforeYear+ "," +beforeMonth+ ", " +date+ ",'"+dateVal+"','"+callback+"','false'); return false;\"></a>";
+            text += "      <a href='javascript:void(0);' class='ico-next' onclick=\"makeInputCalendar_m('"+lang+"','"+idCal+"','"+idD+"'," +afterYear+ "," +afterMonth+ ", " +date+ ",'"+dateVal+"','"+callback+"','false'); return false;\"></a>";
+            //text += "      <a href='javascript:void(0);' class='last' onclick=\"makeInputCalendar_m('"+lang+"','"+idCal+"','"+idD+"'," +nextyear+ "," +(Number(strMonth))+ ", " +date+ ",'"+dateVal+"','"+callback+"','false'); return false;\">�����⵵</a>";
+            text += "      </span>";
+            text += "    </div>";
+            text += "    <table id='"+idCal+"-table' class='schedule'>";
+            text += "      <caption>"+txtCaption+"</caption>";
+            text += "      <colgroup>";
+            text += "        <col style='width:14.5%' />";
+            text += "        <col style='width:14.5%' />";
+            text += "        <col style='width:14.5%' />";
+            text += "        <col style='width:14.5%' />";
+            text += "        <col style='width:14.5%' />";
+            text += "        <col style='width:14.5%' />";
+            text += "        <col style='width:14.5%' />";
+            text += "      <thead>";
+            text += "        <tr>";
+            text += "          <th scope='col' class='sunday'>"+day[0]+"</th>";
+            text += "          <th scope='col'>"+day[1]+"</th>";
+            text += "          <th scope='col'>"+day[2]+"</th>";
+            text += "          <th scope='col'>"+day[3]+"</th>";
+            text += "          <th scope='col'>"+day[4]+"</th>";
+            text += "          <th scope='col'>"+day[5]+"</th>";
+            text += "          <th scope='col'>"+day[6]+"</th>";
+            text += "        </tr>";
+            text += "      </thead>";
+            text += "      <tbody>";
+
+            var dayNum    = 1;
+            var curCol    = 1;
+            var weekcount = 0;
+            for (var i=1; i<=Math.ceil((lastDate + firstDay)/7); i++) {
+                text += "        <tr>";
+                for (var j=1; j<=7; j++) {
+                    if(j == 1) {
+                        text += "          <td class='sunday'>";
+                    } else {
+                        text += "          <td>";
+                    }
+                    weekcount = weekcount+1;
+                    if(curCol < firstDay + 1 || dayNum > lastDate) {
+                        text += "&nbsp;";
+                        curCol++;
+                    } else {
+                        if( dayNum == date ) {
+                            text += "<a href='javascript:void(0);' class='active' year='" + year + "' month='" + Number(strMonth) + "' day='" + dayNum + "' onclick=\"caq.tag.selectDay_m(this,'"+idCal+"','"+idD+"',"+year+","+Number(strMonth)+","+dayNum+"); return false;\">" + dayNum + "<span id=\"id_title\" class=\"hide\">�� ����</span></a>";
+                        } else {
+                            switch(j) {
+                            default :
+                                text += "<a href='javascript:void(0);' year='" + year + "' month='" + Number(strMonth) + "' day='" + dayNum + "' onclick=\"caq.tag.selectDay_m(this,'"+idCal+"','"+idD+"',"+year+","+Number(strMonth)+","+dayNum+");return false;\">"+dayNum+"</a>";
+                            }
+                        }
+                        dayNum++ ;
+                    }
+                    text += "</td>";
+                }
+                text += "        </tr>";
+            }
+            text += "      </tbody>";
+            text += "    </table>";
+            //text += "    <div class='btn_center'>";
+            //text += "      <button type='button' class='btn03' onclick=\"window.appManager.onDataReturn(null);\">"+txtCancle+"</button>";
+            //text += "      <button type='button' class='btn02' onclick=\"caq.tag.setInputYMD_m('"+callback+"');\">"+txtConfirm+"</button>";
+            //text += "    </div>";
+            text += "  </div>";
+
+            calendar.html(text);
+            calendar.css({"height":"100%"});
+        }catch(err){}
+    }
+
+</script>
+<body>
+<div id="wrap">
+	<form>
+		<!-- contents -->
+		<div id="contents" class="u-2019 pay-stub-page u-bizcontent">
+			<div class="step-wrap ty2" role="img" aria-label="�� 4�ܰ� �� 2�ܰ�(�Աݸ����� �ۼ�)">
+				<ol>
+					<li><p>��������</p></li>
+					<li class="on"><p>�⺻����</p></li>
+                   	<li><p>���޳���</p></li>
+                   	<li><p>��������</p></li>
+				</ol>
+			</div>
+			<h2 class="tit-dep1">�⺻����</h2>
+			<p class="txt-cont">�ӱ� ���޹���� �������ּ���</p> 
+			<div class="list-form list-padding-bottom0 space-ty4 mt20">
+				<em class="tit">��ȸ����</em>
+				<div class="btns-pay-wrap">															
+					<button type="button" class="btn-ty2 lv2 on" value="month">����</button>
+					<button type="button" class="btn-ty2 lv2" value="hour">�ñ�</button>					
+                    <button type="button" class="btn-ty2 lv2" value="day">�ϱ�</button>							
+				</div>
+				<label for="ipt_name" class="tit pt10">������</label>
+				<div class="ipt-wrap">
+					<!-- <input type="text" id="ipt_name" name="" class="ipt" value="" maxlength="10" placeholder="10�� �̳�" /> -->
+					<button type="button" class="btn-clear">�Է³��� �ʱ�ȭ</button>
+	               </div>
+	               <div class="calendar-wrap" id="calendarWrap">
+						<!-- �޷� �� ���� -->	   
+	               </div>
+			</div>
+			<div class="btn-area full fixed">
+				<button type="button" class="btn-ty3" onclick="javascript:goPage('C107113');">����</button>
+				<button type="button" class="btn-ty1" onclick="javascript:goPage('C107137');">����</button>
+			</div>				
+		</div>
+		<!--// contents -->
+	</form>
+	<form method="post" id="IBF" name="IBF" onsubmit="return false;">
+		<input type="hidden" id="�޿�������" name="�޿�������" value="" />
+    	<input type="hidden" id="���޾��հ�" name="���޾��հ�" value="" />
+    	<input type="hidden" id="�������հ�" name="�������հ�" value="" />
+    	<input type="hidden" id="�����޾�" name="�����޾�" value="" />
+    	<input type="hidden" id="����" name="����" value="" />
+    	<input type="hidden" id="���޹��" name="���޹��" value="" />
+    	<input type="hidden" id="������" name="������" value="" />
+    	
+    	<input type="hidden" id="�ӱ��׸�" name="�ӱ��׸�" value="" />
+    	<input type="hidden" id="�ӱ��׸�����" name="�ӱ��׸�����" />
+    	<input type="hidden" id="�����׸�" name="�����׸�" value="" />
+    	<input type="hidden" id="�����׸�����" name="�����׸�����" value="" />
+    	
+    	<input type="hidden" id="����׸�" name="����׸�" value="" />
+    	<input type="hidden" id="��곻��" name="��곻��" value="" />
+    	<input type="hidden" id="������޾�" name="������޾�" value="" />
+	</form>
+</div>
+</body>
+</html>e="�ӱ��׸�����" />
+    	<input type="hidden" id="�����׸�" name="�����׸�" value="" />
+    	<input type="hidden" id="�����׸�����" name="�����׸�����" value="" />
+    	
+    	<input type="hidden" id="����׸�" name="����׸�" value="" />
+    	<input type="hidden" id="��곻��" name="��곻��" value="" />
+    	<input type="hidden" id="������޾�" name="������޾�" value="" />
+	</form>
+</div>
+</body>
+</html>

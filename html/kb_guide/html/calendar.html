@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div class="__guide">
+	
+	<div class="__aside">
+		<div class="__component-name">달력</div>
+		<div class="__p">설명글 입력</div>
+	</div>
+
+	<div class="__contents u-2019">
+
+		<div class="__h1">달력</div>
+		<div class="__p">전체화면으로 달력을 표시한다. 오늘 날짜와 선택한 날짜는 다른 날들과 구분되게 한다.<br>(단, 선택한 날짜와 오늘 날짜가 중복인 경우 선택한 날짜를 우선으로 한다.)</div>
+				
+		<div class="__preview">
+			<textarea class="__code">
+<!-- calendar-wrap -->
+<div class="calendar-wrap">
+
+	<h2 class="blind">달력</h2>
+
+	<div class="top-area">
+		<a href="#" class="ico-prev"><span class="blind">이전달</span></a>
+		<span class="date">
+			2019<span class="blind">년</span>
+			<span area-hidden="true">.</span>
+			06<span class="blind">월</span>
+		</span>
+		<a href="#" class="ico-next"><span class="blind">다음달</span></a>
+	</div>
+
+	<!-- calendar -->
+	<div class="calendar-area">
+		<table>
+			<caption>달력</caption>
+			<colgroup>
+				<col style="width:15%"><col style="width:14%"><col style="width:14%"><col style="width:14%"><col style="width:14%"><col style="width:14%"><col style="width:15%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">일</th>
+					<th scope="col">월</th>
+					<th scope="col">화</th>
+					<th scope="col">수</th>
+					<th scope="col">목</th>
+					<th scope="col">금</th>
+					<th scope="col">토</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="#" class="">1</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" class="">2</a></td>
+					<td><a href="#" class="">3</a></td>
+					<td><a href="#" class="">4</a></td>
+					<td><a href="#" class="">5</a></td>
+					<td>
+						<a href="#" class="">6</a>
+						<!-- 일정 -->
+						<div class="remark-area">
+							<div class="mark2"><span class="blind">만기/납부일정</span></div>
+							<div class="mark3"><span class="blind">내 일정</span></div>
+						</div>
+						<!-- //일정 -->
+					</td>
+					<td><a href="#" class="">7</a></td>
+					<td><a href="#" class="">8</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" class="">9</a></td>
+					<td><a href="#" class="today">10</a></td><!-- 날짜(오늘) -->
+					<td><a href="#" class="">11</a></td>
+					<td>
+						<a href="#" class="selectday">12</a><!-- 날짜(선택) -->
+						<!-- 일정 -->
+						<div class="remark-area">
+							<div class="mark1"><span class="blind">이체일정</span></div>
+							<div class="mark2"><span class="blind">만기/납부일정</span></div>
+							<div class="mark3"><span class="blind">내 일정</span></div>
+						</div>
+						<!-- //일정 -->
+					</td>
+					<td><a href="#" class="">13</a></td>
+					<td><a href="#" class="">14</a></td>
+					<td><a href="#" class="">15</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" class="">16</a></td>
+					<td><a href="#" class="">17</a></td>
+					<td><a href="#" class="">18</a></td>
+					<td><a href="#" class="">19</a></td>
+					<td><a href="#" class="">20</a></td>
+					<td><a href="#" class="">21</a></td>
+					<td>
+						<a href="#" class="">22</a>
+						<!-- 일정 -->
+						<div class="remark-area">
+							<div class="mark1"><span class="blind">이체일정</span></div>
+						</div>
+						<!-- //일정 -->
+					</td>
+				</tr>
+				<tr>
+					<td><a href="#" class="">23</a></td>
+					<td>
+						<a href="#" class="">24</a>
+						<!-- 일정 -->
+						<div class="remark-area">
+							<div class="mark1"><span class="blind">이체일정</span></div>
+							<div class="mark3"><span class="blind">내 일정</span></div>
+						</div>
+						<!-- //일정 -->
+					</td>
+					<td><a href="#" class="">25</a></td>
+					<td><a href="#" class="">26</a></td>
+					<td><a href="#" class="">27</a></td>
+					<td><a href="#" class="">28</a></td>
+					<td><a href="#" class="">29</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" class="">30</a></td>
+					<td><a href="#" class="">31</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //calendar -->
+
+</div>
+<!-- //calendar-wrap -->
+
+			</textarea>
+		</div>
+
+	</div>
+	
+</div>
+    
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/common_ui.js"></script>
+<script src="../js/common_ui_2019.js"></script>
+
+</body>
+</html>

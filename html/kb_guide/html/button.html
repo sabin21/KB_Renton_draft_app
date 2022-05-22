@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+	<style>
+	.__preview.rel .__view {position:relative;padding-bottom:66px}
+	</style>
+</head>
+
+<body>
+
+<div class="__guide">
+
+	<div class="__aside">
+		<div class="__component-name">버튼</div>
+		<div class="__p">박스와 텍스트 타입으로 구성되어 있다.</div>
+	</div>
+
+	<div class="__contents u-2019">
+		<div class="__h1">박스타입</div>
+		<div class="__p">사용자의 행동을 결정하는 주요 요소로 수행하고자 하는 내용을 미리 인지시키고 수행할 수 있도록 한다.<br>버튼은 수행하게 될 작동 내용에 대하여 안내하는 레이블(Label)과 버튼의 작동 여부를 나타내는 백그라운드(Background)로 구성한다.</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>btn-ty1</td>
+					<td>긍정의 표현, 사용자 행동 유도, 우선순위 높은 내용, 좌우 여백없이 와이드하게 사용<br>border : none / background-color : #fc0</td>
+				</tr>
+				<tr>
+					<td>btn-ty2</td>
+					<td>border : #bbb / background-color : #fff</td>
+				</tr>
+				<tr>
+					<td>btn-ty3</td>
+					<td>border : none / background-color : #ddd</td>
+				</tr>
+				<tr>
+					<td>btn-ty4</td>
+					<td>border: none / background-color : #eff1f4</td>
+				</tr>
+				<tr>
+					<td>기본레벨<br>button.lv2,<br>button.lv3<br>button.lv4</td>
+					<td>
+						height : 56px / font-size : 17px<br>
+						height : 40px / font-size : 15px<br>
+						height : 36px / font-size : 14px<br>
+						height : 32px / font-size : 13px
+					</td>
+				</tr>
+				<tr>
+					<td>button.disable</td>
+					<td>누를 수 없는 버튼으로 button태그의 disabled="disabled" 속성과 함께 사용</td>
+				</tr>
+				<tr>
+					<td>button.radius</td>
+					<td>라운드 버튼</td>
+				</tr>
+				<tr>
+					<td>btn-area.full</td>
+					<td>btn-area 영역이 화면 내 100% full로 잡힘</td>
+				</tr>
+				<tr>
+					<td>btn-area.fixed</td>
+					<td>btn-area 영역이 화면 하단에 고정</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview rel">
+			<xmp class="__code">
+<div class="btn-area">
+	<button type="button" class="btn-ty1">버튼(btn-ty1)</button>
+	<button type="button" class="btn-ty1 lv2">버튼(btn-ty1 lv2)</button>
+	<button type="button" class="btn-ty1 lv3">버튼(btn-ty1 lv3)</button>
+	<button type="button" class="btn-ty1 lv4">버튼(btn-ty1 lv4)</button>
+	<button type="button" disabled="disabled" class="btn-ty1 lv4 radius">버튼(btn-ty1 radius)</button>
+	<button type="button" disabled="disabled" class="btn-ty1 lv3 disable">버튼(btn-ty1 disable)</button>	
+</div>
+<div class="btn-area">
+	<button type="button" class="btn-ty2">버튼(btn-ty2)</button>
+	<button type="button" class="btn-ty2 lv2">버튼(btn-ty2 lv2)</button>
+	<button type="button" class="btn-ty2 lv3">버튼(btn-ty2 lv3)</button>
+	<button type="button" class="btn-ty2 lv4">버튼(btn-ty2 lv4)</button>
+	<button type="button" disabled="disabled" class="btn-ty2 lv3 disable">버튼(btn-ty2 disable)</button>
+</div>
+<div class="btn-area">
+	<button type="button" class="btn-ty3">버튼(btn-ty3)</button>
+	<button type="button" class="btn-ty3 lv2">버튼(btn-ty3 lv2)</button>
+	<button type="button" class="btn-ty3 lv3">버튼(btn-ty3 lv3)</button>
+	<button type="button" class="btn-ty3 lv4">버튼(btn-ty3 lv4)</button>
+	<button type="button" disabled="disabled" class="btn-ty3 lv3 disable">버튼(btn-ty3 disable)</button>
+</div>
+<div class="btn-area">
+	<button type="button" class="btn-ty4">버튼(btn-ty4)</button>
+	<button type="button" class="btn-ty4 lv2">버튼(btn-ty4 lv2)</button>
+	<button type="button" class="btn-ty4 lv3">버튼(btn-ty4 lv3)</button>
+	<button type="button" class="btn-ty4 lv4">버튼(btn-ty4 lv4)</button>
+	<button type="button" disabled="disabled" class="btn-ty4 lv3 disable">버튼(btn-ty4 disable)</button>
+</div>
+<div class="btn-area full">
+	<button type="button" class="btn-ty3">취소</button>
+	<button type="button" class="btn-ty1">확인</button>
+</div>
+<div class="btn-area full fixed">
+	<button type="button" class="btn-ty3">취소</button>
+	<button type="button" class="btn-ty1">확인</button>
+</div>
+			</xmp>
+		</div>
+
+		<div class="__h1">박스타입 활용</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>button.btn-ty3.lv3 > span.ico-more</td>
+					<td>
+						더보기 + 
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview rel">
+			<xmp class="__code">
+<div class="btn-area full">
+	<button type="button" class="btn-ty3 lv2"><span class="ico-more">더보기</span></button>
+</div>
+			</xmp>
+		</div>
+
+		<div class="__h1">텍스트타입</div>
+		<div class="__p">하이퍼텍스트 버튼은 텍스트와 함께 사용되는 형태에 따라 텍스트 적용형, 텍스트+밑줄 적용형, 아이콘 적용형, 혼합형으로 구분한다.</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>link</td>
+					<td>링크가 필요한 a 태그에 입력 / 박스 버튼이 시각적으로 방해되는 경우 사용</td>
+				</tr>
+				<tr>
+					<td>underline</td>
+					<td>밑줄 필요시 사용</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview">
+			<xmp class="__code">
+<div class="tac">
+	<a href="#" role="button" class="link">텍스트 버튼</a>
+	<a href="#" role="button" class="link">텍스트 버튼</a>
+	<a href="#" role="button" class="link">텍스트 버튼</a>
+</div>
+<div class="tac">
+	<a href="#" role="button" class="link underline">텍스트 버튼(underline)</a>
+	<a href="#" role="button" class="link underline">텍스트 버튼(underline)</a>
+	<a href="#" role="button" class="link underline">텍스트 버튼(underline)</a>
+</div>
+			</xmp>
+		</div>
+		
+	</div>
+
+</div>
+    
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/common_ui.js"></script>
+<script src="../js/common_ui_2019.js"></script>
+
+</body>
+</html>

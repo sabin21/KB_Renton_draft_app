@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>마크업 가이드 | 기업 디지털금융 비대면 채널고도화</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common.css" />	
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019.css" />
+	<link rel="stylesheet" type="text/css" href="../../../lib/css/common_2019_new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div class="__guide">
+	
+	<div class="__aside">
+		<div class="__component-name">박스</div>
+		<div class="__p">콘텐츠를 감쌀때 사용한다.</div>
+	</div>
+
+	<div class="__contents u-2019">
+
+		<div class="__h1">박스</div>
+		<div class="__p"></div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>box-ty2</td>
+					<td>상단 가이드 박스</td>
+				</tr>
+				<tr>
+					<td>box-ty1</td>
+					<td>하단 가이드 박스</td>
+				</tr>
+				<tr>
+					<td>box-ty3</td>
+					<td>그 외 박스</td>
+				</tr>
+				<tr>
+					<td>box-ty4</td>
+					<td>작은 박스</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview">
+			<xmp class="__code">
+<div class="box-ty1">
+	<ul class="list-ty1">
+		<li>리스트 1
+			<ul class="list-ty2">
+				<li>리스트 1-1
+					<ul class="list-ty3">
+						<li>리스트 1-1-1</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>리스트 2<br>두줄두줄두줄두줄두줄두줄</li>
+	</ul>
+</div>
+<br><br>
+<div class="box-ty2">
+	<ul class="list-ty3">
+		<li>첫번째 Depth</li>
+		<li>첫번째 Depth
+			<ul class="list-ty2">
+				<li>2번째 Depth</li>
+				<li>2번째 Depth</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<br><br>
+<div class="box-ty3">
+	<dl class="list-ty4">
+		<dt>정의 1-1</dt>
+		<dd>정의내용 1-1</dd>
+		<dt>정의 1-2</dt>
+		<dd>정의내용 1-2</dd>
+	</dl>
+</div>
+<br><br>
+<div class="box-ty4">
+	<h3 class="box-tit">급여이체 정보활용/변경 계약서</h3>
+	<p class="box-txt">본 계약 동의 시, 영업점에 제출한 탑라인 정보의 기업인터넷뱅킹/스타기업뱅킹 內 활용과 급여이체가 가능합니다.</p>
+</div>
+			</xmp>
+		</div>
+
+		<div class="__h1">메시지 박스</div>
+		<div class="__p">box안에 안내, 완료, 오류등의 아이콘을 포함하고 있다.</div>
+		<table class="__table">
+			<colgroup>
+				<col style="width: 20%" />
+				<col style="width: 80%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">클래스</th>
+					<th scope="col">설명</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr>
+					<td>msg-box.ty1</td>
+					<td>오류 아이콘 </td>
+				</tr>
+				<tr>
+					<td>msg-box.ty2</td>
+					<td>완료 아이콘 </td>
+				</tr>
+				<tr>
+					<td>msg-box.ty3</td>
+					<td>정보 아이콘 </td>
+				</tr>
+				<tr>
+					<td>msg-box.ty4</td>
+					<td>페이지 중간 오류 메세지 </td>
+				</tr>
+				<tr>
+					<td>msg-box.ty5</td>
+					<td>리스트 내 데이터 없을 경우 </td>
+				</tr>
+				<tr>
+					<td>msg-tit</td>
+					<td>strong 태그에 입력. 제목</td>
+				</tr>
+				<tr>
+					<td>msg-txt</td>
+					<td>텍스트</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="__preview">
+			<xmp class="__code">
+<div class="msg-box ty1">
+	<strong class="msg-tit">info/error</strong>
+	<p class="msg-txt">기업인터넷뱅킹 ID를 보유한 개인사업자(통합ID)가 본인명의의 순수개인 또는 타사업장을  부ID로 등록 후 통합ID로 로그인하여 계좌 조회 및 이체를 이용할 수 있는 서비스 입니다.</p>
+</div>
+<br><br>
+<div class="msg-box ty2">
+	<strong class="msg-tit">완료</strong>
+	<p class="msg-txt">기업인터넷뱅킹 ID를 보유한 개인사업자(통합ID)가 본인명의의 순수개인 또는 타사업장을  부ID로 등록 후 통합ID로 로그인하여 계좌 조회 및 이체를 이용할 수 있는 서비스 입니다.</p>
+</div>
+<br /><br />
+<div class="msg-box ty3">
+	<strong class="msg-tit">변경된 스마트폰을 <br>등록하시겠습니까?</strong>
+	<p class="msg-txt">스마트폰을 변경하는 경우 <br>안전한 서비스 이용을 위해 본인확인<br>(ARS 전화인증)을 통한 재등록이 필요합니다.<br>(1인 1기기 이용)</p>
+</div>
+<br /><br />
+<div class="msg-box ty4">
+	<strong class="msg-tit">금융거래제한계좌로 통장 개설되었습니다.</strong>
+	<p class="msg-txt">추후 영업점 방문으로 정상계좌 전환가능합니다.</p>
+	<p class="msg-txt fc-6">※ 필요서류<br>부가가치세 과세표준증명원, 전자세금계산서, 지방세/국세 납입증명원, 표준재무재표 등)</p>
+</div>
+<br /><br />
+<div class="msg-box ty5">
+	<p class="msg-tit">최근 1개월 간 거래내역이 없습니다.</p>
+</div>
+			</xmp>
+		</div>
+	</div>	
+</div>
+    
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/scripts.js"></script>
+
+</body>
+</html>
